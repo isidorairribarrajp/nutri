@@ -61,6 +61,7 @@
   --color-carb: #2F82AE;
   --color-gras: #B5713A;
   --color-agua: #2F82AE;
+  --color-ok: #31844B;          /* estado "cumplido", validado sobre crema */
 
   --font-ui: 'Manrope', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --font-mano: 'Caveat', 'Snell Roundhand', cursive;
@@ -81,6 +82,7 @@
   --color-carb: #3F97C0;
   --color-gras: #C07C46;
   --color-agua: #3F97C0;
+  --color-ok: #3E9C5C;
 }
 
 html, body, #root { height: 100%; }

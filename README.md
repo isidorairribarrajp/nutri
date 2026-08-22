@@ -15,14 +15,32 @@ Abrir la URL **en Safari** (en iOS solo Safari puede instalar PWAs)
 
 - **Buscar** — escáner de código de barras, búsqueda en la tabla chilena, tus recetas,
   tus favoritos y Open Food Facts.
-- **Hoy** — anillo de calorías segmentado por macro, barras de macros, agua, y las
-  comidas del día por momento (desayuno / almuerzo / once / cena / snack). Copiar
-  las comidas de otro día.
+- **Hoy** — racha, tira de la semana con el estado de cada día, anillo de calorías
+  segmentado por macro con las marcas del rango, barras de macros, agua, y las comidas
+  del día por momento. Terminar el día, copiar las comidas de otro día, y marcar una
+  comida como fija para que se cargue sola cada mañana.
 - **Plan** — propuesta de día completo que cuadra con las metas, armada con lo que
-  Isi realmente come. "Otra opción" regenera; "Anotar todo en Hoy" lo registra.
+  Isi realmente come. Cada ítem se marca con un check a medida que se va comiendo
+  (desmarcar borra la entrada, no deja comida fantasma). "Otra opción" regenera.
 - **Progreso** — peso, grasa corporal y ejercicio, con gráficos de tendencia.
 - **Recetas** — los dos recetarios, con macros por porción y botón "Comí esto".
 - **Perfil** — el análisis completo, respaldo y tema claro/oscuro.
+
+## Racha, rango y estado del día
+
+`src/racha.js`. Tres decisiones deliberadas:
+
+- **El rango es ±10 %** alrededor de la meta. Pegarle al número exacto es imposible y
+  castigarse por 40 kcal no le sirve a nadie.
+- **Un día en curso no puede estar "fuera" por quedarse corto.** A las once de la mañana
+  obvio que va bajo: ese estado es `parcial`, no fallo. Recién al terminar el día (o al
+  día siguiente) un día corto cuenta como fuera de rango.
+- **Si hoy todavía no registra nada, la racha no se corta**: se mide desde ayer. Cortarla
+  a las ocho de la mañana sería injusto.
+
+Cada estado lleva **color Y forma** (punto lleno / anillo / raya). Solo con color no
+sirve: el verde de "cumplido" y el terracota de "fuera" tienen ΔE 1,9 bajo daltonismo
+protán — son el mismo tono para quien lo tiene, y significan lo opuesto.
 
 ## Escáner de código de barras
 

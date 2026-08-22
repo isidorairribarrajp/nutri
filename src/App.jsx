@@ -28,6 +28,8 @@ export default function App() {
   const [version, setVersion] = useState(0)
 
   const recargar = useCallback(() => {
+    // las comidas marcadas como fijas se cargan solas al abrir el dia de hoy
+    if (fecha === db.claveFecha()) db.aplicarRepetidas(fecha)
     setEntradas(db.getDia(fecha))
     setPerfil(db.getPerfil())
     setVersion((v) => v + 1)

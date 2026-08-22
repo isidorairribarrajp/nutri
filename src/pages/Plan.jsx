@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import * as db from '../db.js'
-import { MOMENTOS, etiquetaPorcion, formatearFecha, redondear } from '../nutricion.js'
+import { MOMENTOS, formatearFecha, redondear } from '../nutricion.js'
 import { cargarRecetas, cargarTablaCL, getRecetas, getTablaCL } from '../off.js'
 import { etiquetaItem, generarPlan } from '../plan.js'
 
@@ -16,6 +16,8 @@ export default function Plan({ metas, recargar }) {
   const [fuente, setFuente] = useState('todo')
   const [fecha] = useState(() => db.claveFecha())
   const [aviso, setAviso] = useState(null)
+  // que items del plan ya se registraron, para poder ir marcandolos de a uno
+  const [marcados, setMarcados] = useState({})
 
   useEffect(() => {
     Promise.all([cargarTablaCL(), cargarRecetas()]).then(() => setListo(true))
@@ -37,29 +39,50 @@ export default function Plan({ metas, recargar }) {
     [despensa, metas, fecha, variante],
   )
 
+  /** Registra UN item del plan. Es la forma natural de usarlo: vas comiendo
+   *  y vas marcando, en vez de anotar el dia entero de golpe. */
+  function registrarItem(comida, item, clave) {
+    const a = item.alimento
+    db.guardarAlimento({
+      id: a.id, nombre: a.nombre, marca: a.marca || null,
+      por100g: a.por100g, porciones: a.porciones || [], fuente: a.fuente, aprox: a.aprox,
+    })
+    db.marcarReciente(a.id)
+    const f = item.gramos / 100
+    const entrada = db.agregarEntrada(fecha, {
+      alimento_id: a.id, nombre: a.nombre, momento: comida.momento, gramos: item.gramos,
+      kcal: Math.round(a.por100g.kcal * f),
+      p: redondear(a.por100g.p * f, 1),
+      c: redondear(a.por100g.c * f, 1),
+      g: redondear(a.por100g.g * f, 1),
+      etiqueta_porcion: etiquetaItem(item),
+    })
+    setMarcados((m) => ({ ...m, [clave]: entrada.id }))
+    recargar()
+  }
+
+  /** Desmarcar borra la entrada que se creo: no queda comida fantasma. */
+  function desmarcarItem(clave) {
+    const id = marcados[clave]
+    if (id) db.borrarEntrada(fecha, id)
+    setMarcados((m) => { const n = { ...m }; delete n[clave]; return n })
+    recargar()
+  }
+
   function registrarTodo() {
     let n = 0
     for (const comida of plan.comidas) {
-      for (const item of comida.items) {
-        const a = item.alimento
-        db.guardarAlimento({
-          id: a.id, nombre: a.nombre, marca: a.marca || null,
-          por100g: a.por100g, porciones: a.porciones || [], fuente: a.fuente, aprox: a.aprox,
-        })
-        const f = item.gramos / 100
-        db.agregarEntrada(fecha, {
-          alimento_id: a.id, nombre: a.nombre, momento: comida.momento, gramos: item.gramos,
-          kcal: Math.round(a.por100g.kcal * f),
-          p: redondear(a.por100g.p * f, 1),
-          c: redondear(a.por100g.c * f, 1),
-          g: redondear(a.por100g.g * f, 1),
-          etiqueta_porcion: etiquetaPorcion(item.gramos, null),
-        })
+      for (const [idx, item] of comida.items.entries()) {
+        const clave = `${comida.momento}-${idx}-${item.alimento.id}`
+        if (marcados[clave]) continue   // ese ya lo marco a mano
+        registrarItem(comida, item, clave)
         n++
       }
     }
     recargar()
-    setAviso(`${n} alimentos anotados en ${formatearFecha(fecha).toLowerCase()}.`)
+    setAviso(n === 0
+      ? 'Ya tenías todo marcado.'
+      : `${n} ${n === 1 ? 'alimento anotado' : 'alimentos anotados'} en ${formatearFecha(fecha).toLowerCase()}.`)
   }
 
   return (
@@ -125,17 +148,30 @@ export default function Plan({ metas, recargar }) {
                   <p className="py-2 text-xs text-tenue">No encontré nada que calce acá.</p>
                 ) : (
                   <ul className="divide-y divide-borde border-t border-borde">
-                    {c.items.map((i, n) => (
-                      <li key={n} className="flex items-baseline gap-2 py-2">
-                        <span className="min-w-0 flex-1 text-sm leading-tight">
-                          {i.alimento.nombre}
-                          <span className="block text-xs text-tenue">{etiquetaItem(i)}</span>
-                        </span>
-                        <span className="shrink-0 tabular-nums text-xs text-tenue">
-                          {Math.round((i.alimento.por100g.kcal * i.gramos) / 100)}
-                        </span>
-                      </li>
-                    ))}
+                    {c.items.map((i, n) => {
+                      const clave = `${c.momento}-${n}-${i.alimento.id}`
+                      const hecho = Boolean(marcados[clave])
+                      return (
+                        <li key={clave} className="flex items-center gap-2 py-2">
+                          <span className={`min-w-0 flex-1 text-sm leading-tight ${hecho ? 'text-tenue line-through' : ''}`}>
+                            {i.alimento.nombre}
+                            <span className="block text-xs text-tenue no-underline">{etiquetaItem(i)}</span>
+                          </span>
+                          <span className="shrink-0 tabular-nums text-xs text-tenue">
+                            {Math.round((i.alimento.por100g.kcal * i.gramos) / 100)}
+                          </span>
+                          <button
+                            onClick={() => (hecho ? desmarcarItem(clave) : registrarItem(c, i, clave))}
+                            aria-label={hecho ? `Quitar ${i.alimento.nombre}` : `Ya comí ${i.alimento.nombre}`}
+                            className={`grid h-6 w-6 shrink-0 place-items-center rounded-full border text-xs ${
+                              hecho ? 'border-acento bg-acento text-tinta' : 'border-borde text-transparent'
+                            }`}
+                          >
+                            ✓
+                          </button>
+                        </li>
+                      )
+                    })}
                   </ul>
                 )}
               </section>
@@ -148,7 +184,7 @@ export default function Plan({ metas, recargar }) {
 
           <div className="flex gap-3">
             <button
-              onClick={() => { setVariante((v) => v + 1); setAviso(null) }}
+              onClick={() => { setVariante((v) => v + 1); setAviso(null); setMarcados({}) }}
               className="flex-1 rounded-xl border border-borde bg-panel2 py-3.5 text-sm font-semibold"
             >
               Otra opción

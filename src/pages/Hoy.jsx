@@ -4,17 +4,25 @@ import AnilloCalorias from '../components/AnilloCalorias.jsx'
 import BarraMacros from '../components/BarraMacros.jsx'
 import { FilaEntrada } from '../components/FilaAlimento.jsx'
 import SelectorPorcion from '../components/SelectorPorcion.jsx'
+import TiraSemana, { LeyendaSemana } from '../components/TiraSemana.jsx'
 import * as db from '../db.js'
 import { kcalDeSesion } from '../ejercicio.js'
+import { racha, rangoKcal, semanaDe } from '../racha.js'
 import { MOMENTOS, etiquetaPorcion, formatearFecha, porMomento, redondear, totales } from '../nutricion.js'
 
 export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgregar }) {
   const [editando, setEditando] = useState(null)
   const [copiando, setCopiando] = useState(false)
+  const [menuMomento, setMenuMomento] = useState(null)
 
   const t = useMemo(() => totales(entradas), [entradas])
   const grupos = useMemo(() => porMomento(entradas), [entradas])
   const agua = db.getAgua(fecha)
+  const rango = useMemo(() => rangoKcal(metas.kcal), [metas.kcal])
+  const dias = useMemo(() => semanaDe(fecha, metas), [fecha, metas, entradas])
+  const diasSeguidos = useMemo(() => racha(), [entradas])
+  const cerrado = db.estaCerrado(fecha)
+  const repetidas = db.getRepetidas()
 
   const quemadas = useMemo(() => {
     const peso = Number(db.getPerfil()?.peso_kg) || 60
@@ -29,6 +37,19 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
 
   return (
     <div className="px-4 pb-6">
+      {diasSeguidos > 0 && (
+        <div className="mb-2 flex items-center justify-center gap-1.5">
+          <span className="text-lg">🔥</span>
+          <span className="text-sm font-bold tabular-nums">{diasSeguidos}</span>
+          <span className="text-xs text-tenue">
+            {diasSeguidos === 1 ? 'día registrado' : 'días seguidos'}
+          </span>
+        </div>
+      )}
+
+      <TiraSemana dias={dias} onElegir={setFecha} />
+      <LeyendaSemana />
+
       <div className="mb-4 flex items-center justify-between">
         <button onClick={() => setFecha(db.sumarDias(fecha, -1))}
           className="rounded-full border border-borde px-3 py-1.5 text-tenue" aria-label="Día anterior">‹</button>
@@ -38,7 +59,7 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
       </div>
 
       <div className="mb-4 flex justify-center">
-        <AnilloCalorias totales={t} meta={metas.kcal} />
+        <AnilloCalorias totales={t} meta={metas.kcal} rango={rango} />
       </div>
 
       {quemadas > 0 && (
@@ -62,12 +83,44 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
               <h3 className="flex items-center gap-2 font-semibold">
                 <span>{m.emoji}</span>{m.nombre}
               </h3>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
+                {repetidas[m.id] && (
+                  <span className="pildora" title="Se carga sola cada día">↻ fija</span>
+                )}
                 <span className="tabular-nums text-sm text-tenue">{redondear(sub.kcal)} kcal</span>
+                <button
+                  onClick={() => setMenuMomento(menuMomento === m.id ? null : m.id)}
+                  aria-label={`Opciones de ${m.nombre}`}
+                  className="px-1 text-lg leading-none text-tenue"
+                >
+                  ⋯
+                </button>
                 <button onClick={() => onAgregar(m.id)} aria-label={`Agregar a ${m.nombre}`}
                   className="h-8 w-8 rounded-full bg-chip text-lg leading-none text-chip-texto">+</button>
               </div>
             </div>
+            {menuMomento === m.id && (
+              <div className="mt-2 rounded-xl bg-panel2 p-2">
+                {repetidas[m.id] ? (
+                  <button
+                    onClick={() => { db.setRepetida(m.id, []); setMenuMomento(null); recargar() }}
+                    className="w-full rounded-lg px-3 py-2 text-left text-sm"
+                  >
+                    Dejar de repetir este {m.nombre.toLowerCase()} todos los días
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => { db.setRepetida(m.id, items); setMenuMomento(null); recargar() }}
+                    disabled={items.length === 0}
+                    className="w-full rounded-lg px-3 py-2 text-left text-sm disabled:opacity-40"
+                  >
+                    Repetir este {m.nombre.toLowerCase()} todos los días
+                    {items.length === 0 && <span className="block text-xs text-tenue">Primero agrega algo</span>}
+                  </button>
+                )}
+              </div>
+            )}
+
             {items.length > 0 && (
               <div className="mt-1 divide-y divide-borde border-t border-borde">
                 {items.map((e) => (
@@ -81,8 +134,17 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
         )
       })}
 
+      <button
+        onClick={() => { db.cerrarDia(fecha, !cerrado); recargar() }}
+        className={`mt-1 w-full rounded-xl py-3.5 font-bold ${
+          cerrado ? 'border border-borde bg-panel2 text-tenue' : 'bg-acento text-tinta'
+        }`}
+      >
+        {cerrado ? 'Reabrir el día' : 'Terminar el día'}
+      </button>
+
       <button onClick={() => setCopiando(true)}
-        className="mt-1 w-full rounded-xl border border-dashed border-borde py-3 text-sm text-tenue">
+        className="mt-3 w-full rounded-xl border border-dashed border-borde py-3 text-sm text-tenue">
         Copiar las comidas de otro día
       </button>
 

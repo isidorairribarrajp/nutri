@@ -13,6 +13,8 @@ const K = {
   agua: 'nutri:agua',
   favoritos: 'nutri:favoritos',
   tema: 'nutri:tema',
+  cerrados: 'nutri:dias_cerrados',
+  repetidas: 'nutri:repetidas',
 }
 
 const METAS_DEFAULT = { kcal: 1800, proteina_g: 120, carbos_g: 180, grasa_g: 60 }
@@ -110,6 +112,47 @@ export function getPesosOrdenados() {
 export function getUltimoPeso() {
   const lista = getPesosOrdenados()
   return lista.length ? lista[lista.length - 1] : null
+}
+
+// --- dias cerrados ---
+// "Terminar dia" marca que el dia esta listo: deja de contarse como en curso.
+export function estaCerrado(fecha) {
+  return leer(K.cerrados, {})[fecha] === true
+}
+
+export function cerrarDia(fecha, cerrado = true) {
+  const todos = leer(K.cerrados, {})
+  if (cerrado) todos[fecha] = true
+  else delete todos[fecha]
+  escribir(K.cerrados, todos)
+}
+
+// --- comidas que se repiten ---
+// Una comida fija (el desayuno de siempre) que se carga sola cada dia.
+export function getRepetidas() {
+  return leer(K.repetidas, {})
+}
+
+export function setRepetida(momento, entradas) {
+  const todas = getRepetidas()
+  if (entradas && entradas.length) {
+    todas[momento] = entradas.map(({ id, ts, ...resto }) => resto)
+  } else {
+    delete todas[momento]
+  }
+  escribir(K.repetidas, todas)
+}
+
+/** Carga las comidas repetidas del dia si aun no estan. Devuelve cuantas puso. */
+export function aplicarRepetidas(fecha) {
+  const repetidas = getRepetidas()
+  const yaHay = new Set(getDia(fecha).map((e) => e.momento))
+  let n = 0
+  Object.entries(repetidas).forEach(([momento, entradas]) => {
+    if (yaHay.has(momento)) return   // si ya comio algo ahi, no se pisa
+    entradas.forEach((e) => { agregarEntrada(fecha, { ...e, momento }); n++ })
+  })
+  return n
 }
 
 // --- medidas corporales ---
@@ -311,6 +354,8 @@ export function exportar() {
     ejercicios: getEjercicios(),
     agua: leer(K.agua, {}),
     favoritos: getFavoritos(),
+    dias_cerrados: leer(K.cerrados, {}),
+    repetidas: getRepetidas(),
     diario: getDiario(),
     alimentos_cache: getCache(),
     recientes: getRecientesIds(),
@@ -326,6 +371,8 @@ export function importar(json) {
   if (json.ejercicios) escribir(K.ejercicios, json.ejercicios)
   if (json.agua) escribir(K.agua, json.agua)
   if (json.favoritos) escribir(K.favoritos, json.favoritos)
+  if (json.dias_cerrados) escribir(K.cerrados, json.dias_cerrados)
+  if (json.repetidas) escribir(K.repetidas, json.repetidas)
   if (json.diario) escribir(K.diario, json.diario)
   if (json.alimentos_cache) escribir(K.cache, json.alimentos_cache)
   if (json.recientes) escribir(K.recientes, json.recientes)
