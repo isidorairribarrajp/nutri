@@ -1,0 +1,158 @@
+// Persistencia local. Todo vive en el telefono de Isi: no hay backend ni cuenta.
+// La unica red de seguridad contra perder el telefono es exportar() desde Ajustes.
+
+const K = {
+  metas: 'nutri:metas',
+  diario: 'nutri:diario',
+  cache: 'nutri:alimentos_cache',
+  recientes: 'nutri:recientes',
+}
+
+const METAS_DEFAULT = { kcal: 1800, proteina_g: 120, carbos_g: 180, grasa_g: 60 }
+const MAX_RECIENTES = 40
+
+function leer(clave, fallback) {
+  try {
+    const crudo = localStorage.getItem(clave)
+    if (crudo == null) return fallback
+    return JSON.parse(crudo)
+  } catch {
+    return fallback
+  }
+}
+
+function escribir(clave, valor) {
+  try {
+    localStorage.setItem(clave, JSON.stringify(valor))
+    return true
+  } catch (e) {
+    // Cuota llena: raro con texto, pero en iOS puede pasar en modo privado.
+    console.error('No se pudo guardar', clave, e)
+    return false
+  }
+}
+
+/** Fecha local en formato YYYY-MM-DD (nunca toISOString: eso da UTC y en Chile corre el dia). */
+export function claveFecha(d = new Date()) {
+  const y = d.getFullYear()
+  const m = String(d.getMonth() + 1).padStart(2, '0')
+  const dia = String(d.getDate()).padStart(2, '0')
+  return `${y}-${m}-${dia}`
+}
+
+export function sumarDias(clave, n) {
+  const [y, m, d] = clave.split('-').map(Number)
+  const fecha = new Date(y, m - 1, d)
+  fecha.setDate(fecha.getDate() + n)
+  return claveFecha(fecha)
+}
+
+// --- metas ---
+export function getMetas() {
+  return { ...METAS_DEFAULT, ...leer(K.metas, {}) }
+}
+
+export function setMetas(metas) {
+  escribir(K.metas, { ...getMetas(), ...metas })
+  return getMetas()
+}
+
+// --- diario ---
+export function getDiario() {
+  return leer(K.diario, {})
+}
+
+export function getDia(fecha) {
+  return getDiario()[fecha] || []
+}
+
+export function agregarEntrada(fecha, entrada) {
+  const diario = getDiario()
+  const lista = diario[fecha] || []
+  const conId = { ...entrada, id: crypto.randomUUID(), ts: Date.now() }
+  diario[fecha] = [...lista, conId]
+  escribir(K.diario, diario)
+  return conId
+}
+
+export function editarEntrada(fecha, id, parche) {
+  const diario = getDiario()
+  const lista = diario[fecha] || []
+  diario[fecha] = lista.map((e) => (e.id === id ? { ...e, ...parche } : e))
+  escribir(K.diario, diario)
+}
+
+export function borrarEntrada(fecha, id) {
+  const diario = getDiario()
+  const lista = diario[fecha] || []
+  const filtrada = lista.filter((e) => e.id !== id)
+  if (filtrada.length) diario[fecha] = filtrada
+  else delete diario[fecha]
+  escribir(K.diario, diario)
+}
+
+// --- cache de alimentos ---
+export function getCache() {
+  return leer(K.cache, {})
+}
+
+export function getAlimento(id) {
+  return getCache()[id] || null
+}
+
+export function guardarAlimento(alimento) {
+  const cache = getCache()
+  cache[alimento.id] = alimento
+  escribir(K.cache, cache)
+  return alimento
+}
+
+export function borrarAlimentoPropio(id) {
+  const cache = getCache()
+  delete cache[id]
+  escribir(K.cache, cache)
+  escribir(K.recientes, getRecientesIds().filter((x) => x !== id))
+}
+
+// --- recientes ---
+export function getRecientesIds() {
+  return leer(K.recientes, [])
+}
+
+export function marcarReciente(id) {
+  const previos = getRecientesIds().filter((x) => x !== id)
+  escribir(K.recientes, [id, ...previos].slice(0, MAX_RECIENTES))
+}
+
+/** Recientes resueltos contra el cache; descarta ids que ya no existen. */
+export function getRecientes() {
+  const cache = getCache()
+  return getRecientesIds()
+    .map((id) => cache[id])
+    .filter(Boolean)
+}
+
+// --- respaldo ---
+export function exportar() {
+  return {
+    app: 'nutri',
+    version: 1,
+    exportado: new Date().toISOString(),
+    metas: getMetas(),
+    diario: getDiario(),
+    alimentos_cache: getCache(),
+    recientes: getRecientesIds(),
+  }
+}
+
+export function importar(json) {
+  if (!json || json.app !== 'nutri') throw new Error('Este archivo no es un respaldo de Nutri.')
+  if (json.metas) escribir(K.metas, json.metas)
+  if (json.diario) escribir(K.diario, json.diario)
+  if (json.alimentos_cache) escribir(K.cache, json.alimentos_cache)
+  if (json.recientes) escribir(K.recientes, json.recientes)
+}
+
+export function borrarTodo() {
+  Object.values(K).forEach((clave) => localStorage.removeItem(clave))
+}
