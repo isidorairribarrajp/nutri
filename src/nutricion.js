@@ -9,9 +9,9 @@ export const MOMENTOS = [
 ]
 
 export const MACROS = [
-  { id: 'p', nombre: 'Proteina', meta: 'proteina_g', color: 'var(--color-prot)' },
-  { id: 'c', nombre: 'Carbos', meta: 'carbos_g', color: 'var(--color-carb)' },
-  { id: 'g', nombre: 'Grasa', meta: 'grasa_g', color: 'var(--color-gras)' },
+  { id: 'p', nombre: 'Proteína', meta: 'proteina_g', color: 'var(--color-prot)', kcalPorG: 4 },
+  { id: 'c', nombre: 'Carbos', meta: 'carbos_g', color: 'var(--color-carb)', kcalPorG: 4 },
+  { id: 'g', nombre: 'Grasa', meta: 'grasa_g', color: 'var(--color-gras)', kcalPorG: 9 },
 ]
 
 export function redondear(n, decimales = 0) {
@@ -68,6 +68,6 @@ export function formatearFecha(clave) {
   const dif = Math.round((fecha - hoy) / 86400000)
   if (dif === 0) return 'Hoy'
   if (dif === -1) return 'Ayer'
-  if (dif === 1) return 'Manana'
+  if (dif === 1) return 'Mañana'
   return fecha.toLocaleDateString('es-CL', { weekday: 'short', day: 'numeric', month: 'short' })
 }

@@ -1,35 +1,61 @@
-import { redondear } from '../nutricion.js'
+import { MACROS, redondear } from '../nutricion.js'
 
-/** Anillo de progreso de calorias. SVG puro, sin librerias. */
-export default function AnilloCalorias({ consumidas, meta }) {
-  const R = 78
-  const circunferencia = 2 * Math.PI * R
-  const pct = meta > 0 ? Math.min(consumidas / meta, 1) : 0
+const R = 76
+const GROSOR = 15
+const CIRC = 2 * Math.PI * R
+const HUECO = 2 // separacion entre segmentos, en px de arco
+
+/**
+ * Anillo de calorias segmentado por macro.
+ * No es decoracion: cada segmento es la porcion de kcal que aporto ese macro
+ * (4 kcal por gramo de proteina y carbo, 9 por gramo de grasa), asi que de una
+ * mirada se ve de donde vinieron las calorias del dia.
+ */
+export default function AnilloCalorias({ totales, meta }) {
+  const kcalMacro = {
+    p: (totales.p || 0) * 4,
+    c: (totales.c || 0) * 4,
+    g: (totales.g || 0) * 9,
+  }
+  const consumidas = totales.kcal || 0
+  const sumaMacros = kcalMacro.p + kcalMacro.c + kcalMacro.g
   const restantes = redondear(meta - consumidas)
   const excedida = consumidas > meta
 
+  // Los segmentos se dibujan proporcionales a las kcal consumidas sobre la meta.
+  const escala = meta > 0 ? Math.min(consumidas / meta, 1) / (sumaMacros || 1) : 0
+  let acumulado = 0
+  const segmentos = MACROS.map((m) => {
+    const frac = kcalMacro[m.id] * escala
+    const seg = { id: m.id, color: m.color, largo: CIRC * frac, offset: CIRC * acumulado }
+    acumulado += frac
+    return seg
+  }).filter((s) => s.largo > 0.5)
+
   return (
     <div className="relative flex items-center justify-center">
-      <svg width="200" height="200" viewBox="0 0 200 200" className="-rotate-90">
-        <circle cx="100" cy="100" r={R} fill="none" stroke="var(--color-borde)" strokeWidth="14" />
-        <circle
-          cx="100"
-          cy="100"
-          r={R}
-          fill="none"
-          stroke={excedida ? '#ef4444' : 'var(--color-kcal)'}
-          strokeWidth="14"
-          strokeLinecap="round"
-          strokeDasharray={circunferencia}
-          strokeDashoffset={circunferencia * (1 - pct)}
-          style={{ transition: 'stroke-dashoffset 400ms ease' }}
-        />
+      <svg width="190" height="190" viewBox="0 0 190 190" className="-rotate-90" aria-hidden="true">
+        <circle cx="95" cy="95" r={R} fill="none" stroke="var(--color-borde)" strokeWidth={GROSOR} />
+        {segmentos.map((s) => (
+          <circle
+            key={s.id}
+            cx="95"
+            cy="95"
+            r={R}
+            fill="none"
+            stroke={s.color}
+            strokeWidth={GROSOR}
+            strokeDasharray={`${Math.max(s.largo - HUECO, 0.5)} ${CIRC}`}
+            strokeDashoffset={-s.offset}
+            style={{ transition: 'stroke-dasharray 400ms ease, stroke-dashoffset 400ms ease' }}
+          />
+        ))}
       </svg>
       <div className="absolute flex flex-col items-center">
-        <span className="text-4xl font-semibold tabular-nums">{redondear(consumidas)}</span>
-        <span className="text-xs text-tenue">de {redondear(meta)} kcal</span>
-        <span className={`mt-1 text-sm font-medium ${excedida ? 'text-red-400' : 'text-kcal'}`}>
-          {excedida ? `${Math.abs(restantes)} de mas` : `quedan ${restantes}`}
+        <span className="text-[2.6rem] font-bold leading-none tabular-nums">{redondear(consumidas)}</span>
+        <span className="mt-0.5 text-xs text-tenue">de {redondear(meta)} kcal</span>
+        <span className={`mano mt-1 text-lg ${excedida ? 'text-gras' : 'text-acento-texto'}`}>
+          {excedida ? `${Math.abs(restantes)} de más` : `quedan ${restantes}`}
         </span>
       </div>
     </div>

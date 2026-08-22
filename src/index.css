@@ -1,42 +1,123 @@
 @import "tailwindcss";
 
-@theme {
-  --color-fondo: #0d1117;
-  --color-panel: #161b22;
-  --color-panel2: #1c2430;
-  --color-borde: #262d38;
-  --color-texto: #e6edf3;
-  --color-tenue: #8b949e;
-  --color-kcal: #f5a524;
-  --color-prot: #4a9eff;
-  --color-carb: #34d399;
-  --color-gras: #f472b6;
+/* ─────────────────────────────────────────────────────────────────────────
+   Identidad Isi Irri.
+   Base neutra crema, el rosa SIEMPRE como acento y nunca de fondo entero
+   (regla dura del brand book). Manrope para la interfaz, Caveat para las
+   anotaciones manuscritas.
+   Los colores de los graficos no son decorativos: pasaron el validador de
+   contraste y de daltonismo en modo claro y oscuro.
+   ───────────────────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/nutri/fonts/manrope-400.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('/nutri/fonts/manrope-600.woff2') format('woff2');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('/nutri/fonts/manrope-700.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Caveat';
+  src: url('/nutri/fonts/caveat.woff2') format('woff2');
+  font-weight: 400 700; font-style: normal; font-display: swap;
 }
 
-html, body, #root {
-  height: 100%;
+@theme {
+  /* base de marca */
+  --color-crema: #F5F1EA;
+  --color-papel: #FFFFFF;
+  --color-tinta: #190D0B;
+  --color-cafe: #44393C;
+
+  /* rosas de marca */
+  --color-rosa: #FF3EA5;          /* rosa chicle: acento de la interfaz */
+  --color-rosa-neon: #FF7DCD;
+  --color-rosa-pildora: #F1C5DB;
+  --color-rosa-bebe: #F8D7E8;
+  --color-rosa-hondo: #D9247B;    /* rosa legible como texto sobre crema */
+
+  /* superficies (se reasignan en oscuro) */
+  --color-fondo: #F5F1EA;
+  --color-panel: #FFFFFF;
+  --color-panel2: #FAF7F2;
+  --color-borde: #E6DFD4;
+  --color-texto: #190D0B;
+  --color-tenue: #6B5F59;
+  --color-acento: #FF3EA5;
+  --color-acento-texto: #BE1D6B;
+  --color-chip: #F8D7E8;        /* fondo de chips y pildoras */
+  --color-chip-texto: #8A1352;
+
+  /* datos: validados con scripts/validate_palette.js */
+  --color-prot: #D9247B;
+  --color-carb: #2F82AE;
+  --color-gras: #B5713A;
+  --color-agua: #2F82AE;
+
+  --font-ui: 'Manrope', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mano: 'Caveat', 'Snell Roundhand', cursive;
 }
+
+:root[data-tema="oscuro"] {
+  --color-fondo: #1A100E;
+  --color-panel: #241715;
+  --color-panel2: #2E1E1B;
+  --color-borde: #3D2A26;
+  --color-texto: #F5F1EA;
+  --color-tenue: #A89890;
+  --color-acento: #FF7DCD;
+  --color-acento-texto: #FF7DCD;
+  --color-chip: #4A1330;
+  --color-chip-texto: #FFAEDD;
+  --color-prot: #EE4790;
+  --color-carb: #3F97C0;
+  --color-gras: #C07C46;
+  --color-agua: #3F97C0;
+}
+
+html, body, #root { height: 100%; }
 
 body {
   margin: 0;
   background: var(--color-fondo);
   color: var(--color-texto);
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--font-ui);
   -webkit-font-smoothing: antialiased;
   overscroll-behavior-y: none;
 }
 
-/* Sin zoom accidental al tocar inputs en iOS: 16px minimo */
-input, select, button, textarea {
-  font-size: 16px;
-  font-family: inherit;
-}
+/* 16 px minimo: menos que eso y iOS hace zoom al tocar un input */
+input, select, button, textarea { font-size: 16px; font-family: inherit; }
 
 .safe-bottom { padding-bottom: env(safe-area-inset-bottom, 0px); }
 .safe-top { padding-top: env(safe-area-inset-top, 0px); }
 
-/* Sin highlight azul al tocar en iOS */
 * { -webkit-tap-highlight-color: transparent; }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+/* la anotacion manuscrita del brand book */
+.mano { font-family: var(--font-mano); font-size: 1.15em; line-height: 1.1; }
+
+/* pildora: el elemento firma del feed de Isi */
+.pildora {
+  display: inline-flex; align-items: center; gap: .3rem;
+  border-radius: 999px; padding: .25rem .7rem;
+  font-size: .75rem; font-weight: 600;
+  background: var(--color-chip); color: var(--color-chip-texto);
+}
+
+.tarjeta {
+  background: var(--color-panel);
+  border: 1px solid var(--color-borde);
+  border-radius: 1.25rem;
+}

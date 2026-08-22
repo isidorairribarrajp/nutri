@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { FilaResultado } from '../components/FilaAlimento.jsx'
 import SelectorPorcion from '../components/SelectorPorcion.jsx'
 import { MOMENTOS, etiquetaPorcion } from '../nutricion.js'
-import { buscarCL, buscarOFF, buscarPropios, cargarTablaCL, fijarEnCache } from '../off.js'
+import { buscarLocal, buscarOFF, cargarRecetas, cargarTablaCL, fijarEnCache } from '../off.js'
 import * as db from '../db.js'
 
 const DEBOUNCE_MS = 350
@@ -16,10 +16,11 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
   const [elegido, setElegido] = useState(null)
   const [creando, setCreando] = useState(false)
   const [recientes, setRecientes] = useState([])
+  const [favoritos, setFavoritos] = useState(() => db.getFavoritos())
   const inputRef = useRef(null)
 
   useEffect(() => {
-    cargarTablaCL().then(() => setLocales(buscarCL(termino)))
+    Promise.all([cargarTablaCL(), cargarRecetas()]).then(() => setLocales(buscarLocal(termino)))
     setRecientes(db.getRecientes())
     inputRef.current?.focus()
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -27,7 +28,7 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
 
   // Los resultados locales son instantaneos; los de red van con debounce.
   useEffect(() => {
-    setLocales([...buscarPropios(termino), ...buscarCL(termino)])
+    setLocales(buscarLocal(termino))
     if (termino.trim().length < 3) {
       setRemotos([])
       setBuscandoRed(false)
@@ -61,7 +62,10 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
   }
 
   const sinTermino = termino.trim().length === 0
-  const lista = sinTermino ? recientes : [...locales, ...remotos]
+  const cache = db.getCache()
+  const guardados = favoritos.map((id) => cache[id]).filter(Boolean)
+  const sinRepetir = recientes.filter((r) => !favoritos.includes(r.id))
+  const lista = sinTermino ? [...guardados, ...sinRepetir] : [...locales, ...remotos]
 
   return (
     <div className="flex min-h-full flex-col">
@@ -72,7 +76,7 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
             value={termino}
             onChange={(e) => setTermino(e.target.value)}
             placeholder="Buscar alimento..."
-            className="min-w-0 flex-1 rounded-xl border border-borde bg-panel2 px-4 py-3 outline-none focus:border-kcal"
+            className="min-w-0 flex-1 rounded-xl border border-borde bg-panel2 px-4 py-3 outline-none focus:border-acento"
           />
           <button onClick={onCancelar} className="shrink-0 px-1 text-sm text-tenue">
             Cerrar
@@ -85,7 +89,7 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
               onClick={() => setMomento(m.id)}
               className={`shrink-0 rounded-full border px-3 py-1.5 text-sm ${
                 m.id === momento
-                  ? 'border-kcal bg-kcal/15 text-kcal'
+                  ? 'border-acento bg-chip text-chip-texto'
                   : 'border-borde bg-panel2 text-tenue'
               }`}
             >
@@ -96,25 +100,37 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
       </div>
 
       <div className="flex-1">
-        {sinTermino && recientes.length > 0 && (
-          <p className="px-4 py-2 text-xs uppercase tracking-wide text-tenue">Recientes</p>
+        {sinTermino && lista.length > 0 && (
+          <p className="px-4 py-2 text-xs font-semibold uppercase tracking-wide text-tenue">
+            {guardados.length ? 'Favoritos y recientes' : 'Recientes'}
+          </p>
         )}
-        {sinTermino && recientes.length === 0 && (
+        {sinTermino && lista.length === 0 && (
           <p className="px-4 py-8 text-center text-sm text-tenue">
-            Busca lo que comiste. La tabla chilena funciona sin internet.
+            Busca lo que comiste. Tus recetas y la tabla chilena funcionan sin internet.
           </p>
         )}
 
         {lista.map((a) => (
-          <FilaResultado key={a.id} alimento={a} onClick={() => setElegido(a)} />
+          <FilaResultado
+            key={a.id}
+            alimento={a}
+            onClick={() => setElegido(a)}
+            favorito={favoritos.includes(a.id)}
+            onFavorito={() => {
+              fijarEnCache(a)
+              db.alternarFavorito(a.id)
+              setFavoritos(db.getFavoritos())
+            }}
+          />
         ))}
 
         {!sinTermino && buscandoRed && (
-          <p className="px-4 py-3 text-center text-xs text-tenue">Buscando en Open Food Facts...</p>
+          <p className="px-4 py-3 text-center text-xs text-tenue">Buscando en Open Food Facts…</p>
         )}
         {!sinTermino && !buscandoRed && lista.length === 0 && (
           <p className="px-4 py-6 text-center text-sm text-tenue">
-            Nada con ese nombre. Puedes crearlo tu misma.
+            Nada con ese nombre. Puedes crearlo tú misma.
           </p>
         )}
 
@@ -173,8 +189,8 @@ function CrearAlimento({ nombreInicial, onCreado, onCancelar }) {
   }
 
   const campos = [
-    { k: 'kcal', label: 'Calorias' },
-    { k: 'p', label: 'Proteina (g)' },
+    { k: 'kcal', label: 'Calorías' },
+    { k: 'p', label: 'Proteína (g)' },
     { k: 'c', label: 'Carbos (g)' },
     { k: 'g', label: 'Grasa (g)' },
   ]
@@ -193,7 +209,7 @@ function CrearAlimento({ nombreInicial, onCreado, onCancelar }) {
           value={f.nombre}
           onChange={(e) => setF({ ...f, nombre: e.target.value })}
           placeholder="Nombre"
-          className="mb-3 w-full rounded-xl border border-borde bg-panel2 px-4 py-3 outline-none focus:border-kcal"
+          className="mb-3 w-full rounded-xl border border-borde bg-panel2 px-4 py-3 outline-none focus:border-acento"
         />
         <div className="grid grid-cols-2 gap-3">
           {campos.map((c) => (
@@ -205,7 +221,7 @@ function CrearAlimento({ nombreInicial, onCreado, onCancelar }) {
                 min="0"
                 value={f[c.k]}
                 onChange={(e) => setF({ ...f, [c.k]: e.target.value })}
-                className="mt-1 w-full rounded-xl border border-borde bg-panel2 px-4 py-3 tabular-nums outline-none focus:border-kcal"
+                className="mt-1 w-full rounded-xl border border-borde bg-panel2 px-4 py-3 tabular-nums outline-none focus:border-acento"
               />
             </label>
           ))}
@@ -221,7 +237,7 @@ function CrearAlimento({ nombreInicial, onCreado, onCancelar }) {
           <button
             onClick={guardar}
             disabled={!valido}
-            className="flex-[2] rounded-xl bg-kcal py-3.5 font-semibold text-fondo disabled:opacity-40"
+            className="flex-[2] rounded-xl bg-acento py-3.5 font-bold text-tinta disabled:opacity-40"
           >
             Continuar
           </button>

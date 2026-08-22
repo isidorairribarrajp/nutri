@@ -1,0 +1,942 @@
+[
+  {
+    "tipo": "salado",
+    "numero": 1,
+    "nombre": "Pizza de masa de avena y yogur",
+    "descripcion": "La masa rápida de la casa: sin levadura, sin reposo, lista en diez minutos. Fina y crocante en el borde, tierna al centro. Sale una pizza de 30 cm para compartir.",
+    "porciones": 8.0,
+    "unidad_porcion": "trozos",
+    "kcal_declaradas": 130.0,
+    "kcal_por": "por trozo",
+    "gramos_totales": 707,
+    "gramos_porcion": 88,
+    "calculado_porcion": {
+      "kcal": 151.5,
+      "p": 8.8,
+      "c": 15.3,
+      "g": 6.4
+    },
+    "desviacion": 16.5,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 2,
+    "nombre": "Pizza con base de zapallito",
+    "descripcion": "La base es casi pura verdura: zapallito rallado, exprimido y horneado hasta que dora. Se come con tenedor, es liviana de verdad, y con la salsa y el queso arriba sabe a pizza.",
+    "porciones": 6.0,
+    "unidad_porcion": "trozos",
+    "kcal_declaradas": 100.0,
+    "kcal_por": "por trozo",
+    "gramos_totales": 833,
+    "gramos_porcion": 139,
+    "calculado_porcion": {
+      "kcal": 108.9,
+      "p": 7.3,
+      "c": 8.7,
+      "g": 5.3
+    },
+    "desviacion": 8.9,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 3,
+    "nombre": "Pizza de base de quinoa",
+    "descripcion": "Quinoa remojada y licuada, nada más. Sale una base gruesa y crujiente, con proteína, que aguanta verduras asadas encima sin doblarse.",
+    "porciones": 8.0,
+    "unidad_porcion": "trozos",
+    "kcal_declaradas": 120.0,
+    "kcal_por": "por trozo",
+    "gramos_totales": 562,
+    "gramos_porcion": 70,
+    "calculado_porcion": {
+      "kcal": 126.4,
+      "p": 4.9,
+      "c": 14.3,
+      "g": 5.6
+    },
+    "desviacion": 5.3,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 4,
+    "nombre": "Pan de hamburguesa de avena",
+    "descripcion": "Sin trigo ni levadura, blando por dentro y con una costra fina de sésamo. Aguanta una hamburguesa jugosa sin desarmarse, que es lo único que se le pide a un pan de hamburguesa.",
+    "porciones": 6.0,
+    "unidad_porcion": "panes",
+    "kcal_declaradas": 175.0,
+    "kcal_por": "por pan",
+    "gramos_totales": 620,
+    "gramos_porcion": 103,
+    "calculado_porcion": {
+      "kcal": 220.3,
+      "p": 12.2,
+      "c": 29.0,
+      "g": 6.3
+    },
+    "desviacion": 25.9,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 5,
+    "nombre": "Hamburguesas de zapallito y quinoa",
+    "descripcion": "La hamburguesa vegetariana que no sabe a relleno: zapallito exprimido, quinoa cocida y parmesano, con borde dorado y centro tierno. Van en pan, en lechuga o solas con ensalada.",
+    "porciones": 6.0,
+    "unidad_porcion": "hamburguesas",
+    "kcal_declaradas": 95.0,
+    "kcal_por": "cada una",
+    "gramos_totales": 656,
+    "gramos_porcion": 109,
+    "calculado_porcion": {
+      "kcal": 106.1,
+      "p": 5.9,
+      "c": 12.2,
+      "g": 4.0
+    },
+    "desviacion": 11.7,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 6,
+    "nombre": "Hamburguesas de pavo, zanahoria y espinaca",
+    "descripcion": "Un tercio de la carne reemplazado por verdura rallada, que además la deja más jugosa que la de pavo sola. Sabor limpio, especiado, y solo 140 calorías cada una.",
+    "porciones": 6.0,
+    "unidad_porcion": "hamburguesas",
+    "kcal_declaradas": 140.0,
+    "kcal_por": "cada una",
+    "gramos_totales": 726,
+    "gramos_porcion": 121,
+    "calculado_porcion": {
+      "kcal": 152.4,
+      "p": 16.7,
+      "c": 6.2,
+      "g": 6.8
+    },
+    "desviacion": 8.9,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 7,
+    "nombre": "Hamburguesas de camote y tofu",
+    "descripcion": "Vegana y con proteína de verdad. El camote da dulzor y cuerpo, el tofu firme desmenuzado da textura y el horno las deja con costra. Especiadas con comino y pimentón ahumado.",
+    "porciones": 6.0,
+    "unidad_porcion": "hamburguesas",
+    "kcal_declaradas": 135.0,
+    "kcal_por": "cada una",
+    "gramos_totales": 640,
+    "gramos_porcion": 107,
+    "calculado_porcion": {
+      "kcal": 143.9,
+      "p": 8.2,
+      "c": 15.1,
+      "g": 6.5
+    },
+    "desviacion": 6.6,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 8,
+    "nombre": "Tortillas de maíz",
+    "descripcion": "Las dos envolturas del cuaderno. Las de maíz, chicas y firmes, para tacos y quesadillas. Las de avena, grandes y flexibles, para burritos. Ninguna lleva trigo ni levadura.",
+    "porciones": 12,
+    "unidad_porcion": "unidad",
+    "kcal_declaradas": 60.0,
+    "kcal_por": "· 185 por tortilla",
+    "gramos_totales": 463,
+    "gramos_porcion": 39,
+    "calculado_porcion": {
+      "kcal": 60.8,
+      "p": 1.6,
+      "c": 12.7,
+      "g": 0.7
+    },
+    "desviacion": 1.4,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 8,
+    "nombre": "Tortillas de avena",
+    "descripcion": "Las dos envolturas del cuaderno. Las de maíz, chicas y firmes, para tacos y quesadillas. Las de avena, grandes y flexibles, para burritos. Ninguna lleva trigo ni levadura.",
+    "porciones": 6,
+    "unidad_porcion": "unidad",
+    "kcal_declaradas": 0.0,
+    "kcal_por": "· 185 por tortilla",
+    "gramos_totales": 688,
+    "gramos_porcion": 115,
+    "calculado_porcion": {
+      "kcal": 159.1,
+      "p": 8.2,
+      "c": 20.1,
+      "g": 5.2
+    },
+    "desviacion": null,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 9,
+    "nombre": "Tacos de verduras asadas con crema de palta",
+    "descripcion": "Pimentón, zapallito, berenjena y zanahoria al horno fuerte con comino y limón, sobre tortilla de maíz caliente, con crema de palta liviana y cilantro. Sin carne y no se echa de menos.",
+    "porciones": 4.0,
+    "unidad_porcion": "de 2 tacos",
+    "kcal_declaradas": 260.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 1354,
+    "gramos_porcion": 339,
+    "calculado_porcion": {
+      "kcal": 236.3,
+      "p": 5.9,
+      "c": 40.4,
+      "g": 7.2
+    },
+    "desviacion": -9.1,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 10,
+    "nombre": "Tacos de pescado con ensalada de zanahoria y pepino",
+    "descripcion": "Reineta o merluza a la plancha con comino y limón, y una ensalada crocante que hace lo que en el taco original hace el repollo. Salsa de yogur encima y listo: quince minutos.",
+    "porciones": 4.0,
+    "unidad_porcion": "de 2 tacos",
+    "kcal_declaradas": 290.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 832,
+    "gramos_porcion": 208,
+    "calculado_porcion": {
+      "kcal": 268.5,
+      "p": 26.4,
+      "c": 25.7,
+      "g": 7.3
+    },
+    "desviacion": -7.4,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 10,
+    "nombre": "Tacos de pescado con ensalada de zanahoria y pepino — Ensalada",
+    "descripcion": "Reineta o merluza a la plancha con comino y limón, y una ensalada crocante que hace lo que en el taco original hace el repollo. Salsa de yogur encima y listo: quince minutos.",
+    "porciones": 4.0,
+    "unidad_porcion": "de 2 tacos",
+    "kcal_declaradas": null,
+    "kcal_por": "por porción",
+    "gramos_totales": 542,
+    "gramos_porcion": 136,
+    "calculado_porcion": {
+      "kcal": 30.7,
+      "p": 1.4,
+      "c": 6.7,
+      "g": 0.3
+    },
+    "desviacion": null,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 11,
+    "nombre": "Tacos de pollo al limón y pimentón",
+    "descripcion": "Pechuga en tiras salteada a fuego fuerte con pimentón, comino y limón, dorada por fuera y jugosa. El taco de todos los días: diez minutos de sartén y una tabla de cosas para armar al medio de la mesa.",
+    "porciones": 4.0,
+    "unidad_porcion": "de 2 tacos",
+    "kcal_declaradas": 290.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 1022,
+    "gramos_porcion": 255,
+    "calculado_porcion": {
+      "kcal": 306.9,
+      "p": 29.2,
+      "c": 29.2,
+      "g": 8.0
+    },
+    "desviacion": 5.8,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 12,
+    "nombre": "Burrito de verduras y arroz",
+    "descripcion": "Tortilla de avena, arroz con cilantro y limón, verduras salteadas, tofu dorado, lechuga y salsa de yogur. Enrollado apretado y tostado en la sartén para que quede sellado. Un almuerzo completo con una mano.",
+    "porciones": 4.0,
+    "unidad_porcion": "burritos",
+    "kcal_declaradas": 480.0,
+    "kcal_por": "por burrito",
+    "gramos_totales": 1175,
+    "gramos_porcion": 294,
+    "calculado_porcion": {
+      "kcal": 385.0,
+      "p": 20.7,
+      "c": 46.7,
+      "g": 13.5
+    },
+    "desviacion": -19.8,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 13,
+    "nombre": "Burrito de huevo y espinaca",
+    "descripcion": "El desayuno o la once salada rápida: revuelto de huevo con claras y espinaca, tomate, un poco de queso, todo dentro de una tortilla de avena tostada. Ocho minutos desde que prendes el fuego.",
+    "porciones": 2.0,
+    "unidad_porcion": "burritos",
+    "kcal_declaradas": 390.0,
+    "kcal_por": "por burrito",
+    "gramos_totales": 642,
+    "gramos_porcion": 321,
+    "calculado_porcion": {
+      "kcal": 355.4,
+      "p": 21.7,
+      "c": 26.4,
+      "g": 18.6
+    },
+    "desviacion": -8.9,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 14,
+    "nombre": "Burrito bowl de quinoa",
+    "descripcion": "Todo lo del burrito sin la tortilla y con quinoa en vez de arroz: verduras asadas, pollo o tofu, lechuga, palta, lima. Se arma en capas y se come con cuchara. Es el plato de la semana para dejar hecho.",
+    "porciones": 4.0,
+    "unidad_porcion": "bowls",
+    "kcal_declaradas": 520.0,
+    "kcal_por": "por bowl",
+    "gramos_totales": 1310,
+    "gramos_porcion": 328,
+    "calculado_porcion": {
+      "kcal": 453.2,
+      "p": 33.6,
+      "c": 44.7,
+      "g": 16.0
+    },
+    "desviacion": -12.8,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 15,
+    "nombre": "Quesadillas de zapallito y queso",
+    "descripcion": "Dos tortillas de maíz, un relleno de zapallito salteado que aporta volumen, y solo el queso justo para que hile. Crocantes por fuera. Con pebre, un almuerzo liviano; sola, la mejor once.",
+    "porciones": 4.0,
+    "unidad_porcion": "quesadillas",
+    "kcal_declaradas": 230.0,
+    "kcal_por": "cada una",
+    "gramos_totales": 706,
+    "gramos_porcion": 176,
+    "calculado_porcion": {
+      "kcal": 251.5,
+      "p": 11.5,
+      "c": 28.5,
+      "g": 11.0
+    },
+    "desviacion": 9.3,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 16,
+    "nombre": "Sopaipillas de zapallo al horno",
+    "descripcion": "Las de siempre, pero sin trigo y sin freír. Zapallo, harina de arroz y avena, un poco de mantequilla, y horno fuerte. Doradas, tiernas por dentro, con pebre sin cebolla al lado. Setenta calorías cada una.",
+    "porciones": 16.0,
+    "unidad_porcion": "sopaipillas",
+    "kcal_declaradas": 70.0,
+    "kcal_por": "cada una",
+    "gramos_totales": 561,
+    "gramos_porcion": 35,
+    "calculado_porcion": {
+      "kcal": 72.6,
+      "p": 1.7,
+      "c": 12.2,
+      "g": 2.0
+    },
+    "desviacion": 3.8,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 17,
+    "nombre": "Nuggets de pollo con costra de avena",
+    "descripcion": "Pechuga en trozos, pasada por huevo y una costra de avena molida con parmesano y especias, al horno bien caliente. Crujientes de verdad. Con papas rústicas al horno son la comida chatarra sin la chatarra.",
+    "porciones": 4.0,
+    "unidad_porcion": "porcion",
+    "kcal_declaradas": 240.0,
+    "kcal_por": "+ 155 con papas",
+    "gramos_totales": 747,
+    "gramos_porcion": 187,
+    "calculado_porcion": {
+      "kcal": 286.2,
+      "p": 37.2,
+      "c": 13.1,
+      "g": 8.6
+    },
+    "desviacion": 19.2,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 17,
+    "nombre": "Nuggets de pollo con costra de avena — Papas rústicas",
+    "descripcion": "Pechuga en trozos, pasada por huevo y una costra de avena molida con parmesano y especias, al horno bien caliente. Crujientes de verdad. Con papas rústicas al horno son la comida chatarra sin la chatarra.",
+    "porciones": 4.0,
+    "unidad_porcion": "porcion",
+    "kcal_declaradas": 155.0,
+    "kcal_por": "+ 155 con papas",
+    "gramos_totales": 614,
+    "gramos_porcion": 153,
+    "calculado_porcion": {
+      "kcal": 145.3,
+      "p": 3.0,
+      "c": 26.2,
+      "g": 3.5
+    },
+    "desviacion": -6.2,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 18,
+    "nombre": "Lasaña de zapallito",
+    "descripcion": "Láminas de zapallito en lugar de pasta, salsa de tomate de la casa con pavo, ricotta sin lactosa con espinaca y una capa fina de parmesano. Sale húmeda, sabrosa, y con la mitad de las calorías de la de siempre.",
+    "porciones": 6.0,
+    "unidad_porcion": "porcion",
+    "kcal_declaradas": 265.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 2198,
+    "gramos_porcion": 366,
+    "calculado_porcion": {
+      "kcal": 289.2,
+      "p": 26.7,
+      "c": 12.0,
+      "g": 15.6
+    },
+    "desviacion": 9.1,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 19,
+    "nombre": "Empanadas de horno",
+    "descripcion": "Masa sin trigo que se dobla y se repulga, y pino de pavo con zapallito y verde de cebollín en lugar de cebolla. Salen doce chicas, doradas y jugosas, con huevo y aceituna adentro como corresponde. También van de queso y espinaca.",
+    "porciones": 12.0,
+    "unidad_porcion": "empanadas",
+    "kcal_declaradas": 170.0,
+    "kcal_por": "cada una",
+    "gramos_totales": 996,
+    "gramos_porcion": 83,
+    "calculado_porcion": {
+      "kcal": 174.0,
+      "p": 9.1,
+      "c": 17.3,
+      "g": 7.5
+    },
+    "desviacion": 2.4,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "salado",
+    "numero": 20,
+    "nombre": "Panqueques salados de zapallito",
+    "descripcion": "Delgados, verdes por dentro y con borde crocante: zapallito rallado, huevo, un poco de avena y ciboulette. Sirven solos con salsa de yogur, o rellenos con pollo, espinaca y queso como un panqueque de verdad.",
+    "porciones": 8.0,
+    "unidad_porcion": "panqueques",
+    "kcal_declaradas": 60.0,
+    "kcal_por": "cada uno",
+    "gramos_totales": 526,
+    "gramos_porcion": 66,
+    "calculado_porcion": {
+      "kcal": 65.3,
+      "p": 3.7,
+      "c": 6.7,
+      "g": 2.8
+    },
+    "desviacion": 8.8,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 1,
+    "nombre": "Brownies fudgy de camote y betarraga",
+    "descripcion": "Casi sin harina: el camote pone el cuerpo, la betarraga el color y una humedad que no se seca nunca, y el cacao hace el resto. Densos, oscuros, del tipo que se pega al cuchillo.",
+    "porciones": 12.0,
+    "unidad_porcion": "cuadrados",
+    "kcal_declaradas": 95.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 776,
+    "gramos_porcion": 65,
+    "calculado_porcion": {
+      "kcal": 93.5,
+      "p": 3.2,
+      "c": 11.9,
+      "g": 4.6
+    },
+    "desviacion": -1.6,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 2,
+    "nombre": "Blondies de zapallo y caramelo salado",
+    "descripcion": "Mantequilla dorada, vainilla y caramelo de alulosa que nunca cristaliza — y un puré de zapallo que reemplaza a más de la mitad de la harina sin que se note. Masticables, con la sal que aparece al final.",
+    "porciones": 12.0,
+    "unidad_porcion": "cuadrados",
+    "kcal_declaradas": 100.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 684,
+    "gramos_porcion": 57,
+    "calculado_porcion": {
+      "kcal": 79.6,
+      "p": 2.5,
+      "c": 7.9,
+      "g": 4.1
+    },
+    "desviacion": -20.4,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 3,
+    "nombre": "Banana bread de zapallito y avena",
+    "descripcion": "La receta que motivó esta edición: la harina bajó a la mitad y el zapallito rallado ocupa su lugar. Nadie lo detecta — solo deja la miga más húmeda. Plátano firme, canela y vainilla; corteza partida al centro.",
+    "porciones": 10.0,
+    "unidad_porcion": "rebanadas",
+    "kcal_declaradas": 95.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 887,
+    "gramos_porcion": 89,
+    "calculado_porcion": {
+      "kcal": 96.7,
+      "p": 4.5,
+      "c": 16.5,
+      "g": 1.8
+    },
+    "desviacion": 1.8,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 4,
+    "nombre": "Pie de limón",
+    "descripcion": "Base fina de avena en hojuelas que cruje, crema de limón bien ácida sostenida con maicena y una yema menos, y merengue de alulosa. Ácido de verdad, no dulce empalagoso.",
+    "porciones": 10.0,
+    "unidad_porcion": "porcion",
+    "kcal_declaradas": 115.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 610,
+    "gramos_porcion": 61,
+    "calculado_porcion": {
+      "kcal": 91.2,
+      "p": 3.6,
+      "c": 10.6,
+      "g": 3.9
+    },
+    "desviacion": -20.7,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 5,
+    "nombre": "Queque de zapallito y limón",
+    "descripcion": "El de todos los días, el que acompaña el té. El zapallito rallado reemplaza a la mitad de la harina y a casi toda la mantequilla, y deja una miga fina y húmeda que huele a limón. Glaseado que se agrieta al cortar.",
+    "porciones": 10.0,
+    "unidad_porcion": "rebanadas",
+    "kcal_declaradas": 110.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 798,
+    "gramos_porcion": 80,
+    "calculado_porcion": {
+      "kcal": 99.1,
+      "p": 4.7,
+      "c": 12.1,
+      "g": 3.4
+    },
+    "desviacion": -9.9,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 6,
+    "nombre": "Queque de zanahoria y especias",
+    "descripcion": "Ahora con más zanahoria que harina: 250 g de zanahoria y camote contra 120 g de harina. Húmedo, especiado, con un frosting de quark y queso crema que se sostiene. El dulzor de fondo lo pone la verdura.",
+    "porciones": 10.0,
+    "unidad_porcion": "rebanadas",
+    "kcal_declaradas": 135.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 784,
+    "gramos_porcion": 78,
+    "calculado_porcion": {
+      "kcal": 109.7,
+      "p": 3.3,
+      "c": 12.1,
+      "g": 5.6
+    },
+    "desviacion": -18.7,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 7,
+    "nombre": "Alfajores con manjar de alulosa",
+    "descripcion": "La tapita que se deshace en la boca —maicena, arroz y muy poca avena— y un manjar que sí queda cremoso porque la alulosa no cristaliza. Un poco más chicos que antes y con menos mantequilla: dieciséis armados.",
+    "porciones": 16.0,
+    "unidad_porcion": "armados",
+    "kcal_declaradas": 110.0,
+    "kcal_por": "por alfajor",
+    "gramos_totales": 675,
+    "gramos_porcion": 42,
+    "calculado_porcion": {
+      "kcal": 94.1,
+      "p": 1.4,
+      "c": 10.6,
+      "g": 5.2
+    },
+    "desviacion": -14.4,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 8,
+    "nombre": "Cocadas de coco y zanahoria",
+    "descripcion": "La zanahoria rallada fina reemplaza a la mitad del coco: quedan más tiernas por dentro, con puntas doradas y crocantes, y con la mitad de las calorías. Nadie adivina que llevan verdura.",
+    "porciones": 18.0,
+    "unidad_porcion": "unidades",
+    "kcal_declaradas": 55.0,
+    "kcal_por": "por unidad",
+    "gramos_totales": 372,
+    "gramos_porcion": 21,
+    "calculado_porcion": {
+      "kcal": 47.7,
+      "p": 0.9,
+      "c": 3.3,
+      "g": 3.6
+    },
+    "desviacion": -13.3,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 9,
+    "nombre": "Salted caramel popcorn",
+    "descripcion": "Cabritas cubiertas de caramelo de alulosa y horneadas bajo para que queden vidriosas y crocantes. Sin harina desde siempre; en esta edición, con menos mantequilla y una cucharada de agua que ayuda a cubrir parejo.",
+    "porciones": 8.0,
+    "unidad_porcion": "de 2 tazas",
+    "kcal_declaradas": 85.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 252,
+    "gramos_porcion": 31,
+    "calculado_porcion": {
+      "kcal": 88.8,
+      "p": 1.1,
+      "c": 7.4,
+      "g": 6.2
+    },
+    "desviacion": 4.5,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 10,
+    "nombre": "Galletas de avena, zanahoria y chocolate",
+    "descripcion": "Blandas al centro, crocantes en el borde. La harina de almendra se fue y entró zanahoria rallada, que aporta humedad y dulzor; la avena en hojuelas se deja entera para que se note, y el coco tostado hace el resto.",
+    "porciones": 16.0,
+    "unidad_porcion": "galletas",
+    "kcal_declaradas": 80.0,
+    "kcal_por": "por galleta",
+    "gramos_totales": 466,
+    "gramos_porcion": 29,
+    "calculado_porcion": {
+      "kcal": 79.8,
+      "p": 1.6,
+      "c": 7.3,
+      "g": 4.9
+    },
+    "desviacion": -0.3,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 11,
+    "nombre": "Cheesecake horneado de limón",
+    "descripcion": "Cremoso, sin grietas y sin baño maría. La base ahora es una capa fina de avena en hojuelas, y el relleno lleva más quark que queso crema: más firme, más ácido, y sesenta calorías menos por porción.",
+    "porciones": 10.0,
+    "unidad_porcion": "porcion",
+    "kcal_declaradas": 150.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 848,
+    "gramos_porcion": 85,
+    "calculado_porcion": {
+      "kcal": 149.2,
+      "p": 7.3,
+      "c": 8.1,
+      "g": 9.8
+    },
+    "desviacion": -0.5,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 12,
+    "nombre": "Trufas de camote y cacao bañadas",
+    "descripcion": "Reemplazan a los bombones de coco de la primera edición: el corazón es puré de camote con cacao, denso y cremoso como una trufa de verdad, y el coco queda solo en el rebozado. Cobertura de chocolate amargo que cruje.",
+    "porciones": 16.0,
+    "unidad_porcion": "trufas",
+    "kcal_declaradas": 55.0,
+    "kcal_por": "por unidad",
+    "gramos_totales": 369,
+    "gramos_porcion": 23,
+    "calculado_porcion": {
+      "kcal": 53.0,
+      "p": 1.2,
+      "c": 6.1,
+      "g": 3.1
+    },
+    "desviacion": -3.7,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 13,
+    "nombre": "Mousse de chocolate y yogur griego",
+    "descripcion": "Aireada y oscura, con el yogur griego 0 % haciendo el trabajo de la crema. Sin harina desde siempre; en esta edición, con un poco menos de chocolate y más cacao, que es lo que da la intensidad sin las calorías.",
+    "porciones": 6.0,
+    "unidad_porcion": "copas",
+    "kcal_declaradas": 105.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 609,
+    "gramos_porcion": 102,
+    "calculado_porcion": {
+      "kcal": 112.6,
+      "p": 10.0,
+      "c": 9.8,
+      "g": 4.4
+    },
+    "desviacion": 7.3,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 14,
+    "nombre": "Cheesecake de maracuyá",
+    "descripcion": "Sin horno salvo la base, que ahora es una capa fina de avena. El relleno es casi todo yogur griego colado con un poco de queso crema para el gusto, y una capa de maracuyá arriba que corta el dulzor de un tirón. El más fresco del cuaderno, y ahora también de los más livianos.",
+    "porciones": 10.0,
+    "unidad_porcion": "porcion",
+    "kcal_declaradas": 120.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 724,
+    "gramos_porcion": 72,
+    "calculado_porcion": {
+      "kcal": 96.2,
+      "p": 6.9,
+      "c": 6.5,
+      "g": 4.6
+    },
+    "desviacion": -19.9,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 15,
+    "nombre": "Helado de yogur griego y vainilla",
+    "descripcion": "Sin máquina y cremoso de verdad, porque la alulosa no cristaliza. Ahora con yogur 0 % de base y el aceite de coco como opción, no como regla. La base madre para inventar sabores.",
+    "porciones": 6.0,
+    "unidad_porcion": "de 100 g",
+    "kcal_declaradas": 75.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 788,
+    "gramos_porcion": 131,
+    "calculado_porcion": {
+      "kcal": 77.1,
+      "p": 10.5,
+      "c": 6.3,
+      "g": 0.7
+    },
+    "desviacion": 2.8,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 16,
+    "nombre": "Helado de plátano, cacao y yogur",
+    "descripcion": "Reemplaza al helado de chocolate y coco de la primera edición, que era casi puro coco. Plátano firme congelado, cacao y yogur griego a la procesadora: sale cremoso al instante, oscuro e intenso, con 75 calorías.",
+    "porciones": 6.0,
+    "unidad_porcion": "de 100 g",
+    "kcal_declaradas": 75.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 578,
+    "gramos_porcion": 96,
+    "calculado_porcion": {
+      "kcal": 83.3,
+      "p": 4.2,
+      "c": 18.0,
+      "g": 1.0
+    },
+    "desviacion": 11.1,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 17,
+    "nombre": "Barritas de camote, avena y cacao",
+    "descripcion": "Sin horno. El puré de camote reemplaza a casi todos los dátiles y a la mantequilla de almendra: pega igual, endulza de fondo y baja las calorías a casi la mitad. Masticables, tipo barrita de cereal buena.",
+    "porciones": 12.0,
+    "unidad_porcion": "barritas",
+    "kcal_declaradas": 70.0,
+    "kcal_por": "por barrita",
+    "gramos_totales": 350,
+    "gramos_porcion": 29,
+    "calculado_porcion": {
+      "kcal": 69.3,
+      "p": 2.4,
+      "c": 9.5,
+      "g": 3.0
+    },
+    "desviacion": -1.0,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": 18,
+    "nombre": "Paletas de yogur y frutillas",
+    "descripcion": "Cuarenta calorías, tres ingredientes y cero técnica. Cremosas en vez de puro hielo, gracias al yogur griego y a que la alulosa no cristaliza.",
+    "porciones": 8.0,
+    "unidad_porcion": "paletas",
+    "kcal_declaradas": 40.0,
+    "kcal_por": "por paleta",
+    "gramos_totales": 785,
+    "gramos_porcion": 98,
+    "calculado_porcion": {
+      "kcal": 49.0,
+      "p": 6.6,
+      "c": 5.2,
+      "g": 0.3
+    },
+    "desviacion": 22.5,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": null,
+    "nombre": "Muffins de zapallo y especias",
+    "descripcion": "Trescientos gramos de zapallo contra cien de harina: húmedos, especiados, con la miga naranja y una costra de semillas de zapallo. El muffin de otoño para el desayuno o la once, y de los que mejor se congelan.",
+    "porciones": 12.0,
+    "unidad_porcion": "muffins",
+    "kcal_declaradas": 95.0,
+    "kcal_por": "por muffin",
+    "gramos_totales": 789,
+    "gramos_porcion": 66,
+    "calculado_porcion": {
+      "kcal": 86.6,
+      "p": 4.1,
+      "c": 9.4,
+      "g": 3.9
+    },
+    "desviacion": -8.8,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": null,
+    "nombre": "Crumble de ruibarbo y frutilla",
+    "descripcion": "El ruibarbo es una verdura, y una de las mejores para postre: ácido, rosado y con 21 calorías por 100 g. Cocido con frutillas y alulosa, bajo una capa fina y crocante de avena y coco. Se sirve tibio, con una cucharada de yogur griego.",
+    "porciones": 8.0,
+    "unidad_porcion": "porcion",
+    "kcal_declaradas": 110.0,
+    "kcal_por": "por porción",
+    "gramos_totales": 936,
+    "gramos_porcion": 117,
+    "calculado_porcion": {
+      "kcal": 100.1,
+      "p": 2.2,
+      "c": 15.2,
+      "g": 3.8
+    },
+    "desviacion": -9.0,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": null,
+    "nombre": "Crumble de ruibarbo y frutilla — Para servir",
+    "descripcion": "El ruibarbo es una verdura, y una de las mejores para postre: ácido, rosado y con 21 calorías por 100 g. Cocido con frutillas y alulosa, bajo una capa fina y crocante de avena y coco. Se sirve tibio, con una cucharada de yogur griego.",
+    "porciones": 8.0,
+    "unidad_porcion": "porcion",
+    "kcal_declaradas": null,
+    "kcal_por": "por porción",
+    "gramos_totales": 0,
+    "gramos_porcion": 0,
+    "calculado_porcion": {
+      "kcal": 0.0,
+      "p": 0.0,
+      "c": 0.0,
+      "g": 0.0
+    },
+    "desviacion": null,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": null,
+    "nombre": "Panqueques dulces de zapallito y plátano",
+    "descripcion": "Delgados, tiernos y con muy poca harina: el zapallito exprimido y el plátano firme ponen el volumen. Van con yogur griego, frutillas y una cucharadita de manjar de alulosa. Sesenta calorías cada uno.",
+    "porciones": 10.0,
+    "unidad_porcion": "panqueques",
+    "kcal_declaradas": 60.0,
+    "kcal_por": "cada uno",
+    "gramos_totales": 567,
+    "gramos_porcion": 57,
+    "calculado_porcion": {
+      "kcal": 62.2,
+      "p": 2.9,
+      "c": 8.1,
+      "g": 2.2
+    },
+    "desviacion": 3.7,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": null,
+    "nombre": "Panqueques dulces de zapallito y plátano — Para servir",
+    "descripcion": "Delgados, tiernos y con muy poca harina: el zapallito exprimido y el plátano firme ponen el volumen. Van con yogur griego, frutillas y una cucharadita de manjar de alulosa. Sesenta calorías cada uno.",
+    "porciones": 10.0,
+    "unidad_porcion": "panqueques",
+    "kcal_declaradas": null,
+    "kcal_por": "cada uno",
+    "gramos_totales": 0,
+    "gramos_porcion": 0,
+    "calculado_porcion": {
+      "kcal": 0.0,
+      "p": 0.0,
+      "c": 0.0,
+      "g": 0.0
+    },
+    "desviacion": null,
+    "ingredientes_sin_tabla": []
+  },
+  {
+    "tipo": "postre",
+    "numero": null,
+    "nombre": "Sopaipillas pasadas",
+    "descripcion": "La misma masa de zapallo de la receta salada, pero dulce: horneadas en vez de fritas y bañadas en un almíbar de alulosa, canela, naranja y clavo de olor. Se comen tibias, chorreando, con las manos.",
+    "porciones": 16.0,
+    "unidad_porcion": "sopaipillas",
+    "kcal_declaradas": 65.0,
+    "kcal_por": "por unidad",
+    "gramos_totales": 955,
+    "gramos_porcion": 60,
+    "calculado_porcion": {
+      "kcal": 75.6,
+      "p": 1.7,
+      "c": 12.8,
+      "g": 2.0
+    },
+    "desviacion": 16.4,
+    "ingredientes_sin_tabla": []
+  }
+]

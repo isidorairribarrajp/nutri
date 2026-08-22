@@ -1,44 +1,51 @@
 import { redondear } from '../nutricion.js'
 
-const ETIQUETA_FUENTE = { cl: 'Chile', off: 'Open Food Facts', propio: 'Mio' }
+const ETIQUETA_FUENTE = {
+  cl: 'Chile',
+  off: 'Open Food Facts',
+  propio: 'Mío',
+  receta: 'Mi recetario',
+}
 
-/** Fila de resultado de busqueda. */
-export function FilaResultado({ alimento, onClick }) {
+export function FilaResultado({ alimento, onClick, favorito, onFavorito }) {
   const { kcal, p, c, g } = alimento.por100g
   return (
-    <button
-      onClick={onClick}
-      className="flex w-full items-center gap-3 border-b border-borde px-4 py-3 text-left active:bg-panel2"
-    >
-      <div className="min-w-0 flex-1">
-        <div className="truncate text-[15px] leading-tight">{alimento.nombre}</div>
+    <div className="flex w-full items-center border-b border-borde active:bg-panel2">
+      <button onClick={onClick} className="min-w-0 flex-1 px-4 py-3 text-left">
+        <div className="truncate text-[15px] font-medium leading-tight">{alimento.nombre}</div>
         <div className="mt-0.5 truncate text-xs text-tenue">
           {alimento.marca ? `${alimento.marca} · ` : ''}
           {kcal} kcal · P {p} · C {c} · G {g} <span className="opacity-70">/100 g</span>
         </div>
-      </div>
-      <span className="shrink-0 rounded-full border border-borde px-2 py-0.5 text-[10px] text-tenue">
-        {ETIQUETA_FUENTE[alimento.fuente] || ''}
-      </span>
-    </button>
+        <span className="pildora mt-1.5">{ETIQUETA_FUENTE[alimento.fuente] || ''}</span>
+      </button>
+      {onFavorito && (
+        <button
+          onClick={onFavorito}
+          aria-label={favorito ? 'Quitar de favoritos' : 'Guardar en favoritos'}
+          className={`shrink-0 px-3 py-4 text-lg ${favorito ? 'text-acento' : 'text-tenue opacity-50'}`}
+        >
+          {favorito ? '♥' : '♡'}
+        </button>
+      )}
+    </div>
   )
 }
 
-/** Fila de una entrada ya registrada en el diario. */
 export function FilaEntrada({ entrada, onEditar, onBorrar }) {
   return (
     <div className="flex items-center gap-2 py-2.5">
       <button onClick={onEditar} className="min-w-0 flex-1 text-left">
         <div className="truncate text-[15px] leading-tight">{entrada.nombre}</div>
-        <div className="mt-0.5 text-xs text-tenue">
+        <div className="mt-0.5 truncate text-xs text-tenue">
           {entrada.etiqueta_porcion} · P {entrada.p} · C {entrada.c} · G {entrada.g}
         </div>
       </button>
-      <span className="shrink-0 tabular-nums text-sm text-kcal">{redondear(entrada.kcal)}</span>
+      <span className="shrink-0 tabular-nums text-sm font-semibold">{redondear(entrada.kcal)}</span>
       <button
         onClick={onBorrar}
         aria-label="Borrar"
-        className="shrink-0 px-2 py-1 text-lg leading-none text-tenue active:text-red-400"
+        className="shrink-0 px-2 py-1 text-lg leading-none text-tenue active:text-gras"
       >
         ×
       </button>

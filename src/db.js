@@ -8,6 +8,11 @@ const K = {
   recientes: 'nutri:recientes',
   perfil: 'nutri:perfil',
   pesos: 'nutri:pesos',
+  medidas: 'nutri:medidas',
+  ejercicios: 'nutri:ejercicios',
+  agua: 'nutri:agua',
+  favoritos: 'nutri:favoritos',
+  tema: 'nutri:tema',
 }
 
 const METAS_DEFAULT = { kcal: 1800, proteina_g: 120, carbos_g: 180, grasa_g: 60 }
@@ -107,6 +112,107 @@ export function getUltimoPeso() {
   return lista.length ? lista[lista.length - 1] : null
 }
 
+// --- medidas corporales ---
+// Un set de medidas por fecha, igual que el peso.
+export function getMedidas() {
+  return leer(K.medidas, {})
+}
+
+export function registrarMedidas(fecha, medidas) {
+  const todas = getMedidas()
+  todas[fecha] = { ...(todas[fecha] || {}), ...medidas }
+  escribir(K.medidas, todas)
+}
+
+export function borrarMedidas(fecha) {
+  const todas = getMedidas()
+  delete todas[fecha]
+  escribir(K.medidas, todas)
+}
+
+export function getMedidasOrdenadas() {
+  return Object.entries(getMedidas())
+    .map(([fecha, m]) => ({ fecha, ...m }))
+    .sort((a, b) => a.fecha.localeCompare(b.fecha))
+}
+
+export function getUltimasMedidas() {
+  const l = getMedidasOrdenadas()
+  return l.length ? l[l.length - 1] : null
+}
+
+// --- ejercicio ---
+export function getEjercicios() {
+  return leer(K.ejercicios, {})
+}
+
+export function getEjerciciosDia(fecha) {
+  return getEjercicios()[fecha] || []
+}
+
+export function agregarEjercicio(fecha, sesion) {
+  const todos = getEjercicios()
+  const conId = { ...sesion, id: crypto.randomUUID(), ts: Date.now() }
+  todos[fecha] = [...(todos[fecha] || []), conId]
+  escribir(K.ejercicios, todos)
+  return conId
+}
+
+export function borrarEjercicio(fecha, id) {
+  const todos = getEjercicios()
+  const lista = (todos[fecha] || []).filter((e) => e.id !== id)
+  if (lista.length) todos[fecha] = lista
+  else delete todos[fecha]
+  escribir(K.ejercicios, todos)
+}
+
+/** Todas las sesiones desde `desde` (inclusive), aplanadas con su fecha. */
+export function getEjerciciosDesde(desde) {
+  const todos = getEjercicios()
+  return Object.entries(todos)
+    .filter(([f]) => f >= desde)
+    .flatMap(([f, lista]) => lista.map((s) => ({ ...s, fecha: f })))
+}
+
+// --- agua ---
+export function getAgua(fecha) {
+  return leer(K.agua, {})[fecha] || 0
+}
+
+export function setAgua(fecha, vasos) {
+  const todos = leer(K.agua, {})
+  const n = Math.max(0, Math.round(vasos))
+  if (n > 0) todos[fecha] = n
+  else delete todos[fecha]
+  escribir(K.agua, todos)
+}
+
+// --- favoritos ---
+export function getFavoritos() {
+  return leer(K.favoritos, [])
+}
+
+export function esFavorito(id) {
+  return getFavoritos().includes(id)
+}
+
+export function alternarFavorito(id) {
+  const f = getFavoritos()
+  const nuevo = f.includes(id) ? f.filter((x) => x !== id) : [id, ...f]
+  escribir(K.favoritos, nuevo)
+  return nuevo.includes(id)
+}
+
+// --- tema ---
+export function getTema() {
+  return leer(K.tema, 'claro')
+}
+
+export function setTema(t) {
+  escribir(K.tema, t)
+  document.documentElement.dataset.tema = t
+}
+
 // --- diario ---
 export function getDiario() {
   return leer(K.diario, {})
@@ -130,6 +236,16 @@ export function editarEntrada(fecha, id, parche) {
   const lista = diario[fecha] || []
   diario[fecha] = lista.map((e) => (e.id === id ? { ...e, ...parche } : e))
   escribir(K.diario, diario)
+}
+
+/** Copia todas las comidas de un dia a otro. Es el "repetir día" de Fitia. */
+export function copiarDia(desde, hacia, momentos = null) {
+  const origen = getDia(desde).filter((e) => !momentos || momentos.includes(e.momento))
+  origen.forEach((e) => {
+    const { id, ts, ...resto } = e
+    agregarEntrada(hacia, resto)
+  })
+  return origen.length
 }
 
 export function borrarEntrada(fecha, id) {
@@ -191,6 +307,10 @@ export function exportar() {
     metas: getMetas(),
     perfil: getPerfil(),
     pesos: getPesos(),
+    medidas: getMedidas(),
+    ejercicios: getEjercicios(),
+    agua: leer(K.agua, {}),
+    favoritos: getFavoritos(),
     diario: getDiario(),
     alimentos_cache: getCache(),
     recientes: getRecientesIds(),
@@ -202,6 +322,10 @@ export function importar(json) {
   if (json.metas) escribir(K.metas, json.metas)
   if (json.perfil) escribir(K.perfil, json.perfil)
   if (json.pesos) escribir(K.pesos, json.pesos)
+  if (json.medidas) escribir(K.medidas, json.medidas)
+  if (json.ejercicios) escribir(K.ejercicios, json.ejercicios)
+  if (json.agua) escribir(K.agua, json.agua)
+  if (json.favoritos) escribir(K.favoritos, json.favoritos)
   if (json.diario) escribir(K.diario, json.diario)
   if (json.alimentos_cache) escribir(K.cache, json.alimentos_cache)
   if (json.recientes) escribir(K.recientes, json.recientes)

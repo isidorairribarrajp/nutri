@@ -1,0 +1,1916 @@
+{
+  "version": 1,
+  "nota": "Recetas de los dos recetarios de Isi (Comida salada liviana y Postres livianos). Los macros se calculan sumando los ingredientes; las kcal se contrastan contra las que declara cada receta y se muestra la diferencia cuando es grande.",
+  "recetas": [
+    {
+      "id": "rec-pizza-de-masa-de-avena-y-yogur",
+      "nombre": "Pizza de masa de avena y yogur",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "La masa rápida de la casa: sin levadura, sin reposo, lista en diez minutos. Fina y crocante en el borde, tierna al centro. Sale una pizza de 30 cm para compartir.",
+      "por100g": {
+        "kcal": 172,
+        "p": 10.0,
+        "c": 17.4,
+        "g": 7.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 trozo",
+          "gramos": 88
+        },
+        {
+          "nombre": "2 trozos",
+          "gramos": 176
+        }
+      ],
+      "rinde": {
+        "porciones": 8.0,
+        "unidad": "trozos"
+      },
+      "kcal_declaradas": 130.0,
+      "kcal_calculadas": 152,
+      "desviacion": 16.5,
+      "ingredientes": [
+        "150 g de harina de avena",
+        "150 g de yogur griego natural sin lactosa",
+        "1 huevo",
+        "1 1/2 cdta de polvos de hornear",
+        "1/2 cdta de sal · 1 cdta de orégano",
+        "1 cdta de aceite de ajo para pincelar",
+        "120 g de salsa de tomate de la casa",
+        "100 g de mozzarella sin lactosa, en trozos",
+        "1 tomate en rodajas finas",
+        "Hojas de albahaca · pimienta · orégano"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-pizza-con-base-de-zapallito",
+      "nombre": "Pizza con base de zapallito",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "La base es casi pura verdura: zapallito rallado, exprimido y horneado hasta que dora. Se come con tenedor, es liviana de verdad, y con la salsa y el queso arriba sabe a pizza.",
+      "por100g": {
+        "kcal": 78,
+        "p": 5.3,
+        "c": 6.3,
+        "g": 3.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 trozo",
+          "gramos": 139
+        },
+        {
+          "nombre": "2 trozos",
+          "gramos": 278
+        }
+      ],
+      "rinde": {
+        "porciones": 6.0,
+        "unidad": "trozos"
+      },
+      "kcal_declaradas": 100.0,
+      "kcal_calculadas": 109,
+      "desviacion": 8.9,
+      "ingredientes": [
+        "450 g de zapallito italiano (2 grandes), rallado",
+        "1 huevo",
+        "40 g de parmesano rallado",
+        "30 g de harina de arroz",
+        "1 cdta de orégano · 1/2 cdta de sal · pimienta",
+        "100 g de salsa de tomate de la casa",
+        "60 g de mozzarella sin lactosa",
+        "6 tomates cherry partidos",
+        "Albahaca · aceite de ajo para terminar"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-pizza-de-base-de-quinoa",
+      "nombre": "Pizza de base de quinoa",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Quinoa remojada y licuada, nada más. Sale una base gruesa y crujiente, con proteína, que aguanta verduras asadas encima sin doblarse.",
+      "por100g": {
+        "kcal": 181,
+        "p": 7.0,
+        "c": 20.4,
+        "g": 8.0
+      },
+      "porciones": [
+        {
+          "nombre": "1 trozo",
+          "gramos": 70
+        },
+        {
+          "nombre": "2 trozos",
+          "gramos": 140
+        }
+      ],
+      "rinde": {
+        "porciones": 8.0,
+        "unidad": "trozos"
+      },
+      "kcal_declaradas": 120.0,
+      "kcal_calculadas": 126,
+      "desviacion": 5.3,
+      "ingredientes": [
+        "150 g de quinoa cruda, remojada 6–8 h",
+        "80 ml de agua",
+        "1 cda de aceite de oliva",
+        "1 cdta de polvos de hornear",
+        "3/4 cdta de sal · 1 cdta de orégano",
+        "120 g de salsa de tomate de la casa",
+        "1 pimentón rojo y 1 zapallito en láminas, asados o salteados",
+        "70 g de queso de cabra fresco desmigado",
+        "Puñado de espinaca baby · orégano"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-pan-de-hamburguesa-de-avena",
+      "nombre": "Pan de hamburguesa de avena",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Sin trigo ni levadura, blando por dentro y con una costra fina de sésamo. Aguanta una hamburguesa jugosa sin desarmarse, que es lo único que se le pide a un pan de hamburguesa.",
+      "por100g": {
+        "kcal": 214,
+        "p": 11.8,
+        "c": 28.2,
+        "g": 6.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 pan",
+          "gramos": 103
+        },
+        {
+          "nombre": "2 panes",
+          "gramos": 206
+        }
+      ],
+      "rinde": {
+        "porciones": 6.0,
+        "unidad": "panes"
+      },
+      "kcal_declaradas": 175.0,
+      "kcal_calculadas": 220,
+      "desviacion": 25.9,
+      "ingredientes": [
+        "200 g de harina de avena",
+        "30 g de almidón de maíz",
+        "200 g de yogur griego natural sin lactosa",
+        "2 huevos (uno va a la masa, otro para pintar)",
+        "2 claras",
+        "2 cdtas de polvos de hornear",
+        "1/2 cdta de bicarbonato · 3/4 cdta de sal",
+        "1 cdta de alulosa",
+        "1 cda de sésamo para arriba"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-hamburguesas-de-zapallito-y-quinoa",
+      "nombre": "Hamburguesas de zapallito y quinoa",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "La hamburguesa vegetariana que no sabe a relleno: zapallito exprimido, quinoa cocida y parmesano, con borde dorado y centro tierno. Van en pan, en lechuga o solas con ensalada.",
+      "por100g": {
+        "kcal": 97,
+        "p": 5.4,
+        "c": 11.2,
+        "g": 3.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 hamburguesa",
+          "gramos": 109
+        },
+        {
+          "nombre": "2 hamburguesas",
+          "gramos": 218
+        }
+      ],
+      "rinde": {
+        "porciones": 6.0,
+        "unidad": "hamburguesas"
+      },
+      "kcal_declaradas": 95.0,
+      "kcal_calculadas": 106,
+      "desviacion": 11.7,
+      "ingredientes": [
+        "350 g de zapallito italiano rallado",
+        "150 g de quinoa cocida (unos 50 g cruda), fría",
+        "1 huevo",
+        "40 g de avena en hojuelas",
+        "30 g de parmesano rallado",
+        "3 cdas de verde de cebollín picado",
+        "2 cdas de perejil o cilantro picado",
+        "1/2 cdta de comino · 1/2 cdta de pimentón ahumado",
+        "3/4 cdta de sal · pimienta · ralladura de 1/2 limón",
+        "1 cdta de aceite de ajo para la sartén"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-hamburguesas-de-pavo-zanahoria-y-espinaca",
+      "nombre": "Hamburguesas de pavo, zanahoria y espinaca",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Un tercio de la carne reemplazado por verdura rallada, que además la deja más jugosa que la de pavo sola. Sabor limpio, especiado, y solo 140 calorías cada una.",
+      "por100g": {
+        "kcal": 126,
+        "p": 13.8,
+        "c": 5.1,
+        "g": 5.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 hamburguesa",
+          "gramos": 121
+        },
+        {
+          "nombre": "2 hamburguesas",
+          "gramos": 242
+        }
+      ],
+      "rinde": {
+        "porciones": 6.0,
+        "unidad": "hamburguesas"
+      },
+      "kcal_declaradas": 140.0,
+      "kcal_calculadas": 152,
+      "desviacion": 8.9,
+      "ingredientes": [
+        "400 g de pavo molido (o pollo, muslo sin piel)",
+        "120 g de zanahoria rallada fina (1 grande)",
+        "80 g de espinaca fresca, picada fina",
+        "1 huevo",
+        "30 g de avena en hojuelas",
+        "3 cdas de verde de cebollín picado",
+        "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano",
+        "1 cdta de sal · pimienta",
+        "1 cda de salsa de yogur o mostaza para untar",
+        "1 cdta de aceite para la sartén"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-hamburguesas-de-camote-y-tofu",
+      "nombre": "Hamburguesas de camote y tofu",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Vegana y con proteína de verdad. El camote da dulzor y cuerpo, el tofu firme desmenuzado da textura y el horno las deja con costra. Especiadas con comino y pimentón ahumado.",
+      "por100g": {
+        "kcal": 134,
+        "p": 7.7,
+        "c": 14.1,
+        "g": 6.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 hamburguesa",
+          "gramos": 107
+        },
+        {
+          "nombre": "2 hamburguesas",
+          "gramos": 214
+        }
+      ],
+      "rinde": {
+        "porciones": 6.0,
+        "unidad": "hamburguesas"
+      },
+      "kcal_declaradas": 135.0,
+      "kcal_calculadas": 144,
+      "desviacion": 6.6,
+      "ingredientes": [
+        "250 g de camote cocido, en puré seco",
+        "200 g de tofu firme , prensado y desmenuzado",
+        "100 g de zapallito rallado y exprimido",
+        "40 g de avena en hojuelas",
+        "1 cda de linaza molida + 3 cdas de agua",
+        "3 cdas de verde de cebollín · 2 cdas de cilantro",
+        "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de cúrcuma",
+        "1 cdta de sal · pimienta · jugo de 1/2 limón",
+        "1 cda de aceite de oliva para pincelar"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-tortillas-de-maiz",
+      "nombre": "Tortillas de maíz",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Las dos envolturas del cuaderno. Las de maíz, chicas y firmes, para tacos y quesadillas. Las de avena, grandes y flexibles, para burritos. Ninguna lleva trigo ni levadura.",
+      "por100g": {
+        "kcal": 156,
+        "p": 4.1,
+        "c": 32.6,
+        "g": 1.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 unidad",
+          "gramos": 39
+        },
+        {
+          "nombre": "2 unidades",
+          "gramos": 78
+        }
+      ],
+      "rinde": {
+        "porciones": 12,
+        "unidad": "unidad"
+      },
+      "kcal_declaradas": 60.0,
+      "kcal_calculadas": 61,
+      "desviacion": 1.4,
+      "ingredientes": [],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-tortillas-de-avena",
+      "nombre": "Tortillas de avena",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Las dos envolturas del cuaderno. Las de maíz, chicas y firmes, para tacos y quesadillas. Las de avena, grandes y flexibles, para burritos. Ninguna lleva trigo ni levadura.",
+      "por100g": {
+        "kcal": 138,
+        "p": 7.1,
+        "c": 17.5,
+        "g": 4.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 unidad",
+          "gramos": 115
+        },
+        {
+          "nombre": "2 unidades",
+          "gramos": 230
+        }
+      ],
+      "rinde": {
+        "porciones": 6,
+        "unidad": "unidad"
+      },
+      "kcal_declaradas": 0.0,
+      "kcal_calculadas": 159,
+      "desviacion": null,
+      "ingredientes": [],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-tacos-de-verduras-asadas-con-crema-de-palta",
+      "nombre": "Tacos de verduras asadas con crema de palta",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Pimentón, zapallito, berenjena y zanahoria al horno fuerte con comino y limón, sobre tortilla de maíz caliente, con crema de palta liviana y cilantro. Sin carne y no se echa de menos.",
+      "por100g": {
+        "kcal": 70,
+        "p": 1.7,
+        "c": 11.9,
+        "g": 2.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion (2 tacos)",
+          "gramos": 339
+        },
+        {
+          "nombre": "2 porciones (2 tacos)",
+          "gramos": 678
+        }
+      ],
+      "rinde": {
+        "porciones": 4.0,
+        "unidad": "de 2 tacos"
+      },
+      "kcal_declaradas": 260.0,
+      "kcal_calculadas": 236,
+      "desviacion": -9.1,
+      "ingredientes": [
+        "8 tortillas de maíz (receta 08)",
+        "2 pimentones rojos en tiras",
+        "1 zapallito grande en medias lunas",
+        "1 berenjena chica en cubos",
+        "2 zanahorias en bastones finos",
+        "1 1/2 cda de aceite de ajo",
+        "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano",
+        "1 cdta de sal · jugo de 1 limón",
+        "1 receta de crema de palta liviana",
+        "Cilantro · verde de cebollín · ají verde en rodajas"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-tacos-de-pescado-con-ensalada-de-zanahoria-y-pep",
+      "nombre": "Tacos de pescado con ensalada de zanahoria y pepino",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Reineta o merluza a la plancha con comino y limón, y una ensalada crocante que hace lo que en el taco original hace el repollo. Salsa de yogur encima y listo: quince minutos.",
+      "por100g": {
+        "kcal": 129,
+        "p": 12.7,
+        "c": 12.4,
+        "g": 3.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion (2 tacos)",
+          "gramos": 208
+        },
+        {
+          "nombre": "2 porciones (2 tacos)",
+          "gramos": 416
+        }
+      ],
+      "rinde": {
+        "porciones": 4.0,
+        "unidad": "de 2 tacos"
+      },
+      "kcal_declaradas": 290.0,
+      "kcal_calculadas": 268,
+      "desviacion": -7.4,
+      "ingredientes": [
+        "500 g de reineta, merluza o corvina en filetes",
+        "1 cdta de comino · 1 cdta de pimentón dulce · 1/2 cdta de ají de color",
+        "3/4 cdta de sal · jugo de 1 limón",
+        "1 cda de aceite de oliva",
+        "2 zanahorias en juliana o ralladas grueso",
+        "1 pepino sin semillas, en bastones",
+        "1/2 taza de cilantro · 2 cdas de verde de cebollín",
+        "Jugo de 1 limón · 1 cdta de alulosa · sal",
+        "8 tortillas de maíz · 1 receta de salsa de yogur y ciboulette · ají verde"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-tacos-de-pescado-con-ensalada-de-zanahoria-y-pep",
+      "nombre": "Tacos de pescado con ensalada de zanahoria y pepino — Ensalada",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Reineta o merluza a la plancha con comino y limón, y una ensalada crocante que hace lo que en el taco original hace el repollo. Salsa de yogur encima y listo: quince minutos.",
+      "por100g": {
+        "kcal": 23,
+        "p": 1.0,
+        "c": 4.9,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion (2 tacos)",
+          "gramos": 136
+        },
+        {
+          "nombre": "2 porciones (2 tacos)",
+          "gramos": 272
+        }
+      ],
+      "rinde": {
+        "porciones": 4.0,
+        "unidad": "de 2 tacos"
+      },
+      "kcal_declaradas": null,
+      "kcal_calculadas": 31,
+      "desviacion": null,
+      "ingredientes": [],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-tacos-de-pollo-al-limon-y-pimenton",
+      "nombre": "Tacos de pollo al limón y pimentón",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Pechuga en tiras salteada a fuego fuerte con pimentón, comino y limón, dorada por fuera y jugosa. El taco de todos los días: diez minutos de sartén y una tabla de cosas para armar al medio de la mesa.",
+      "por100g": {
+        "kcal": 120,
+        "p": 11.5,
+        "c": 11.5,
+        "g": 3.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion (2 tacos)",
+          "gramos": 255
+        },
+        {
+          "nombre": "2 porciones (2 tacos)",
+          "gramos": 510
+        }
+      ],
+      "rinde": {
+        "porciones": 4.0,
+        "unidad": "de 2 tacos"
+      },
+      "kcal_declaradas": 290.0,
+      "kcal_calculadas": 307,
+      "desviacion": 5.8,
+      "ingredientes": [
+        "450 g de pechuga de pollo en tiras finas",
+        "2 pimentones (rojo y amarillo) en tiras",
+        "1 cda de aceite de ajo",
+        "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano · 1/4 cdta de ají en polvo",
+        "1 cdta de sal · pimienta",
+        "Jugo y ralladura de 1 limón",
+        "8 tortillas de maíz",
+        "Para armar: lechuga en tiras, tomate en cubos, cilantro , pebre sin cebolla o crema de palta, ají verde"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-burrito-de-verduras-y-arroz",
+      "nombre": "Burrito de verduras y arroz",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Tortilla de avena, arroz con cilantro y limón, verduras salteadas, tofu dorado, lechuga y salsa de yogur. Enrollado apretado y tostado en la sartén para que quede sellado. Un almuerzo completo con una mano.",
+      "por100g": {
+        "kcal": 131,
+        "p": 7.0,
+        "c": 15.9,
+        "g": 4.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 burrito",
+          "gramos": 294
+        },
+        {
+          "nombre": "2 burritos",
+          "gramos": 588
+        }
+      ],
+      "rinde": {
+        "porciones": 4.0,
+        "unidad": "burritos"
+      },
+      "kcal_declaradas": 480.0,
+      "kcal_calculadas": 385,
+      "desviacion": -19.8,
+      "ingredientes": [
+        "4 tortillas de avena de 25 cm (receta 08)",
+        "320 g de arroz cocido (unos 110 g crudo), tibio",
+        "Jugo de 1 limón · 3 cdas de cilantro picado",
+        "200 g de tofu firme en cubos, o 200 g de pollo cocido desmenuzado",
+        "1 pimentón rojo · 1 zapallito · 1 zanahoria , todo en tiras",
+        "1 cda de aceite de ajo",
+        "1 cdta de comino · 1 cdta de pimentón ahumado · sal",
+        "4 hojas de lechuga en tiras · 1 tomate en cubos",
+        "4 cdas de salsa de yogur y ciboulette",
+        "40 g de queso rallado sin lactosa (opcional)"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-burrito-de-huevo-y-espinaca",
+      "nombre": "Burrito de huevo y espinaca",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "El desayuno o la once salada rápida: revuelto de huevo con claras y espinaca, tomate, un poco de queso, todo dentro de una tortilla de avena tostada. Ocho minutos desde que prendes el fuego.",
+      "por100g": {
+        "kcal": 111,
+        "p": 6.8,
+        "c": 8.2,
+        "g": 5.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 burrito",
+          "gramos": 321
+        },
+        {
+          "nombre": "2 burritos",
+          "gramos": 642
+        }
+      ],
+      "rinde": {
+        "porciones": 2.0,
+        "unidad": "burritos"
+      },
+      "kcal_declaradas": 390.0,
+      "kcal_calculadas": 355,
+      "desviacion": -8.9,
+      "ingredientes": [
+        "2 tortillas de avena de 25 cm",
+        "2 huevos + 3 claras",
+        "100 g de espinaca fresca",
+        "1 tomate en cubos, sin semillas",
+        "40 g de queso rallado sin lactosa o 30 g de parmesano",
+        "2 cdas de verde de cebollín picado",
+        "1 cdta de aceite de ajo",
+        "Sal · pimienta · pizca de pimentón ahumado",
+        "2 cdas de pebre sin cebolla o crema de palta, para servir"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-burrito-bowl-de-quinoa",
+      "nombre": "Burrito bowl de quinoa",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Todo lo del burrito sin la tortilla y con quinoa en vez de arroz: verduras asadas, pollo o tofu, lechuga, palta, lima. Se arma en capas y se come con cuchara. Es el plato de la semana para dejar hecho.",
+      "por100g": {
+        "kcal": 138,
+        "p": 10.2,
+        "c": 13.6,
+        "g": 4.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 bowl",
+          "gramos": 328
+        },
+        {
+          "nombre": "2 bowls",
+          "gramos": 656
+        }
+      ],
+      "rinde": {
+        "porciones": 4.0,
+        "unidad": "bowls"
+      },
+      "kcal_declaradas": 520.0,
+      "kcal_calculadas": 453,
+      "desviacion": -12.8,
+      "ingredientes": [
+        "200 g de quinoa cruda, enjuagada",
+        "400 g de pechuga de pollo o tofu firme, en cubos",
+        "2 pimentones · 1 zapallito · 1 berenjena chica · 1 zanahoria , en cubos",
+        "1 1/2 cda de aceite de ajo",
+        "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano · sal",
+        "4 tazas de lechuga picada",
+        "120 g de palta en láminas (30 g por bowl)",
+        "1/2 taza de choclo cocido (2 cdas por bowl)",
+        "Jugo de 2 limones · 1/2 taza de cilantro",
+        "4 cdas de salsa de yogur y ciboulette · ají verde"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-quesadillas-de-zapallito-y-queso",
+      "nombre": "Quesadillas de zapallito y queso",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Dos tortillas de maíz, un relleno de zapallito salteado que aporta volumen, y solo el queso justo para que hile. Crocantes por fuera. Con pebre, un almuerzo liviano; sola, la mejor once.",
+      "por100g": {
+        "kcal": 143,
+        "p": 6.5,
+        "c": 16.2,
+        "g": 6.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 quesadilla",
+          "gramos": 176
+        },
+        {
+          "nombre": "2 quesadillas",
+          "gramos": 352
+        }
+      ],
+      "rinde": {
+        "porciones": 4.0,
+        "unidad": "quesadillas"
+      },
+      "kcal_declaradas": 230.0,
+      "kcal_calculadas": 252,
+      "desviacion": 9.3,
+      "ingredientes": [
+        "8 tortillas de maíz de 14 cm",
+        "250 g de zapallito rallado grueso",
+        "120 g de queso mantecoso o mozzarella sin lactosa, rallado",
+        "3 cdas de verde de cebollín",
+        "1 cdta de aceite de ajo",
+        "1/2 cdta de comino · 1/2 cdta de orégano · sal · pimienta",
+        "Opcional: 100 g de pollo cocido desmenuzado o 60 g de espinaca",
+        "Pebre sin cebolla para servir"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-sopaipillas-de-zapallo-al-horno",
+      "nombre": "Sopaipillas de zapallo al horno",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Las de siempre, pero sin trigo y sin freír. Zapallo, harina de arroz y avena, un poco de mantequilla, y horno fuerte. Doradas, tiernas por dentro, con pebre sin cebolla al lado. Setenta calorías cada una.",
+      "por100g": {
+        "kcal": 207,
+        "p": 4.9,
+        "c": 34.9,
+        "g": 5.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 sopaipilla",
+          "gramos": 35
+        },
+        {
+          "nombre": "2 sopaipillas",
+          "gramos": 70
+        }
+      ],
+      "rinde": {
+        "porciones": 16.0,
+        "unidad": "sopaipillas"
+      },
+      "kcal_declaradas": 70.0,
+      "kcal_calculadas": 73,
+      "desviacion": 3.8,
+      "ingredientes": [
+        "250 g de zapallo cocido al vapor, en puré seco",
+        "150 g de harina de arroz",
+        "50 g de harina de avena",
+        "25 g de almidón de maíz",
+        "20 g de mantequilla derretida",
+        "1 huevo",
+        "1 1/2 cdta de polvos de hornear",
+        "3/4 cdta de sal",
+        "1 cdta de aceite para pincelar",
+        "Pebre sin cebolla para servir"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-nuggets-de-pollo-con-costra-de-avena",
+      "nombre": "Nuggets de pollo con costra de avena",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Pechuga en trozos, pasada por huevo y una costra de avena molida con parmesano y especias, al horno bien caliente. Crujientes de verdad. Con papas rústicas al horno son la comida chatarra sin la chatarra.",
+      "por100g": {
+        "kcal": 153,
+        "p": 19.9,
+        "c": 7.0,
+        "g": 4.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion",
+          "gramos": 187
+        },
+        {
+          "nombre": "2 porciones",
+          "gramos": 374
+        }
+      ],
+      "rinde": {
+        "porciones": 4.0,
+        "unidad": "porcion"
+      },
+      "kcal_declaradas": 240.0,
+      "kcal_calculadas": 286,
+      "desviacion": 19.2,
+      "ingredientes": [
+        "500 g de pechuga de pollo en trozos de 3 cm",
+        "100 g de yogur griego sin lactosa · 1 cdta de sal · jugo de 1/2 limón",
+        "70 g de avena en hojuelas , molida grueso",
+        "25 g de parmesano rallado fino",
+        "1 cdta de pimentón ahumado · 1/2 cdta de orégano · 1/2 cdta de comino · pimienta",
+        "1 huevo batido",
+        "Aceite en spray",
+        "600 g de papas con cáscara, en gajos",
+        "1 cda de aceite de oliva · sal · romero o pimentón"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-nuggets-de-pollo-con-costra-de-avena-papas-rusti",
+      "nombre": "Nuggets de pollo con costra de avena — Papas rústicas",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Pechuga en trozos, pasada por huevo y una costra de avena molida con parmesano y especias, al horno bien caliente. Crujientes de verdad. Con papas rústicas al horno son la comida chatarra sin la chatarra.",
+      "por100g": {
+        "kcal": 95,
+        "p": 2.0,
+        "c": 17.1,
+        "g": 2.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion",
+          "gramos": 153
+        },
+        {
+          "nombre": "2 porciones",
+          "gramos": 306
+        }
+      ],
+      "rinde": {
+        "porciones": 4.0,
+        "unidad": "porcion"
+      },
+      "kcal_declaradas": 155.0,
+      "kcal_calculadas": 145,
+      "desviacion": -6.2,
+      "ingredientes": [],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-lasana-de-zapallito",
+      "nombre": "Lasaña de zapallito",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Láminas de zapallito en lugar de pasta, salsa de tomate de la casa con pavo, ricotta sin lactosa con espinaca y una capa fina de parmesano. Sale húmeda, sabrosa, y con la mitad de las calorías de la de siempre.",
+      "por100g": {
+        "kcal": 79,
+        "p": 7.3,
+        "c": 3.3,
+        "g": 4.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion",
+          "gramos": 366
+        },
+        {
+          "nombre": "2 porciones",
+          "gramos": 732
+        }
+      ],
+      "rinde": {
+        "porciones": 6.0,
+        "unidad": "porcion"
+      },
+      "kcal_declaradas": 265.0,
+      "kcal_calculadas": 289,
+      "desviacion": 9.1,
+      "ingredientes": [
+        "4 zapallitos grandes (unos 900 g), en láminas de 3 mm a lo largo",
+        "400 g de pavo molido (o pollo)",
+        "500 g de salsa de tomate de la casa",
+        "1 cdta de aceite de ajo · 1 cdta de orégano · pimienta",
+        "250 g de ricotta sin lactosa (o quark)",
+        "150 g de espinaca , marchitada y exprimida",
+        "1 huevo",
+        "60 g de parmesano rallado",
+        "Nuez moscada · sal · albahaca"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-empanadas-de-horno",
+      "nombre": "Empanadas de horno",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Masa sin trigo que se dobla y se repulga, y pino de pavo con zapallito y verde de cebollín en lugar de cebolla. Salen doce chicas, doradas y jugosas, con huevo y aceituna adentro como corresponde. También van de queso y espinaca.",
+      "por100g": {
+        "kcal": 210,
+        "p": 11.0,
+        "c": 20.8,
+        "g": 9.0
+      },
+      "porciones": [
+        {
+          "nombre": "1 empanada",
+          "gramos": 83
+        },
+        {
+          "nombre": "2 empanadas",
+          "gramos": 166
+        }
+      ],
+      "rinde": {
+        "porciones": 12.0,
+        "unidad": "empanadas"
+      },
+      "kcal_declaradas": 170.0,
+      "kcal_calculadas": 174,
+      "desviacion": 2.4,
+      "ingredientes": [
+        "130 g de harina de arroz",
+        "80 g de harina de avena",
+        "40 g de almidón de maíz",
+        "1 cda de psyllium en polvo (o 2 cdtas de goma xantana)",
+        "40 g de mantequilla fría en cubos",
+        "100 g de yogur griego sin lactosa",
+        "1 huevo + 1 para pintar",
+        "3/4 cdta de sal · 3–4 cdas de agua tibia",
+        "300 g de pavo molido",
+        "150 g de zapallito rallado y exprimido",
+        "4 cdas de verde de cebollín picado",
+        "1 cda de aceite de ajo",
+        "1 cdta de comino · 1 cdta de ají de color · 1/2 cdta de orégano · sal · pimienta",
+        "1 huevo duro picado · 12 aceitunas sin cuesco"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-panqueques-salados-de-zapallito",
+      "nombre": "Panqueques salados de zapallito",
+      "grupo": "Recetas saladas",
+      "tipo": "salado",
+      "descripcion": "Delgados, verdes por dentro y con borde crocante: zapallito rallado, huevo, un poco de avena y ciboulette. Sirven solos con salsa de yogur, o rellenos con pollo, espinaca y queso como un panqueque de verdad.",
+      "por100g": {
+        "kcal": 99,
+        "p": 5.6,
+        "c": 10.2,
+        "g": 4.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 panqueque",
+          "gramos": 66
+        },
+        {
+          "nombre": "2 panqueques",
+          "gramos": 132
+        }
+      ],
+      "rinde": {
+        "porciones": 8.0,
+        "unidad": "panqueques"
+      },
+      "kcal_declaradas": 60.0,
+      "kcal_calculadas": 65,
+      "desviacion": 8.8,
+      "ingredientes": [
+        "250 g de zapallito rallado fino y exprimido",
+        "2 huevos",
+        "60 g de harina de avena",
+        "100 ml de leche sin lactosa",
+        "3 cdas de ciboulette o verde de cebollín",
+        "1/2 cdta de sal · pimienta · pizca de nuez moscada",
+        "1 cdta de aceite para pincelar",
+        "Pollo y espinaca : 200 g de pollo cocido desmenuzado + 100 g de espinaca marchitada + 60 g de queso sin lactosa, gratinados 8 min a 200 °C con salsa de tomate encima.",
+        "Solo con salsa de yogur , tomate y palta (30 g)."
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-brownies-fudgy-de-camote-y-betarraga",
+      "nombre": "Brownies fudgy de camote y betarraga",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Casi sin harina: el camote pone el cuerpo, la betarraga el color y una humedad que no se seca nunca, y el cacao hace el resto. Densos, oscuros, del tipo que se pega al cuchillo.",
+      "por100g": {
+        "kcal": 144,
+        "p": 4.9,
+        "c": 18.3,
+        "g": 7.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 cuadrado",
+          "gramos": 65
+        },
+        {
+          "nombre": "2 cuadrados",
+          "gramos": 130
+        }
+      ],
+      "rinde": {
+        "porciones": 12.0,
+        "unidad": "cuadrados"
+      },
+      "kcal_declaradas": 95.0,
+      "kcal_calculadas": 94,
+      "desviacion": -1.6,
+      "ingredientes": [
+        "250 g de camote cocido al vapor, en puré seco",
+        "100 g de betarraga cocida, en puré",
+        "120 g de alulosa",
+        "25 g de mantequilla derretida",
+        "60 g de yogur griego 0 % sin lactosa",
+        "2 huevos grandes, a temperatura ambiente",
+        "50 g de cacao amargo en polvo",
+        "25 g de harina de arroz",
+        "1 cdta de esencia de vainilla",
+        "1/2 cdta de polvos de hornear · 1/2 cdta de sal",
+        "40 g de chocolate 70 % picado, para arriba"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-blondies-de-zapallo-y-caramelo-salado",
+      "nombre": "Blondies de zapallo y caramelo salado",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Mantequilla dorada, vainilla y caramelo de alulosa que nunca cristaliza — y un puré de zapallo que reemplaza a más de la mitad de la harina sin que se note. Masticables, con la sal que aparece al final.",
+      "por100g": {
+        "kcal": 140,
+        "p": 4.4,
+        "c": 13.9,
+        "g": 7.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 cuadrado",
+          "gramos": 57
+        },
+        {
+          "nombre": "2 cuadrados",
+          "gramos": 114
+        }
+      ],
+      "rinde": {
+        "porciones": 12.0,
+        "unidad": "cuadrados"
+      },
+      "kcal_declaradas": 100.0,
+      "kcal_calculadas": 80,
+      "desviacion": -20.4,
+      "ingredientes": [
+        "200 g de zapallo cocido al vapor, en puré seco",
+        "45 g de mantequilla",
+        "60 g de yogur griego 0 % sin lactosa",
+        "130 g de alulosa",
+        "2 huevos + 1 yema",
+        "40 g de harina de avena",
+        "40 g de harina de arroz",
+        "2 cdtas de vainilla · 1 cdta de polvos de hornear · 3/4 cdta de sal",
+        "60 g de alulosa · 30 ml de crema sin lactosa · 10 g de mantequilla",
+        "1/4 cdta de sal en escamas , más un poco para terminar"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-banana-bread-de-zapallito-y-avena",
+      "nombre": "Banana bread de zapallito y avena",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "La receta que motivó esta edición: la harina bajó a la mitad y el zapallito rallado ocupa su lugar. Nadie lo detecta — solo deja la miga más húmeda. Plátano firme, canela y vainilla; corteza partida al centro.",
+      "por100g": {
+        "kcal": 109,
+        "p": 5.1,
+        "c": 18.5,
+        "g": 2.0
+      },
+      "porciones": [
+        {
+          "nombre": "1 rebanada",
+          "gramos": 89
+        },
+        {
+          "nombre": "2 rebanadas",
+          "gramos": 178
+        }
+      ],
+      "rinde": {
+        "porciones": 10.0,
+        "unidad": "rebanadas"
+      },
+      "kcal_declaradas": 95.0,
+      "kcal_calculadas": 97,
+      "desviacion": 1.8,
+      "ingredientes": [
+        "2 plátanos firmes , apenas pintones (unos 200 g pelados)",
+        "200 g de zapallito italiano rallado fino, salado y exprimido (quedan unos 120 g)",
+        "120 g de alulosa",
+        "2 huevos",
+        "100 g de yogur griego 0 % sin lactosa",
+        "90 g de harina de avena",
+        "30 g de harina de arroz",
+        "1 1/2 cdta de polvos de hornear · 1/2 cdta de bicarbonato",
+        "1 1/2 cdta de canela · 2 cdtas de vainilla · 1/2 cdta de sal",
+        "15 g de nueces picadas para arriba (opcional, +10 kcal)"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-pie-de-limon",
+      "nombre": "Pie de limón",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Base fina de avena en hojuelas que cruje, crema de limón bien ácida sostenida con maicena y una yema menos, y merengue de alulosa. Ácido de verdad, no dulce empalagoso.",
+      "por100g": {
+        "kcal": 150,
+        "p": 5.9,
+        "c": 17.4,
+        "g": 6.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion",
+          "gramos": 61
+        },
+        {
+          "nombre": "2 porciones",
+          "gramos": 122
+        }
+      ],
+      "rinde": {
+        "porciones": 10.0,
+        "unidad": "porcion"
+      },
+      "kcal_declaradas": 115.0,
+      "kcal_calculadas": 91,
+      "desviacion": -20.7,
+      "ingredientes": [
+        "60 g de avena en hojuelas , molida grueso",
+        "30 g de harina de arroz",
+        "30 g de mantequilla fría en cubos",
+        "20 g de alulosa · 1 clara · 1/4 cdta de sal",
+        "150 ml de jugo de limón (5–6 limones) · ralladura de 2",
+        "100 g de alulosa",
+        "2 huevos + 1 yema",
+        "20 g de almidón de maíz · 15 g de mantequilla · pizca de sal",
+        "3 claras a temperatura ambiente · 90 g de alulosa molida fina",
+        "1/4 cdta de cremor tártaro o 1/2 cdta de jugo de limón"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-queque-de-zapallito-y-limon",
+      "nombre": "Queque de zapallito y limón",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "El de todos los días, el que acompaña el té. El zapallito rallado reemplaza a la mitad de la harina y a casi toda la mantequilla, y deja una miga fina y húmeda que huele a limón. Glaseado que se agrieta al cortar.",
+      "por100g": {
+        "kcal": 124,
+        "p": 5.9,
+        "c": 15.1,
+        "g": 4.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 rebanada",
+          "gramos": 80
+        },
+        {
+          "nombre": "2 rebanadas",
+          "gramos": 160
+        }
+      ],
+      "rinde": {
+        "porciones": 10.0,
+        "unidad": "rebanadas"
+      },
+      "kcal_declaradas": 110.0,
+      "kcal_calculadas": 99,
+      "desviacion": -9.9,
+      "ingredientes": [
+        "250 g de zapallito italiano rallado fino, salado y exprimido (unos 150 g)",
+        "100 g de harina de avena",
+        "30 g de harina de arroz · 30 g de almidón de maíz",
+        "130 g de alulosa",
+        "2 huevos + 2 claras",
+        "20 g de mantequilla blanda",
+        "120 g de yogur griego 0 % sin lactosa",
+        "Ralladura de 2 limones + 3 cdas de su jugo",
+        "2 cdtas de vainilla · 2 cdtas de polvos de hornear · 1/2 cdta de sal",
+        "40 g de alulosa molida fina · 2 cdtas de jugo de limón"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-queque-de-zanahoria-y-especias",
+      "nombre": "Queque de zanahoria y especias",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Ahora con más zanahoria que harina: 250 g de zanahoria y camote contra 120 g de harina. Húmedo, especiado, con un frosting de quark y queso crema que se sostiene. El dulzor de fondo lo pone la verdura.",
+      "por100g": {
+        "kcal": 141,
+        "p": 4.2,
+        "c": 15.5,
+        "g": 7.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 rebanada",
+          "gramos": 78
+        },
+        {
+          "nombre": "2 rebanadas",
+          "gramos": 156
+        }
+      ],
+      "rinde": {
+        "porciones": 10.0,
+        "unidad": "rebanadas"
+      },
+      "kcal_declaradas": 135.0,
+      "kcal_calculadas": 110,
+      "desviacion": -18.7,
+      "ingredientes": [
+        "250 g de zanahoria rallada fina (3 medianas)",
+        "80 g de camote cocido en puré",
+        "140 g de alulosa",
+        "2 huevos + 2 claras",
+        "20 ml de aceite de oliva suave · 100 g de yogur griego 0 %",
+        "80 g de harina de avena · 40 g de harina de arroz",
+        "2 cdtas de canela · 1/2 cdta de jengibre · 1/4 de nuez moscada y 1/4 de clavo",
+        "2 cdtas de polvos de hornear · 1/2 cdta de bicarbonato · 1/2 cdta de sal",
+        "60 g de queso crema sin lactosa, frío · 100 g de quark o yogur griego colado",
+        "40 g de alulosa molida fina · 1 cdta de almidón · 1 cdta de vainilla · pizca de sal"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-alfajores-con-manjar-de-alulosa",
+      "nombre": "Alfajores con manjar de alulosa",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "La tapita que se deshace en la boca —maicena, arroz y muy poca avena— y un manjar que sí queda cremoso porque la alulosa no cristaliza. Un poco más chicos que antes y con menos mantequilla: dieciséis armados.",
+      "por100g": {
+        "kcal": 224,
+        "p": 3.3,
+        "c": 25.2,
+        "g": 12.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 armado",
+          "gramos": 42
+        },
+        {
+          "nombre": "2 armados",
+          "gramos": 84
+        }
+      ],
+      "rinde": {
+        "porciones": 16.0,
+        "unidad": "armados"
+      },
+      "kcal_declaradas": 110.0,
+      "kcal_calculadas": 94,
+      "desviacion": -14.4,
+      "ingredientes": [
+        "120 g de almidón de maíz (maicena)",
+        "40 g de harina de arroz · 30 g de harina de avena",
+        "60 g de mantequilla blanda · 40 g de yogur griego 0 %",
+        "60 g de alulosa molida fina",
+        "1 huevo + 1 yema",
+        "1 cdta de polvos de hornear · 1 cdta de vainilla · ralladura de 1/2 limón · 1/4 cdta de sal",
+        "300 ml de leche descremada sin lactosa · 100 g de alulosa",
+        "15 g de mantequilla · 1/2 cdta de bicarbonato · 1 cdta de vainilla · pizca de sal",
+        "25 g de coco rallado"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-cocadas-de-coco-y-zanahoria",
+      "nombre": "Cocadas de coco y zanahoria",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "La zanahoria rallada fina reemplaza a la mitad del coco: quedan más tiernas por dentro, con puntas doradas y crocantes, y con la mitad de las calorías. Nadie adivina que llevan verdura.",
+      "por100g": {
+        "kcal": 227,
+        "p": 4.3,
+        "c": 15.7,
+        "g": 17.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 unidad",
+          "gramos": 21
+        },
+        {
+          "nombre": "2 unidades",
+          "gramos": 42
+        }
+      ],
+      "rinde": {
+        "porciones": 18.0,
+        "unidad": "unidades"
+      },
+      "kcal_declaradas": 55.0,
+      "kcal_calculadas": 48,
+      "desviacion": -13.3,
+      "ingredientes": [
+        "100 g de coco rallado (medio grueso, no harina de coco)",
+        "100 g de zanahoria rallada muy fina y apretada en papel absorbente",
+        "2 claras + 1 huevo entero",
+        "80 g de alulosa",
+        "20 g de harina de arroz",
+        "1 1/2 cdta de vainilla · 1/2 cdta de sal · ralladura de 1/2 naranja",
+        "25 g de chocolate 70 % derretido, para la base (opcional, +8 kcal)"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-salted-caramel-popcorn",
+      "nombre": "Salted caramel popcorn",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Cabritas cubiertas de caramelo de alulosa y horneadas bajo para que queden vidriosas y crocantes. Sin harina desde siempre; en esta edición, con menos mantequilla y una cucharada de agua que ayuda a cubrir parejo.",
+      "por100g": {
+        "kcal": 286,
+        "p": 3.5,
+        "c": 23.9,
+        "g": 20.0
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion (2 tazas)",
+          "gramos": 31
+        },
+        {
+          "nombre": "2 porciones (2 tazas)",
+          "gramos": 62
+        }
+      ],
+      "rinde": {
+        "porciones": 8.0,
+        "unidad": "de 2 tazas"
+      },
+      "kcal_declaradas": 85.0,
+      "kcal_calculadas": 89,
+      "desviacion": 4.5,
+      "ingredientes": [
+        "60 g de maíz para cabritas (unas 16 tazas)",
+        "1 cda de aceite de coco o maravilla, para reventar",
+        "110 g de alulosa",
+        "30 g de mantequilla · 1 cda de agua caliente",
+        "2 cdas de crema sin lactosa",
+        "1 cdta de vainilla · 1/4 cdta de bicarbonato",
+        "1 cdta de sal en escamas , más un poco para terminar"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-galletas-de-avena-zanahoria-y-chocolate",
+      "nombre": "Galletas de avena, zanahoria y chocolate",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Blandas al centro, crocantes en el borde. La harina de almendra se fue y entró zanahoria rallada, que aporta humedad y dulzor; la avena en hojuelas se deja entera para que se note, y el coco tostado hace el resto.",
+      "por100g": {
+        "kcal": 275,
+        "p": 5.5,
+        "c": 25.2,
+        "g": 16.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 galleta",
+          "gramos": 29
+        },
+        {
+          "nombre": "2 galletas",
+          "gramos": 58
+        }
+      ],
+      "rinde": {
+        "porciones": 16.0,
+        "unidad": "galletas"
+      },
+      "kcal_declaradas": 80.0,
+      "kcal_calculadas": 80,
+      "desviacion": -0.3,
+      "ingredientes": [
+        "70 g de avena en hojuelas (tradicional)",
+        "30 g de harina de arroz",
+        "100 g de zanahoria rallada muy fina, apretada en papel",
+        "30 g de coco rallado , tostado",
+        "40 g de mantequilla blanda · 40 g de yogur griego 0 %",
+        "100 g de alulosa",
+        "1 huevo",
+        "1 1/2 cdta de vainilla · 1/2 cdta de bicarbonato · 1 cdta de canela · 1/2 cdta de sal",
+        "40 g de chocolate 70 % picado grueso"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-cheesecake-horneado-de-limon",
+      "nombre": "Cheesecake horneado de limón",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Cremoso, sin grietas y sin baño maría. La base ahora es una capa fina de avena en hojuelas, y el relleno lleva más quark que queso crema: más firme, más ácido, y sesenta calorías menos por porción.",
+      "por100g": {
+        "kcal": 176,
+        "p": 8.6,
+        "c": 9.5,
+        "g": 11.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion",
+          "gramos": 85
+        },
+        {
+          "nombre": "2 porciones",
+          "gramos": 170
+        }
+      ],
+      "rinde": {
+        "porciones": 10.0,
+        "unidad": "porcion"
+      },
+      "kcal_declaradas": 150.0,
+      "kcal_calculadas": 149,
+      "desviacion": -0.5,
+      "ingredientes": [
+        "50 g de avena en hojuelas , molida grueso",
+        "20 g de mantequilla derretida · 15 g de alulosa",
+        "1 clara · pizca de sal y de canela",
+        "200 g de queso crema sin lactosa, a temperatura ambiente",
+        "300 g de quark 0 % o yogur griego sin lactosa bien colado",
+        "130 g de alulosa",
+        "2 huevos a temperatura ambiente",
+        "Ralladura de 2 limones + 2 cdas de jugo",
+        "15 g de almidón de maíz · 2 cdtas de vainilla · 1/4 cdta de sal"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-trufas-de-camote-y-cacao-banadas",
+      "nombre": "Trufas de camote y cacao bañadas",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Reemplazan a los bombones de coco de la primera edición: el corazón es puré de camote con cacao, denso y cremoso como una trufa de verdad, y el coco queda solo en el rebozado. Cobertura de chocolate amargo que cruje.",
+      "por100g": {
+        "kcal": 230,
+        "p": 5.2,
+        "c": 26.5,
+        "g": 13.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 trufa",
+          "gramos": 23
+        },
+        {
+          "nombre": "2 trufas",
+          "gramos": 46
+        }
+      ],
+      "rinde": {
+        "porciones": 16.0,
+        "unidad": "trufas"
+      },
+      "kcal_declaradas": 55.0,
+      "kcal_calculadas": 53,
+      "desviacion": -3.7,
+      "ingredientes": [
+        "200 g de camote cocido al vapor, en puré seco y frío",
+        "30 g de cacao amargo",
+        "40 g de alulosa molida fina",
+        "15 g de mantequilla de maní sin azúcar (1 cda)",
+        "1 cdta de vainilla · 1/4 cdta de sal · pizca de canela",
+        "60 g de chocolate 70 % + 1 cdta de aceite de coco , para bañar",
+        "20 g de coco rallado tostado o cacao, para rebozar"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-mousse-de-chocolate-y-yogur-griego",
+      "nombre": "Mousse de chocolate y yogur griego",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Aireada y oscura, con el yogur griego 0 % haciendo el trabajo de la crema. Sin harina desde siempre; en esta edición, con un poco menos de chocolate y más cacao, que es lo que da la intensidad sin las calorías.",
+      "por100g": {
+        "kcal": 110,
+        "p": 9.8,
+        "c": 9.6,
+        "g": 4.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 copa",
+          "gramos": 102
+        },
+        {
+          "nombre": "2 copas",
+          "gramos": 204
+        }
+      ],
+      "rinde": {
+        "porciones": 6.0,
+        "unidad": "copas"
+      },
+      "kcal_declaradas": 105.0,
+      "kcal_calculadas": 113,
+      "desviacion": 7.3,
+      "ingredientes": [
+        "400 g de yogur griego 0 % sin lactosa, bien frío",
+        "50 g de chocolate 70 %",
+        "25 g de cacao amargo",
+        "60 g de alulosa molida fina",
+        "2 claras a temperatura ambiente",
+        "4 g de gelatina sin sabor + 2 cdas de agua fría",
+        "1 cdta de vainilla · 1/4 cdta de sal · pizca de café instantáneo"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-cheesecake-de-maracuya",
+      "nombre": "Cheesecake de maracuyá",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Sin horno salvo la base, que ahora es una capa fina de avena. El relleno es casi todo yogur griego colado con un poco de queso crema para el gusto, y una capa de maracuyá arriba que corta el dulzor de un tirón. El más fresco del cuaderno, y ahora también de los más livianos.",
+      "por100g": {
+        "kcal": 134,
+        "p": 9.6,
+        "c": 9.0,
+        "g": 6.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion",
+          "gramos": 72
+        },
+        {
+          "nombre": "2 porciones",
+          "gramos": 144
+        }
+      ],
+      "rinde": {
+        "porciones": 10.0,
+        "unidad": "porcion"
+      },
+      "kcal_declaradas": 120.0,
+      "kcal_calculadas": 96,
+      "desviacion": -19.9,
+      "ingredientes": [
+        "50 g de avena en hojuelas molida grueso · 20 g de mantequilla derretida",
+        "15 g de alulosa · 1 clara · pizca de sal",
+        "120 g de queso crema sin lactosa, a temperatura ambiente",
+        "430 g de yogur griego 0 % sin lactosa, colado una noche",
+        "90 g de alulosa molida fina",
+        "8 g de gelatina sin sabor + 4 cdas de agua",
+        "Pulpa de 3 maracuyás colada (unos 50 ml)",
+        "2 cdtas de vainilla · 1/4 cdta de sal",
+        "Pulpa de 3 maracuyás con pepas · 25 g de alulosa · 60 ml de agua",
+        "3 g de gelatina + 2 cdas de agua"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-helado-de-yogur-griego-y-vainilla",
+      "nombre": "Helado de yogur griego y vainilla",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Sin máquina y cremoso de verdad, porque la alulosa no cristaliza. Ahora con yogur 0 % de base y el aceite de coco como opción, no como regla. La base madre para inventar sabores.",
+      "por100g": {
+        "kcal": 59,
+        "p": 8.0,
+        "c": 4.8,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion (100 g)",
+          "gramos": 131
+        },
+        {
+          "nombre": "2 porciones (100 g)",
+          "gramos": 262
+        }
+      ],
+      "rinde": {
+        "porciones": 6.0,
+        "unidad": "de 100 g"
+      },
+      "kcal_declaradas": 75.0,
+      "kcal_calculadas": 77,
+      "desviacion": 2.8,
+      "ingredientes": [
+        "600 g de yogur griego 0 % natural sin lactosa",
+        "120 g de alulosa",
+        "60 ml de leche sin lactosa · 1 cda de almidón de maíz",
+        "2 cdtas de vainilla o media vaina raspada · 1/4 cdta de sal",
+        "1 cda de aceite de coco derretido (opcional, +20 kcal: más cremoso)",
+        "Limón : ralladura de 2 limones + 3 cdas de jugo.",
+        "Frutilla : 150 g de frutillas cocidas 5 min con 20 g de alulosa, frías.",
+        "Camote y canela : 150 g de puré de camote + 1 cdta de canela. Queda color caramelo y más cuerpo (+20 kcal).",
+        "Café : 2 cdtas de café instantáneo en la leche."
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-helado-de-platano-cacao-y-yogur",
+      "nombre": "Helado de plátano, cacao y yogur",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Reemplaza al helado de chocolate y coco de la primera edición, que era casi puro coco. Plátano firme congelado, cacao y yogur griego a la procesadora: sale cremoso al instante, oscuro e intenso, con 75 calorías.",
+      "por100g": {
+        "kcal": 87,
+        "p": 4.4,
+        "c": 18.8,
+        "g": 1.0
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion (100 g)",
+          "gramos": 96
+        },
+        {
+          "nombre": "2 porciones (100 g)",
+          "gramos": 192
+        }
+      ],
+      "rinde": {
+        "porciones": 6.0,
+        "unidad": "de 100 g"
+      },
+      "kcal_declaradas": 75.0,
+      "kcal_calculadas": 83,
+      "desviacion": 11.1,
+      "ingredientes": [
+        "3 plátanos firmes , apenas pintones (300 g pelados), en rodajas y congelados",
+        "150 g de yogur griego 0 % sin lactosa, frío",
+        "30 g de cacao amargo",
+        "40 g de alulosa molida fina",
+        "1 cdta de vainilla · 1/4 cdta de sal · 1/4 cdta de café instantáneo",
+        "15 g de chocolate 70 % picado fino, para las lascas (opcional, +15 kcal)",
+        "Cambia el yogur griego por 150 g de yogur de coco natural sin aditivos (+30 kcal)."
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-barritas-de-camote-avena-y-cacao",
+      "nombre": "Barritas de camote, avena y cacao",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Sin horno. El puré de camote reemplaza a casi todos los dátiles y a la mantequilla de almendra: pega igual, endulza de fondo y baja las calorías a casi la mitad. Masticables, tipo barrita de cereal buena.",
+      "por100g": {
+        "kcal": 239,
+        "p": 8.3,
+        "c": 32.8,
+        "g": 10.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 barrita",
+          "gramos": 29
+        },
+        {
+          "nombre": "2 barritas",
+          "gramos": 58
+        }
+      ],
+      "rinde": {
+        "porciones": 12.0,
+        "unidad": "barritas"
+      },
+      "kcal_declaradas": 70.0,
+      "kcal_calculadas": 69,
+      "desviacion": -1.0,
+      "ingredientes": [
+        "150 g de camote cocido al vapor, en puré seco",
+        "60 g de avena en hojuelas , tostada",
+        "2 dátiles (unos 30 g) sin cuesco, remojados 10 min",
+        "25 g de mantequilla de maní sin azúcar",
+        "40 g de alulosa",
+        "20 g de cacao amargo",
+        "15 g de semillas de zapallo",
+        "1 cdta de vainilla · 1/2 cdta de sal",
+        "20 g de chocolate 70 % derretido, para las rayas"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-paletas-de-yogur-y-frutillas",
+      "nombre": "Paletas de yogur y frutillas",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Cuarenta calorías, tres ingredientes y cero técnica. Cremosas en vez de puro hielo, gracias al yogur griego y a que la alulosa no cristaliza.",
+      "por100g": {
+        "kcal": 50,
+        "p": 6.7,
+        "c": 5.3,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 paleta",
+          "gramos": 98
+        },
+        {
+          "nombre": "2 paletas",
+          "gramos": 196
+        }
+      ],
+      "rinde": {
+        "porciones": 8.0,
+        "unidad": "paletas"
+      },
+      "kcal_declaradas": 40.0,
+      "kcal_calculadas": 49,
+      "desviacion": 22.5,
+      "ingredientes": [
+        "500 g de yogur griego 0 % natural sin lactosa",
+        "200 g de frutillas (unas 10 medianas)",
+        "80 g de alulosa",
+        "1 cdta de jugo de limón · 1 cdta de vainilla · pizca de sal",
+        "Maracuyá : 4 maracuyás en vez de las frutillas.",
+        "Ruibarbo : 200 g de ruibarbo cocido 8 min con 40 g de alulosa. Rosado y ácido.",
+        "Coco : cambia el yogur griego por yogur de coco (+25 kcal).",
+        "Bañadas : 40 g de chocolate 70 % con 1 cdta de aceite de coco (+30 kcal)."
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-muffins-de-zapallo-y-especias",
+      "nombre": "Muffins de zapallo y especias",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Trescientos gramos de zapallo contra cien de harina: húmedos, especiados, con la miga naranja y una costra de semillas de zapallo. El muffin de otoño para el desayuno o la once, y de los que mejor se congelan.",
+      "por100g": {
+        "kcal": 131,
+        "p": 6.2,
+        "c": 14.2,
+        "g": 5.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 muffin",
+          "gramos": 66
+        },
+        {
+          "nombre": "2 muffins",
+          "gramos": 132
+        }
+      ],
+      "rinde": {
+        "porciones": 12.0,
+        "unidad": "muffins"
+      },
+      "kcal_declaradas": 95.0,
+      "kcal_calculadas": 87,
+      "desviacion": -8.8,
+      "ingredientes": [
+        "300 g de zapallo cocido al vapor, en puré seco",
+        "2 huevos + 2 claras",
+        "100 g de yogur griego 0 % sin lactosa",
+        "20 ml de aceite de oliva suave",
+        "130 g de alulosa",
+        "100 g de harina de avena · 30 g de almidón de maíz",
+        "2 cdtas de polvos de hornear · 1/2 cdta de bicarbonato",
+        "2 cdtas de canela · 1/2 cdta de jengibre · 1/4 de nuez moscada · pizca de clavo",
+        "1 cdta de vainilla · 1/2 cdta de sal",
+        "20 g de semillas de zapallo para arriba"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-crumble-de-ruibarbo-y-frutilla",
+      "nombre": "Crumble de ruibarbo y frutilla",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "El ruibarbo es una verdura, y una de las mejores para postre: ácido, rosado y con 21 calorías por 100 g. Cocido con frutillas y alulosa, bajo una capa fina y crocante de avena y coco. Se sirve tibio, con una cucharada de yogur griego.",
+      "por100g": {
+        "kcal": 86,
+        "p": 1.9,
+        "c": 13.0,
+        "g": 3.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 porcion",
+          "gramos": 117
+        },
+        {
+          "nombre": "2 porciones",
+          "gramos": 234
+        }
+      ],
+      "rinde": {
+        "porciones": 8.0,
+        "unidad": "porcion"
+      },
+      "kcal_declaradas": 110.0,
+      "kcal_calculadas": 100,
+      "desviacion": -9.0,
+      "ingredientes": [
+        "400 g de ruibarbo (solo tallos), en trozos de 2 cm",
+        "300 g de frutillas partidas",
+        "80 g de alulosa",
+        "1 cda de almidón de maíz · jugo de 1/2 naranja · 1 cdta de vainilla",
+        "60 g de avena en hojuelas",
+        "25 g de harina de arroz",
+        "30 g de mantequilla fría en cubos",
+        "30 g de alulosa · 15 g de coco rallado",
+        "1 cdta de canela · pizca de sal",
+        "Yogur griego 0 % sin lactosa, 1 cda por porción (+10 kcal)"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-panqueques-dulces-de-zapallito-y-platano",
+      "nombre": "Panqueques dulces de zapallito y plátano",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "Delgados, tiernos y con muy poca harina: el zapallito exprimido y el plátano firme ponen el volumen. Van con yogur griego, frutillas y una cucharadita de manjar de alulosa. Sesenta calorías cada uno.",
+      "por100g": {
+        "kcal": 109,
+        "p": 5.1,
+        "c": 14.2,
+        "g": 3.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 panqueque",
+          "gramos": 57
+        },
+        {
+          "nombre": "2 panqueques",
+          "gramos": 114
+        }
+      ],
+      "rinde": {
+        "porciones": 10.0,
+        "unidad": "panqueques"
+      },
+      "kcal_declaradas": 60.0,
+      "kcal_calculadas": 62,
+      "desviacion": 3.7,
+      "ingredientes": [
+        "150 g de zapallito italiano rallado fino, salado y exprimido",
+        "1 plátano firme (100 g), pisado",
+        "2 huevos",
+        "60 g de harina de avena",
+        "100 ml de leche sin lactosa · 100 g de yogur griego 0 %",
+        "30 g de alulosa",
+        "1 cdta de polvos de hornear · 1 cdta de canela · 1 cdta de vainilla · pizca de sal",
+        "1 cdta de aceite o mantequilla para la sartén",
+        "Yogur griego, frutillas, manjar de alulosa (receta 07) o compota de frutilla (receta 18)"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    },
+    {
+      "id": "rec-sopaipillas-pasadas",
+      "nombre": "Sopaipillas pasadas",
+      "grupo": "Recetas dulces",
+      "tipo": "postre",
+      "descripcion": "La misma masa de zapallo de la receta salada, pero dulce: horneadas en vez de fritas y bañadas en un almíbar de alulosa, canela, naranja y clavo de olor. Se comen tibias, chorreando, con las manos.",
+      "por100g": {
+        "kcal": 126,
+        "p": 2.8,
+        "c": 21.3,
+        "g": 3.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 sopaipilla",
+          "gramos": 60
+        },
+        {
+          "nombre": "2 sopaipillas",
+          "gramos": 120
+        }
+      ],
+      "rinde": {
+        "porciones": 16.0,
+        "unidad": "sopaipillas"
+      },
+      "kcal_declaradas": 65.0,
+      "kcal_calculadas": 76,
+      "desviacion": 16.4,
+      "ingredientes": [
+        "250 g de zapallo cocido al vapor, en puré seco",
+        "150 g de harina de arroz",
+        "50 g de harina de avena",
+        "25 g de almidón de maíz",
+        "20 g de mantequilla derretida",
+        "1 huevo",
+        "1 1/2 cdta de polvos de hornear",
+        "3/4 cdta de sal",
+        "1 cdta de aceite para pincelar",
+        "300 ml de agua",
+        "90 g de alulosa",
+        "1 rama de canela",
+        "2 clavos de olor",
+        "Cáscara de 1/2 naranja , en tiras (sin la parte blanca)",
+        "1 cdta de esencia de vainilla"
+      ],
+      "fuente": "receta",
+      "aprox": true
+    }
+  ]
+}

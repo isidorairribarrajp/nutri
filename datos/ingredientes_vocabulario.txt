@@ -1,0 +1,113 @@
+29	alulosa
+14	sal
+13	harina de avena
+13	harina de arroz
+13	huevos
+13	mantequilla
+12	vainilla
+11	huevo
+11	polvos de hornear
+11	yogur griego 0 %
+10	aceite de ajo
+10	avena en hojuelas
+10	comino
+10	aceite
+8	almidón de maíz
+7	chocolate 70 %
+6	verde de cebollín
+5	zapallito italiano
+5	camote
+5	zapallito
+5	cacao amargo
+5	canela
+4	yogur griego
+4	salsa de tomate de la casa
+4	parmesano
+4	aceite de oliva
+4	espinaca
+4	claras
+4	zanahoria
+4	tortillas de maíz
+4	limón
+4	zapallo
+4	coco rallado
+3	agua
+3	pavo molido
+3	pechuga de pollo
+3	lechuga
+3	queso
+3	pebre sin cebolla
+3	limones
+3	leche sin lactosa
+3	queso crema
+2	mozzarella
+2	tomate
+2	albahaca
+2	quinoa
+2	pimentón rojo
+2	tofu firme
+2	zanahorias
+2	cilantro
+2	pimentones
+2	tortillas de avena
+2	salsa de yogur y ciboulette
+2	pimentón ahumado
+2	esencia de vainilla
+2	sal en escamas
+2	plátanos firmes
+2	jugo de limón
+2	mantequilla de maní
+2	gelatina sin sabor
+2	maracuyás
+2	semillas de zapallo
+2	frutillas
+2	ruibarbo
+1	orégano
+1	tomates cherry
+1	queso de cabra
+1	bicarbonato
+1	sésamo
+1	quinoa cocida
+1	perejil
+1	salsa de yogur
+1	linaza molida
+1	masa harina
+1	agua tibia
+1	pimentones rojos
+1	berenjena
+1	crema de palta liviana
+1	reineta, merluza o corvina
+1	pepino
+1	arroz cocido
+1	palta
+1	choclo
+1	pollo
+1	papas
+1	zapallitos
+1	ricotta
+1	psyllium
+1	huevo duro
+1	ciboulette
+1	pollo y espinaca
+1	solo con salsa de yogur
+1	betarraga
+1	nueces
+1	cremor tártaro
+1	leche descremada sin lactosa
+1	maíz para cabritas
+1	crema sin lactosa
+1	clara
+1	quark 0 %
+1	gelatina
+1	aceite de coco
+1	frutilla
+1	camote y canela
+1	café
+1	yogur de coco
+1	dátiles
+1	maracuyá
+1	coco
+1	bañadas
+1	plátano firme
+1	clavos de olor
+1	naranja

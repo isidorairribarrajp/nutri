@@ -33,7 +33,7 @@ export default function SelectorPorcion({ alimento, entradaExistente, onConfirma
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col justify-end bg-black/60" onClick={onCancelar}>
+    <div className="fixed inset-0 z-50 flex flex-col justify-end bg-black/50" onClick={onCancelar}>
       <div
         className="safe-bottom max-h-[88vh] overflow-y-auto rounded-t-3xl border-t border-borde bg-panel px-5 pt-5"
         onClick={(e) => e.stopPropagation()}
@@ -44,13 +44,13 @@ export default function SelectorPorcion({ alimento, entradaExistente, onConfirma
         {alimento.marca && <p className="text-sm text-tenue">{alimento.marca}</p>}
         {alimento.aprox && (
           <p className="mt-1 text-xs text-tenue">
-            Valor aproximado: la receta cambia segun quien cocine.
+            Valor aproximado: la receta cambia según quién cocine.
           </p>
         )}
 
         <div className="my-4 grid grid-cols-4 gap-2 rounded-2xl bg-panel2 p-3 text-center">
           <div>
-            <div className="text-lg font-semibold tabular-nums text-kcal">{nutri.kcal}</div>
+            <div className="text-lg font-semibold tabular-nums text-acento-texto">{nutri.kcal}</div>
             <div className="text-[10px] text-tenue">kcal</div>
           </div>
           <div>
@@ -77,9 +77,9 @@ export default function SelectorPorcion({ alimento, entradaExistente, onConfirma
               min="0"
               value={cantidad}
               onChange={(e) => setCantidad(e.target.value)}
-              className="mt-1 mb-3 w-full rounded-xl border border-borde bg-panel2 px-4 py-3 tabular-nums outline-none focus:border-kcal"
+              className="mt-1 mb-3 w-full rounded-xl border border-borde bg-panel2 px-4 py-3 tabular-nums outline-none focus:border-acento"
             />
-            <label className="text-xs text-tenue">Porcion</label>
+            <label className="text-xs text-tenue">Porción</label>
             <div className="mb-3 mt-1 flex flex-wrap gap-2">
               {porciones.map((p, i) => (
                 <button
@@ -87,7 +87,7 @@ export default function SelectorPorcion({ alimento, entradaExistente, onConfirma
                   onClick={() => elegirPorcion(i)}
                   className={`rounded-full border px-3 py-2 text-sm ${
                     i === porcionIdx
-                      ? 'border-kcal bg-kcal/15 text-kcal'
+                      ? 'border-acento bg-chip text-chip-texto'
                       : 'border-borde bg-panel2 text-tenue'
                   }`}
                 >
@@ -108,14 +108,14 @@ export default function SelectorPorcion({ alimento, entradaExistente, onConfirma
               autoFocus
               value={gramos}
               onChange={(e) => setGramos(e.target.value)}
-              className="mt-1 mb-3 w-full rounded-xl border border-borde bg-panel2 px-4 py-3 tabular-nums outline-none focus:border-kcal"
+              className="mt-1 mb-3 w-full rounded-xl border border-borde bg-panel2 px-4 py-3 tabular-nums outline-none focus:border-acento"
             />
           </>
         )}
 
         <button
           onClick={() => setModoLibre((v) => !v)}
-          className="mb-4 text-sm text-prot underline underline-offset-2"
+          className="mb-4 text-sm text-acento-texto underline underline-offset-2"
         >
           {modoLibre ? 'Usar porciones' : 'Escribir gramos exactos'}
         </button>
@@ -132,7 +132,7 @@ export default function SelectorPorcion({ alimento, entradaExistente, onConfirma
           <button
             onClick={confirmar}
             disabled={gramosFinales <= 0}
-            className="flex-[2] rounded-xl bg-kcal py-3.5 font-semibold text-fondo disabled:opacity-40"
+            className="flex-[2] rounded-xl bg-acento py-3.5 font-bold text-tinta disabled:opacity-40"
           >
             {entradaExistente ? 'Guardar' : 'Agregar'}
           </button>

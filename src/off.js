@@ -7,6 +7,7 @@ const OFF_URL = 'https://world.openfoodfacts.org/cgi/search.pl'
 const CAMPOS = 'code,product_name,product_name_es,brands,nutriments,serving_size,quantity'
 
 let TABLA_CL = null
+let RECETAS = null
 
 /** Quita tildes y baja a minusculas para que "platano" encuentre "plátano". */
 export function normalizar(texto) {
@@ -29,6 +30,28 @@ export async function cargarTablaCL() {
   return TABLA_CL
 }
 
+/** Las recetas de los dos recetarios de Isi, como alimentos buscables. */
+export async function cargarRecetas() {
+  if (RECETAS) return RECETAS
+  const res = await fetch(`${import.meta.env.BASE_URL}recetas-cl.json`)
+  const json = await res.json()
+  RECETAS = json.recetas.map((r) => ({
+    ...r,
+    busqueda: normalizar(`${r.nombre} ${r.descripcion} ${r.grupo}`),
+  }))
+  return RECETAS
+}
+
+export const getRecetas = () => RECETAS || []
+export const getTablaCL = () => TABLA_CL || []
+
+export function buscarRecetas(termino) {
+  if (!RECETAS) return []
+  const q = normalizar(termino)
+  if (!q) return []
+  return RECETAS.filter((r) => r.busqueda.includes(q))
+}
+
 /** Busca en la tabla chilena. Prioriza los que empiezan con el termino. */
 export function buscarCL(termino) {
   if (!TABLA_CL) return []
@@ -41,6 +64,11 @@ export function buscarCL(termino) {
     if (ia !== ib) return ia - ib
     return a.nombre.length - b.nombre.length
   })
+}
+
+/** Todo lo que funciona sin internet: recetas propias + tabla chilena. */
+export function buscarLocal(termino) {
+  return [...buscarPropios(termino), ...buscarRecetas(termino), ...buscarCL(termino)]
 }
 
 /** Busca en los alimentos que Isi creo a mano. */
@@ -70,7 +98,7 @@ function traducirProducto(prod) {
 
   const porciones = []
   const gServing = gramosDeServing(prod.serving_size)
-  if (gServing) porciones.push({ nombre: '1 porcion', gramos: gServing })
+  if (gServing) porciones.push({ nombre: '1 porción', gramos: gServing })
   const gEnvase = gramosDeServing(prod.quantity)
   if (gEnvase && gEnvase !== gServing) porciones.push({ nombre: 'envase completo', gramos: gEnvase })
 
