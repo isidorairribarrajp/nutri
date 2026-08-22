@@ -120,7 +120,7 @@ export default function Progreso({ perfil, pesoKg, recargar }) {
           <div className="divide-y divide-borde">
             {[...serie].reverse().slice(0, 30).map((p) => (
               <div key={p.fecha} className="flex items-center gap-3 py-2.5">
-                <span className="flex-1 text-sm capitalize">{formatearFecha(p.fecha)}</span>
+                <span className="flex-1 text-sm first-letter:uppercase">{formatearFecha(p.fecha)}</span>
                 <span className="tabular-nums text-sm">
                   {String(redondear(p.kg, 1)).replace('.', ',')} {vista === 'peso' ? 'kg' : '%'}
                 </span>

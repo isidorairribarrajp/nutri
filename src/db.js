@@ -15,6 +15,7 @@ const K = {
   tema: 'nutri:tema',
   cerrados: 'nutri:dias_cerrados',
   repetidas: 'nutri:repetidas',
+  recetas_editadas: 'nutri:recetas_editadas',
 }
 
 const METAS_DEFAULT = { kcal: 1800, proteina_g: 120, carbos_g: 180, grasa_g: 60 }
@@ -112,6 +113,29 @@ export function getPesosOrdenados() {
 export function getUltimoPeso() {
   const lista = getPesosOrdenados()
   return lista.length ? lista[lista.length - 1] : null
+}
+
+// --- recetas editadas ---
+// Solo se guarda lo que Isi cambio. El recetario original nunca se toca, asi
+// que siempre puede volver a la version del libro.
+export function getRecetasEditadas() {
+  return leer(K.recetas_editadas, {})
+}
+
+export function getRecetaEditada(id) {
+  return getRecetasEditadas()[id] || null
+}
+
+export function guardarRecetaEditada(id, cambios) {
+  const todas = getRecetasEditadas()
+  todas[id] = { ...(todas[id] || {}), ...cambios }
+  escribir(K.recetas_editadas, todas)
+}
+
+export function restaurarReceta(id) {
+  const todas = getRecetasEditadas()
+  delete todas[id]
+  escribir(K.recetas_editadas, todas)
 }
 
 // --- dias cerrados ---
@@ -356,6 +380,7 @@ export function exportar() {
     favoritos: getFavoritos(),
     dias_cerrados: leer(K.cerrados, {}),
     repetidas: getRepetidas(),
+    recetas_editadas: getRecetasEditadas(),
     diario: getDiario(),
     alimentos_cache: getCache(),
     recientes: getRecientesIds(),
@@ -373,6 +398,7 @@ export function importar(json) {
   if (json.favoritos) escribir(K.favoritos, json.favoritos)
   if (json.dias_cerrados) escribir(K.cerrados, json.dias_cerrados)
   if (json.repetidas) escribir(K.repetidas, json.repetidas)
+  if (json.recetas_editadas) escribir(K.recetas_editadas, json.recetas_editadas)
   if (json.diario) escribir(K.diario, json.diario)
   if (json.alimentos_cache) escribir(K.cache, json.alimentos_cache)
   if (json.recientes) escribir(K.recientes, json.recientes)

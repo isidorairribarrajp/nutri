@@ -13,17 +13,19 @@ Abrir la URL **en Safari** (en iOS solo Safari puede instalar PWAs)
 
 ## Las cinco pantallas
 
-- **Buscar** — escáner de código de barras, búsqueda en la tabla chilena, tus recetas,
-  tus favoritos y Open Food Facts.
+- **Buscar** — registro por texto (✎), escáner de código de barras (▤), búsqueda en la
+  tabla chilena, tus recetas, tus favoritos y Open Food Facts.
 - **Hoy** — racha, tira de la semana con el estado de cada día, anillo de calorías
   segmentado por macro con las marcas del rango, barras de macros, agua, y las comidas
-  del día por momento. Terminar el día, copiar las comidas de otro día, y marcar una
-  comida como fija para que se cargue sola cada mañana.
+  del día por momento, más una tarjeta de **ejercicio del día** con su propio botón de
+  anotar. Terminar el día, copiar las comidas de otro día, y marcar una comida como fija
+  para que se cargue sola cada mañana.
 - **Plan** — propuesta de día completo que cuadra con las metas, armada con lo que
   Isi realmente come. Cada ítem se marca con un check a medida que se va comiendo
   (desmarcar borra la entrada, no deja comida fantasma). "Otra opción" regenera.
 - **Progreso** — peso, grasa corporal y ejercicio, con gráficos de tendencia.
-- **Recetas** — los dos recetarios, con macros por porción y botón "Comí esto".
+- **Recetas** — los dos recetarios, con macros por porción, botón "Comí esto" y
+  **editor**: cambiar cuánto rinde, ajustar cantidades, sacar y agregar ingredientes.
 - **Perfil** — el análisis completo, respaldo y tema claro/oscuro.
 
 ## Racha, rango y estado del día
@@ -41,6 +43,32 @@ Abrir la URL **en Safari** (en iOS solo Safari puede instalar PWAs)
 Cada estado lleva **color Y forma** (punto lleno / anillo / raya). Solo con color no
 sirve: el verde de "cumplido" y el terracota de "fuera" tienen ΔE 1,9 bajo daltonismo
 protán — son el mismo tono para quien lo tiene, y significan lo opuesto.
+
+## Registro por texto
+
+`src/texto.js`. Un parser de cantidad + unidad + nombre, no una IA. Entiende gramos
+("100 g de pollo", "100g pollo", "pollo 150 g"), medidas caseras ("1 taza de arroz",
+"1 cda de aceite"), fracciones ("1 1/2 taza", "1/2 marraqueta") y cantidades en palabras
+("dos manzanas", "media palta").
+
+Dos reglas:
+
+- **Nunca guarda sin mostrar.** Cada línea vuelve con lo que entendió, con cuántos gramos
+  resolvió y con alternativas para corregir cuando no está seguro.
+- **Una frase que ya es el nombre de una porción no se vuelve a partir.** "media palta"
+  son 68 g, no 34: la porción de la tabla ya se llama "media palta". Sin esa regla el
+  parser dividía la mitad por la mitad.
+
+## Recetas editables
+
+`src/receta.js`. Cada receta viaja con sus ingredientes estructurados (peso + composición),
+así que al cambiar una cantidad, sacar algo o cambiar cuánto rinde, los macros se
+recalculan **desde los ingredientes**, no se escalan a ojo.
+
+El recetario original nunca se toca: la edición se guarda aparte
+(`nutri:recetas_editadas`) y "Volver a la versión del recetario" la deshace. La tabla de
+composición viaja completa en `public/ingredientes-cl.json` para poder agregar
+ingredientes nuevos.
 
 ## Escáner de código de barras
 

@@ -32,16 +32,136 @@
       "kcal_calculadas": 152,
       "desviacion": 16.5,
       "ingredientes": [
-        "150 g de harina de avena",
-        "150 g de yogur griego natural sin lactosa",
-        "1 huevo",
-        "1 1/2 cdta de polvos de hornear",
-        "1/2 cdta de sal · 1 cdta de orégano",
-        "1 cdta de aceite de ajo para pincelar",
-        "120 g de salsa de tomate de la casa",
-        "100 g de mozzarella sin lactosa, en trozos",
-        "1 tomate en rodajas finas",
-        "Hojas de albahaca · pimienta · orégano"
+        {
+          "crudo": "150 g de harina de avena",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": "Masa",
+          "gramos": 150,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "150 g de yogur griego natural sin lactosa",
+          "nombre": "yogur griego",
+          "clave": "yogur griego",
+          "grupo": "Masa",
+          "gramos": 150,
+          "por100g": {
+            "kcal": 97,
+            "p": 9,
+            "c": 3.9,
+            "g": 5
+          }
+        },
+        {
+          "crudo": "1 huevo",
+          "nombre": "huevo",
+          "clave": "huevo",
+          "grupo": "Masa",
+          "gramos": 50,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "1 1/2 cdta de polvos de hornear",
+          "nombre": "polvos de hornear",
+          "clave": "polvos de hornear",
+          "grupo": "Masa",
+          "gramos": 7,
+          "por100g": {
+            "kcal": 53,
+            "p": 0,
+            "c": 27.7,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1/2 cdta de sal · 1 cdta de orégano",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": "Masa",
+          "gramos": 3,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de aceite de ajo para pincelar",
+          "nombre": "aceite de ajo",
+          "clave": "aceite de ajo",
+          "grupo": "Masa",
+          "gramos": 4,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "120 g de salsa de tomate de la casa",
+          "nombre": "salsa de tomate de la casa",
+          "clave": "salsa de tomate de la casa",
+          "grupo": "Arriba",
+          "gramos": 120,
+          "por100g": {
+            "kcal": 38,
+            "p": 1.4,
+            "c": 6.5,
+            "g": 1.1
+          }
+        },
+        {
+          "crudo": "100 g de mozzarella sin lactosa, en trozos",
+          "nombre": "mozzarella",
+          "clave": "mozzarella",
+          "grupo": "Arriba",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 300,
+            "p": 22.2,
+            "c": 2.2,
+            "g": 22.4
+          }
+        },
+        {
+          "crudo": "1 tomate en rodajas finas",
+          "nombre": "tomate",
+          "clave": "tomate",
+          "grupo": "Arriba",
+          "gramos": 123,
+          "por100g": {
+            "kcal": 18,
+            "p": 0.9,
+            "c": 3.9,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "Hojas de albahaca · pimienta · orégano",
+          "nombre": "albahaca",
+          "clave": "albahaca",
+          "grupo": "Arriba",
+          "gramos": null,
+          "por100g": {
+            "kcal": 23,
+            "p": 3.2,
+            "c": 2.7,
+            "g": 0.6
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -76,15 +196,123 @@
       "kcal_calculadas": 109,
       "desviacion": 8.9,
       "ingredientes": [
-        "450 g de zapallito italiano (2 grandes), rallado",
-        "1 huevo",
-        "40 g de parmesano rallado",
-        "30 g de harina de arroz",
-        "1 cdta de orégano · 1/2 cdta de sal · pimienta",
-        "100 g de salsa de tomate de la casa",
-        "60 g de mozzarella sin lactosa",
-        "6 tomates cherry partidos",
-        "Albahaca · aceite de ajo para terminar"
+        {
+          "crudo": "450 g de zapallito italiano (2 grandes), rallado",
+          "nombre": "zapallito italiano",
+          "clave": "zapallito italiano",
+          "grupo": "Base",
+          "gramos": 450,
+          "por100g": {
+            "kcal": 17,
+            "p": 1.2,
+            "c": 3.1,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "1 huevo",
+          "nombre": "huevo",
+          "clave": "huevo",
+          "grupo": "Base",
+          "gramos": 50,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "40 g de parmesano rallado",
+          "nombre": "parmesano",
+          "clave": "parmesano",
+          "grupo": "Base",
+          "gramos": 40,
+          "por100g": {
+            "kcal": 392,
+            "p": 35.8,
+            "c": 3.2,
+            "g": 25.8
+          }
+        },
+        {
+          "crudo": "30 g de harina de arroz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": "Base",
+          "gramos": 30,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "1 cdta de orégano · 1/2 cdta de sal · pimienta",
+          "nombre": "orégano",
+          "clave": "oregano",
+          "grupo": "Base",
+          "gramos": 1,
+          "por100g": {
+            "kcal": 265,
+            "p": 9,
+            "c": 68.9,
+            "g": 4.3
+          }
+        },
+        {
+          "crudo": "100 g de salsa de tomate de la casa",
+          "nombre": "salsa de tomate de la casa",
+          "clave": "salsa de tomate de la casa",
+          "grupo": "Arriba",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 38,
+            "p": 1.4,
+            "c": 6.5,
+            "g": 1.1
+          }
+        },
+        {
+          "crudo": "60 g de mozzarella sin lactosa",
+          "nombre": "mozzarella",
+          "clave": "mozzarella",
+          "grupo": "Arriba",
+          "gramos": 60,
+          "por100g": {
+            "kcal": 300,
+            "p": 22.2,
+            "c": 2.2,
+            "g": 22.4
+          }
+        },
+        {
+          "crudo": "6 tomates cherry partidos",
+          "nombre": "tomates cherry",
+          "clave": "tomates cherry",
+          "grupo": "Arriba",
+          "gramos": 102,
+          "por100g": {
+            "kcal": 18,
+            "p": 0.9,
+            "c": 3.9,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "Albahaca · aceite de ajo para terminar",
+          "nombre": "Albahaca",
+          "clave": "albahaca",
+          "grupo": "Arriba",
+          "gramos": null,
+          "por100g": {
+            "kcal": 23,
+            "p": 3.2,
+            "c": 2.7,
+            "g": 0.6
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -119,15 +347,123 @@
       "kcal_calculadas": 126,
       "desviacion": 5.3,
       "ingredientes": [
-        "150 g de quinoa cruda, remojada 6–8 h",
-        "80 ml de agua",
-        "1 cda de aceite de oliva",
-        "1 cdta de polvos de hornear",
-        "3/4 cdta de sal · 1 cdta de orégano",
-        "120 g de salsa de tomate de la casa",
-        "1 pimentón rojo y 1 zapallito en láminas, asados o salteados",
-        "70 g de queso de cabra fresco desmigado",
-        "Puñado de espinaca baby · orégano"
+        {
+          "crudo": "150 g de quinoa cruda, remojada 6–8 h",
+          "nombre": "quinoa",
+          "clave": "quinoa",
+          "grupo": "Base",
+          "gramos": 150,
+          "por100g": {
+            "kcal": 368,
+            "p": 14.1,
+            "c": 64.2,
+            "g": 6.1
+          }
+        },
+        {
+          "crudo": "80 ml de agua",
+          "nombre": "agua",
+          "clave": "agua",
+          "grupo": "Base",
+          "gramos": 80,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cda de aceite de oliva",
+          "nombre": "aceite de oliva",
+          "clave": "aceite de oliva",
+          "grupo": "Base",
+          "gramos": 14,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "1 cdta de polvos de hornear",
+          "nombre": "polvos de hornear",
+          "clave": "polvos de hornear",
+          "grupo": "Base",
+          "gramos": 5,
+          "por100g": {
+            "kcal": 53,
+            "p": 0,
+            "c": 27.7,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "3/4 cdta de sal · 1 cdta de orégano",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": "Base",
+          "gramos": 4,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "120 g de salsa de tomate de la casa",
+          "nombre": "salsa de tomate de la casa",
+          "clave": "salsa de tomate de la casa",
+          "grupo": "Arriba",
+          "gramos": 120,
+          "por100g": {
+            "kcal": 38,
+            "p": 1.4,
+            "c": 6.5,
+            "g": 1.1
+          }
+        },
+        {
+          "crudo": "1 pimentón rojo y 1 zapallito en láminas, asados o salteados",
+          "nombre": "pimentón rojo",
+          "clave": "pimenton rojo",
+          "grupo": "Arriba",
+          "gramos": 119,
+          "por100g": {
+            "kcal": 31,
+            "p": 1,
+            "c": 6,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "70 g de queso de cabra fresco desmigado",
+          "nombre": "queso de cabra",
+          "clave": "queso de cabra",
+          "grupo": "Arriba",
+          "gramos": 70,
+          "por100g": {
+            "kcal": 364,
+            "p": 21.6,
+            "c": 2.5,
+            "g": 29.8
+          }
+        },
+        {
+          "crudo": "Puñado de espinaca baby · orégano",
+          "nombre": "espinaca",
+          "clave": "espinaca",
+          "grupo": "Arriba",
+          "gramos": null,
+          "por100g": {
+            "kcal": 23,
+            "p": 2.9,
+            "c": 3.6,
+            "g": 0.4
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -162,15 +498,123 @@
       "kcal_calculadas": 220,
       "desviacion": 25.9,
       "ingredientes": [
-        "200 g de harina de avena",
-        "30 g de almidón de maíz",
-        "200 g de yogur griego natural sin lactosa",
-        "2 huevos (uno va a la masa, otro para pintar)",
-        "2 claras",
-        "2 cdtas de polvos de hornear",
-        "1/2 cdta de bicarbonato · 3/4 cdta de sal",
-        "1 cdta de alulosa",
-        "1 cda de sésamo para arriba"
+        {
+          "crudo": "200 g de harina de avena",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": null,
+          "gramos": 200,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "30 g de almidón de maíz",
+          "nombre": "almidón de maíz",
+          "clave": "almidon de maiz",
+          "grupo": null,
+          "gramos": 30,
+          "por100g": {
+            "kcal": 381,
+            "p": 0.3,
+            "c": 91.3,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "200 g de yogur griego natural sin lactosa",
+          "nombre": "yogur griego",
+          "clave": "yogur griego",
+          "grupo": null,
+          "gramos": 200,
+          "por100g": {
+            "kcal": 97,
+            "p": 9,
+            "c": 3.9,
+            "g": 5
+          }
+        },
+        {
+          "crudo": "2 huevos (uno va a la masa, otro para pintar)",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "2 claras",
+          "nombre": "claras",
+          "clave": "claras",
+          "grupo": null,
+          "gramos": 66,
+          "por100g": {
+            "kcal": 52,
+            "p": 10.9,
+            "c": 0.7,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "2 cdtas de polvos de hornear",
+          "nombre": "polvos de hornear",
+          "clave": "polvos de hornear",
+          "grupo": null,
+          "gramos": 9,
+          "por100g": {
+            "kcal": 53,
+            "p": 0,
+            "c": 27.7,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1/2 cdta de bicarbonato · 3/4 cdta de sal",
+          "nombre": "bicarbonato",
+          "clave": "bicarbonato",
+          "grupo": null,
+          "gramos": 2,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cda de sésamo para arriba",
+          "nombre": "sésamo",
+          "clave": "sesamo",
+          "grupo": null,
+          "gramos": 9,
+          "por100g": {
+            "kcal": 573,
+            "p": 17.7,
+            "c": 23.4,
+            "g": 49.7
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -205,16 +649,136 @@
       "kcal_calculadas": 106,
       "desviacion": 11.7,
       "ingredientes": [
-        "350 g de zapallito italiano rallado",
-        "150 g de quinoa cocida (unos 50 g cruda), fría",
-        "1 huevo",
-        "40 g de avena en hojuelas",
-        "30 g de parmesano rallado",
-        "3 cdas de verde de cebollín picado",
-        "2 cdas de perejil o cilantro picado",
-        "1/2 cdta de comino · 1/2 cdta de pimentón ahumado",
-        "3/4 cdta de sal · pimienta · ralladura de 1/2 limón",
-        "1 cdta de aceite de ajo para la sartén"
+        {
+          "crudo": "350 g de zapallito italiano rallado",
+          "nombre": "zapallito italiano",
+          "clave": "zapallito italiano",
+          "grupo": null,
+          "gramos": 350,
+          "por100g": {
+            "kcal": 17,
+            "p": 1.2,
+            "c": 3.1,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "150 g de quinoa cocida (unos 50 g cruda), fría",
+          "nombre": "quinoa cocida",
+          "clave": "quinoa cocida",
+          "grupo": null,
+          "gramos": 150,
+          "por100g": {
+            "kcal": 120,
+            "p": 4.4,
+            "c": 21.3,
+            "g": 1.9
+          }
+        },
+        {
+          "crudo": "1 huevo",
+          "nombre": "huevo",
+          "clave": "huevo",
+          "grupo": null,
+          "gramos": 50,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "40 g de avena en hojuelas",
+          "nombre": "avena en hojuelas",
+          "clave": "avena en hojuelas",
+          "grupo": null,
+          "gramos": 40,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "30 g de parmesano rallado",
+          "nombre": "parmesano",
+          "clave": "parmesano",
+          "grupo": null,
+          "gramos": 30,
+          "por100g": {
+            "kcal": 392,
+            "p": 35.8,
+            "c": 3.2,
+            "g": 25.8
+          }
+        },
+        {
+          "crudo": "3 cdas de verde de cebollín picado",
+          "nombre": "verde de cebollín",
+          "clave": "verde de cebollin",
+          "grupo": null,
+          "gramos": 18,
+          "por100g": {
+            "kcal": 32,
+            "p": 1.8,
+            "c": 7.3,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "2 cdas de perejil o cilantro picado",
+          "nombre": "perejil",
+          "clave": "perejil",
+          "grupo": null,
+          "gramos": 8,
+          "por100g": {
+            "kcal": 36,
+            "p": 3,
+            "c": 6.3,
+            "g": 0.8
+          }
+        },
+        {
+          "crudo": "1/2 cdta de comino · 1/2 cdta de pimentón ahumado",
+          "nombre": "comino",
+          "clave": "comino",
+          "grupo": null,
+          "gramos": 1,
+          "por100g": {
+            "kcal": 375,
+            "p": 17.8,
+            "c": 44.2,
+            "g": 22.3
+          }
+        },
+        {
+          "crudo": "3/4 cdta de sal · pimienta · ralladura de 1/2 limón",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de aceite de ajo para la sartén",
+          "nombre": "aceite de ajo",
+          "clave": "aceite de ajo",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -249,16 +813,136 @@
       "kcal_calculadas": 152,
       "desviacion": 8.9,
       "ingredientes": [
-        "400 g de pavo molido (o pollo, muslo sin piel)",
-        "120 g de zanahoria rallada fina (1 grande)",
-        "80 g de espinaca fresca, picada fina",
-        "1 huevo",
-        "30 g de avena en hojuelas",
-        "3 cdas de verde de cebollín picado",
-        "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano",
-        "1 cdta de sal · pimienta",
-        "1 cda de salsa de yogur o mostaza para untar",
-        "1 cdta de aceite para la sartén"
+        {
+          "crudo": "400 g de pavo molido (o pollo, muslo sin piel)",
+          "nombre": "pavo molido",
+          "clave": "pavo molido",
+          "grupo": null,
+          "gramos": 400,
+          "por100g": {
+            "kcal": 149,
+            "p": 20.9,
+            "c": 0,
+            "g": 7
+          }
+        },
+        {
+          "crudo": "120 g de zanahoria rallada fina (1 grande)",
+          "nombre": "zanahoria",
+          "clave": "zanahoria",
+          "grupo": null,
+          "gramos": 120,
+          "por100g": {
+            "kcal": 41,
+            "p": 0.9,
+            "c": 9.6,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "80 g de espinaca fresca, picada fina",
+          "nombre": "espinaca",
+          "clave": "espinaca",
+          "grupo": null,
+          "gramos": 80,
+          "por100g": {
+            "kcal": 23,
+            "p": 2.9,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "1 huevo",
+          "nombre": "huevo",
+          "clave": "huevo",
+          "grupo": null,
+          "gramos": 50,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "30 g de avena en hojuelas",
+          "nombre": "avena en hojuelas",
+          "clave": "avena en hojuelas",
+          "grupo": null,
+          "gramos": 30,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "3 cdas de verde de cebollín picado",
+          "nombre": "verde de cebollín",
+          "clave": "verde de cebollin",
+          "grupo": null,
+          "gramos": 18,
+          "por100g": {
+            "kcal": 32,
+            "p": 1.8,
+            "c": 7.3,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano",
+          "nombre": "comino",
+          "clave": "comino",
+          "grupo": null,
+          "gramos": 2,
+          "por100g": {
+            "kcal": 375,
+            "p": 17.8,
+            "c": 44.2,
+            "g": 22.3
+          }
+        },
+        {
+          "crudo": "1 cdta de sal · pimienta",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": null,
+          "gramos": 6,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cda de salsa de yogur o mostaza para untar",
+          "nombre": "salsa de yogur",
+          "clave": "salsa de yogur",
+          "grupo": null,
+          "gramos": 15,
+          "por100g": {
+            "kcal": 62,
+            "p": 9.2,
+            "c": 4,
+            "g": 1
+          }
+        },
+        {
+          "crudo": "1 cdta de aceite para la sartén",
+          "nombre": "aceite",
+          "clave": "aceite",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -293,15 +977,123 @@
       "kcal_calculadas": 144,
       "desviacion": 6.6,
       "ingredientes": [
-        "250 g de camote cocido, en puré seco",
-        "200 g de tofu firme , prensado y desmenuzado",
-        "100 g de zapallito rallado y exprimido",
-        "40 g de avena en hojuelas",
-        "1 cda de linaza molida + 3 cdas de agua",
-        "3 cdas de verde de cebollín · 2 cdas de cilantro",
-        "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de cúrcuma",
-        "1 cdta de sal · pimienta · jugo de 1/2 limón",
-        "1 cda de aceite de oliva para pincelar"
+        {
+          "crudo": "250 g de camote cocido, en puré seco",
+          "nombre": "camote",
+          "clave": "camote",
+          "grupo": null,
+          "gramos": 250,
+          "por100g": {
+            "kcal": 86,
+            "p": 1.6,
+            "c": 20.1,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "200 g de tofu firme , prensado y desmenuzado",
+          "nombre": "tofu firme",
+          "clave": "tofu firme",
+          "grupo": null,
+          "gramos": 200,
+          "por100g": {
+            "kcal": 144,
+            "p": 17.3,
+            "c": 2.8,
+            "g": 8.7
+          }
+        },
+        {
+          "crudo": "100 g de zapallito rallado y exprimido",
+          "nombre": "zapallito",
+          "clave": "zapallito",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 17,
+            "p": 1.2,
+            "c": 3.1,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "40 g de avena en hojuelas",
+          "nombre": "avena en hojuelas",
+          "clave": "avena en hojuelas",
+          "grupo": null,
+          "gramos": 40,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "1 cda de linaza molida + 3 cdas de agua",
+          "nombre": "linaza molida",
+          "clave": "linaza molida",
+          "grupo": null,
+          "gramos": 10,
+          "por100g": {
+            "kcal": 534,
+            "p": 18.3,
+            "c": 28.9,
+            "g": 42.2
+          }
+        },
+        {
+          "crudo": "3 cdas de verde de cebollín · 2 cdas de cilantro",
+          "nombre": "verde de cebollín",
+          "clave": "verde de cebollin",
+          "grupo": null,
+          "gramos": 18,
+          "por100g": {
+            "kcal": 32,
+            "p": 1.8,
+            "c": 7.3,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de cúrcuma",
+          "nombre": "comino",
+          "clave": "comino",
+          "grupo": null,
+          "gramos": 2,
+          "por100g": {
+            "kcal": 375,
+            "p": 17.8,
+            "c": 44.2,
+            "g": 22.3
+          }
+        },
+        {
+          "crudo": "1 cdta de sal · pimienta · jugo de 1/2 limón",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": null,
+          "gramos": 6,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cda de aceite de oliva para pincelar",
+          "nombre": "aceite de oliva",
+          "clave": "aceite de oliva",
+          "grupo": null,
+          "gramos": 14,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -335,7 +1127,47 @@
       "kcal_declaradas": 60.0,
       "kcal_calculadas": 61,
       "desviacion": 1.4,
-      "ingredientes": [],
+      "ingredientes": [
+        {
+          "crudo": "200 g de masa harina de maíz nixtamalizado (tipo Maseca)",
+          "nombre": "masa harina",
+          "clave": "masa harina",
+          "grupo": "De maíz · 12 de 14 cm",
+          "gramos": 200,
+          "por100g": {
+            "kcal": 365,
+            "p": 9.3,
+            "c": 76.3,
+            "g": 3.9
+          }
+        },
+        {
+          "crudo": "260 ml de agua tibia , aprox.",
+          "nombre": "agua tibia",
+          "clave": "agua tibia",
+          "grupo": "De maíz · 12 de 14 cm",
+          "gramos": 260,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1/2 cdta de sal",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": "De maíz · 12 de 14 cm",
+          "gramos": 3,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        }
+      ],
       "fuente": "receta",
       "aprox": true
     },
@@ -368,7 +1200,73 @@
       "kcal_declaradas": 0.0,
       "kcal_calculadas": 159,
       "desviacion": null,
-      "ingredientes": [],
+      "ingredientes": [
+        {
+          "crudo": "180 g de harina de avena",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": "De avena · 6 de 25 cm",
+          "gramos": 180,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "3 huevos",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": "De avena · 6 de 25 cm",
+          "gramos": 150,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "350 ml de agua",
+          "nombre": "agua",
+          "clave": "agua",
+          "grupo": "De avena · 6 de 25 cm",
+          "gramos": 350,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1/2 cdta de sal",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": "De avena · 6 de 25 cm",
+          "gramos": 3,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de aceite para la sartén",
+          "nombre": "aceite",
+          "clave": "aceite",
+          "grupo": "De avena · 6 de 25 cm",
+          "gramos": 4,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        }
+      ],
       "fuente": "receta",
       "aprox": true
     },
@@ -402,16 +1300,136 @@
       "kcal_calculadas": 236,
       "desviacion": -9.1,
       "ingredientes": [
-        "8 tortillas de maíz (receta 08)",
-        "2 pimentones rojos en tiras",
-        "1 zapallito grande en medias lunas",
-        "1 berenjena chica en cubos",
-        "2 zanahorias en bastones finos",
-        "1 1/2 cda de aceite de ajo",
-        "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano",
-        "1 cdta de sal · jugo de 1 limón",
-        "1 receta de crema de palta liviana",
-        "Cilantro · verde de cebollín · ají verde en rodajas"
+        {
+          "crudo": "8 tortillas de maíz (receta 08)",
+          "nombre": "tortillas de maíz",
+          "clave": "tortillas de maiz",
+          "grupo": null,
+          "gramos": 312,
+          "por100g": {
+            "kcal": 156,
+            "p": 4.1,
+            "c": 32.6,
+            "g": 1.8
+          }
+        },
+        {
+          "crudo": "2 pimentones rojos en tiras",
+          "nombre": "pimentones rojos",
+          "clave": "pimentones rojos",
+          "grupo": null,
+          "gramos": 238,
+          "por100g": {
+            "kcal": 31,
+            "p": 1,
+            "c": 6,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "1 zapallito grande en medias lunas",
+          "nombre": "zapallito",
+          "clave": "zapallito",
+          "grupo": null,
+          "gramos": 196,
+          "por100g": {
+            "kcal": 17,
+            "p": 1.2,
+            "c": 3.1,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "1 berenjena chica en cubos",
+          "nombre": "berenjena",
+          "clave": "berenjena",
+          "grupo": null,
+          "gramos": 458,
+          "por100g": {
+            "kcal": 25,
+            "p": 1,
+            "c": 5.9,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "2 zanahorias en bastones finos",
+          "nombre": "zanahorias",
+          "clave": "zanahorias",
+          "grupo": null,
+          "gramos": 122,
+          "por100g": {
+            "kcal": 41,
+            "p": 0.9,
+            "c": 9.6,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "1 1/2 cda de aceite de ajo",
+          "nombre": "aceite de ajo",
+          "clave": "aceite de ajo",
+          "grupo": null,
+          "gramos": 20,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano",
+          "nombre": "comino",
+          "clave": "comino",
+          "grupo": null,
+          "gramos": 2,
+          "por100g": {
+            "kcal": 375,
+            "p": 17.8,
+            "c": 44.2,
+            "g": 22.3
+          }
+        },
+        {
+          "crudo": "1 cdta de sal · jugo de 1 limón",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": null,
+          "gramos": 6,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 receta de crema de palta liviana",
+          "nombre": "crema de palta liviana",
+          "clave": "crema de palta liviana",
+          "grupo": null,
+          "gramos": null,
+          "por100g": {
+            "kcal": 120,
+            "p": 2.4,
+            "c": 6.5,
+            "g": 9.8
+          }
+        },
+        {
+          "crudo": "Cilantro · verde de cebollín · ají verde en rodajas",
+          "nombre": "Cilantro",
+          "clave": "cilantro",
+          "grupo": null,
+          "gramos": null,
+          "por100g": {
+            "kcal": 23,
+            "p": 2.1,
+            "c": 3.7,
+            "g": 0.5
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -446,15 +1464,71 @@
       "kcal_calculadas": 268,
       "desviacion": -7.4,
       "ingredientes": [
-        "500 g de reineta, merluza o corvina en filetes",
-        "1 cdta de comino · 1 cdta de pimentón dulce · 1/2 cdta de ají de color",
-        "3/4 cdta de sal · jugo de 1 limón",
-        "1 cda de aceite de oliva",
-        "2 zanahorias en juliana o ralladas grueso",
-        "1 pepino sin semillas, en bastones",
-        "1/2 taza de cilantro · 2 cdas de verde de cebollín",
-        "Jugo de 1 limón · 1 cdta de alulosa · sal",
-        "8 tortillas de maíz · 1 receta de salsa de yogur y ciboulette · ají verde"
+        {
+          "crudo": "500 g de reineta, merluza o corvina en filetes",
+          "nombre": "reineta, merluza o corvina",
+          "clave": "reineta, merluza o corvina",
+          "grupo": "Pescado",
+          "gramos": 500,
+          "por100g": {
+            "kcal": 92,
+            "p": 18.5,
+            "c": 0,
+            "g": 1.9
+          }
+        },
+        {
+          "crudo": "1 cdta de comino · 1 cdta de pimentón dulce · 1/2 cdta de ají de color",
+          "nombre": "comino",
+          "clave": "comino",
+          "grupo": "Pescado",
+          "gramos": 2,
+          "por100g": {
+            "kcal": 375,
+            "p": 17.8,
+            "c": 44.2,
+            "g": 22.3
+          }
+        },
+        {
+          "crudo": "3/4 cdta de sal · jugo de 1 limón",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": "Pescado",
+          "gramos": 4,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cda de aceite de oliva",
+          "nombre": "aceite de oliva",
+          "clave": "aceite de oliva",
+          "grupo": "Pescado",
+          "gramos": 14,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "8 tortillas de maíz · 1 receta de salsa de yogur y ciboulette · ají verde",
+          "nombre": "tortillas de maíz",
+          "clave": "tortillas de maiz",
+          "grupo": "Para armar",
+          "gramos": 312,
+          "por100g": {
+            "kcal": 156,
+            "p": 4.1,
+            "c": 32.6,
+            "g": 1.8
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -488,7 +1562,60 @@
       "kcal_declaradas": null,
       "kcal_calculadas": 31,
       "desviacion": null,
-      "ingredientes": [],
+      "ingredientes": [
+        {
+          "crudo": "2 zanahorias en juliana o ralladas grueso",
+          "nombre": "zanahorias",
+          "clave": "zanahorias",
+          "grupo": "Ensalada",
+          "gramos": 122,
+          "por100g": {
+            "kcal": 41,
+            "p": 0.9,
+            "c": 9.6,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "1 pepino sin semillas, en bastones",
+          "nombre": "pepino",
+          "clave": "pepino",
+          "grupo": "Ensalada",
+          "gramos": 300,
+          "por100g": {
+            "kcal": 15,
+            "p": 0.7,
+            "c": 3.6,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "1/2 taza de cilantro · 2 cdas de verde de cebollín",
+          "nombre": "cilantro",
+          "clave": "cilantro",
+          "grupo": "Ensalada",
+          "gramos": 120,
+          "por100g": {
+            "kcal": 23,
+            "p": 2.1,
+            "c": 3.7,
+            "g": 0.5
+          }
+        },
+        {
+          "crudo": "Jugo de 1 limón · 1 cdta de alulosa · sal",
+          "nombre": "limón",
+          "clave": "limon",
+          "grupo": "Ensalada",
+          "gramos": null,
+          "por100g": {
+            "kcal": 29,
+            "p": 1.1,
+            "c": 9.3,
+            "g": 0.3
+          }
+        }
+      ],
       "fuente": "receta",
       "aprox": true
     },
@@ -522,14 +1649,110 @@
       "kcal_calculadas": 307,
       "desviacion": 5.8,
       "ingredientes": [
-        "450 g de pechuga de pollo en tiras finas",
-        "2 pimentones (rojo y amarillo) en tiras",
-        "1 cda de aceite de ajo",
-        "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano · 1/4 cdta de ají en polvo",
-        "1 cdta de sal · pimienta",
-        "Jugo y ralladura de 1 limón",
-        "8 tortillas de maíz",
-        "Para armar: lechuga en tiras, tomate en cubos, cilantro , pebre sin cebolla o crema de palta, ají verde"
+        {
+          "crudo": "450 g de pechuga de pollo en tiras finas",
+          "nombre": "pechuga de pollo",
+          "clave": "pechuga de pollo",
+          "grupo": null,
+          "gramos": 450,
+          "por100g": {
+            "kcal": 120,
+            "p": 22.5,
+            "c": 0,
+            "g": 2.6
+          }
+        },
+        {
+          "crudo": "2 pimentones (rojo y amarillo) en tiras",
+          "nombre": "pimentones",
+          "clave": "pimentones",
+          "grupo": null,
+          "gramos": 238,
+          "por100g": {
+            "kcal": 31,
+            "p": 1,
+            "c": 6,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "1 cda de aceite de ajo",
+          "nombre": "aceite de ajo",
+          "clave": "aceite de ajo",
+          "grupo": null,
+          "gramos": 14,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano · 1/4 cdta de ají en polvo",
+          "nombre": "comino",
+          "clave": "comino",
+          "grupo": null,
+          "gramos": 2,
+          "por100g": {
+            "kcal": 375,
+            "p": 17.8,
+            "c": 44.2,
+            "g": 22.3
+          }
+        },
+        {
+          "crudo": "1 cdta de sal · pimienta",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": null,
+          "gramos": 6,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "Jugo y ralladura de 1 limón",
+          "nombre": "limón",
+          "clave": "limon",
+          "grupo": null,
+          "gramos": null,
+          "por100g": {
+            "kcal": 29,
+            "p": 1.1,
+            "c": 9.3,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "8 tortillas de maíz",
+          "nombre": "tortillas de maíz",
+          "clave": "tortillas de maiz",
+          "grupo": null,
+          "gramos": 312,
+          "por100g": {
+            "kcal": 156,
+            "p": 4.1,
+            "c": 32.6,
+            "g": 1.8
+          }
+        },
+        {
+          "crudo": "Para armar: lechuga en tiras, tomate en cubos, cilantro , pebre sin cebolla o crema de palta, ají verde",
+          "nombre": "lechuga",
+          "clave": "lechuga",
+          "grupo": null,
+          "gramos": null,
+          "por100g": {
+            "kcal": 15,
+            "p": 1.4,
+            "c": 2.9,
+            "g": 0.2
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -564,16 +1787,136 @@
       "kcal_calculadas": 385,
       "desviacion": -19.8,
       "ingredientes": [
-        "4 tortillas de avena de 25 cm (receta 08)",
-        "320 g de arroz cocido (unos 110 g crudo), tibio",
-        "Jugo de 1 limón · 3 cdas de cilantro picado",
-        "200 g de tofu firme en cubos, o 200 g de pollo cocido desmenuzado",
-        "1 pimentón rojo · 1 zapallito · 1 zanahoria , todo en tiras",
-        "1 cda de aceite de ajo",
-        "1 cdta de comino · 1 cdta de pimentón ahumado · sal",
-        "4 hojas de lechuga en tiras · 1 tomate en cubos",
-        "4 cdas de salsa de yogur y ciboulette",
-        "40 g de queso rallado sin lactosa (opcional)"
+        {
+          "crudo": "4 tortillas de avena de 25 cm (receta 08)",
+          "nombre": "tortillas de avena",
+          "clave": "tortillas de avena",
+          "grupo": null,
+          "gramos": 460,
+          "por100g": {
+            "kcal": 138,
+            "p": 7.1,
+            "c": 17.5,
+            "g": 4.5
+          }
+        },
+        {
+          "crudo": "320 g de arroz cocido (unos 110 g crudo), tibio",
+          "nombre": "arroz cocido",
+          "clave": "arroz cocido",
+          "grupo": null,
+          "gramos": 320,
+          "por100g": {
+            "kcal": 130,
+            "p": 2.7,
+            "c": 28.2,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "Jugo de 1 limón · 3 cdas de cilantro picado",
+          "nombre": "limón",
+          "clave": "limon",
+          "grupo": null,
+          "gramos": null,
+          "por100g": {
+            "kcal": 29,
+            "p": 1.1,
+            "c": 9.3,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "200 g de tofu firme en cubos, o 200 g de pollo cocido desmenuzado",
+          "nombre": "tofu firme",
+          "clave": "tofu firme",
+          "grupo": null,
+          "gramos": 200,
+          "por100g": {
+            "kcal": 144,
+            "p": 17.3,
+            "c": 2.8,
+            "g": 8.7
+          }
+        },
+        {
+          "crudo": "1 pimentón rojo · 1 zapallito · 1 zanahoria , todo en tiras",
+          "nombre": "pimentón rojo",
+          "clave": "pimenton rojo",
+          "grupo": null,
+          "gramos": 119,
+          "por100g": {
+            "kcal": 31,
+            "p": 1,
+            "c": 6,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "1 cda de aceite de ajo",
+          "nombre": "aceite de ajo",
+          "clave": "aceite de ajo",
+          "grupo": null,
+          "gramos": 14,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "1 cdta de comino · 1 cdta de pimentón ahumado · sal",
+          "nombre": "comino",
+          "clave": "comino",
+          "grupo": null,
+          "gramos": 2,
+          "por100g": {
+            "kcal": 375,
+            "p": 17.8,
+            "c": 44.2,
+            "g": 22.3
+          }
+        },
+        {
+          "crudo": "4 hojas de lechuga en tiras · 1 tomate en cubos",
+          "nombre": "lechuga",
+          "clave": "lechuga",
+          "grupo": null,
+          "gramos": null,
+          "por100g": {
+            "kcal": 15,
+            "p": 1.4,
+            "c": 2.9,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "4 cdas de salsa de yogur y ciboulette",
+          "nombre": "salsa de yogur y ciboulette",
+          "clave": "salsa de yogur y ciboulette",
+          "grupo": null,
+          "gramos": 60,
+          "por100g": {
+            "kcal": 62,
+            "p": 9.2,
+            "c": 4,
+            "g": 1
+          }
+        },
+        {
+          "crudo": "40 g de queso rallado sin lactosa (opcional)",
+          "nombre": "queso",
+          "clave": "queso",
+          "grupo": null,
+          "gramos": 40,
+          "por100g": {
+            "kcal": 356,
+            "p": 24.9,
+            "c": 2.2,
+            "g": 27.4
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -608,15 +1951,123 @@
       "kcal_calculadas": 355,
       "desviacion": -8.9,
       "ingredientes": [
-        "2 tortillas de avena de 25 cm",
-        "2 huevos + 3 claras",
-        "100 g de espinaca fresca",
-        "1 tomate en cubos, sin semillas",
-        "40 g de queso rallado sin lactosa o 30 g de parmesano",
-        "2 cdas de verde de cebollín picado",
-        "1 cdta de aceite de ajo",
-        "Sal · pimienta · pizca de pimentón ahumado",
-        "2 cdas de pebre sin cebolla o crema de palta, para servir"
+        {
+          "crudo": "2 tortillas de avena de 25 cm",
+          "nombre": "tortillas de avena",
+          "clave": "tortillas de avena",
+          "grupo": null,
+          "gramos": 230,
+          "por100g": {
+            "kcal": 138,
+            "p": 7.1,
+            "c": 17.5,
+            "g": 4.5
+          }
+        },
+        {
+          "crudo": "2 huevos + 3 claras",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "100 g de espinaca fresca",
+          "nombre": "espinaca",
+          "clave": "espinaca",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 23,
+            "p": 2.9,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "1 tomate en cubos, sin semillas",
+          "nombre": "tomate",
+          "clave": "tomate",
+          "grupo": null,
+          "gramos": 123,
+          "por100g": {
+            "kcal": 18,
+            "p": 0.9,
+            "c": 3.9,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "40 g de queso rallado sin lactosa o 30 g de parmesano",
+          "nombre": "queso",
+          "clave": "queso",
+          "grupo": null,
+          "gramos": 40,
+          "por100g": {
+            "kcal": 356,
+            "p": 24.9,
+            "c": 2.2,
+            "g": 27.4
+          }
+        },
+        {
+          "crudo": "2 cdas de verde de cebollín picado",
+          "nombre": "verde de cebollín",
+          "clave": "verde de cebollin",
+          "grupo": null,
+          "gramos": 12,
+          "por100g": {
+            "kcal": 32,
+            "p": 1.8,
+            "c": 7.3,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "1 cdta de aceite de ajo",
+          "nombre": "aceite de ajo",
+          "clave": "aceite de ajo",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "Sal · pimienta · pizca de pimentón ahumado",
+          "nombre": "pimentón ahumado",
+          "clave": "pimenton ahumado",
+          "grupo": null,
+          "gramos": null,
+          "por100g": {
+            "kcal": 282,
+            "p": 14.1,
+            "c": 54,
+            "g": 12.9
+          }
+        },
+        {
+          "crudo": "2 cdas de pebre sin cebolla o crema de palta, para servir",
+          "nombre": "pebre sin cebolla",
+          "clave": "pebre sin cebolla",
+          "grupo": null,
+          "gramos": 32,
+          "por100g": {
+            "kcal": 60,
+            "p": 1.2,
+            "c": 5,
+            "g": 4
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -651,16 +2102,136 @@
       "kcal_calculadas": 453,
       "desviacion": -12.8,
       "ingredientes": [
-        "200 g de quinoa cruda, enjuagada",
-        "400 g de pechuga de pollo o tofu firme, en cubos",
-        "2 pimentones · 1 zapallito · 1 berenjena chica · 1 zanahoria , en cubos",
-        "1 1/2 cda de aceite de ajo",
-        "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano · sal",
-        "4 tazas de lechuga picada",
-        "120 g de palta en láminas (30 g por bowl)",
-        "1/2 taza de choclo cocido (2 cdas por bowl)",
-        "Jugo de 2 limones · 1/2 taza de cilantro",
-        "4 cdas de salsa de yogur y ciboulette · ají verde"
+        {
+          "crudo": "200 g de quinoa cruda, enjuagada",
+          "nombre": "quinoa",
+          "clave": "quinoa",
+          "grupo": null,
+          "gramos": 200,
+          "por100g": {
+            "kcal": 368,
+            "p": 14.1,
+            "c": 64.2,
+            "g": 6.1
+          }
+        },
+        {
+          "crudo": "400 g de pechuga de pollo o tofu firme, en cubos",
+          "nombre": "pechuga de pollo",
+          "clave": "pechuga de pollo",
+          "grupo": null,
+          "gramos": 400,
+          "por100g": {
+            "kcal": 120,
+            "p": 22.5,
+            "c": 0,
+            "g": 2.6
+          }
+        },
+        {
+          "crudo": "2 pimentones · 1 zapallito · 1 berenjena chica · 1 zanahoria , en cubos",
+          "nombre": "pimentones",
+          "clave": "pimentones",
+          "grupo": null,
+          "gramos": 238,
+          "por100g": {
+            "kcal": 31,
+            "p": 1,
+            "c": 6,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "1 1/2 cda de aceite de ajo",
+          "nombre": "aceite de ajo",
+          "clave": "aceite de ajo",
+          "grupo": null,
+          "gramos": 20,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "1 cdta de comino · 1 cdta de pimentón ahumado · 1/2 cdta de orégano · sal",
+          "nombre": "comino",
+          "clave": "comino",
+          "grupo": null,
+          "gramos": 2,
+          "por100g": {
+            "kcal": 375,
+            "p": 17.8,
+            "c": 44.2,
+            "g": 22.3
+          }
+        },
+        {
+          "crudo": "4 tazas de lechuga picada",
+          "nombre": "lechuga",
+          "clave": "lechuga",
+          "grupo": null,
+          "gramos": 188,
+          "por100g": {
+            "kcal": 15,
+            "p": 1.4,
+            "c": 2.9,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "120 g de palta en láminas (30 g por bowl)",
+          "nombre": "palta",
+          "clave": "palta",
+          "grupo": null,
+          "gramos": 120,
+          "por100g": {
+            "kcal": 160,
+            "p": 2,
+            "c": 8.5,
+            "g": 14.7
+          }
+        },
+        {
+          "crudo": "1/2 taza de choclo cocido (2 cdas por bowl)",
+          "nombre": "choclo",
+          "clave": "choclo",
+          "grupo": null,
+          "gramos": 82,
+          "por100g": {
+            "kcal": 96,
+            "p": 3.4,
+            "c": 21,
+            "g": 1.5
+          }
+        },
+        {
+          "crudo": "Jugo de 2 limones · 1/2 taza de cilantro",
+          "nombre": "limones",
+          "clave": "limones",
+          "grupo": null,
+          "gramos": null,
+          "por100g": {
+            "kcal": 29,
+            "p": 1.1,
+            "c": 9.3,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "4 cdas de salsa de yogur y ciboulette · ají verde",
+          "nombre": "salsa de yogur y ciboulette",
+          "clave": "salsa de yogur y ciboulette",
+          "grupo": null,
+          "gramos": 60,
+          "por100g": {
+            "kcal": 62,
+            "p": 9.2,
+            "c": 4,
+            "g": 1
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -695,14 +2266,110 @@
       "kcal_calculadas": 252,
       "desviacion": 9.3,
       "ingredientes": [
-        "8 tortillas de maíz de 14 cm",
-        "250 g de zapallito rallado grueso",
-        "120 g de queso mantecoso o mozzarella sin lactosa, rallado",
-        "3 cdas de verde de cebollín",
-        "1 cdta de aceite de ajo",
-        "1/2 cdta de comino · 1/2 cdta de orégano · sal · pimienta",
-        "Opcional: 100 g de pollo cocido desmenuzado o 60 g de espinaca",
-        "Pebre sin cebolla para servir"
+        {
+          "crudo": "8 tortillas de maíz de 14 cm",
+          "nombre": "tortillas de maíz",
+          "clave": "tortillas de maiz",
+          "grupo": null,
+          "gramos": 312,
+          "por100g": {
+            "kcal": 156,
+            "p": 4.1,
+            "c": 32.6,
+            "g": 1.8
+          }
+        },
+        {
+          "crudo": "250 g de zapallito rallado grueso",
+          "nombre": "zapallito",
+          "clave": "zapallito",
+          "grupo": null,
+          "gramos": 250,
+          "por100g": {
+            "kcal": 17,
+            "p": 1.2,
+            "c": 3.1,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "120 g de queso mantecoso o mozzarella sin lactosa, rallado",
+          "nombre": "queso",
+          "clave": "queso",
+          "grupo": null,
+          "gramos": 120,
+          "por100g": {
+            "kcal": 356,
+            "p": 24.9,
+            "c": 2.2,
+            "g": 27.4
+          }
+        },
+        {
+          "crudo": "3 cdas de verde de cebollín",
+          "nombre": "verde de cebollín",
+          "clave": "verde de cebollin",
+          "grupo": null,
+          "gramos": 18,
+          "por100g": {
+            "kcal": 32,
+            "p": 1.8,
+            "c": 7.3,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "1 cdta de aceite de ajo",
+          "nombre": "aceite de ajo",
+          "clave": "aceite de ajo",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "1/2 cdta de comino · 1/2 cdta de orégano · sal · pimienta",
+          "nombre": "comino",
+          "clave": "comino",
+          "grupo": null,
+          "gramos": 1,
+          "por100g": {
+            "kcal": 375,
+            "p": 17.8,
+            "c": 44.2,
+            "g": 22.3
+          }
+        },
+        {
+          "crudo": "Opcional: 100 g de pollo cocido desmenuzado o 60 g de espinaca",
+          "nombre": "pollo",
+          "clave": "pollo",
+          "grupo": null,
+          "gramos": null,
+          "por100g": {
+            "kcal": 120,
+            "p": 22.5,
+            "c": 0,
+            "g": 2.6
+          }
+        },
+        {
+          "crudo": "Pebre sin cebolla para servir",
+          "nombre": "Pebre sin cebolla",
+          "clave": "pebre sin cebolla",
+          "grupo": null,
+          "gramos": null,
+          "por100g": {
+            "kcal": 60,
+            "p": 1.2,
+            "c": 5,
+            "g": 4
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -737,16 +2404,136 @@
       "kcal_calculadas": 73,
       "desviacion": 3.8,
       "ingredientes": [
-        "250 g de zapallo cocido al vapor, en puré seco",
-        "150 g de harina de arroz",
-        "50 g de harina de avena",
-        "25 g de almidón de maíz",
-        "20 g de mantequilla derretida",
-        "1 huevo",
-        "1 1/2 cdta de polvos de hornear",
-        "3/4 cdta de sal",
-        "1 cdta de aceite para pincelar",
-        "Pebre sin cebolla para servir"
+        {
+          "crudo": "250 g de zapallo cocido al vapor, en puré seco",
+          "nombre": "zapallo",
+          "clave": "zapallo",
+          "grupo": null,
+          "gramos": 250,
+          "por100g": {
+            "kcal": 26,
+            "p": 1,
+            "c": 6.5,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "150 g de harina de arroz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": null,
+          "gramos": 150,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "50 g de harina de avena",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": null,
+          "gramos": 50,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "25 g de almidón de maíz",
+          "nombre": "almidón de maíz",
+          "clave": "almidon de maiz",
+          "grupo": null,
+          "gramos": 25,
+          "por100g": {
+            "kcal": 381,
+            "p": 0.3,
+            "c": 91.3,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "20 g de mantequilla derretida",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": null,
+          "gramos": 20,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "1 huevo",
+          "nombre": "huevo",
+          "clave": "huevo",
+          "grupo": null,
+          "gramos": 50,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "1 1/2 cdta de polvos de hornear",
+          "nombre": "polvos de hornear",
+          "clave": "polvos de hornear",
+          "grupo": null,
+          "gramos": 7,
+          "por100g": {
+            "kcal": 53,
+            "p": 0,
+            "c": 27.7,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "3/4 cdta de sal",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de aceite para pincelar",
+          "nombre": "aceite",
+          "clave": "aceite",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "Pebre sin cebolla para servir",
+          "nombre": "Pebre sin cebolla",
+          "clave": "pebre sin cebolla",
+          "grupo": null,
+          "gramos": null,
+          "por100g": {
+            "kcal": 60,
+            "p": 1.2,
+            "c": 5,
+            "g": 4
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -781,15 +2568,97 @@
       "kcal_calculadas": 286,
       "desviacion": 19.2,
       "ingredientes": [
-        "500 g de pechuga de pollo en trozos de 3 cm",
-        "100 g de yogur griego sin lactosa · 1 cdta de sal · jugo de 1/2 limón",
-        "70 g de avena en hojuelas , molida grueso",
-        "25 g de parmesano rallado fino",
-        "1 cdta de pimentón ahumado · 1/2 cdta de orégano · 1/2 cdta de comino · pimienta",
-        "1 huevo batido",
-        "Aceite en spray",
-        "600 g de papas con cáscara, en gajos",
-        "1 cda de aceite de oliva · sal · romero o pimentón"
+        {
+          "crudo": "500 g de pechuga de pollo en trozos de 3 cm",
+          "nombre": "pechuga de pollo",
+          "clave": "pechuga de pollo",
+          "grupo": "Nuggets",
+          "gramos": 500,
+          "por100g": {
+            "kcal": 120,
+            "p": 22.5,
+            "c": 0,
+            "g": 2.6
+          }
+        },
+        {
+          "crudo": "100 g de yogur griego sin lactosa · 1 cdta de sal · jugo de 1/2 limón",
+          "nombre": "yogur griego",
+          "clave": "yogur griego",
+          "grupo": "Nuggets",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 97,
+            "p": 9,
+            "c": 3.9,
+            "g": 5
+          }
+        },
+        {
+          "crudo": "70 g de avena en hojuelas , molida grueso",
+          "nombre": "avena en hojuelas",
+          "clave": "avena en hojuelas",
+          "grupo": "Nuggets",
+          "gramos": 70,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "25 g de parmesano rallado fino",
+          "nombre": "parmesano",
+          "clave": "parmesano",
+          "grupo": "Nuggets",
+          "gramos": 25,
+          "por100g": {
+            "kcal": 392,
+            "p": 35.8,
+            "c": 3.2,
+            "g": 25.8
+          }
+        },
+        {
+          "crudo": "1 cdta de pimentón ahumado · 1/2 cdta de orégano · 1/2 cdta de comino · pimienta",
+          "nombre": "pimentón ahumado",
+          "clave": "pimenton ahumado",
+          "grupo": "Nuggets",
+          "gramos": 2,
+          "por100g": {
+            "kcal": 282,
+            "p": 14.1,
+            "c": 54,
+            "g": 12.9
+          }
+        },
+        {
+          "crudo": "1 huevo batido",
+          "nombre": "huevo",
+          "clave": "huevo",
+          "grupo": "Nuggets",
+          "gramos": 50,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "Aceite en spray",
+          "nombre": "Aceite",
+          "clave": "aceite",
+          "grupo": "Nuggets",
+          "gramos": null,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -823,7 +2692,34 @@
       "kcal_declaradas": 155.0,
       "kcal_calculadas": 145,
       "desviacion": -6.2,
-      "ingredientes": [],
+      "ingredientes": [
+        {
+          "crudo": "600 g de papas con cáscara, en gajos",
+          "nombre": "papas",
+          "clave": "papas",
+          "grupo": "Papas rústicas",
+          "gramos": 600,
+          "por100g": {
+            "kcal": 77,
+            "p": 2,
+            "c": 17.5,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "1 cda de aceite de oliva · sal · romero o pimentón",
+          "nombre": "aceite de oliva",
+          "clave": "aceite de oliva",
+          "grupo": "Papas rústicas",
+          "gramos": 14,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        }
+      ],
       "fuente": "receta",
       "aprox": true
     },
@@ -857,15 +2753,118 @@
       "kcal_calculadas": 289,
       "desviacion": 9.1,
       "ingredientes": [
-        "4 zapallitos grandes (unos 900 g), en láminas de 3 mm a lo largo",
-        "400 g de pavo molido (o pollo)",
-        "500 g de salsa de tomate de la casa",
-        "1 cdta de aceite de ajo · 1 cdta de orégano · pimienta",
-        "250 g de ricotta sin lactosa (o quark)",
-        "150 g de espinaca , marchitada y exprimida",
-        "1 huevo",
-        "60 g de parmesano rallado",
-        "Nuez moscada · sal · albahaca"
+        {
+          "crudo": "4 zapallitos grandes (unos 900 g), en láminas de 3 mm a lo largo",
+          "nombre": "zapallitos",
+          "clave": "zapallitos",
+          "grupo": null,
+          "gramos": 784,
+          "por100g": {
+            "kcal": 17,
+            "p": 1.2,
+            "c": 3.1,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "400 g de pavo molido (o pollo)",
+          "nombre": "pavo molido",
+          "clave": "pavo molido",
+          "grupo": null,
+          "gramos": 400,
+          "por100g": {
+            "kcal": 149,
+            "p": 20.9,
+            "c": 0,
+            "g": 7
+          }
+        },
+        {
+          "crudo": "500 g de salsa de tomate de la casa",
+          "nombre": "salsa de tomate de la casa",
+          "clave": "salsa de tomate de la casa",
+          "grupo": null,
+          "gramos": 500,
+          "por100g": {
+            "kcal": 38,
+            "p": 1.4,
+            "c": 6.5,
+            "g": 1.1
+          }
+        },
+        {
+          "crudo": "1 cdta de aceite de ajo · 1 cdta de orégano · pimienta",
+          "nombre": "aceite de ajo",
+          "clave": "aceite de ajo",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "250 g de ricotta sin lactosa (o quark)",
+          "nombre": "ricotta",
+          "clave": "ricotta",
+          "grupo": null,
+          "gramos": 250,
+          "por100g": {
+            "kcal": 174,
+            "p": 11.3,
+            "c": 3,
+            "g": 13
+          }
+        },
+        {
+          "crudo": "150 g de espinaca , marchitada y exprimida",
+          "nombre": "espinaca",
+          "clave": "espinaca",
+          "grupo": null,
+          "gramos": 150,
+          "por100g": {
+            "kcal": 23,
+            "p": 2.9,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "1 huevo",
+          "nombre": "huevo",
+          "clave": "huevo",
+          "grupo": null,
+          "gramos": 50,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "60 g de parmesano rallado",
+          "nombre": "parmesano",
+          "clave": "parmesano",
+          "grupo": null,
+          "gramos": 60,
+          "por100g": {
+            "kcal": 392,
+            "p": 35.8,
+            "c": 3.2,
+            "g": 25.8
+          }
+        },
+        {
+          "crudo": "Nuez moscada · sal · albahaca",
+          "nombre": null,
+          "clave": null,
+          "grupo": null,
+          "gramos": null,
+          "por100g": null
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -900,20 +2899,188 @@
       "kcal_calculadas": 174,
       "desviacion": 2.4,
       "ingredientes": [
-        "130 g de harina de arroz",
-        "80 g de harina de avena",
-        "40 g de almidón de maíz",
-        "1 cda de psyllium en polvo (o 2 cdtas de goma xantana)",
-        "40 g de mantequilla fría en cubos",
-        "100 g de yogur griego sin lactosa",
-        "1 huevo + 1 para pintar",
-        "3/4 cdta de sal · 3–4 cdas de agua tibia",
-        "300 g de pavo molido",
-        "150 g de zapallito rallado y exprimido",
-        "4 cdas de verde de cebollín picado",
-        "1 cda de aceite de ajo",
-        "1 cdta de comino · 1 cdta de ají de color · 1/2 cdta de orégano · sal · pimienta",
-        "1 huevo duro picado · 12 aceitunas sin cuesco"
+        {
+          "crudo": "130 g de harina de arroz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": "Masa",
+          "gramos": 130,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "80 g de harina de avena",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": "Masa",
+          "gramos": 80,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "40 g de almidón de maíz",
+          "nombre": "almidón de maíz",
+          "clave": "almidon de maiz",
+          "grupo": "Masa",
+          "gramos": 40,
+          "por100g": {
+            "kcal": 381,
+            "p": 0.3,
+            "c": 91.3,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "1 cda de psyllium en polvo (o 2 cdtas de goma xantana)",
+          "nombre": "psyllium",
+          "clave": "psyllium",
+          "grupo": "Masa",
+          "gramos": 12,
+          "por100g": {
+            "kcal": 71,
+            "p": 1.5,
+            "c": 17.6,
+            "g": 0.5
+          }
+        },
+        {
+          "crudo": "40 g de mantequilla fría en cubos",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": "Masa",
+          "gramos": 40,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "100 g de yogur griego sin lactosa",
+          "nombre": "yogur griego",
+          "clave": "yogur griego",
+          "grupo": "Masa",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 97,
+            "p": 9,
+            "c": 3.9,
+            "g": 5
+          }
+        },
+        {
+          "crudo": "1 huevo + 1 para pintar",
+          "nombre": "huevo",
+          "clave": "huevo",
+          "grupo": "Masa",
+          "gramos": 50,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "3/4 cdta de sal · 3–4 cdas de agua tibia",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": "Masa",
+          "gramos": 4,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "300 g de pavo molido",
+          "nombre": "pavo molido",
+          "clave": "pavo molido",
+          "grupo": "Pino",
+          "gramos": 300,
+          "por100g": {
+            "kcal": 149,
+            "p": 20.9,
+            "c": 0,
+            "g": 7
+          }
+        },
+        {
+          "crudo": "150 g de zapallito rallado y exprimido",
+          "nombre": "zapallito",
+          "clave": "zapallito",
+          "grupo": "Pino",
+          "gramos": 150,
+          "por100g": {
+            "kcal": 17,
+            "p": 1.2,
+            "c": 3.1,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "4 cdas de verde de cebollín picado",
+          "nombre": "verde de cebollín",
+          "clave": "verde de cebollin",
+          "grupo": "Pino",
+          "gramos": 24,
+          "por100g": {
+            "kcal": 32,
+            "p": 1.8,
+            "c": 7.3,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "1 cda de aceite de ajo",
+          "nombre": "aceite de ajo",
+          "clave": "aceite de ajo",
+          "grupo": "Pino",
+          "gramos": 14,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "1 cdta de comino · 1 cdta de ají de color · 1/2 cdta de orégano · sal · pimienta",
+          "nombre": "comino",
+          "clave": "comino",
+          "grupo": "Pino",
+          "gramos": 2,
+          "por100g": {
+            "kcal": 375,
+            "p": 17.8,
+            "c": 44.2,
+            "g": 22.3
+          }
+        },
+        {
+          "crudo": "1 huevo duro picado · 12 aceitunas sin cuesco",
+          "nombre": "huevo duro",
+          "clave": "huevo duro",
+          "grupo": "Pino",
+          "gramos": 50,
+          "por100g": {
+            "kcal": 155,
+            "p": 12.6,
+            "c": 1.1,
+            "g": 10.6
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -948,15 +3115,97 @@
       "kcal_calculadas": 65,
       "desviacion": 8.8,
       "ingredientes": [
-        "250 g de zapallito rallado fino y exprimido",
-        "2 huevos",
-        "60 g de harina de avena",
-        "100 ml de leche sin lactosa",
-        "3 cdas de ciboulette o verde de cebollín",
-        "1/2 cdta de sal · pimienta · pizca de nuez moscada",
-        "1 cdta de aceite para pincelar",
-        "Pollo y espinaca : 200 g de pollo cocido desmenuzado + 100 g de espinaca marchitada + 60 g de queso sin lactosa, gratinados 8 min a 200 °C con salsa de tomate encima.",
-        "Solo con salsa de yogur , tomate y palta (30 g)."
+        {
+          "crudo": "250 g de zapallito rallado fino y exprimido",
+          "nombre": "zapallito",
+          "clave": "zapallito",
+          "grupo": "Panqueques",
+          "gramos": 250,
+          "por100g": {
+            "kcal": 17,
+            "p": 1.2,
+            "c": 3.1,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "2 huevos",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": "Panqueques",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "60 g de harina de avena",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": "Panqueques",
+          "gramos": 60,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "100 ml de leche sin lactosa",
+          "nombre": "leche sin lactosa",
+          "clave": "leche sin lactosa",
+          "grupo": "Panqueques",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 61,
+            "p": 3.2,
+            "c": 4.8,
+            "g": 3.3
+          }
+        },
+        {
+          "crudo": "3 cdas de ciboulette o verde de cebollín",
+          "nombre": "ciboulette",
+          "clave": "ciboulette",
+          "grupo": "Panqueques",
+          "gramos": 9,
+          "por100g": {
+            "kcal": 30,
+            "p": 3.3,
+            "c": 4.4,
+            "g": 0.7
+          }
+        },
+        {
+          "crudo": "1/2 cdta de sal · pimienta · pizca de nuez moscada",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": "Panqueques",
+          "gramos": 3,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de aceite para pincelar",
+          "nombre": "aceite",
+          "clave": "aceite",
+          "grupo": "Panqueques",
+          "gramos": 4,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -991,17 +3240,149 @@
       "kcal_calculadas": 94,
       "desviacion": -1.6,
       "ingredientes": [
-        "250 g de camote cocido al vapor, en puré seco",
-        "100 g de betarraga cocida, en puré",
-        "120 g de alulosa",
-        "25 g de mantequilla derretida",
-        "60 g de yogur griego 0 % sin lactosa",
-        "2 huevos grandes, a temperatura ambiente",
-        "50 g de cacao amargo en polvo",
-        "25 g de harina de arroz",
-        "1 cdta de esencia de vainilla",
-        "1/2 cdta de polvos de hornear · 1/2 cdta de sal",
-        "40 g de chocolate 70 % picado, para arriba"
+        {
+          "crudo": "250 g de camote cocido al vapor, en puré seco",
+          "nombre": "camote",
+          "clave": "camote",
+          "grupo": null,
+          "gramos": 250,
+          "por100g": {
+            "kcal": 86,
+            "p": 1.6,
+            "c": 20.1,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "100 g de betarraga cocida, en puré",
+          "nombre": "betarraga",
+          "clave": "betarraga",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 43,
+            "p": 1.6,
+            "c": 9.6,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "120 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 120,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "25 g de mantequilla derretida",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": null,
+          "gramos": 25,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "60 g de yogur griego 0 % sin lactosa",
+          "nombre": "yogur griego 0 %",
+          "clave": "yogur griego 0 %",
+          "grupo": null,
+          "gramos": 60,
+          "por100g": {
+            "kcal": 59,
+            "p": 10.2,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "2 huevos grandes, a temperatura ambiente",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "50 g de cacao amargo en polvo",
+          "nombre": "cacao amargo",
+          "clave": "cacao amargo",
+          "grupo": null,
+          "gramos": 50,
+          "por100g": {
+            "kcal": 228,
+            "p": 19.6,
+            "c": 57.9,
+            "g": 13.7
+          }
+        },
+        {
+          "crudo": "25 g de harina de arroz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": null,
+          "gramos": 25,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "1 cdta de esencia de vainilla",
+          "nombre": "esencia de vainilla",
+          "clave": "esencia de vainilla",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "1/2 cdta de polvos de hornear · 1/2 cdta de sal",
+          "nombre": "polvos de hornear",
+          "clave": "polvos de hornear",
+          "grupo": null,
+          "gramos": 2,
+          "por100g": {
+            "kcal": 53,
+            "p": 0,
+            "c": 27.7,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "40 g de chocolate 70 % picado, para arriba",
+          "nombre": "chocolate 70 %",
+          "clave": "chocolate 70 %",
+          "grupo": null,
+          "gramos": 40,
+          "por100g": {
+            "kcal": 598,
+            "p": 7.8,
+            "c": 45.9,
+            "g": 42.6
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1036,16 +3417,136 @@
       "kcal_calculadas": 80,
       "desviacion": -20.4,
       "ingredientes": [
-        "200 g de zapallo cocido al vapor, en puré seco",
-        "45 g de mantequilla",
-        "60 g de yogur griego 0 % sin lactosa",
-        "130 g de alulosa",
-        "2 huevos + 1 yema",
-        "40 g de harina de avena",
-        "40 g de harina de arroz",
-        "2 cdtas de vainilla · 1 cdta de polvos de hornear · 3/4 cdta de sal",
-        "60 g de alulosa · 30 ml de crema sin lactosa · 10 g de mantequilla",
-        "1/4 cdta de sal en escamas , más un poco para terminar"
+        {
+          "crudo": "200 g de zapallo cocido al vapor, en puré seco",
+          "nombre": "zapallo",
+          "clave": "zapallo",
+          "grupo": "Masa",
+          "gramos": 200,
+          "por100g": {
+            "kcal": 26,
+            "p": 1,
+            "c": 6.5,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "45 g de mantequilla",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": "Masa",
+          "gramos": 45,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "60 g de yogur griego 0 % sin lactosa",
+          "nombre": "yogur griego 0 %",
+          "clave": "yogur griego 0 %",
+          "grupo": "Masa",
+          "gramos": 60,
+          "por100g": {
+            "kcal": 59,
+            "p": 10.2,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "130 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Masa",
+          "gramos": 130,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "2 huevos + 1 yema",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": "Masa",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "40 g de harina de avena",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": "Masa",
+          "gramos": 40,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "40 g de harina de arroz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": "Masa",
+          "gramos": 40,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "2 cdtas de vainilla · 1 cdta de polvos de hornear · 3/4 cdta de sal",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": "Masa",
+          "gramos": 8,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "60 g de alulosa · 30 ml de crema sin lactosa · 10 g de mantequilla",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Caramelo salado",
+          "gramos": 60,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1/4 cdta de sal en escamas , más un poco para terminar",
+          "nombre": "sal en escamas",
+          "clave": "sal en escamas",
+          "grupo": "Caramelo salado",
+          "gramos": 1,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1080,16 +3581,136 @@
       "kcal_calculadas": 97,
       "desviacion": 1.8,
       "ingredientes": [
-        "2 plátanos firmes , apenas pintones (unos 200 g pelados)",
-        "200 g de zapallito italiano rallado fino, salado y exprimido (quedan unos 120 g)",
-        "120 g de alulosa",
-        "2 huevos",
-        "100 g de yogur griego 0 % sin lactosa",
-        "90 g de harina de avena",
-        "30 g de harina de arroz",
-        "1 1/2 cdta de polvos de hornear · 1/2 cdta de bicarbonato",
-        "1 1/2 cdta de canela · 2 cdtas de vainilla · 1/2 cdta de sal",
-        "15 g de nueces picadas para arriba (opcional, +10 kcal)"
+        {
+          "crudo": "2 plátanos firmes , apenas pintones (unos 200 g pelados)",
+          "nombre": "plátanos firmes",
+          "clave": "platanos firmes",
+          "grupo": null,
+          "gramos": 236,
+          "por100g": {
+            "kcal": 89,
+            "p": 1.1,
+            "c": 22.8,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "200 g de zapallito italiano rallado fino, salado y exprimido (quedan unos 120 g)",
+          "nombre": "zapallito italiano",
+          "clave": "zapallito italiano",
+          "grupo": null,
+          "gramos": 200,
+          "por100g": {
+            "kcal": 17,
+            "p": 1.2,
+            "c": 3.1,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "120 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 120,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "2 huevos",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "100 g de yogur griego 0 % sin lactosa",
+          "nombre": "yogur griego 0 %",
+          "clave": "yogur griego 0 %",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 59,
+            "p": 10.2,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "90 g de harina de avena",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": null,
+          "gramos": 90,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "30 g de harina de arroz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": null,
+          "gramos": 30,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "1 1/2 cdta de polvos de hornear · 1/2 cdta de bicarbonato",
+          "nombre": "polvos de hornear",
+          "clave": "polvos de hornear",
+          "grupo": null,
+          "gramos": 7,
+          "por100g": {
+            "kcal": 53,
+            "p": 0,
+            "c": 27.7,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 1/2 cdta de canela · 2 cdtas de vainilla · 1/2 cdta de sal",
+          "nombre": "canela",
+          "clave": "canela",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 247,
+            "p": 4,
+            "c": 80.6,
+            "g": 1.2
+          }
+        },
+        {
+          "crudo": "15 g de nueces picadas para arriba (opcional, +10 kcal)",
+          "nombre": "nueces",
+          "clave": "nueces",
+          "grupo": null,
+          "gramos": 15,
+          "por100g": {
+            "kcal": 654,
+            "p": 15.2,
+            "c": 13.7,
+            "g": 65.2
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1124,16 +3745,136 @@
       "kcal_calculadas": 91,
       "desviacion": -20.7,
       "ingredientes": [
-        "60 g de avena en hojuelas , molida grueso",
-        "30 g de harina de arroz",
-        "30 g de mantequilla fría en cubos",
-        "20 g de alulosa · 1 clara · 1/4 cdta de sal",
-        "150 ml de jugo de limón (5–6 limones) · ralladura de 2",
-        "100 g de alulosa",
-        "2 huevos + 1 yema",
-        "20 g de almidón de maíz · 15 g de mantequilla · pizca de sal",
-        "3 claras a temperatura ambiente · 90 g de alulosa molida fina",
-        "1/4 cdta de cremor tártaro o 1/2 cdta de jugo de limón"
+        {
+          "crudo": "60 g de avena en hojuelas , molida grueso",
+          "nombre": "avena en hojuelas",
+          "clave": "avena en hojuelas",
+          "grupo": "Base",
+          "gramos": 60,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "30 g de harina de arroz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": "Base",
+          "gramos": 30,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "30 g de mantequilla fría en cubos",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": "Base",
+          "gramos": 30,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "20 g de alulosa · 1 clara · 1/4 cdta de sal",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Base",
+          "gramos": 20,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "150 ml de jugo de limón (5–6 limones) · ralladura de 2",
+          "nombre": "jugo de limón",
+          "clave": "jugo de limon",
+          "grupo": "Crema de limón",
+          "gramos": 150,
+          "por100g": {
+            "kcal": 22,
+            "p": 0.4,
+            "c": 6.9,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "100 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Crema de limón",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "2 huevos + 1 yema",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": "Crema de limón",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "20 g de almidón de maíz · 15 g de mantequilla · pizca de sal",
+          "nombre": "almidón de maíz",
+          "clave": "almidon de maiz",
+          "grupo": "Crema de limón",
+          "gramos": 20,
+          "por100g": {
+            "kcal": 381,
+            "p": 0.3,
+            "c": 91.3,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "3 claras a temperatura ambiente · 90 g de alulosa molida fina",
+          "nombre": "claras",
+          "clave": "claras",
+          "grupo": "Merengue",
+          "gramos": 99,
+          "por100g": {
+            "kcal": 52,
+            "p": 10.9,
+            "c": 0.7,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "1/4 cdta de cremor tártaro o 1/2 cdta de jugo de limón",
+          "nombre": "cremor tártaro",
+          "clave": "cremor tartaro",
+          "grupo": "Merengue",
+          "gramos": 1,
+          "por100g": {
+            "kcal": 258,
+            "p": 0,
+            "c": 61.5,
+            "g": 0
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1168,16 +3909,136 @@
       "kcal_calculadas": 99,
       "desviacion": -9.9,
       "ingredientes": [
-        "250 g de zapallito italiano rallado fino, salado y exprimido (unos 150 g)",
-        "100 g de harina de avena",
-        "30 g de harina de arroz · 30 g de almidón de maíz",
-        "130 g de alulosa",
-        "2 huevos + 2 claras",
-        "20 g de mantequilla blanda",
-        "120 g de yogur griego 0 % sin lactosa",
-        "Ralladura de 2 limones + 3 cdas de su jugo",
-        "2 cdtas de vainilla · 2 cdtas de polvos de hornear · 1/2 cdta de sal",
-        "40 g de alulosa molida fina · 2 cdtas de jugo de limón"
+        {
+          "crudo": "250 g de zapallito italiano rallado fino, salado y exprimido (unos 150 g)",
+          "nombre": "zapallito italiano",
+          "clave": "zapallito italiano",
+          "grupo": "Queque",
+          "gramos": 250,
+          "por100g": {
+            "kcal": 17,
+            "p": 1.2,
+            "c": 3.1,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "100 g de harina de avena",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": "Queque",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "30 g de harina de arroz · 30 g de almidón de maíz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": "Queque",
+          "gramos": 30,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "130 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Queque",
+          "gramos": 130,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "2 huevos + 2 claras",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": "Queque",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "20 g de mantequilla blanda",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": "Queque",
+          "gramos": 20,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "120 g de yogur griego 0 % sin lactosa",
+          "nombre": "yogur griego 0 %",
+          "clave": "yogur griego 0 %",
+          "grupo": "Queque",
+          "gramos": 120,
+          "por100g": {
+            "kcal": 59,
+            "p": 10.2,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "Ralladura de 2 limones + 3 cdas de su jugo",
+          "nombre": "limones",
+          "clave": "limones",
+          "grupo": "Queque",
+          "gramos": null,
+          "por100g": {
+            "kcal": 29,
+            "p": 1.1,
+            "c": 9.3,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "2 cdtas de vainilla · 2 cdtas de polvos de hornear · 1/2 cdta de sal",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": "Queque",
+          "gramos": 8,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "40 g de alulosa molida fina · 2 cdtas de jugo de limón",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Glaseado",
+          "gramos": 40,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1212,16 +4073,136 @@
       "kcal_calculadas": 110,
       "desviacion": -18.7,
       "ingredientes": [
-        "250 g de zanahoria rallada fina (3 medianas)",
-        "80 g de camote cocido en puré",
-        "140 g de alulosa",
-        "2 huevos + 2 claras",
-        "20 ml de aceite de oliva suave · 100 g de yogur griego 0 %",
-        "80 g de harina de avena · 40 g de harina de arroz",
-        "2 cdtas de canela · 1/2 cdta de jengibre · 1/4 de nuez moscada y 1/4 de clavo",
-        "2 cdtas de polvos de hornear · 1/2 cdta de bicarbonato · 1/2 cdta de sal",
-        "60 g de queso crema sin lactosa, frío · 100 g de quark o yogur griego colado",
-        "40 g de alulosa molida fina · 1 cdta de almidón · 1 cdta de vainilla · pizca de sal"
+        {
+          "crudo": "250 g de zanahoria rallada fina (3 medianas)",
+          "nombre": "zanahoria",
+          "clave": "zanahoria",
+          "grupo": "Queque",
+          "gramos": 250,
+          "por100g": {
+            "kcal": 41,
+            "p": 0.9,
+            "c": 9.6,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "80 g de camote cocido en puré",
+          "nombre": "camote",
+          "clave": "camote",
+          "grupo": "Queque",
+          "gramos": 80,
+          "por100g": {
+            "kcal": 86,
+            "p": 1.6,
+            "c": 20.1,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "140 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Queque",
+          "gramos": 140,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "2 huevos + 2 claras",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": "Queque",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "20 ml de aceite de oliva suave · 100 g de yogur griego 0 %",
+          "nombre": "aceite",
+          "clave": "aceite",
+          "grupo": "Queque",
+          "gramos": 20,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "80 g de harina de avena · 40 g de harina de arroz",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": "Queque",
+          "gramos": 80,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "2 cdtas de canela · 1/2 cdta de jengibre · 1/4 de nuez moscada y 1/4 de clavo",
+          "nombre": "canela",
+          "clave": "canela",
+          "grupo": "Queque",
+          "gramos": 5,
+          "por100g": {
+            "kcal": 247,
+            "p": 4,
+            "c": 80.6,
+            "g": 1.2
+          }
+        },
+        {
+          "crudo": "2 cdtas de polvos de hornear · 1/2 cdta de bicarbonato · 1/2 cdta de sal",
+          "nombre": "polvos de hornear",
+          "clave": "polvos de hornear",
+          "grupo": "Queque",
+          "gramos": 9,
+          "por100g": {
+            "kcal": 53,
+            "p": 0,
+            "c": 27.7,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "60 g de queso crema sin lactosa, frío · 100 g de quark o yogur griego colado",
+          "nombre": "queso crema",
+          "clave": "queso crema",
+          "grupo": "Frosting",
+          "gramos": 60,
+          "por100g": {
+            "kcal": 342,
+            "p": 6,
+            "c": 4.1,
+            "g": 34
+          }
+        },
+        {
+          "crudo": "40 g de alulosa molida fina · 1 cdta de almidón · 1 cdta de vainilla · pizca de sal",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Frosting",
+          "gramos": 40,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1256,15 +4237,123 @@
       "kcal_calculadas": 94,
       "desviacion": -14.4,
       "ingredientes": [
-        "120 g de almidón de maíz (maicena)",
-        "40 g de harina de arroz · 30 g de harina de avena",
-        "60 g de mantequilla blanda · 40 g de yogur griego 0 %",
-        "60 g de alulosa molida fina",
-        "1 huevo + 1 yema",
-        "1 cdta de polvos de hornear · 1 cdta de vainilla · ralladura de 1/2 limón · 1/4 cdta de sal",
-        "300 ml de leche descremada sin lactosa · 100 g de alulosa",
-        "15 g de mantequilla · 1/2 cdta de bicarbonato · 1 cdta de vainilla · pizca de sal",
-        "25 g de coco rallado"
+        {
+          "crudo": "120 g de almidón de maíz (maicena)",
+          "nombre": "almidón de maíz",
+          "clave": "almidon de maiz",
+          "grupo": "Tapitas (32)",
+          "gramos": 120,
+          "por100g": {
+            "kcal": 381,
+            "p": 0.3,
+            "c": 91.3,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "40 g de harina de arroz · 30 g de harina de avena",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": "Tapitas (32)",
+          "gramos": 40,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "60 g de mantequilla blanda · 40 g de yogur griego 0 %",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": "Tapitas (32)",
+          "gramos": 60,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "60 g de alulosa molida fina",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Tapitas (32)",
+          "gramos": 60,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 huevo + 1 yema",
+          "nombre": "huevo",
+          "clave": "huevo",
+          "grupo": "Tapitas (32)",
+          "gramos": 50,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "1 cdta de polvos de hornear · 1 cdta de vainilla · ralladura de 1/2 limón · 1/4 cdta de sal",
+          "nombre": "polvos de hornear",
+          "clave": "polvos de hornear",
+          "grupo": "Tapitas (32)",
+          "gramos": 5,
+          "por100g": {
+            "kcal": 53,
+            "p": 0,
+            "c": 27.7,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "300 ml de leche descremada sin lactosa · 100 g de alulosa",
+          "nombre": "leche descremada sin lactosa",
+          "clave": "leche descremada sin lactosa",
+          "grupo": "Manjar",
+          "gramos": 300,
+          "por100g": {
+            "kcal": 34,
+            "p": 3.4,
+            "c": 5,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "15 g de mantequilla · 1/2 cdta de bicarbonato · 1 cdta de vainilla · pizca de sal",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": "Manjar",
+          "gramos": 15,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "25 g de coco rallado",
+          "nombre": "coco rallado",
+          "clave": "coco rallado",
+          "grupo": "Para terminar",
+          "gramos": 25,
+          "por100g": {
+            "kcal": 660,
+            "p": 6.9,
+            "c": 23.7,
+            "g": 64.5
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1299,13 +4388,97 @@
       "kcal_calculadas": 48,
       "desviacion": -13.3,
       "ingredientes": [
-        "100 g de coco rallado (medio grueso, no harina de coco)",
-        "100 g de zanahoria rallada muy fina y apretada en papel absorbente",
-        "2 claras + 1 huevo entero",
-        "80 g de alulosa",
-        "20 g de harina de arroz",
-        "1 1/2 cdta de vainilla · 1/2 cdta de sal · ralladura de 1/2 naranja",
-        "25 g de chocolate 70 % derretido, para la base (opcional, +8 kcal)"
+        {
+          "crudo": "100 g de coco rallado (medio grueso, no harina de coco)",
+          "nombre": "coco rallado",
+          "clave": "coco rallado",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 660,
+            "p": 6.9,
+            "c": 23.7,
+            "g": 64.5
+          }
+        },
+        {
+          "crudo": "100 g de zanahoria rallada muy fina y apretada en papel absorbente",
+          "nombre": "zanahoria",
+          "clave": "zanahoria",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 41,
+            "p": 0.9,
+            "c": 9.6,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "2 claras + 1 huevo entero",
+          "nombre": "claras",
+          "clave": "claras",
+          "grupo": null,
+          "gramos": 66,
+          "por100g": {
+            "kcal": 52,
+            "p": 10.9,
+            "c": 0.7,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "80 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 80,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "20 g de harina de arroz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": null,
+          "gramos": 20,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "1 1/2 cdta de vainilla · 1/2 cdta de sal · ralladura de 1/2 naranja",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": null,
+          "gramos": 6,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "25 g de chocolate 70 % derretido, para la base (opcional, +8 kcal)",
+          "nombre": "chocolate 70 %",
+          "clave": "chocolate 70 %",
+          "grupo": null,
+          "gramos": 25,
+          "por100g": {
+            "kcal": 598,
+            "p": 7.8,
+            "c": 45.9,
+            "g": 42.6
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1340,13 +4513,97 @@
       "kcal_calculadas": 89,
       "desviacion": 4.5,
       "ingredientes": [
-        "60 g de maíz para cabritas (unas 16 tazas)",
-        "1 cda de aceite de coco o maravilla, para reventar",
-        "110 g de alulosa",
-        "30 g de mantequilla · 1 cda de agua caliente",
-        "2 cdas de crema sin lactosa",
-        "1 cdta de vainilla · 1/4 cdta de bicarbonato",
-        "1 cdta de sal en escamas , más un poco para terminar"
+        {
+          "crudo": "60 g de maíz para cabritas (unas 16 tazas)",
+          "nombre": "maíz para cabritas",
+          "clave": "maiz para cabritas",
+          "grupo": null,
+          "gramos": 60,
+          "por100g": {
+            "kcal": 387,
+            "p": 12.9,
+            "c": 77.8,
+            "g": 4.5
+          }
+        },
+        {
+          "crudo": "1 cda de aceite de coco o maravilla, para reventar",
+          "nombre": "aceite",
+          "clave": "aceite",
+          "grupo": null,
+          "gramos": 14,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "110 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 110,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "30 g de mantequilla · 1 cda de agua caliente",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": null,
+          "gramos": 30,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "2 cdas de crema sin lactosa",
+          "nombre": "crema sin lactosa",
+          "clave": "crema sin lactosa",
+          "grupo": null,
+          "gramos": 30,
+          "por100g": {
+            "kcal": 292,
+            "p": 2.1,
+            "c": 3.7,
+            "g": 30
+          }
+        },
+        {
+          "crudo": "1 cdta de vainilla · 1/4 cdta de bicarbonato",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "1 cdta de sal en escamas , más un poco para terminar",
+          "nombre": "sal en escamas",
+          "clave": "sal en escamas",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1381,15 +4638,123 @@
       "kcal_calculadas": 80,
       "desviacion": -0.3,
       "ingredientes": [
-        "70 g de avena en hojuelas (tradicional)",
-        "30 g de harina de arroz",
-        "100 g de zanahoria rallada muy fina, apretada en papel",
-        "30 g de coco rallado , tostado",
-        "40 g de mantequilla blanda · 40 g de yogur griego 0 %",
-        "100 g de alulosa",
-        "1 huevo",
-        "1 1/2 cdta de vainilla · 1/2 cdta de bicarbonato · 1 cdta de canela · 1/2 cdta de sal",
-        "40 g de chocolate 70 % picado grueso"
+        {
+          "crudo": "70 g de avena en hojuelas (tradicional)",
+          "nombre": "avena en hojuelas",
+          "clave": "avena en hojuelas",
+          "grupo": null,
+          "gramos": 70,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "30 g de harina de arroz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": null,
+          "gramos": 30,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "100 g de zanahoria rallada muy fina, apretada en papel",
+          "nombre": "zanahoria",
+          "clave": "zanahoria",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 41,
+            "p": 0.9,
+            "c": 9.6,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "30 g de coco rallado , tostado",
+          "nombre": "coco rallado",
+          "clave": "coco rallado",
+          "grupo": null,
+          "gramos": 30,
+          "por100g": {
+            "kcal": 660,
+            "p": 6.9,
+            "c": 23.7,
+            "g": 64.5
+          }
+        },
+        {
+          "crudo": "40 g de mantequilla blanda · 40 g de yogur griego 0 %",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": null,
+          "gramos": 40,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "100 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 huevo",
+          "nombre": "huevo",
+          "clave": "huevo",
+          "grupo": null,
+          "gramos": 50,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "1 1/2 cdta de vainilla · 1/2 cdta de bicarbonato · 1 cdta de canela · 1/2 cdta de sal",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": null,
+          "gramos": 6,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "40 g de chocolate 70 % picado grueso",
+          "nombre": "chocolate 70 %",
+          "clave": "chocolate 70 %",
+          "grupo": null,
+          "gramos": 40,
+          "por100g": {
+            "kcal": 598,
+            "p": 7.8,
+            "c": 45.9,
+            "g": 42.6
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1424,15 +4789,123 @@
       "kcal_calculadas": 149,
       "desviacion": -0.5,
       "ingredientes": [
-        "50 g de avena en hojuelas , molida grueso",
-        "20 g de mantequilla derretida · 15 g de alulosa",
-        "1 clara · pizca de sal y de canela",
-        "200 g de queso crema sin lactosa, a temperatura ambiente",
-        "300 g de quark 0 % o yogur griego sin lactosa bien colado",
-        "130 g de alulosa",
-        "2 huevos a temperatura ambiente",
-        "Ralladura de 2 limones + 2 cdas de jugo",
-        "15 g de almidón de maíz · 2 cdtas de vainilla · 1/4 cdta de sal"
+        {
+          "crudo": "50 g de avena en hojuelas , molida grueso",
+          "nombre": "avena en hojuelas",
+          "clave": "avena en hojuelas",
+          "grupo": "Base",
+          "gramos": 50,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "20 g de mantequilla derretida · 15 g de alulosa",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": "Base",
+          "gramos": 20,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "1 clara · pizca de sal y de canela",
+          "nombre": "clara",
+          "clave": "clara",
+          "grupo": "Base",
+          "gramos": 33,
+          "por100g": {
+            "kcal": 52,
+            "p": 10.9,
+            "c": 0.7,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "200 g de queso crema sin lactosa, a temperatura ambiente",
+          "nombre": "queso crema",
+          "clave": "queso crema",
+          "grupo": "Relleno",
+          "gramos": 200,
+          "por100g": {
+            "kcal": 342,
+            "p": 6,
+            "c": 4.1,
+            "g": 34
+          }
+        },
+        {
+          "crudo": "300 g de quark 0 % o yogur griego sin lactosa bien colado",
+          "nombre": "quark 0 %",
+          "clave": "quark 0 %",
+          "grupo": "Relleno",
+          "gramos": 300,
+          "por100g": {
+            "kcal": 67,
+            "p": 12,
+            "c": 4,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "130 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Relleno",
+          "gramos": 130,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "2 huevos a temperatura ambiente",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": "Relleno",
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "Ralladura de 2 limones + 2 cdas de jugo",
+          "nombre": "limones",
+          "clave": "limones",
+          "grupo": "Relleno",
+          "gramos": null,
+          "por100g": {
+            "kcal": 29,
+            "p": 1.1,
+            "c": 9.3,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "15 g de almidón de maíz · 2 cdtas de vainilla · 1/4 cdta de sal",
+          "nombre": "almidón de maíz",
+          "clave": "almidon de maiz",
+          "grupo": "Relleno",
+          "gramos": 15,
+          "por100g": {
+            "kcal": 381,
+            "p": 0.3,
+            "c": 91.3,
+            "g": 0.1
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1467,13 +4940,97 @@
       "kcal_calculadas": 53,
       "desviacion": -3.7,
       "ingredientes": [
-        "200 g de camote cocido al vapor, en puré seco y frío",
-        "30 g de cacao amargo",
-        "40 g de alulosa molida fina",
-        "15 g de mantequilla de maní sin azúcar (1 cda)",
-        "1 cdta de vainilla · 1/4 cdta de sal · pizca de canela",
-        "60 g de chocolate 70 % + 1 cdta de aceite de coco , para bañar",
-        "20 g de coco rallado tostado o cacao, para rebozar"
+        {
+          "crudo": "200 g de camote cocido al vapor, en puré seco y frío",
+          "nombre": "camote",
+          "clave": "camote",
+          "grupo": null,
+          "gramos": 200,
+          "por100g": {
+            "kcal": 86,
+            "p": 1.6,
+            "c": 20.1,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "30 g de cacao amargo",
+          "nombre": "cacao amargo",
+          "clave": "cacao amargo",
+          "grupo": null,
+          "gramos": 30,
+          "por100g": {
+            "kcal": 228,
+            "p": 19.6,
+            "c": 57.9,
+            "g": 13.7
+          }
+        },
+        {
+          "crudo": "40 g de alulosa molida fina",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 40,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "15 g de mantequilla de maní sin azúcar (1 cda)",
+          "nombre": "mantequilla de maní",
+          "clave": "mantequilla de mani",
+          "grupo": null,
+          "gramos": 15,
+          "por100g": {
+            "kcal": 588,
+            "p": 25.1,
+            "c": 19.6,
+            "g": 50.4
+          }
+        },
+        {
+          "crudo": "1 cdta de vainilla · 1/4 cdta de sal · pizca de canela",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "60 g de chocolate 70 % + 1 cdta de aceite de coco , para bañar",
+          "nombre": "chocolate 70 %",
+          "clave": "chocolate 70 %",
+          "grupo": null,
+          "gramos": 60,
+          "por100g": {
+            "kcal": 598,
+            "p": 7.8,
+            "c": 45.9,
+            "g": 42.6
+          }
+        },
+        {
+          "crudo": "20 g de coco rallado tostado o cacao, para rebozar",
+          "nombre": "coco rallado",
+          "clave": "coco rallado",
+          "grupo": null,
+          "gramos": 20,
+          "por100g": {
+            "kcal": 660,
+            "p": 6.9,
+            "c": 23.7,
+            "g": 64.5
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1508,13 +5065,97 @@
       "kcal_calculadas": 113,
       "desviacion": 7.3,
       "ingredientes": [
-        "400 g de yogur griego 0 % sin lactosa, bien frío",
-        "50 g de chocolate 70 %",
-        "25 g de cacao amargo",
-        "60 g de alulosa molida fina",
-        "2 claras a temperatura ambiente",
-        "4 g de gelatina sin sabor + 2 cdas de agua fría",
-        "1 cdta de vainilla · 1/4 cdta de sal · pizca de café instantáneo"
+        {
+          "crudo": "400 g de yogur griego 0 % sin lactosa, bien frío",
+          "nombre": "yogur griego 0 %",
+          "clave": "yogur griego 0 %",
+          "grupo": null,
+          "gramos": 400,
+          "por100g": {
+            "kcal": 59,
+            "p": 10.2,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "50 g de chocolate 70 %",
+          "nombre": "chocolate 70 %",
+          "clave": "chocolate 70 %",
+          "grupo": null,
+          "gramos": 50,
+          "por100g": {
+            "kcal": 598,
+            "p": 7.8,
+            "c": 45.9,
+            "g": 42.6
+          }
+        },
+        {
+          "crudo": "25 g de cacao amargo",
+          "nombre": "cacao amargo",
+          "clave": "cacao amargo",
+          "grupo": null,
+          "gramos": 25,
+          "por100g": {
+            "kcal": 228,
+            "p": 19.6,
+            "c": 57.9,
+            "g": 13.7
+          }
+        },
+        {
+          "crudo": "60 g de alulosa molida fina",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 60,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "2 claras a temperatura ambiente",
+          "nombre": "claras",
+          "clave": "claras",
+          "grupo": null,
+          "gramos": 66,
+          "por100g": {
+            "kcal": 52,
+            "p": 10.9,
+            "c": 0.7,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "4 g de gelatina sin sabor + 2 cdas de agua fría",
+          "nombre": "gelatina sin sabor",
+          "clave": "gelatina sin sabor",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 335,
+            "p": 85.6,
+            "c": 0,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "1 cdta de vainilla · 1/4 cdta de sal · pizca de café instantáneo",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1549,16 +5190,136 @@
       "kcal_calculadas": 96,
       "desviacion": -19.9,
       "ingredientes": [
-        "50 g de avena en hojuelas molida grueso · 20 g de mantequilla derretida",
-        "15 g de alulosa · 1 clara · pizca de sal",
-        "120 g de queso crema sin lactosa, a temperatura ambiente",
-        "430 g de yogur griego 0 % sin lactosa, colado una noche",
-        "90 g de alulosa molida fina",
-        "8 g de gelatina sin sabor + 4 cdas de agua",
-        "Pulpa de 3 maracuyás colada (unos 50 ml)",
-        "2 cdtas de vainilla · 1/4 cdta de sal",
-        "Pulpa de 3 maracuyás con pepas · 25 g de alulosa · 60 ml de agua",
-        "3 g de gelatina + 2 cdas de agua"
+        {
+          "crudo": "50 g de avena en hojuelas molida grueso · 20 g de mantequilla derretida",
+          "nombre": "avena en hojuelas",
+          "clave": "avena en hojuelas",
+          "grupo": "Base · 10 min a 160 °C",
+          "gramos": 50,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "15 g de alulosa · 1 clara · pizca de sal",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Base · 10 min a 160 °C",
+          "gramos": 15,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "120 g de queso crema sin lactosa, a temperatura ambiente",
+          "nombre": "queso crema",
+          "clave": "queso crema",
+          "grupo": "Relleno",
+          "gramos": 120,
+          "por100g": {
+            "kcal": 342,
+            "p": 6,
+            "c": 4.1,
+            "g": 34
+          }
+        },
+        {
+          "crudo": "430 g de yogur griego 0 % sin lactosa, colado una noche",
+          "nombre": "yogur griego 0 %",
+          "clave": "yogur griego 0 %",
+          "grupo": "Relleno",
+          "gramos": 430,
+          "por100g": {
+            "kcal": 59,
+            "p": 10.2,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "90 g de alulosa molida fina",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Relleno",
+          "gramos": 90,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "8 g de gelatina sin sabor + 4 cdas de agua",
+          "nombre": "gelatina sin sabor",
+          "clave": "gelatina sin sabor",
+          "grupo": "Relleno",
+          "gramos": 8,
+          "por100g": {
+            "kcal": 335,
+            "p": 85.6,
+            "c": 0,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "Pulpa de 3 maracuyás colada (unos 50 ml)",
+          "nombre": "maracuyás",
+          "clave": "maracuyas",
+          "grupo": "Relleno",
+          "gramos": null,
+          "por100g": {
+            "kcal": 97,
+            "p": 2.2,
+            "c": 23.4,
+            "g": 0.7
+          }
+        },
+        {
+          "crudo": "2 cdtas de vainilla · 1/4 cdta de sal",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": "Relleno",
+          "gramos": 8,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "Pulpa de 3 maracuyás con pepas · 25 g de alulosa · 60 ml de agua",
+          "nombre": "maracuyás",
+          "clave": "maracuyas",
+          "grupo": "Cobertura",
+          "gramos": null,
+          "por100g": {
+            "kcal": 97,
+            "p": 2.2,
+            "c": 23.4,
+            "g": 0.7
+          }
+        },
+        {
+          "crudo": "3 g de gelatina + 2 cdas de agua",
+          "nombre": "gelatina",
+          "clave": "gelatina",
+          "grupo": "Cobertura",
+          "gramos": 3,
+          "por100g": {
+            "kcal": 335,
+            "p": 85.6,
+            "c": 0,
+            "g": 0.1
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1593,15 +5354,71 @@
       "kcal_calculadas": 77,
       "desviacion": 2.8,
       "ingredientes": [
-        "600 g de yogur griego 0 % natural sin lactosa",
-        "120 g de alulosa",
-        "60 ml de leche sin lactosa · 1 cda de almidón de maíz",
-        "2 cdtas de vainilla o media vaina raspada · 1/4 cdta de sal",
-        "1 cda de aceite de coco derretido (opcional, +20 kcal: más cremoso)",
-        "Limón : ralladura de 2 limones + 3 cdas de jugo.",
-        "Frutilla : 150 g de frutillas cocidas 5 min con 20 g de alulosa, frías.",
-        "Camote y canela : 150 g de puré de camote + 1 cdta de canela. Queda color caramelo y más cuerpo (+20 kcal).",
-        "Café : 2 cdtas de café instantáneo en la leche."
+        {
+          "crudo": "600 g de yogur griego 0 % natural sin lactosa",
+          "nombre": "yogur griego 0 %",
+          "clave": "yogur griego 0 %",
+          "grupo": null,
+          "gramos": 600,
+          "por100g": {
+            "kcal": 59,
+            "p": 10.2,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "120 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 120,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "60 ml de leche sin lactosa · 1 cda de almidón de maíz",
+          "nombre": "leche sin lactosa",
+          "clave": "leche sin lactosa",
+          "grupo": null,
+          "gramos": 60,
+          "por100g": {
+            "kcal": 61,
+            "p": 3.2,
+            "c": 4.8,
+            "g": 3.3
+          }
+        },
+        {
+          "crudo": "2 cdtas de vainilla o media vaina raspada · 1/4 cdta de sal",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": null,
+          "gramos": 8,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "1 cda de aceite de coco derretido (opcional, +20 kcal: más cremoso)",
+          "nombre": "aceite de coco",
+          "clave": "aceite de coco",
+          "grupo": null,
+          "gramos": 14,
+          "por100g": {
+            "kcal": 862,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1636,13 +5453,84 @@
       "kcal_calculadas": 83,
       "desviacion": 11.1,
       "ingredientes": [
-        "3 plátanos firmes , apenas pintones (300 g pelados), en rodajas y congelados",
-        "150 g de yogur griego 0 % sin lactosa, frío",
-        "30 g de cacao amargo",
-        "40 g de alulosa molida fina",
-        "1 cdta de vainilla · 1/4 cdta de sal · 1/4 cdta de café instantáneo",
-        "15 g de chocolate 70 % picado fino, para las lascas (opcional, +15 kcal)",
-        "Cambia el yogur griego por 150 g de yogur de coco natural sin aditivos (+30 kcal)."
+        {
+          "crudo": "3 plátanos firmes , apenas pintones (300 g pelados), en rodajas y congelados",
+          "nombre": "plátanos firmes",
+          "clave": "platanos firmes",
+          "grupo": null,
+          "gramos": 354,
+          "por100g": {
+            "kcal": 89,
+            "p": 1.1,
+            "c": 22.8,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "150 g de yogur griego 0 % sin lactosa, frío",
+          "nombre": "yogur griego 0 %",
+          "clave": "yogur griego 0 %",
+          "grupo": null,
+          "gramos": 150,
+          "por100g": {
+            "kcal": 59,
+            "p": 10.2,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "30 g de cacao amargo",
+          "nombre": "cacao amargo",
+          "clave": "cacao amargo",
+          "grupo": null,
+          "gramos": 30,
+          "por100g": {
+            "kcal": 228,
+            "p": 19.6,
+            "c": 57.9,
+            "g": 13.7
+          }
+        },
+        {
+          "crudo": "40 g de alulosa molida fina",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 40,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de vainilla · 1/4 cdta de sal · 1/4 cdta de café instantáneo",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "15 g de chocolate 70 % picado fino, para las lascas (opcional, +15 kcal)",
+          "nombre": "chocolate 70 %",
+          "clave": "chocolate 70 %",
+          "grupo": null,
+          "gramos": 15,
+          "por100g": {
+            "kcal": 598,
+            "p": 7.8,
+            "c": 45.9,
+            "g": 42.6
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1677,15 +5565,123 @@
       "kcal_calculadas": 69,
       "desviacion": -1.0,
       "ingredientes": [
-        "150 g de camote cocido al vapor, en puré seco",
-        "60 g de avena en hojuelas , tostada",
-        "2 dátiles (unos 30 g) sin cuesco, remojados 10 min",
-        "25 g de mantequilla de maní sin azúcar",
-        "40 g de alulosa",
-        "20 g de cacao amargo",
-        "15 g de semillas de zapallo",
-        "1 cdta de vainilla · 1/2 cdta de sal",
-        "20 g de chocolate 70 % derretido, para las rayas"
+        {
+          "crudo": "150 g de camote cocido al vapor, en puré seco",
+          "nombre": "camote",
+          "clave": "camote",
+          "grupo": null,
+          "gramos": 150,
+          "por100g": {
+            "kcal": 86,
+            "p": 1.6,
+            "c": 20.1,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "60 g de avena en hojuelas , tostada",
+          "nombre": "avena en hojuelas",
+          "clave": "avena en hojuelas",
+          "grupo": null,
+          "gramos": 60,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "2 dátiles (unos 30 g) sin cuesco, remojados 10 min",
+          "nombre": "dátiles",
+          "clave": "datiles",
+          "grupo": null,
+          "gramos": 16,
+          "por100g": {
+            "kcal": 282,
+            "p": 2.5,
+            "c": 75,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "25 g de mantequilla de maní sin azúcar",
+          "nombre": "mantequilla de maní",
+          "clave": "mantequilla de mani",
+          "grupo": null,
+          "gramos": 25,
+          "por100g": {
+            "kcal": 588,
+            "p": 25.1,
+            "c": 19.6,
+            "g": 50.4
+          }
+        },
+        {
+          "crudo": "40 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 40,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "20 g de cacao amargo",
+          "nombre": "cacao amargo",
+          "clave": "cacao amargo",
+          "grupo": null,
+          "gramos": 20,
+          "por100g": {
+            "kcal": 228,
+            "p": 19.6,
+            "c": 57.9,
+            "g": 13.7
+          }
+        },
+        {
+          "crudo": "15 g de semillas de zapallo",
+          "nombre": "semillas de zapallo",
+          "clave": "semillas de zapallo",
+          "grupo": null,
+          "gramos": 15,
+          "por100g": {
+            "kcal": 559,
+            "p": 30.2,
+            "c": 10.7,
+            "g": 49.1
+          }
+        },
+        {
+          "crudo": "1 cdta de vainilla · 1/2 cdta de sal",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "20 g de chocolate 70 % derretido, para las rayas",
+          "nombre": "chocolate 70 %",
+          "clave": "chocolate 70 %",
+          "grupo": null,
+          "gramos": 20,
+          "por100g": {
+            "kcal": 598,
+            "p": 7.8,
+            "c": 45.9,
+            "g": 42.6
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1720,14 +5716,58 @@
       "kcal_calculadas": 49,
       "desviacion": 22.5,
       "ingredientes": [
-        "500 g de yogur griego 0 % natural sin lactosa",
-        "200 g de frutillas (unas 10 medianas)",
-        "80 g de alulosa",
-        "1 cdta de jugo de limón · 1 cdta de vainilla · pizca de sal",
-        "Maracuyá : 4 maracuyás en vez de las frutillas.",
-        "Ruibarbo : 200 g de ruibarbo cocido 8 min con 40 g de alulosa. Rosado y ácido.",
-        "Coco : cambia el yogur griego por yogur de coco (+25 kcal).",
-        "Bañadas : 40 g de chocolate 70 % con 1 cdta de aceite de coco (+30 kcal)."
+        {
+          "crudo": "500 g de yogur griego 0 % natural sin lactosa",
+          "nombre": "yogur griego 0 %",
+          "clave": "yogur griego 0 %",
+          "grupo": null,
+          "gramos": 500,
+          "por100g": {
+            "kcal": 59,
+            "p": 10.2,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "200 g de frutillas (unas 10 medianas)",
+          "nombre": "frutillas",
+          "clave": "frutillas",
+          "grupo": null,
+          "gramos": 200,
+          "por100g": {
+            "kcal": 32,
+            "p": 0.7,
+            "c": 7.7,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "80 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 80,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de jugo de limón · 1 cdta de vainilla · pizca de sal",
+          "nombre": "jugo de limón",
+          "clave": "jugo de limon",
+          "grupo": null,
+          "gramos": 5,
+          "por100g": {
+            "kcal": 22,
+            "p": 0.4,
+            "c": 6.9,
+            "g": 0.2
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1762,16 +5802,136 @@
       "kcal_calculadas": 87,
       "desviacion": -8.8,
       "ingredientes": [
-        "300 g de zapallo cocido al vapor, en puré seco",
-        "2 huevos + 2 claras",
-        "100 g de yogur griego 0 % sin lactosa",
-        "20 ml de aceite de oliva suave",
-        "130 g de alulosa",
-        "100 g de harina de avena · 30 g de almidón de maíz",
-        "2 cdtas de polvos de hornear · 1/2 cdta de bicarbonato",
-        "2 cdtas de canela · 1/2 cdta de jengibre · 1/4 de nuez moscada · pizca de clavo",
-        "1 cdta de vainilla · 1/2 cdta de sal",
-        "20 g de semillas de zapallo para arriba"
+        {
+          "crudo": "300 g de zapallo cocido al vapor, en puré seco",
+          "nombre": "zapallo",
+          "clave": "zapallo",
+          "grupo": null,
+          "gramos": 300,
+          "por100g": {
+            "kcal": 26,
+            "p": 1,
+            "c": 6.5,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "2 huevos + 2 claras",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "100 g de yogur griego 0 % sin lactosa",
+          "nombre": "yogur griego 0 %",
+          "clave": "yogur griego 0 %",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 59,
+            "p": 10.2,
+            "c": 3.6,
+            "g": 0.4
+          }
+        },
+        {
+          "crudo": "20 ml de aceite de oliva suave",
+          "nombre": "aceite",
+          "clave": "aceite",
+          "grupo": null,
+          "gramos": 20,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "130 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 130,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "100 g de harina de avena · 30 g de almidón de maíz",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "2 cdtas de polvos de hornear · 1/2 cdta de bicarbonato",
+          "nombre": "polvos de hornear",
+          "clave": "polvos de hornear",
+          "grupo": null,
+          "gramos": 9,
+          "por100g": {
+            "kcal": 53,
+            "p": 0,
+            "c": 27.7,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "2 cdtas de canela · 1/2 cdta de jengibre · 1/4 de nuez moscada · pizca de clavo",
+          "nombre": "canela",
+          "clave": "canela",
+          "grupo": null,
+          "gramos": 5,
+          "por100g": {
+            "kcal": 247,
+            "p": 4,
+            "c": 80.6,
+            "g": 1.2
+          }
+        },
+        {
+          "crudo": "1 cdta de vainilla · 1/2 cdta de sal",
+          "nombre": "vainilla",
+          "clave": "vainilla",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "20 g de semillas de zapallo para arriba",
+          "nombre": "semillas de zapallo",
+          "clave": "semillas de zapallo",
+          "grupo": null,
+          "gramos": 20,
+          "por100g": {
+            "kcal": 559,
+            "p": 30.2,
+            "c": 10.7,
+            "g": 49.1
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1806,16 +5966,123 @@
       "kcal_calculadas": 100,
       "desviacion": -9.0,
       "ingredientes": [
-        "400 g de ruibarbo (solo tallos), en trozos de 2 cm",
-        "300 g de frutillas partidas",
-        "80 g de alulosa",
-        "1 cda de almidón de maíz · jugo de 1/2 naranja · 1 cdta de vainilla",
-        "60 g de avena en hojuelas",
-        "25 g de harina de arroz",
-        "30 g de mantequilla fría en cubos",
-        "30 g de alulosa · 15 g de coco rallado",
-        "1 cdta de canela · pizca de sal",
-        "Yogur griego 0 % sin lactosa, 1 cda por porción (+10 kcal)"
+        {
+          "crudo": "400 g de ruibarbo (solo tallos), en trozos de 2 cm",
+          "nombre": "ruibarbo",
+          "clave": "ruibarbo",
+          "grupo": "Relleno",
+          "gramos": 400,
+          "por100g": {
+            "kcal": 21,
+            "p": 0.9,
+            "c": 4.5,
+            "g": 0.2
+          }
+        },
+        {
+          "crudo": "300 g de frutillas partidas",
+          "nombre": "frutillas",
+          "clave": "frutillas",
+          "grupo": "Relleno",
+          "gramos": 300,
+          "por100g": {
+            "kcal": 32,
+            "p": 0.7,
+            "c": 7.7,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "80 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Relleno",
+          "gramos": 80,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cda de almidón de maíz · jugo de 1/2 naranja · 1 cdta de vainilla",
+          "nombre": "almidón de maíz",
+          "clave": "almidon de maiz",
+          "grupo": "Relleno",
+          "gramos": 8,
+          "por100g": {
+            "kcal": 381,
+            "p": 0.3,
+            "c": 91.3,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "60 g de avena en hojuelas",
+          "nombre": "avena en hojuelas",
+          "clave": "avena en hojuelas",
+          "grupo": "Crumble",
+          "gramos": 60,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "25 g de harina de arroz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": "Crumble",
+          "gramos": 25,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "30 g de mantequilla fría en cubos",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": "Crumble",
+          "gramos": 30,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "30 g de alulosa · 15 g de coco rallado",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Crumble",
+          "gramos": 30,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de canela · pizca de sal",
+          "nombre": "canela",
+          "clave": "canela",
+          "grupo": "Crumble",
+          "gramos": 3,
+          "por100g": {
+            "kcal": 247,
+            "p": 4,
+            "c": 80.6,
+            "g": 1.2
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1850,15 +6117,110 @@
       "kcal_calculadas": 62,
       "desviacion": 3.7,
       "ingredientes": [
-        "150 g de zapallito italiano rallado fino, salado y exprimido",
-        "1 plátano firme (100 g), pisado",
-        "2 huevos",
-        "60 g de harina de avena",
-        "100 ml de leche sin lactosa · 100 g de yogur griego 0 %",
-        "30 g de alulosa",
-        "1 cdta de polvos de hornear · 1 cdta de canela · 1 cdta de vainilla · pizca de sal",
-        "1 cdta de aceite o mantequilla para la sartén",
-        "Yogur griego, frutillas, manjar de alulosa (receta 07) o compota de frutilla (receta 18)"
+        {
+          "crudo": "150 g de zapallito italiano rallado fino, salado y exprimido",
+          "nombre": "zapallito italiano",
+          "clave": "zapallito italiano",
+          "grupo": null,
+          "gramos": 150,
+          "por100g": {
+            "kcal": 17,
+            "p": 1.2,
+            "c": 3.1,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "1 plátano firme (100 g), pisado",
+          "nombre": "plátano firme",
+          "clave": "platano firme",
+          "grupo": null,
+          "gramos": 118,
+          "por100g": {
+            "kcal": 89,
+            "p": 1.1,
+            "c": 22.8,
+            "g": 0.3
+          }
+        },
+        {
+          "crudo": "2 huevos",
+          "nombre": "huevos",
+          "clave": "huevos",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "60 g de harina de avena",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": null,
+          "gramos": 60,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "100 ml de leche sin lactosa · 100 g de yogur griego 0 %",
+          "nombre": "leche sin lactosa",
+          "clave": "leche sin lactosa",
+          "grupo": null,
+          "gramos": 100,
+          "por100g": {
+            "kcal": 61,
+            "p": 3.2,
+            "c": 4.8,
+            "g": 3.3
+          }
+        },
+        {
+          "crudo": "30 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": null,
+          "gramos": 30,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de polvos de hornear · 1 cdta de canela · 1 cdta de vainilla · pizca de sal",
+          "nombre": "polvos de hornear",
+          "clave": "polvos de hornear",
+          "grupo": null,
+          "gramos": 5,
+          "por100g": {
+            "kcal": 53,
+            "p": 0,
+            "c": 27.7,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de aceite o mantequilla para la sartén",
+          "nombre": "aceite",
+          "clave": "aceite",
+          "grupo": null,
+          "gramos": 4,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true
@@ -1893,21 +6255,201 @@
       "kcal_calculadas": 76,
       "desviacion": 16.4,
       "ingredientes": [
-        "250 g de zapallo cocido al vapor, en puré seco",
-        "150 g de harina de arroz",
-        "50 g de harina de avena",
-        "25 g de almidón de maíz",
-        "20 g de mantequilla derretida",
-        "1 huevo",
-        "1 1/2 cdta de polvos de hornear",
-        "3/4 cdta de sal",
-        "1 cdta de aceite para pincelar",
-        "300 ml de agua",
-        "90 g de alulosa",
-        "1 rama de canela",
-        "2 clavos de olor",
-        "Cáscara de 1/2 naranja , en tiras (sin la parte blanca)",
-        "1 cdta de esencia de vainilla"
+        {
+          "crudo": "250 g de zapallo cocido al vapor, en puré seco",
+          "nombre": "zapallo",
+          "clave": "zapallo",
+          "grupo": "Sopaipillas",
+          "gramos": 250,
+          "por100g": {
+            "kcal": 26,
+            "p": 1,
+            "c": 6.5,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "150 g de harina de arroz",
+          "nombre": "harina de arroz",
+          "clave": "harina de arroz",
+          "grupo": "Sopaipillas",
+          "gramos": 150,
+          "por100g": {
+            "kcal": 366,
+            "p": 6,
+            "c": 80.1,
+            "g": 1.4
+          }
+        },
+        {
+          "crudo": "50 g de harina de avena",
+          "nombre": "harina de avena",
+          "clave": "harina de avena",
+          "grupo": "Sopaipillas",
+          "gramos": 50,
+          "por100g": {
+            "kcal": 389,
+            "p": 16.9,
+            "c": 66.3,
+            "g": 6.9
+          }
+        },
+        {
+          "crudo": "25 g de almidón de maíz",
+          "nombre": "almidón de maíz",
+          "clave": "almidon de maiz",
+          "grupo": "Sopaipillas",
+          "gramos": 25,
+          "por100g": {
+            "kcal": 381,
+            "p": 0.3,
+            "c": 91.3,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "20 g de mantequilla derretida",
+          "nombre": "mantequilla",
+          "clave": "mantequilla",
+          "grupo": "Sopaipillas",
+          "gramos": 20,
+          "por100g": {
+            "kcal": 717,
+            "p": 0.9,
+            "c": 0.1,
+            "g": 81.1
+          }
+        },
+        {
+          "crudo": "1 huevo",
+          "nombre": "huevo",
+          "clave": "huevo",
+          "grupo": "Sopaipillas",
+          "gramos": 50,
+          "por100g": {
+            "kcal": 143,
+            "p": 12.6,
+            "c": 0.7,
+            "g": 9.5
+          }
+        },
+        {
+          "crudo": "1 1/2 cdta de polvos de hornear",
+          "nombre": "polvos de hornear",
+          "clave": "polvos de hornear",
+          "grupo": "Sopaipillas",
+          "gramos": 7,
+          "por100g": {
+            "kcal": 53,
+            "p": 0,
+            "c": 27.7,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "3/4 cdta de sal",
+          "nombre": "sal",
+          "clave": "sal",
+          "grupo": "Sopaipillas",
+          "gramos": 4,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 cdta de aceite para pincelar",
+          "nombre": "aceite",
+          "clave": "aceite",
+          "grupo": "Sopaipillas",
+          "gramos": 4,
+          "por100g": {
+            "kcal": 884,
+            "p": 0,
+            "c": 0,
+            "g": 100
+          }
+        },
+        {
+          "crudo": "300 ml de agua",
+          "nombre": "agua",
+          "clave": "agua",
+          "grupo": "Almíbar",
+          "gramos": 300,
+          "por100g": {
+            "kcal": 0,
+            "p": 0,
+            "c": 0,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "90 g de alulosa",
+          "nombre": "alulosa",
+          "clave": "alulosa",
+          "grupo": "Almíbar",
+          "gramos": 90,
+          "por100g": {
+            "kcal": 40,
+            "p": 0,
+            "c": 10,
+            "g": 0
+          }
+        },
+        {
+          "crudo": "1 rama de canela",
+          "nombre": "canela",
+          "clave": "canela",
+          "grupo": "Almíbar",
+          "gramos": null,
+          "por100g": {
+            "kcal": 247,
+            "p": 4,
+            "c": 80.6,
+            "g": 1.2
+          }
+        },
+        {
+          "crudo": "2 clavos de olor",
+          "nombre": "clavos de olor",
+          "clave": "clavos de olor",
+          "grupo": "Almíbar",
+          "gramos": null,
+          "por100g": {
+            "kcal": 274,
+            "p": 6,
+            "c": 65.5,
+            "g": 13
+          }
+        },
+        {
+          "crudo": "Cáscara de 1/2 naranja , en tiras (sin la parte blanca)",
+          "nombre": "naranja",
+          "clave": "naranja",
+          "grupo": "Almíbar",
+          "gramos": null,
+          "por100g": {
+            "kcal": 47,
+            "p": 0.9,
+            "c": 11.8,
+            "g": 0.1
+          }
+        },
+        {
+          "crudo": "1 cdta de esencia de vainilla",
+          "nombre": "esencia de vainilla",
+          "clave": "esencia de vainilla",
+          "grupo": "Almíbar",
+          "gramos": 4,
+          "por100g": {
+            "kcal": 288,
+            "p": 0.1,
+            "c": 12.7,
+            "g": 0.1
+          }
+        }
       ],
       "fuente": "receta",
       "aprox": true

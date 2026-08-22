@@ -1,5 +1,8 @@
-import { useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import SelectorPorcion from '../components/SelectorPorcion.jsx'
+import { comoAlimento, conEdicion, recalcular } from '../receta.js'
+
+const EditorReceta = lazy(() => import('../components/EditorReceta.jsx'))
 import * as db from '../db.js'
 import { MOMENTOS, etiquetaPorcion } from '../nutricion.js'
 import { cargarRecetas, getRecetas, normalizar } from '../off.js'
@@ -15,6 +18,9 @@ export default function Recetas({ recargar }) {
   const [filtro, setFiltro] = useState('todo')
   const [q, setQ] = useState('')
   const [abierta, setAbierta] = useState(null)
+  const [editando, setEditando] = useState(null)
+  const [version, setVersion] = useState(0)
+  const [aviso, setAviso] = useState(null)
 
   useEffect(() => { cargarRecetas().then(() => setListo(true)) }, [])
 
@@ -22,9 +28,10 @@ export default function Recetas({ recargar }) {
     if (!listo) return []
     const n = normalizar(q)
     return getRecetas()
+      .map(conEdicion)
       .filter((r) => filtro === 'todo' || r.tipo === filtro)
       .filter((r) => !n || r.busqueda.includes(n))
-  }, [listo, filtro, q])
+  }, [listo, filtro, q, version])
 
   return (
     <div className="px-4 pb-6">
@@ -66,7 +73,7 @@ export default function Recetas({ recargar }) {
             <div className="flex items-baseline justify-between gap-3">
               <span className="font-semibold leading-tight">{r.nombre}</span>
               <span className="shrink-0 tabular-nums text-sm text-acento-texto">
-                {r.por100g.kcal * (r.porciones[0].gramos / 100) | 0} kcal
+                {recalcular(r).porPorcion.kcal} kcal
               </span>
             </div>
             <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-tenue">{r.descripcion}</p>
@@ -74,6 +81,7 @@ export default function Recetas({ recargar }) {
               <span className="pildora">
                 rinde {r.rinde.porciones} {r.rinde.unidad}
               </span>
+              {r.editada && <span className="pildora">✎ editada</span>}
               <span className="pildora">P {r.por100g.p} · C {r.por100g.c} · G {r.por100g.g} /100 g</span>
             </div>
           </button>
@@ -84,19 +92,48 @@ export default function Recetas({ recargar }) {
         <p className="py-8 text-center text-sm text-tenue">Ninguna receta con ese nombre.</p>
       )}
 
+      {aviso && (
+        <p className="fixed inset-x-4 bottom-24 z-40 rounded-xl bg-carb/15 px-4 py-3 text-center text-sm text-carb">
+          {aviso}
+        </p>
+      )}
+
       {abierta && (
-        <DetalleReceta receta={abierta} onCerrar={() => setAbierta(null)} onRegistrado={recargar} />
+        <DetalleReceta
+          receta={abierta}
+          onCerrar={() => setAbierta(null)}
+          onRegistrado={recargar}
+          onEditar={() => { setEditando(abierta); setAbierta(null) }}
+        />
+      )}
+
+      {editando && (
+        <Suspense fallback={<div className="fixed inset-0 z-50 grid place-items-center bg-fondo text-sm text-tenue">Cargando…</div>}>
+          <EditorReceta
+            receta={editando}
+            onCerrar={() => setEditando(null)}
+            onGuardado={(texto) => {
+              setEditando(null)
+              setVersion((v) => v + 1)
+              setAviso(texto)
+              setTimeout(() => setAviso(null), 2500)
+            }}
+          />
+        </Suspense>
       )}
     </div>
   )
 }
 
-function DetalleReceta({ receta, onCerrar, onRegistrado }) {
+function DetalleReceta({ receta, onCerrar, onRegistrado, onEditar }) {
   const [registrando, setRegistrando] = useState(false)
   const [momento, setMomento] = useState('almuerzo')
-  const porcion = receta.porciones[0]
-  const kcalPorcion = Math.round((receta.por100g.kcal * porcion.gramos) / 100)
-  const difGrande = receta.desviacion != null && Math.abs(receta.desviacion) > 15
+  const alimento = comoAlimento(receta)
+  const calc = recalcular(receta)
+  const porcion = alimento.porciones[0]
+  const kcalPorcion = calc.porPorcion.kcal
+  // si Isi la edito, comparar con el libro ya no tiene sentido
+  const difGrande = !receta.editada && receta.desviacion != null && Math.abs(receta.desviacion) > 15
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col justify-end bg-black/50" onClick={onCerrar}>
@@ -114,21 +151,15 @@ function DetalleReceta({ receta, onCerrar, onRegistrado }) {
             <div className="text-[10px] text-tenue">kcal</div>
           </div>
           <div>
-            <div className="font-bold tabular-nums text-prot">
-              {Math.round((receta.por100g.p * porcion.gramos) / 100)}
-            </div>
+            <div className="font-bold tabular-nums text-prot">{calc.porPorcion.p}</div>
             <div className="text-[10px] text-tenue">prot</div>
           </div>
           <div>
-            <div className="font-bold tabular-nums text-carb">
-              {Math.round((receta.por100g.c * porcion.gramos) / 100)}
-            </div>
+            <div className="font-bold tabular-nums text-carb">{calc.porPorcion.c}</div>
             <div className="text-[10px] text-tenue">carbos</div>
           </div>
           <div>
-            <div className="font-bold tabular-nums text-gras">
-              {Math.round((receta.por100g.g * porcion.gramos) / 100)}
-            </div>
+            <div className="font-bold tabular-nums text-gras">{calc.porPorcion.g}</div>
             <div className="text-[10px] text-tenue">grasa</div>
           </div>
         </div>
@@ -142,12 +173,20 @@ function DetalleReceta({ receta, onCerrar, onRegistrado }) {
           </p>
         )}
 
-        <h3 className="mb-2 font-semibold">Ingredientes</h3>
+        <div className="mb-2 flex items-center justify-between">
+          <h3 className="font-semibold">Ingredientes</h3>
+          <button onClick={onEditar} className="text-sm text-acento-texto underline underline-offset-2">
+            Editar receta
+          </button>
+        </div>
         <ul className="mb-4 space-y-1.5">
           {receta.ingredientes.map((i, n) => (
             <li key={n} className="flex gap-2 text-sm leading-snug">
               <span className="text-acento">·</span>
-              <span>{i}</span>
+              <span>
+                {i.crudo || i.nombre}
+                {receta.editada && i.gramos ? <span className="text-tenue"> — {i.gramos} g</span> : null}
+              </span>
             </li>
           ))}
         </ul>
@@ -169,12 +208,12 @@ function DetalleReceta({ receta, onCerrar, onRegistrado }) {
               ))}
             </div>
             <SelectorPorcion
-              alimento={receta}
+              alimento={alimento}
               onCancelar={() => setRegistrando(false)}
               onConfirmar={(res) => {
                 db.guardarAlimento({
-                  id: receta.id, nombre: receta.nombre, marca: null,
-                  por100g: receta.por100g, porciones: receta.porciones,
+                  id: alimento.id, nombre: alimento.nombre, marca: null,
+                  por100g: alimento.por100g, porciones: alimento.porciones,
                   fuente: 'receta', aprox: true,
                 })
                 db.marcarReciente(receta.id)

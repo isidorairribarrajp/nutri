@@ -35,8 +35,9 @@ export async function cargarRecetas() {
   if (RECETAS) return RECETAS
   const res = await fetch(`${import.meta.env.BASE_URL}recetas-cl.json`)
   const json = await res.json()
+  const { comoAlimento } = await import('./receta.js')
   RECETAS = json.recetas.map((r) => ({
-    ...r,
+    ...comoAlimento(r),
     busqueda: normalizar(`${r.nombre} ${r.descripcion} ${r.grupo}`),
   }))
   return RECETAS

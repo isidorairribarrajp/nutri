@@ -6,6 +6,7 @@ from pathlib import Path
 
 RECETAS = json.loads(Path("recetas_calculadas.json").read_text(encoding="utf-8"))
 CRUDAS = {r["nombre"]: r for r in json.loads(Path("recetas_crudas.json").read_text(encoding="utf-8"))}
+TABLA = json.loads(Path("ingredientes.json").read_text(encoding="utf-8"))
 
 
 # "4 porciones de 2 tacos" => la unidad es "porcion (2 tacos)", no "de 2 taco".
@@ -37,6 +38,60 @@ def slug(t):
     t = unicodedata.normalize("NFD", t.lower())
     t = "".join(c for c in t if unicodedata.category(c) != "Mn")
     return re.sub(r"[^a-z0-9]+", "-", t).strip("-")[:48]
+
+
+import unicodedata as _ud
+
+
+def _norm(t):
+    t = _ud.normalize("NFD", (t or "").lower())
+    return "".join(c for c in t if _ud.category(c) != "Mn").strip()
+
+
+_ING_NORM = {_norm(k): (k, v) for k, v in TABLA["ingredientes"].items()}
+
+
+def _buscar_ing(nombre):
+    n = _norm(nombre)
+    if n in _ING_NORM:
+        return _ING_NORM[n]
+    for cand in (n.rstrip("s"), n + "s"):
+        if cand in _ING_NORM:
+            return _ING_NORM[cand]
+    return (None, None)
+
+
+def _gramos(ing, datos):
+    cant, uni = ing.get("cantidad"), (ing.get("unidad") or "unidad")
+    if cant is None or datos is None:
+        return None
+    if uni in ("g", "gr"):
+        return round(cant)
+    if uni == "kg":
+        return round(cant * 1000)
+    if uni == "ml":
+        return round(cant)
+    if uni == "unidad":
+        gu = datos.get("gramos_unidad")
+        return round(cant * gu) if gu else None
+    peso = datos.get(uni) or TABLA["conversiones_default"].get(uni)
+    return round(cant * peso) if peso else None
+
+
+def ingredientes_estructurados(fila):
+    """Cada ingrediente con su peso en gramos y su composicion, para recalcular."""
+    salida = []
+    for ing in fila.get("ingredientes", []):
+        clave, datos = _buscar_ing(ing.get("nombre"))
+        salida.append({
+            "crudo": ing["crudo"],
+            "nombre": ing.get("nombre"),
+            "clave": clave,
+            "grupo": ing.get("grupo"),
+            "gramos": _gramos(ing, datos),
+            "por100g": datos["por100g"] if datos else None,
+        })
+    return salida
 
 
 def porciones_de(r, gp):
@@ -76,7 +131,8 @@ for r in RECETAS:
         "kcal_declaradas": r["kcal_declaradas"],
         "kcal_calculadas": round(por["kcal"]),
         "desviacion": r["desviacion"],
-        "ingredientes": [i["crudo"] for i in cruda.get("ingredientes", [])],
+        # estructurados, para que la app pueda recalcular si Isi los edita
+        "ingredientes": ingredientes_estructurados(r),
         "fuente": "receta",
         "aprox": True,
     })
@@ -87,6 +143,18 @@ Path("../public/recetas-cl.json").write_text(json.dumps({
              "Los macros se calculan sumando los ingredientes; las kcal se contrastan contra "
              "las que declara cada receta y se muestra la diferencia cuando es grande."),
     "recetas": salida,
+}, ensure_ascii=False, indent=2), encoding="utf-8")
+
+# la tabla de composicion tambien viaja, para poder agregar ingredientes nuevos
+Path("../public/ingredientes-cl.json").write_text(json.dumps({
+    "version": 1,
+    "nota": TABLA["_meta"]["descripcion"],
+    "nota_alulosa": TABLA["_meta"]["nota_alulosa"],
+    "conversiones_default": TABLA["conversiones_default"],
+    "ingredientes": [
+        {"clave": k, "nombre": k, **{x: y for x, y in v.items() if not x.startswith("_")}}
+        for k, v in TABLA["ingredientes"].items()
+    ],
 }, ensure_ascii=False, indent=2), encoding="utf-8")
 
 print(f"{len(salida)} recetas exportadas")

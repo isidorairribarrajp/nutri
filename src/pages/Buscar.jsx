@@ -4,8 +4,9 @@ import SelectorPorcion from '../components/SelectorPorcion.jsx'
 
 // El lector pesa harto: se carga solo cuando Isi abre la camara.
 const Escaner = lazy(() => import('../components/Escaner.jsx'))
+const RegistroTexto = lazy(() => import('../components/RegistroTexto.jsx'))
 import { MOMENTOS, etiquetaPorcion } from '../nutricion.js'
-import { buscarLocal, buscarOFF, cargarRecetas, cargarTablaCL, fijarEnCache } from '../off.js'
+import { buscarLocal, buscarOFF, cargarRecetas, cargarTablaCL, fijarEnCache, getRecetas, getTablaCL } from '../off.js'
 import * as db from '../db.js'
 
 const DEBOUNCE_MS = 350
@@ -19,6 +20,7 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
   const [elegido, setElegido] = useState(null)
   const [creando, setCreando] = useState(false)
   const [escaneando, setEscaneando] = useState(false)
+  const [escribiendo, setEscribiendo] = useState(false)
   const [codigoNuevo, setCodigoNuevo] = useState(null)
   const [recientes, setRecientes] = useState([])
   const [favoritos, setFavoritos] = useState(() => db.getFavoritos())
@@ -83,6 +85,13 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
             placeholder="Buscar alimento..."
             className="min-w-0 flex-1 rounded-xl border border-borde bg-panel2 px-4 py-3 outline-none focus:border-acento"
           />
+          <button
+            onClick={() => setEscribiendo(true)}
+            aria-label="Escribir varios alimentos"
+            className="shrink-0 rounded-xl border border-borde bg-chip px-3 py-3 text-lg leading-none"
+          >
+            ✎
+          </button>
           <button
             onClick={() => setEscaneando(true)}
             aria-label="Escanear código de barras"
@@ -162,6 +171,18 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
           onConfirmar={confirmar}
           onCancelar={() => setElegido(null)}
         />
+      )}
+
+      {escribiendo && (
+        <Suspense fallback={<div className="fixed inset-0 z-50 grid place-items-center bg-fondo text-sm text-tenue">Cargando…</div>}>
+          <RegistroTexto
+            fecha={fecha}
+            momentoInicial={momento}
+            despensa={[...Object.values(db.getCache()), ...getRecetas(), ...getTablaCL()]}
+            onCerrar={() => setEscribiendo(false)}
+            onListo={() => { setEscribiendo(false); onListo() }}
+          />
+        </Suspense>
       )}
 
       {escaneando && (

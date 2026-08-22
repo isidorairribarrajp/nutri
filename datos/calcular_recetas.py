@@ -119,6 +119,7 @@ def armar(nombre, base, ingredientes, porciones, unidad, kcal_declaradas, sufijo
         "calculado_porcion": {k: round(v, 1) for k, v in por.items()},
         "desviacion": round(dif * 100, 1) if dif is not None else None,
         "ingredientes_sin_tabla": faltantes,
+        "ingredientes": ingredientes,
     }
     salida.append(fila)
     if dif is not None and abs(dif) > 0.25:

@@ -4,9 +4,10 @@ import AnilloCalorias from '../components/AnilloCalorias.jsx'
 import BarraMacros from '../components/BarraMacros.jsx'
 import { FilaEntrada } from '../components/FilaAlimento.jsx'
 import SelectorPorcion from '../components/SelectorPorcion.jsx'
+import FormularioEjercicio from '../components/FormularioEjercicio.jsx'
 import TiraSemana, { LeyendaSemana } from '../components/TiraSemana.jsx'
 import * as db from '../db.js'
-import { kcalDeSesion } from '../ejercicio.js'
+import { buscarEjercicio, kcalDeSesion, resumenSesion } from '../ejercicio.js'
 import { racha, rangoKcal, semanaDe } from '../racha.js'
 import { MOMENTOS, etiquetaPorcion, formatearFecha, porMomento, redondear, totales } from '../nutricion.js'
 
@@ -14,6 +15,7 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
   const [editando, setEditando] = useState(null)
   const [copiando, setCopiando] = useState(false)
   const [menuMomento, setMenuMomento] = useState(null)
+  const [anotandoEjercicio, setAnotandoEjercicio] = useState(false)
 
   const t = useMemo(() => totales(entradas), [entradas])
   const grupos = useMemo(() => porMomento(entradas), [entradas])
@@ -24,10 +26,9 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
   const cerrado = db.estaCerrado(fecha)
   const repetidas = db.getRepetidas()
 
-  const quemadas = useMemo(() => {
-    const peso = Number(db.getPerfil()?.peso_kg) || 60
-    return db.getEjerciciosDia(fecha).reduce((a, s) => a + kcalDeSesion(s, peso).kcal, 0)
-  }, [fecha, entradas])
+  const pesoKg = Number(db.getPerfil()?.peso_kg) || Number(db.getUltimoPeso()?.kg) || 60
+  const sesiones = useMemo(() => db.getEjerciciosDia(fecha), [fecha, entradas])
+  const quemadas = sesiones.reduce((a, s) => a + kcalDeSesion(s, pesoKg).kcal, 0)
 
   function abrirEdicion(entrada) {
     const alimento = db.getAlimento(entrada.alimento_id)
@@ -53,7 +54,7 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
       <div className="mb-4 flex items-center justify-between">
         <button onClick={() => setFecha(db.sumarDias(fecha, -1))}
           className="rounded-full border border-borde px-3 py-1.5 text-tenue" aria-label="Día anterior">‹</button>
-        <span className="text-sm font-semibold capitalize">{formatearFecha(fecha)}</span>
+        <span className="text-sm font-semibold first-letter:uppercase">{formatearFecha(fecha)}</span>
         <button onClick={() => setFecha(db.sumarDias(fecha, 1))} disabled={fecha >= db.claveFecha()}
           className="rounded-full border border-borde px-3 py-1.5 text-tenue disabled:opacity-30" aria-label="Día siguiente">›</button>
       </div>
@@ -62,15 +63,62 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
         <AnilloCalorias totales={t} meta={metas.kcal} rango={rango} />
       </div>
 
-      {quemadas > 0 && (
-        <p className="mb-4 text-center text-xs text-tenue">
-          🔥 {quemadas} kcal quemadas hoy · las de tu meta ya vienen con tu promedio de ejercicio
-        </p>
-      )}
 
       <div className="tarjeta mb-3 p-4">
         <BarraMacros totales={t} metas={metas} />
       </div>
+
+      <section className="tarjeta mb-3 px-4 py-3">
+        <div className="mb-1 flex items-center justify-between">
+          <h3 className="flex items-center gap-2 font-semibold">
+            <span>⚡</span> Ejercicio
+          </h3>
+          <div className="flex items-center gap-3">
+            <span className="tabular-nums text-sm text-tenue">{quemadas} kcal</span>
+            <button
+              onClick={() => setAnotandoEjercicio(true)}
+              aria-label="Anotar ejercicio"
+              className="h-8 w-8 rounded-full bg-chip text-lg leading-none text-chip-texto"
+            >
+              +
+            </button>
+          </div>
+        </div>
+
+        {sesiones.length === 0 ? (
+          <p className="py-1 text-xs text-tenue">Sin ejercicio anotado hoy.</p>
+        ) : (
+          <div className="mt-1 divide-y divide-borde border-t border-borde">
+            {sesiones.map((s) => {
+              const ej = buscarEjercicio(s.ejercicio)
+              return (
+                <div key={s.id} className="flex items-center gap-2 py-2.5">
+                  <span className="text-lg">{ej.icono}</span>
+                  <div className="min-w-0 flex-1">
+                    <div className="truncate text-[15px] leading-tight">{ej.nombre}</div>
+                    <div className="truncate text-xs text-tenue">{resumenSesion(s)}</div>
+                  </div>
+                  <span className="shrink-0 tabular-nums text-sm">{kcalDeSesion(s, pesoKg).kcal}</span>
+                  <button
+                    onClick={() => { db.borrarEjercicio(fecha, s.id); recargar() }}
+                    aria-label="Borrar"
+                    className="shrink-0 px-1 text-lg leading-none text-tenue active:text-gras"
+                  >
+                    ×
+                  </button>
+                </div>
+              )
+            })}
+          </div>
+        )}
+
+        {quemadas > 0 && (
+          <p className="mt-2 text-[11px] leading-relaxed text-tenue">
+            Tu meta de comida ya viene con tu promedio de ejercicio de la semana, así que esto
+            no se suma dos veces.
+          </p>
+        )}
+      </section>
 
       <Agua fecha={fecha} vasos={agua} onCambio={recargar} />
 
@@ -164,6 +212,15 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
         />
       )}
 
+      {anotandoEjercicio && (
+        <FormularioEjercicio
+          fecha={fecha}
+          pesoKg={pesoKg}
+          onCerrar={() => setAnotandoEjercicio(false)}
+          onGuardado={() => { setAnotandoEjercicio(false); recargar() }}
+        />
+      )}
+
       {copiando && (
         <CopiarDia fecha={fecha} onCerrar={() => setCopiando(false)}
           onCopiado={() => { setCopiando(false); recargar() }} />
@@ -185,7 +242,7 @@ function CopiarDia({ fecha, onCerrar, onCopiado }) {
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-borde" />
         <h2 className="mb-1 text-lg font-bold">Copiar comidas</h2>
         <p className="mb-3 text-xs text-tenue">
-          Se agregan a <b className="capitalize">{formatearFecha(fecha)}</b>, sin borrar lo que ya tienes.
+          Se agregan a <b className="first-letter:uppercase">{formatearFecha(fecha)}</b>, sin borrar lo que ya tienes.
         </p>
 
         <label className="mb-3 block text-xs text-tenue">
