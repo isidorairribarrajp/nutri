@@ -3,24 +3,2685 @@
   "nota": "Valores por 100 g de tablas de composicion de alimentos (USDA FoodData Central para genericos, tabla chilena INTA/U. de Chile para preparaciones). Los platos preparados estan marcados como aproximados: la receta de cada casa cambia.",
   "alimentos": [
     {
-      "id": "cl-marraqueta",
-      "nombre": "Marraqueta",
-      "grupo": "Panes",
-      "alias": "pan francés batido",
+      "id": "cl-agua-mineral",
+      "nombre": "Agua mineral",
+      "grupo": "Bebidas",
       "por100g": {
-        "kcal": 271,
-        "p": 8.5,
-        "c": 55.4,
+        "kcal": 0,
+        "p": 0,
+        "c": 0,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 vaso",
+          "gramos": 200
+        },
+        {
+          "nombre": "1 botella",
+          "gramos": 500
+        }
+      ],
+      "alias": "con gas"
+    },
+    {
+      "id": "cl-bebida-energetica",
+      "nombre": "Bebida energética",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 45,
+        "p": 0,
+        "c": 11,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 lata",
+          "gramos": 250
+        }
+      ],
+      "alias": "red bull monster"
+    },
+    {
+      "id": "cl-bebida",
+      "nombre": "Bebida gaseosa",
+      "grupo": "Bebidas",
+      "alias": "coca cola sprite refresco gaseosa",
+      "por100g": {
+        "kcal": 42,
+        "p": 0,
+        "c": 10.6,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 lata",
+          "gramos": 330
+        },
+        {
+          "nombre": "1 vaso",
+          "gramos": 200
+        }
+      ]
+    },
+    {
+      "id": "cl-bebida-zero",
+      "nombre": "Bebida zero / light",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 0,
+        "p": 0,
+        "c": 0,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 lata",
+          "gramos": 330
+        }
+      ]
+    },
+    {
+      "id": "cl-cafe-con-leche",
+      "nombre": "Café con leche",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 42,
+        "p": 2.2,
+        "c": 3.3,
+        "g": 2.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 240
+        }
+      ],
+      "alias": "latte cortado"
+    },
+    {
+      "id": "cl-cafe",
+      "nombre": "Café negro sin azúcar",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 2,
+        "p": 0.1,
+        "c": 0,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 240
+        }
+      ]
+    },
+    {
+      "id": "cl-cerveza",
+      "nombre": "Cerveza",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 43,
+        "p": 0.5,
+        "c": 3.6,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 lata",
+          "gramos": 355
+        },
+        {
+          "nombre": "1 schop",
+          "gramos": 470
+        }
+      ]
+    },
+    {
+      "id": "cl-jugo-de-manzana",
+      "nombre": "Jugo de manzana",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 46,
+        "p": 0.1,
+        "c": 11.3,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 vaso",
+          "gramos": 248
+        }
+      ]
+    },
+    {
+      "id": "cl-jugo-naranja",
+      "nombre": "Jugo de naranja natural",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 45,
+        "p": 0.7,
+        "c": 10.4,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 vaso",
+          "gramos": 248
+        }
+      ]
+    },
+    {
+      "id": "cl-jugo-en-polvo-preparado",
+      "nombre": "Jugo en polvo preparado",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 5,
+        "p": 0,
+        "c": 1.2,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 vaso",
+          "gramos": 200
+        },
+        {
+          "nombre": "1 jarro",
+          "gramos": 1000
+        }
+      ],
+      "alias": "zuko livean sobre"
+    },
+    {
+      "id": "cl-kombucha",
+      "nombre": "Kombucha",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 25,
+        "p": 0,
+        "c": 6,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 vaso",
+          "gramos": 240
+        }
+      ]
+    },
+    {
+      "id": "cl-leche-chocolatada",
+      "nombre": "Leche chocolatada",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 83,
+        "p": 3.2,
+        "c": 12.8,
+        "g": 2.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 caja",
+          "gramos": 200
+        }
+      ],
+      "alias": "chocolate milo"
+    },
+    {
+      "id": "cl-matcha-preparado",
+      "nombre": "Matcha preparado",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 3,
+        "p": 0.3,
+        "c": 0.3,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 240
+        }
+      ],
+      "alias": "te verde"
+    },
+    {
+      "id": "cl-pisco",
+      "nombre": "Pisco",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 231,
+        "p": 0,
+        "c": 0,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 trago",
+          "gramos": 42
+        }
+      ]
+    },
+    {
+      "id": "cl-te-helado",
+      "nombre": "Té helado",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 30,
+        "p": 0,
+        "c": 7.5,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 vaso",
+          "gramos": 240
+        },
+        {
+          "nombre": "1 botella",
+          "gramos": 500
+        }
+      ],
+      "alias": "ice tea"
+    },
+    {
+      "id": "cl-te",
+      "nombre": "Té sin azúcar",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 1,
+        "p": 0,
+        "c": 0.3,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 240
+        }
+      ]
+    },
+    {
+      "id": "cl-vino-tinto",
+      "nombre": "Vino tinto",
+      "grupo": "Bebidas",
+      "por100g": {
+        "kcal": 85,
+        "p": 0.1,
+        "c": 2.6,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 copa",
+          "gramos": 147
+        }
+      ]
+    },
+    {
+      "id": "cl-arrollado-huaso",
+      "nombre": "Arrollado huaso",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 280,
+        "p": 18,
+        "c": 2,
+        "g": 22
+      },
+      "porciones": [
+        {
+          "nombre": "1 rebanada",
+          "gramos": 50
+        }
+      ]
+    },
+    {
+      "id": "cl-carne-molida",
+      "nombre": "Carne molida cocida",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 254,
+        "p": 25.8,
+        "c": 0,
+        "g": 16
+      },
+      "porciones": [
+        {
+          "nombre": "porción mediana",
+          "gramos": 120
+        }
+      ]
+    },
+    {
+      "id": "cl-chorizo",
+      "nombre": "Chorizo",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 455,
+        "p": 24,
+        "c": 1.9,
+        "g": 38
+      },
+      "porciones": [
+        {
+          "nombre": "1 chorizo",
+          "gramos": 60
+        }
+      ]
+    },
+    {
+      "id": "cl-cordero",
+      "nombre": "Cordero",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 258,
+        "p": 25.6,
+        "c": 0,
+        "g": 16.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 porción",
+          "gramos": 120
+        }
+      ]
+    },
+    {
+      "id": "cl-higado-de-vacuno",
+      "nombre": "Hígado de vacuno",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 175,
+        "p": 26.5,
+        "c": 5.1,
+        "g": 4.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 porción",
+          "gramos": 100
+        }
+      ]
+    },
+    {
+      "id": "cl-jamon-pavo",
+      "nombre": "Jamón de pavo",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 104,
+        "p": 15.4,
+        "c": 3.1,
+        "g": 3.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 lamina",
+          "gramos": 20
+        },
+        {
+          "nombre": "3 laminas",
+          "gramos": 60
+        }
+      ]
+    },
+    {
+      "id": "cl-cerdo-lomo",
+      "nombre": "Lomo de cerdo cocido",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 175,
+        "p": 30,
+        "c": 0,
+        "g": 5.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 porción",
+          "gramos": 120
+        }
+      ]
+    },
+    {
+      "id": "cl-longaniza",
+      "nombre": "Longaniza",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 320,
+        "p": 15,
+        "c": 2,
+        "g": 28
+      },
+      "porciones": [
+        {
+          "nombre": "1 longaniza",
+          "gramos": 80
+        }
+      ]
+    },
+    {
+      "id": "cl-pechuga-de-pavo",
+      "nombre": "Pechuga de pavo",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 135,
+        "p": 29.9,
+        "c": 0,
+        "g": 1
+      },
+      "porciones": [
+        {
+          "nombre": "1 porción",
+          "gramos": 120
+        }
+      ]
+    },
+    {
+      "id": "cl-pollo-pechuga",
+      "nombre": "Pechuga de pollo cocida sin piel",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 165,
+        "p": 31,
+        "c": 0,
+        "g": 3.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 pechuga",
+          "gramos": 170
+        },
+        {
+          "nombre": "porción mediana",
+          "gramos": 120
+        }
+      ]
+    },
+    {
+      "id": "cl-pollo-piel",
+      "nombre": "Pollo asado con piel",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 220,
+        "p": 27.3,
+        "c": 0,
+        "g": 12.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 trutro",
+          "gramos": 130
+        }
+      ]
+    },
+    {
+      "id": "cl-posta",
+      "nombre": "Posta de vacuno cocida",
+      "grupo": "Carnes",
+      "alias": "carne magra",
+      "por100g": {
+        "kcal": 187,
+        "p": 30.2,
+        "c": 0,
+        "g": 6.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 bistec",
+          "gramos": 120
+        }
+      ]
+    },
+    {
+      "id": "cl-prieta",
+      "nombre": "Prieta",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 379,
+        "p": 14.6,
+        "c": 1.3,
+        "g": 34.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 prieta",
+          "gramos": 100
+        }
+      ],
+      "alias": "morcilla"
+    },
+    {
+      "id": "cl-salchicha-de-pavo",
+      "nombre": "Salchicha de pavo",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 180,
+        "p": 14,
+        "c": 3,
+        "g": 12
+      },
+      "porciones": [
+        {
+          "nombre": "1 salchicha",
+          "gramos": 45
+        }
+      ]
+    },
+    {
+      "id": "cl-tocino",
+      "nombre": "Tocino",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 541,
+        "p": 37,
+        "c": 1.4,
+        "g": 42
+      },
+      "porciones": [
+        {
+          "nombre": "1 lonja",
+          "gramos": 8
+        },
+        {
+          "nombre": "3 lonjas",
+          "gramos": 24
+        }
+      ],
+      "alias": "panceta bacon"
+    },
+    {
+      "id": "cl-vienesa",
+      "nombre": "Vienesa",
+      "grupo": "Carnes",
+      "alias": "salchicha hot dog",
+      "por100g": {
+        "kcal": 290,
+        "p": 11,
+        "c": 3.2,
+        "g": 26
+      },
+      "porciones": [
+        {
+          "nombre": "1 vienesa",
+          "gramos": 50
+        },
+        {
+          "nombre": "2 vienesas",
+          "gramos": 100
+        }
+      ]
+    },
+    {
+      "id": "cl-arroz-blanco",
+      "nombre": "Arroz blanco cocido",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 130,
+        "p": 2.7,
+        "c": 28.2,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 158
+        },
+        {
+          "nombre": "media taza",
+          "gramos": 79
+        }
+      ]
+    },
+    {
+      "id": "cl-arroz-integral",
+      "nombre": "Arroz integral cocido",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 123,
+        "p": 2.7,
+        "c": 25.6,
+        "g": 1
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 195
+        }
+      ]
+    },
+    {
+      "id": "cl-avena",
+      "nombre": "Avena cruda",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 389,
+        "p": 16.9,
+        "c": 66.3,
+        "g": 6.9
+      },
+      "porciones": [
+        {
+          "nombre": "media taza",
+          "gramos": 40
+        },
+        {
+          "nombre": "3 cucharadas",
+          "gramos": 30
+        }
+      ]
+    },
+    {
+      "id": "cl-avena-instantanea",
+      "nombre": "Avena instantánea",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 389,
+        "p": 16.9,
+        "c": 66.3,
+        "g": 6.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 sobre",
+          "gramos": 30
+        },
+        {
+          "nombre": "media taza",
+          "gramos": 40
+        }
+      ]
+    },
+    {
+      "id": "cl-barrita-de-cereal",
+      "nombre": "Barrita de cereal",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 400,
+        "p": 6,
+        "c": 70,
+        "g": 10
+      },
+      "porciones": [
+        {
+          "nombre": "1 barrita",
+          "gramos": 25
+        }
+      ]
+    },
+    {
+      "id": "cl-choclo",
+      "nombre": "Choclo cocido",
+      "grupo": "Cereales",
+      "alias": "maiz elote",
+      "por100g": {
+        "kcal": 96,
+        "p": 3.4,
+        "c": 21,
         "g": 1.5
       },
       "porciones": [
         {
-          "nombre": "1 marraqueta",
+          "nombre": "1 choclo",
+          "gramos": 90
+        },
+        {
+          "nombre": "1 taza granos",
+          "gramos": 164
+        }
+      ]
+    },
+    {
+      "id": "cl-fideos",
+      "nombre": "Fideos cocidos",
+      "grupo": "Cereales",
+      "alias": "pasta tallarines",
+      "por100g": {
+        "kcal": 158,
+        "p": 5.8,
+        "c": 30.9,
+        "g": 0.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 140
+        },
+        {
+          "nombre": "1 plato",
+          "gramos": 220
+        }
+      ]
+    },
+    {
+      "id": "cl-fideos-integrales-cocidos",
+      "nombre": "Fideos integrales cocidos",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 124,
+        "p": 5.3,
+        "c": 26.5,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 140
+        }
+      ],
+      "alias": "pasta"
+    },
+    {
+      "id": "cl-galletas-de-arroz",
+      "nombre": "Galletas de arroz",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 387,
+        "p": 8.2,
+        "c": 81.5,
+        "g": 2.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 galleta",
+          "gramos": 9
+        },
+        {
+          "nombre": "2 galletas",
+          "gramos": 18
+        }
+      ]
+    },
+    {
+      "id": "cl-granola",
+      "nombre": "Granola",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 471,
+        "p": 10,
+        "c": 64,
+        "g": 20
+      },
+      "porciones": [
+        {
+          "nombre": "un cuarto de taza",
+          "gramos": 30
+        },
+        {
+          "nombre": "media taza",
+          "gramos": 60
+        }
+      ]
+    },
+    {
+      "id": "cl-harina-blanca",
+      "nombre": "Harina blanca",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 364,
+        "p": 10.3,
+        "c": 76.3,
+        "g": 1
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 125
+        },
+        {
+          "nombre": "1 cucharada",
+          "gramos": 8
+        }
+      ],
+      "alias": "trigo"
+    },
+    {
+      "id": "cl-mote",
+      "nombre": "Mote de trigo cocido",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 124,
+        "p": 4,
+        "c": 26,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 170
+        }
+      ]
+    },
+    {
+      "id": "cl-papa",
+      "nombre": "Papa cocida",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 87,
+        "p": 1.9,
+        "c": 20.1,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 papa mediana",
+          "gramos": 150
+        },
+        {
+          "nombre": "1 papa chica",
+          "gramos": 90
+        }
+      ]
+    },
+    {
+      "id": "cl-papas-fritas",
+      "nombre": "Papas fritas",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 312,
+        "p": 3.4,
+        "c": 41.4,
+        "g": 14.7
+      },
+      "porciones": [
+        {
+          "nombre": "porción chica",
           "gramos": 100
         },
         {
-          "nombre": "media marraqueta",
+          "nombre": "porción grande",
+          "gramos": 180
+        }
+      ],
+      "aprox": true,
+      "alias": "papitas"
+    },
+    {
+      "id": "cl-pure",
+      "nombre": "Puré de papas",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 113,
+        "p": 2,
+        "c": 16.9,
+        "g": 4.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 210
+        }
+      ],
+      "aprox": true
+    },
+    {
+      "id": "cl-quinoa",
+      "nombre": "Quinoa cocida",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 120,
+        "p": 4.4,
+        "c": 21.3,
+        "g": 1.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 185
+        }
+      ]
+    },
+    {
+      "id": "cl-alfajor",
+      "nombre": "Alfajor",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 420,
+        "p": 5,
+        "c": 62,
+        "g": 17
+      },
+      "porciones": [
+        {
+          "nombre": "1 alfajor",
+          "gramos": 45
+        }
+      ]
+    },
+    {
+      "id": "cl-alulosa",
+      "nombre": "Alulosa",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 40,
+        "p": 0,
+        "c": 10,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharadita",
+          "gramos": 4
+        },
+        {
+          "nombre": "1 cucharada",
+          "gramos": 12
+        }
+      ],
+      "alias": "endulzante alulose"
+    },
+    {
+      "id": "cl-azucar",
+      "nombre": "Azúcar",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 387,
+        "p": 0,
+        "c": 100,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharadita",
+          "gramos": 4
+        },
+        {
+          "nombre": "1 cucharada",
+          "gramos": 12
+        }
+      ]
+    },
+    {
+      "id": "cl-berlin",
+      "nombre": "Berlín",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 380,
+        "p": 6,
+        "c": 45,
+        "g": 19
+      },
+      "porciones": [
+        {
+          "nombre": "1 berlín",
+          "gramos": 100
+        }
+      ],
+      "alias": "bomba"
+    },
+    {
+      "id": "cl-brownie",
+      "nombre": "Brownie",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 466,
+        "p": 6,
+        "c": 50,
+        "g": 27
+      },
+      "porciones": [
+        {
+          "nombre": "1 cuadrado",
+          "gramos": 56
+        }
+      ]
+    },
+    {
+      "id": "cl-cacao-amargo-en-polvo",
+      "nombre": "Cacao amargo en polvo",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 228,
+        "p": 19.6,
+        "c": 57.9,
+        "g": 13.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 5.4
+        }
+      ],
+      "alias": "cocoa chocolate"
+    },
+    {
+      "id": "cl-canela",
+      "nombre": "Canela",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 247,
+        "p": 4,
+        "c": 80.6,
+        "g": 1.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharadita",
+          "gramos": 2.6
+        },
+        {
+          "nombre": "1 pizca",
+          "gramos": 0.5
+        }
+      ],
+      "alias": "especias"
+    },
+    {
+      "id": "cl-chocolate-amargo-70",
+      "nombre": "Chocolate amargo 70%",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 598,
+        "p": 7.8,
+        "c": 45.9,
+        "g": 42.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 cuadrito",
+          "gramos": 10
+        },
+        {
+          "nombre": "1 barra chica",
+          "gramos": 40
+        }
+      ],
+      "alias": "negro bitter"
+    },
+    {
+      "id": "cl-chocolate-leche",
+      "nombre": "Chocolate de leche",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 535,
+        "p": 7.6,
+        "c": 59.4,
+        "g": 29.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 cuadrito",
+          "gramos": 10
+        },
+        {
+          "nombre": "1 barra chica",
+          "gramos": 40
+        }
+      ]
+    },
+    {
+      "id": "cl-cuchufli",
+      "nombre": "Cuchuflí",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 480,
+        "p": 5,
+        "c": 60,
+        "g": 24
+      },
+      "porciones": [
+        {
+          "nombre": "1 cuchuflí",
+          "gramos": 20
+        }
+      ]
+    },
+    {
+      "id": "cl-endulzante-sin-calorias",
+      "nombre": "Endulzante sin calorías",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 0,
+        "p": 0,
+        "c": 0,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 sobre",
+          "gramos": 1
+        },
+        {
+          "nombre": "1 cucharadita",
+          "gramos": 1
+        }
+      ],
+      "alias": "sucralosa stevia estevia"
+    },
+    {
+      "id": "cl-eritritol",
+      "nombre": "Eritritol",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 20,
+        "p": 0,
+        "c": 5,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharadita",
+          "gramos": 4
+        },
+        {
+          "nombre": "1 cucharada",
+          "gramos": 12
+        }
+      ],
+      "alias": "endulzante"
+    },
+    {
+      "id": "cl-galletas-dulces",
+      "nombre": "Galletas dulces",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 480,
+        "p": 5.5,
+        "c": 68,
+        "g": 20
+      },
+      "porciones": [
+        {
+          "nombre": "1 galleta",
+          "gramos": 12
+        },
+        {
+          "nombre": "3 galletas",
+          "gramos": 36
+        }
+      ],
+      "alias": "vainilla obleas"
+    },
+    {
+      "id": "cl-helado",
+      "nombre": "Helado de vainilla",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 207,
+        "p": 3.5,
+        "c": 23.6,
+        "g": 11
+      },
+      "porciones": [
+        {
+          "nombre": "1 bola",
+          "gramos": 66
+        }
+      ]
+    },
+    {
+      "id": "cl-mermelada",
+      "nombre": "Mermelada",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 278,
+        "p": 0.4,
+        "c": 68.9,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 20
+        }
+      ],
+      "alias": "jalea"
+    },
+    {
+      "id": "cl-miel",
+      "nombre": "Miel",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 304,
+        "p": 0.3,
+        "c": 82.4,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 21
+        }
+      ]
+    },
+    {
+      "id": "cl-papas-fritas-de-bolsa",
+      "nombre": "Papas fritas de bolsa",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 536,
+        "p": 7,
+        "c": 53,
+        "g": 34
+      },
+      "porciones": [
+        {
+          "nombre": "1 bolsa chica",
+          "gramos": 30
+        },
+        {
+          "nombre": "1 bolsa grande",
+          "gramos": 90
+        }
+      ],
+      "alias": "snack lays papitas"
+    },
+    {
+      "id": "cl-ramitas",
+      "nombre": "Ramitas",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 500,
+        "p": 8,
+        "c": 60,
+        "g": 25
+      },
+      "porciones": [
+        {
+          "nombre": "1 bolsa",
+          "gramos": 45
+        }
+      ],
+      "alias": "snack palitos"
+    },
+    {
+      "id": "cl-arandano",
+      "nombre": "Arándanos",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 57,
+        "p": 0.7,
+        "c": 14.5,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 148
+        }
+      ]
+    },
+    {
+      "id": "cl-cerezas",
+      "nombre": "Cerezas",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 63,
+        "p": 1.1,
+        "c": 16,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 154
+        },
+        {
+          "nombre": "10 cerezas",
+          "gramos": 68
+        }
+      ],
+      "alias": "guindas"
+    },
+    {
+      "id": "cl-ciruela",
+      "nombre": "Ciruela",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 46,
+        "p": 0.7,
+        "c": 11.4,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 ciruela",
+          "gramos": 66
+        }
+      ]
+    },
+    {
+      "id": "cl-damasco",
+      "nombre": "Damasco",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 48,
+        "p": 1.4,
+        "c": 11.1,
+        "g": 0.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 damasco",
+          "gramos": 35
+        },
+        {
+          "nombre": "3 damascos",
+          "gramos": 105
+        }
+      ],
+      "alias": "albaricoque"
+    },
+    {
+      "id": "cl-durazno",
+      "nombre": "Durazno",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 39,
+        "p": 0.9,
+        "c": 9.5,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 durazno",
+          "gramos": 150
+        }
+      ],
+      "alias": "melocoton"
+    },
+    {
+      "id": "cl-durazno-en-conserva",
+      "nombre": "Durazno en conserva",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 54,
+        "p": 0.5,
+        "c": 14,
+        "g": 0
+      },
+      "porciones": [
+        {
+          "nombre": "media unidad",
+          "gramos": 98
+        },
+        {
+          "nombre": "1 taza",
+          "gramos": 244
+        }
+      ],
+      "alias": "almíbar melocoton"
+    },
+    {
+      "id": "cl-frambuesas",
+      "nombre": "Frambuesas",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 52,
+        "p": 1.2,
+        "c": 11.9,
+        "g": 0.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 123
+        }
+      ]
+    },
+    {
+      "id": "cl-frutilla",
+      "nombre": "Frutillas",
+      "grupo": "Frutas",
+      "alias": "fresas fresa",
+      "por100g": {
+        "kcal": 32,
+        "p": 0.7,
+        "c": 7.7,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 152
+        }
+      ]
+    },
+    {
+      "id": "cl-granada",
+      "nombre": "Granada",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 83,
+        "p": 1.7,
+        "c": 18.7,
+        "g": 1.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza de granos",
+          "gramos": 174
+        }
+      ]
+    },
+    {
+      "id": "cl-higo",
+      "nombre": "Higo",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 74,
+        "p": 0.8,
+        "c": 19.2,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 higo",
           "gramos": 50
+        }
+      ]
+    },
+    {
+      "id": "cl-kiwi",
+      "nombre": "Kiwi",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 61,
+        "p": 1.1,
+        "c": 14.7,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 kiwi",
+          "gramos": 76
+        }
+      ]
+    },
+    {
+      "id": "cl-limon",
+      "nombre": "Limón",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 29,
+        "p": 1.1,
+        "c": 9.3,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 limón",
+          "gramos": 58
+        },
+        {
+          "nombre": "jugo de 1 limón",
+          "gramos": 25
+        }
+      ]
+    },
+    {
+      "id": "cl-mandarina",
+      "nombre": "Mandarina",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 53,
+        "p": 0.8,
+        "c": 13.3,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 mandarina",
+          "gramos": 88
+        },
+        {
+          "nombre": "2 mandarinas",
+          "gramos": 176
+        }
+      ],
+      "alias": "clementina"
+    },
+    {
+      "id": "cl-mango",
+      "nombre": "Mango",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 60,
+        "p": 0.8,
+        "c": 15,
+        "g": 0.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 mango",
+          "gramos": 207
+        },
+        {
+          "nombre": "1 taza",
+          "gramos": 165
+        }
+      ]
+    },
+    {
+      "id": "cl-manzana",
+      "nombre": "Manzana",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 52,
+        "p": 0.3,
+        "c": 13.8,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 manzana",
+          "gramos": 182
+        }
+      ]
+    },
+    {
+      "id": "cl-melon",
+      "nombre": "Melón",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 34,
+        "p": 0.8,
+        "c": 8.2,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 160
+        },
+        {
+          "nombre": "1 rebanada",
+          "gramos": 160
+        }
+      ],
+      "alias": "calameño tuna"
+    },
+    {
+      "id": "cl-moras",
+      "nombre": "Moras",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 43,
+        "p": 1.4,
+        "c": 9.6,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 144
+        }
+      ],
+      "alias": "murtilla"
+    },
+    {
+      "id": "cl-naranja",
+      "nombre": "Naranja",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 47,
+        "p": 0.9,
+        "c": 11.8,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 naranja",
+          "gramos": 131
+        }
+      ]
+    },
+    {
+      "id": "cl-palta",
+      "nombre": "Palta",
+      "grupo": "Frutas",
+      "alias": "aguacate",
+      "por100g": {
+        "kcal": 160,
+        "p": 2,
+        "c": 8.5,
+        "g": 14.7
+      },
+      "porciones": [
+        {
+          "nombre": "media palta",
+          "gramos": 68
+        },
+        {
+          "nombre": "1 palta",
+          "gramos": 136
+        },
+        {
+          "nombre": "1 cucharada",
+          "gramos": 15
+        }
+      ]
+    },
+    {
+      "id": "cl-papaya",
+      "nombre": "Papaya",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 43,
+        "p": 0.5,
+        "c": 10.8,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 145
+        }
+      ]
+    },
+    {
+      "id": "cl-pasas",
+      "nombre": "Pasas",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 299,
+        "p": 3.1,
+        "c": 79.2,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 10
+        },
+        {
+          "nombre": "1 puñado",
+          "gramos": 28
+        }
+      ],
+      "alias": "uvas pasas"
+    },
+    {
+      "id": "cl-pera",
+      "nombre": "Pera",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 57,
+        "p": 0.4,
+        "c": 15.2,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 pera",
+          "gramos": 178
+        }
+      ]
+    },
+    {
+      "id": "cl-pina",
+      "nombre": "Piña",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 50,
+        "p": 0.5,
+        "c": 13.1,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 165
+        },
+        {
+          "nombre": "1 rodaja",
+          "gramos": 84
+        }
+      ],
+      "alias": "ananá"
+    },
+    {
+      "id": "cl-platano",
+      "nombre": "Plátano",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 89,
+        "p": 1.1,
+        "c": 22.8,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 platano",
+          "gramos": 118
+        }
+      ]
+    },
+    {
+      "id": "cl-pomelo",
+      "nombre": "Pomelo",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 42,
+        "p": 0.8,
+        "c": 10.7,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "media unidad",
+          "gramos": 123
+        }
+      ],
+      "alias": "toronja"
+    },
+    {
+      "id": "cl-sandia",
+      "nombre": "Sandía",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 30,
+        "p": 0.6,
+        "c": 7.6,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 152
+        }
+      ]
+    },
+    {
+      "id": "cl-uva",
+      "nombre": "Uva",
+      "grupo": "Frutas",
+      "por100g": {
+        "kcal": 69,
+        "p": 0.7,
+        "c": 18.1,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 151
+        }
+      ]
+    },
+    {
+      "id": "cl-almendras",
+      "nombre": "Almendras",
+      "grupo": "Frutos secos",
+      "por100g": {
+        "kcal": 579,
+        "p": 21.2,
+        "c": 21.6,
+        "g": 49.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 puñado",
+          "gramos": 28
+        },
+        {
+          "nombre": "10 almendras",
+          "gramos": 12
+        }
+      ]
+    },
+    {
+      "id": "cl-castanas-de-caju",
+      "nombre": "Castañas de cajú",
+      "grupo": "Frutos secos",
+      "por100g": {
+        "kcal": 553,
+        "p": 18.2,
+        "c": 30.2,
+        "g": 43.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 puñado",
+          "gramos": 28
+        }
+      ],
+      "alias": "anacardo nuez de la india"
+    },
+    {
+      "id": "cl-chia",
+      "nombre": "Chía",
+      "grupo": "Frutos secos",
+      "por100g": {
+        "kcal": 486,
+        "p": 16.5,
+        "c": 42.1,
+        "g": 30.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 12
+        },
+        {
+          "nombre": "2 cucharadas",
+          "gramos": 24
+        }
+      ],
+      "alias": "semillas de chia"
+    },
+    {
+      "id": "cl-linaza-molida",
+      "nombre": "Linaza molida",
+      "grupo": "Frutos secos",
+      "por100g": {
+        "kcal": 534,
+        "p": 18.3,
+        "c": 28.9,
+        "g": 42.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 10
+        }
+      ],
+      "alias": "semillas"
+    },
+    {
+      "id": "cl-mantequilla-mani",
+      "nombre": "Mantequilla de maní",
+      "grupo": "Frutos secos",
+      "por100g": {
+        "kcal": 588,
+        "p": 25.1,
+        "c": 19.6,
+        "g": 50.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 16
+        }
+      ],
+      "alias": "cacahuate cacahuete"
+    },
+    {
+      "id": "cl-mani",
+      "nombre": "Maní",
+      "grupo": "Frutos secos",
+      "por100g": {
+        "kcal": 567,
+        "p": 25.8,
+        "c": 16.1,
+        "g": 49.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 puñado",
+          "gramos": 28
+        }
+      ],
+      "alias": "cacahuate cacahuete"
+    },
+    {
+      "id": "cl-nueces",
+      "nombre": "Nueces",
+      "grupo": "Frutos secos",
+      "por100g": {
+        "kcal": 654,
+        "p": 15.2,
+        "c": 13.7,
+        "g": 65.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 puñado",
+          "gramos": 28
+        }
+      ]
+    },
+    {
+      "id": "cl-pistachos",
+      "nombre": "Pistachos",
+      "grupo": "Frutos secos",
+      "por100g": {
+        "kcal": 560,
+        "p": 20.2,
+        "c": 27.2,
+        "g": 45.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 puñado",
+          "gramos": 28
+        }
+      ]
+    },
+    {
+      "id": "cl-semillas-de-maravilla",
+      "nombre": "Semillas de maravilla",
+      "grupo": "Frutos secos",
+      "por100g": {
+        "kcal": 584,
+        "p": 20.8,
+        "c": 20,
+        "g": 51.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 9
+        }
+      ],
+      "alias": "girasol pepas"
+    },
+    {
+      "id": "cl-aceite-de-coco",
+      "nombre": "Aceite de coco",
+      "grupo": "Grasas",
+      "por100g": {
+        "kcal": 862,
+        "p": 0,
+        "c": 0,
+        "g": 100
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharadita",
+          "gramos": 4.5
+        },
+        {
+          "nombre": "1 cucharada",
+          "gramos": 13.5
+        }
+      ]
+    },
+    {
+      "id": "cl-aceite-de-maravilla",
+      "nombre": "Aceite de maravilla",
+      "grupo": "Grasas",
+      "por100g": {
+        "kcal": 884,
+        "p": 0,
+        "c": 0,
+        "g": 100
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharadita",
+          "gramos": 4.5
+        },
+        {
+          "nombre": "1 cucharada",
+          "gramos": 13.5
+        }
+      ],
+      "alias": "girasol vegetal"
+    },
+    {
+      "id": "cl-aceite-oliva",
+      "nombre": "Aceite de oliva",
+      "grupo": "Grasas",
+      "por100g": {
+        "kcal": 884,
+        "p": 0,
+        "c": 0,
+        "g": 100
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharadita",
+          "gramos": 4.5
+        },
+        {
+          "nombre": "1 cucharada",
+          "gramos": 13.5
+        }
+      ]
+    },
+    {
+      "id": "cl-aceitunas",
+      "nombre": "Aceitunas",
+      "grupo": "Grasas",
+      "por100g": {
+        "kcal": 145,
+        "p": 1,
+        "c": 3.8,
+        "g": 15.3
+      },
+      "porciones": [
+        {
+          "nombre": "5 aceitunas",
+          "gramos": 20
+        },
+        {
+          "nombre": "1 taza",
+          "gramos": 134
+        }
+      ],
+      "alias": "olivas"
+    },
+    {
+      "id": "cl-mayonesa",
+      "nombre": "Mayonesa",
+      "grupo": "Grasas",
+      "por100g": {
+        "kcal": 680,
+        "p": 1,
+        "c": 1.3,
+        "g": 75
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 14
+        }
+      ]
+    },
+    {
+      "id": "cl-clara",
+      "nombre": "Clara de huevo",
+      "grupo": "Huevos",
+      "por100g": {
+        "kcal": 52,
+        "p": 10.9,
+        "c": 0.7,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 clara",
+          "gramos": 33
+        }
+      ]
+    },
+    {
+      "id": "cl-huevo",
+      "nombre": "Huevo",
+      "grupo": "Huevos",
+      "por100g": {
+        "kcal": 143,
+        "p": 12.6,
+        "c": 0.7,
+        "g": 9.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 huevo",
+          "gramos": 50
+        },
+        {
+          "nombre": "2 huevos",
+          "gramos": 100
+        }
+      ]
+    },
+    {
+      "id": "cl-arvejas",
+      "nombre": "Arvejas cocidas",
+      "grupo": "Legumbres",
+      "por100g": {
+        "kcal": 84,
+        "p": 5.4,
+        "c": 15.6,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 160
+        }
+      ]
+    },
+    {
+      "id": "cl-garbanzos",
+      "nombre": "Garbanzos cocidos",
+      "grupo": "Legumbres",
+      "por100g": {
+        "kcal": 164,
+        "p": 8.9,
+        "c": 27.4,
+        "g": 2.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 164
+        }
+      ]
+    },
+    {
+      "id": "cl-lentejas",
+      "nombre": "Lentejas cocidas",
+      "grupo": "Legumbres",
+      "por100g": {
+        "kcal": 116,
+        "p": 9,
+        "c": 20.1,
+        "g": 0.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 198
+        },
+        {
+          "nombre": "1 plato",
+          "gramos": 250
+        }
+      ]
+    },
+    {
+      "id": "cl-porotos",
+      "nombre": "Porotos cocidos",
+      "grupo": "Legumbres",
+      "por100g": {
+        "kcal": 127,
+        "p": 8.7,
+        "c": 22.8,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 177
+        },
+        {
+          "nombre": "1 plato",
+          "gramos": 250
+        }
+      ],
+      "alias": "frejol frijol judia"
+    },
+    {
+      "id": "cl-bebida-de-almendras-sin-azucar",
+      "nombre": "Bebida de almendras sin azúcar",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 15,
+        "p": 0.6,
+        "c": 0.6,
+        "g": 1.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 240
+        },
+        {
+          "nombre": "1 vaso",
+          "gramos": 200
+        }
+      ],
+      "alias": "leche de almendras vegetal"
+    },
+    {
+      "id": "cl-bebida-de-avena-barista",
+      "nombre": "Bebida de avena barista",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 60,
+        "p": 1,
+        "c": 8,
+        "g": 2.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 240
+        },
+        {
+          "nombre": "chorrito de café",
+          "gramos": 50
+        }
+      ],
+      "alias": "leche de avena vegetal"
+    },
+    {
+      "id": "cl-bebida-de-avena-sin-azucar",
+      "nombre": "Bebida de avena sin azúcar",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 40,
+        "p": 0.8,
+        "c": 6.5,
+        "g": 1.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 240
+        },
+        {
+          "nombre": "1 vaso",
+          "gramos": 200
+        }
+      ],
+      "alias": "leche de avena vegetal"
+    },
+    {
+      "id": "cl-bebida-de-coco",
+      "nombre": "Bebida de coco",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 20,
+        "p": 0.2,
+        "c": 1.5,
+        "g": 1.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 240
+        }
+      ],
+      "alias": "leche de coco vegetal"
+    },
+    {
+      "id": "cl-bebida-de-soya",
+      "nombre": "Bebida de soya",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 43,
+        "p": 3.3,
+        "c": 5,
+        "g": 1.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 243
+        }
+      ],
+      "alias": "leche de soya vegetal"
+    },
+    {
+      "id": "cl-crema-de-leche",
+      "nombre": "Crema de leche",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 292,
+        "p": 2.1,
+        "c": 3.7,
+        "g": 30
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 15
+        }
+      ],
+      "alias": "nata"
+    },
+    {
+      "id": "cl-kefir",
+      "nombre": "Kéfir",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 55,
+        "p": 3.3,
+        "c": 4.5,
+        "g": 2.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 vaso",
+          "gramos": 240
+        }
+      ]
+    },
+    {
+      "id": "cl-leche-condensada",
+      "nombre": "Leche condensada",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 321,
+        "p": 7.9,
+        "c": 54.4,
+        "g": 8.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 20
+        }
+      ]
+    },
+    {
+      "id": "cl-leche-descremada",
+      "nombre": "Leche descremada",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 34,
+        "p": 3.4,
+        "c": 5,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 245
+        },
+        {
+          "nombre": "1 vaso",
+          "gramos": 200
+        }
+      ]
+    },
+    {
+      "id": "cl-leche-entera",
+      "nombre": "Leche entera",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 61,
+        "p": 3.2,
+        "c": 4.8,
+        "g": 3.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 244
+        },
+        {
+          "nombre": "1 vaso",
+          "gramos": 200
+        }
+      ]
+    },
+    {
+      "id": "cl-leche-sin-lactosa",
+      "nombre": "Leche sin lactosa",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 61,
+        "p": 3.2,
+        "c": 4.8,
+        "g": 3.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 244
+        },
+        {
+          "nombre": "1 vaso",
+          "gramos": 200
+        }
+      ]
+    },
+    {
+      "id": "cl-manjar",
+      "nombre": "Manjar",
+      "grupo": "Lácteos",
+      "alias": "dulce de leche",
+      "por100g": {
+        "kcal": 315,
+        "p": 6.8,
+        "c": 55.4,
+        "g": 7.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 20
+        }
+      ]
+    },
+    {
+      "id": "cl-mantequilla",
+      "nombre": "Mantequilla",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 717,
+        "p": 0.9,
+        "c": 0.1,
+        "g": 81.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharadita",
+          "gramos": 5
+        },
+        {
+          "nombre": "1 cucharada",
+          "gramos": 14
+        }
+      ]
+    },
+    {
+      "id": "cl-quark",
+      "nombre": "Quark",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 67,
+        "p": 12,
+        "c": 4,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 pote",
+          "gramos": 150
+        }
+      ],
+      "alias": "queso fresco batido"
+    },
+    {
+      "id": "cl-quesillo",
+      "nombre": "Quesillo",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 98,
+        "p": 11.6,
+        "c": 3.4,
+        "g": 4.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 rebanada",
+          "gramos": 50
+        }
+      ],
+      "alias": "queso fresco"
+    },
+    {
+      "id": "cl-queso-crema",
+      "nombre": "Queso crema",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 342,
+        "p": 6,
+        "c": 4.1,
+        "g": 34
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 15
+        }
+      ],
+      "alias": "philadelphia untable"
+    },
+    {
+      "id": "cl-queso-gauda",
+      "nombre": "Queso gauda",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 356,
+        "p": 24.9,
+        "c": 2.2,
+        "g": 27.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 lamina",
+          "gramos": 20
+        },
+        {
+          "nombre": "2 laminas",
+          "gramos": 40
+        }
+      ]
+    },
+    {
+      "id": "cl-queso-mantecoso",
+      "nombre": "Queso mantecoso",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 330,
+        "p": 22,
+        "c": 2,
+        "g": 26
+      },
+      "porciones": [
+        {
+          "nombre": "1 lámina",
+          "gramos": 20
+        },
+        {
+          "nombre": "2 láminas",
+          "gramos": 40
+        }
+      ]
+    },
+    {
+      "id": "cl-queso-parmesano",
+      "nombre": "Queso parmesano",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 392,
+        "p": 35.8,
+        "c": 3.2,
+        "g": 25.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 5
+        }
+      ]
+    },
+    {
+      "id": "cl-ricotta",
+      "nombre": "Ricotta",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 174,
+        "p": 11.3,
+        "c": 3,
+        "g": 13
+      },
+      "porciones": [
+        {
+          "nombre": "media taza",
+          "gramos": 123
+        }
+      ]
+    },
+    {
+      "id": "cl-yogur-descremado",
+      "nombre": "Yogur descremado",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 41,
+        "p": 4.1,
+        "c": 5.6,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 pote",
+          "gramos": 125
+        }
+      ],
+      "alias": "yogurt yoghurt"
+    },
+    {
+      "id": "cl-yogur-proteico",
+      "nombre": "Yogur proteico",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 60,
+        "p": 10,
+        "c": 4,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 envase",
+          "gramos": 140
+        },
+        {
+          "nombre": "1 pote",
+          "gramos": 125
+        }
+      ],
+      "alias": "protein extra alto en proteina yogurt yoghurt"
+    },
+    {
+      "id": "cl-yogurt-sabor",
+      "nombre": "Yogurt batido con sabor",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 85,
+        "p": 3,
+        "c": 13.2,
+        "g": 2.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 pote",
+          "gramos": 125
+        }
+      ],
+      "aprox": true,
+      "alias": "yogurt yoghurt yogur"
+    },
+    {
+      "id": "cl-yogurt-griego",
+      "nombre": "Yogurt griego natural",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 59,
+        "p": 10.2,
+        "c": 3.6,
+        "g": 0.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 pote",
+          "gramos": 150
+        }
+      ],
+      "alias": "yogurt yoghurt yogur"
+    },
+    {
+      "id": "cl-yogurt-natural",
+      "nombre": "Yogurt natural",
+      "grupo": "Lácteos",
+      "por100g": {
+        "kcal": 61,
+        "p": 3.5,
+        "c": 4.7,
+        "g": 3.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 pote",
+          "gramos": 125
+        }
+      ],
+      "alias": "yogurt yoghurt yogur"
+    },
+    {
+      "id": "cl-galleta-soda",
+      "nombre": "Galletas de soda",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 418,
+        "p": 9,
+        "c": 71,
+        "g": 10
+      },
+      "porciones": [
+        {
+          "nombre": "1 galleta",
+          "gramos": 6
+        },
+        {
+          "nombre": "6 galletas",
+          "gramos": 36
         }
       ]
     },
@@ -42,6 +2703,29 @@
         {
           "nombre": "media hallulla",
           "gramos": 40
+        }
+      ],
+      "alias": "pan"
+    },
+    {
+      "id": "cl-marraqueta",
+      "nombre": "Marraqueta",
+      "grupo": "Panes",
+      "alias": "pan francés batido frances",
+      "por100g": {
+        "kcal": 271,
+        "p": 8.5,
+        "c": 55.4,
+        "g": 1.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 marraqueta",
+          "gramos": 100
+        },
+        {
+          "nombre": "media marraqueta",
+          "gramos": 50
         }
       ]
     },
@@ -123,449 +2807,119 @@
       "aprox": true
     },
     {
-      "id": "cl-galleta-soda",
-      "nombre": "Galletas de soda",
-      "grupo": "Panes",
+      "id": "cl-atun-en-aceite-lata",
+      "nombre": "Atún en aceite (lata)",
+      "grupo": "Pescados",
       "por100g": {
-        "kcal": 418,
-        "p": 9,
-        "c": 71,
-        "g": 10
+        "kcal": 198,
+        "p": 29,
+        "c": 0,
+        "g": 8.2
       },
       "porciones": [
         {
-          "nombre": "1 galleta",
-          "gramos": 6
-        },
+          "nombre": "1 lata escurrida",
+          "gramos": 104
+        }
+      ],
+      "alias": "conserva"
+    },
+    {
+      "id": "cl-atun-agua",
+      "nombre": "Atún en agua (lata)",
+      "grupo": "Pescados",
+      "por100g": {
+        "kcal": 116,
+        "p": 25.5,
+        "c": 0,
+        "g": 0.8
+      },
+      "porciones": [
         {
-          "nombre": "6 galletas",
-          "gramos": 36
+          "nombre": "1 lata escurrida",
+          "gramos": 104
         }
       ]
     },
     {
-      "id": "cl-arroz-blanco",
-      "nombre": "Arroz blanco cocido",
-      "grupo": "Cereales",
+      "id": "cl-camarones-cocidos",
+      "nombre": "Camarones cocidos",
+      "grupo": "Pescados",
       "por100g": {
-        "kcal": 130,
-        "p": 2.7,
-        "c": 28.2,
+        "kcal": 99,
+        "p": 24,
+        "c": 0.2,
         "g": 0.3
       },
       "porciones": [
         {
           "nombre": "1 taza",
-          "gramos": 158
+          "gramos": 145
         },
         {
-          "nombre": "media taza",
-          "gramos": 79
+          "nombre": "porción",
+          "gramos": 120
         }
-      ]
+      ],
+      "alias": "gambas langostinos"
     },
     {
-      "id": "cl-arroz-integral",
-      "nombre": "Arroz integral cocido",
-      "grupo": "Cereales",
+      "id": "cl-choritos-cocidos",
+      "nombre": "Choritos cocidos",
+      "grupo": "Pescados",
       "por100g": {
-        "kcal": 123,
-        "p": 2.7,
-        "c": 25.6,
-        "g": 1
+        "kcal": 172,
+        "p": 23.8,
+        "c": 7.4,
+        "g": 4.5
       },
       "porciones": [
         {
           "nombre": "1 taza",
-          "gramos": 195
-        }
-      ]
-    },
-    {
-      "id": "cl-fideos",
-      "nombre": "Fideos cocidos",
-      "grupo": "Cereales",
-      "alias": "pasta tallarines",
-      "por100g": {
-        "kcal": 158,
-        "p": 5.8,
-        "c": 30.9,
-        "g": 0.9
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 140
-        },
-        {
-          "nombre": "1 plato",
-          "gramos": 220
-        }
-      ]
-    },
-    {
-      "id": "cl-avena",
-      "nombre": "Avena cruda",
-      "grupo": "Cereales",
-      "por100g": {
-        "kcal": 389,
-        "p": 16.9,
-        "c": 66.3,
-        "g": 6.9
-      },
-      "porciones": [
-        {
-          "nombre": "media taza",
-          "gramos": 40
-        },
-        {
-          "nombre": "3 cucharadas",
-          "gramos": 30
-        }
-      ]
-    },
-    {
-      "id": "cl-quinoa",
-      "nombre": "Quinoa cocida",
-      "grupo": "Cereales",
-      "por100g": {
-        "kcal": 120,
-        "p": 4.4,
-        "c": 21.3,
-        "g": 1.9
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 185
-        }
-      ]
-    },
-    {
-      "id": "cl-mote",
-      "nombre": "Mote de trigo cocido",
-      "grupo": "Cereales",
-      "por100g": {
-        "kcal": 124,
-        "p": 4,
-        "c": 26,
-        "g": 0.5
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 170
-        }
-      ]
-    },
-    {
-      "id": "cl-papa",
-      "nombre": "Papa cocida",
-      "grupo": "Cereales",
-      "por100g": {
-        "kcal": 87,
-        "p": 1.9,
-        "c": 20.1,
-        "g": 0.1
-      },
-      "porciones": [
-        {
-          "nombre": "1 papa mediana",
           "gramos": 150
-        },
-        {
-          "nombre": "1 papa chica",
-          "gramos": 90
         }
-      ]
+      ],
+      "alias": "mejillones"
     },
     {
-      "id": "cl-pure",
-      "nombre": "Puré de papas",
-      "grupo": "Cereales",
+      "id": "cl-jurel-en-lata",
+      "nombre": "Jurel en lata",
+      "grupo": "Pescados",
       "por100g": {
-        "kcal": 113,
-        "p": 2,
-        "c": 16.9,
-        "g": 4.2
+        "kcal": 156,
+        "p": 20.7,
+        "c": 0,
+        "g": 7.9
       },
       "porciones": [
         {
-          "nombre": "1 taza",
-          "gramos": 210
-        }
-      ],
-      "aprox": true
-    },
-    {
-      "id": "cl-papas-fritas",
-      "nombre": "Papas fritas",
-      "grupo": "Cereales",
-      "por100g": {
-        "kcal": 312,
-        "p": 3.4,
-        "c": 41.4,
-        "g": 14.7
-      },
-      "porciones": [
-        {
-          "nombre": "porción chica",
-          "gramos": 100
+          "nombre": "1 lata",
+          "gramos": 125
         },
         {
-          "nombre": "porción grande",
-          "gramos": 180
+          "nombre": "media lata",
+          "gramos": 62
         }
       ],
-      "aprox": true
+      "alias": "conserva"
     },
     {
-      "id": "cl-choclo",
-      "nombre": "Choclo cocido",
-      "grupo": "Cereales",
-      "alias": "maiz",
+      "id": "cl-machas",
+      "nombre": "Machas",
+      "grupo": "Pescados",
       "por100g": {
-        "kcal": 96,
-        "p": 3.4,
-        "c": 21,
+        "kcal": 86,
+        "p": 14.7,
+        "c": 3,
         "g": 1.5
       },
       "porciones": [
         {
-          "nombre": "1 choclo",
+          "nombre": "6 machas",
           "gramos": 90
-        },
-        {
-          "nombre": "1 taza granos",
-          "gramos": 164
         }
-      ]
-    },
-    {
-      "id": "cl-porotos",
-      "nombre": "Porotos cocidos",
-      "grupo": "Legumbres",
-      "por100g": {
-        "kcal": 127,
-        "p": 8.7,
-        "c": 22.8,
-        "g": 0.5
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 177
-        },
-        {
-          "nombre": "1 plato",
-          "gramos": 250
-        }
-      ]
-    },
-    {
-      "id": "cl-lentejas",
-      "nombre": "Lentejas cocidas",
-      "grupo": "Legumbres",
-      "por100g": {
-        "kcal": 116,
-        "p": 9,
-        "c": 20.1,
-        "g": 0.4
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 198
-        },
-        {
-          "nombre": "1 plato",
-          "gramos": 250
-        }
-      ]
-    },
-    {
-      "id": "cl-garbanzos",
-      "nombre": "Garbanzos cocidos",
-      "grupo": "Legumbres",
-      "por100g": {
-        "kcal": 164,
-        "p": 8.9,
-        "c": 27.4,
-        "g": 2.6
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 164
-        }
-      ]
-    },
-    {
-      "id": "cl-arvejas",
-      "nombre": "Arvejas cocidas",
-      "grupo": "Legumbres",
-      "por100g": {
-        "kcal": 84,
-        "p": 5.4,
-        "c": 15.6,
-        "g": 0.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 160
-        }
-      ]
-    },
-    {
-      "id": "cl-poroto-verde",
-      "nombre": "Porotos verdes cocidos",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 35,
-        "p": 1.9,
-        "c": 7.9,
-        "g": 0.3
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 125
-        }
-      ]
-    },
-    {
-      "id": "cl-pollo-pechuga",
-      "nombre": "Pechuga de pollo cocida sin piel",
-      "grupo": "Carnes",
-      "por100g": {
-        "kcal": 165,
-        "p": 31,
-        "c": 0,
-        "g": 3.6
-      },
-      "porciones": [
-        {
-          "nombre": "1 pechuga",
-          "gramos": 170
-        },
-        {
-          "nombre": "porción mediana",
-          "gramos": 120
-        }
-      ]
-    },
-    {
-      "id": "cl-pollo-piel",
-      "nombre": "Pollo asado con piel",
-      "grupo": "Carnes",
-      "por100g": {
-        "kcal": 220,
-        "p": 27.3,
-        "c": 0,
-        "g": 12.6
-      },
-      "porciones": [
-        {
-          "nombre": "1 trutro",
-          "gramos": 130
-        }
-      ]
-    },
-    {
-      "id": "cl-posta",
-      "nombre": "Posta de vacuno cocida",
-      "grupo": "Carnes",
-      "alias": "carne magra",
-      "por100g": {
-        "kcal": 187,
-        "p": 30.2,
-        "c": 0,
-        "g": 6.7
-      },
-      "porciones": [
-        {
-          "nombre": "1 bistec",
-          "gramos": 120
-        }
-      ]
-    },
-    {
-      "id": "cl-carne-molida",
-      "nombre": "Carne molida cocida",
-      "grupo": "Carnes",
-      "por100g": {
-        "kcal": 254,
-        "p": 25.8,
-        "c": 0,
-        "g": 16
-      },
-      "porciones": [
-        {
-          "nombre": "porción mediana",
-          "gramos": 120
-        }
-      ]
-    },
-    {
-      "id": "cl-cerdo-lomo",
-      "nombre": "Lomo de cerdo cocido",
-      "grupo": "Carnes",
-      "por100g": {
-        "kcal": 175,
-        "p": 30,
-        "c": 0,
-        "g": 5.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 porción",
-          "gramos": 120
-        }
-      ]
-    },
-    {
-      "id": "cl-vienesa",
-      "nombre": "Vienesa",
-      "grupo": "Carnes",
-      "alias": "salchicha",
-      "por100g": {
-        "kcal": 290,
-        "p": 11,
-        "c": 3.2,
-        "g": 26
-      },
-      "porciones": [
-        {
-          "nombre": "1 vienesa",
-          "gramos": 50
-        },
-        {
-          "nombre": "2 vienesas",
-          "gramos": 100
-        }
-      ]
-    },
-    {
-      "id": "cl-jamon-pavo",
-      "nombre": "Jamón de pavo",
-      "grupo": "Carnes",
-      "por100g": {
-        "kcal": 104,
-        "p": 15.4,
-        "c": 3.1,
-        "g": 3.5
-      },
-      "porciones": [
-        {
-          "nombre": "1 lamina",
-          "gramos": 20
-        },
-        {
-          "nombre": "3 laminas",
-          "gramos": 60
-        }
-      ]
+      ],
+      "alias": "almejas"
     },
     {
       "id": "cl-merluza",
@@ -581,23 +2935,6 @@
         {
           "nombre": "1 filete",
           "gramos": 130
-        }
-      ]
-    },
-    {
-      "id": "cl-salmon",
-      "nombre": "Salmón cocido",
-      "grupo": "Pescados",
-      "por100g": {
-        "kcal": 208,
-        "p": 22.1,
-        "c": 0,
-        "g": 12.4
-      },
-      "porciones": [
-        {
-          "nombre": "1 porción",
-          "gramos": 120
         }
       ]
     },
@@ -619,742 +2956,92 @@
       ]
     },
     {
-      "id": "cl-atun-agua",
-      "nombre": "Atún en agua (lata)",
+      "id": "cl-salmon-ahumado",
+      "nombre": "Salmón ahumado",
       "grupo": "Pescados",
       "por100g": {
-        "kcal": 116,
-        "p": 25.5,
+        "kcal": 117,
+        "p": 18.3,
         "c": 0,
-        "g": 0.8
+        "g": 4.3
       },
       "porciones": [
         {
-          "nombre": "1 lata escurrida",
-          "gramos": 104
-        }
-      ]
-    },
-    {
-      "id": "cl-huevo",
-      "nombre": "Huevo",
-      "grupo": "Huevos",
-      "por100g": {
-        "kcal": 143,
-        "p": 12.6,
-        "c": 0.7,
-        "g": 9.5
-      },
-      "porciones": [
-        {
-          "nombre": "1 huevo",
+          "nombre": "2 láminas",
           "gramos": 50
-        },
-        {
-          "nombre": "2 huevos",
-          "gramos": 100
         }
       ]
     },
     {
-      "id": "cl-clara",
-      "nombre": "Clara de huevo",
-      "grupo": "Huevos",
+      "id": "cl-salmon",
+      "nombre": "Salmón cocido",
+      "grupo": "Pescados",
       "por100g": {
-        "kcal": 52,
-        "p": 10.9,
-        "c": 0.7,
-        "g": 0.2
+        "kcal": 208,
+        "p": 22.1,
+        "c": 0,
+        "g": 12.4
       },
       "porciones": [
         {
-          "nombre": "1 clara",
-          "gramos": 33
+          "nombre": "1 porción",
+          "gramos": 120
         }
       ]
     },
     {
-      "id": "cl-leche-entera",
-      "nombre": "Leche entera",
-      "grupo": "Lácteos",
+      "id": "cl-cazuela",
+      "nombre": "Cazuela de vacuno",
+      "grupo": "Platos",
       "por100g": {
-        "kcal": 61,
-        "p": 3.2,
-        "c": 4.8,
-        "g": 3.3
+        "kcal": 75,
+        "p": 5.2,
+        "c": 7.4,
+        "g": 2.5
       },
       "porciones": [
         {
-          "nombre": "1 taza",
-          "gramos": 244
-        },
-        {
-          "nombre": "1 vaso",
-          "gramos": 200
-        }
-      ]
-    },
-    {
-      "id": "cl-leche-descremada",
-      "nombre": "Leche descremada",
-      "grupo": "Lácteos",
-      "por100g": {
-        "kcal": 34,
-        "p": 3.4,
-        "c": 5,
-        "g": 0.1
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 245
-        },
-        {
-          "nombre": "1 vaso",
-          "gramos": 200
-        }
-      ]
-    },
-    {
-      "id": "cl-yogurt-natural",
-      "nombre": "Yogurt natural",
-      "grupo": "Lácteos",
-      "por100g": {
-        "kcal": 61,
-        "p": 3.5,
-        "c": 4.7,
-        "g": 3.3
-      },
-      "porciones": [
-        {
-          "nombre": "1 pote",
-          "gramos": 125
-        }
-      ]
-    },
-    {
-      "id": "cl-yogurt-sabor",
-      "nombre": "Yogurt batido con sabor",
-      "grupo": "Lácteos",
-      "por100g": {
-        "kcal": 85,
-        "p": 3,
-        "c": 13.2,
-        "g": 2.4
-      },
-      "porciones": [
-        {
-          "nombre": "1 pote",
-          "gramos": 125
+          "nombre": "1 plato",
+          "gramos": 400
         }
       ],
       "aprox": true
     },
     {
-      "id": "cl-yogurt-griego",
-      "nombre": "Yogurt griego natural",
-      "grupo": "Lácteos",
+      "id": "cl-charquican",
+      "nombre": "Charquicán",
+      "grupo": "Platos",
       "por100g": {
-        "kcal": 59,
-        "p": 10.2,
-        "c": 3.6,
-        "g": 0.4
+        "kcal": 110,
+        "p": 5,
+        "c": 15,
+        "g": 3.5
       },
       "porciones": [
         {
-          "nombre": "1 pote",
-          "gramos": 150
+          "nombre": "1 plato",
+          "gramos": 300
         }
-      ]
+      ],
+      "aprox": true
     },
     {
-      "id": "cl-quesillo",
-      "nombre": "Quesillo",
-      "grupo": "Lácteos",
+      "id": "cl-churrasco-italiano",
+      "nombre": "Churrasco italiano",
+      "grupo": "Platos",
       "por100g": {
-        "kcal": 98,
-        "p": 11.6,
-        "c": 3.4,
-        "g": 4.3
+        "kcal": 230,
+        "p": 11,
+        "c": 20,
+        "g": 12
       },
       "porciones": [
         {
-          "nombre": "1 rebanada",
-          "gramos": 50
+          "nombre": "1 sandwich",
+          "gramos": 300
         }
-      ]
-    },
-    {
-      "id": "cl-queso-gauda",
-      "nombre": "Queso gauda",
-      "grupo": "Lácteos",
-      "por100g": {
-        "kcal": 356,
-        "p": 24.9,
-        "c": 2.2,
-        "g": 27.4
-      },
-      "porciones": [
-        {
-          "nombre": "1 lamina",
-          "gramos": 20
-        },
-        {
-          "nombre": "2 laminas",
-          "gramos": 40
-        }
-      ]
-    },
-    {
-      "id": "cl-mantequilla",
-      "nombre": "Mantequilla",
-      "grupo": "Lácteos",
-      "por100g": {
-        "kcal": 717,
-        "p": 0.9,
-        "c": 0.1,
-        "g": 81.1
-      },
-      "porciones": [
-        {
-          "nombre": "1 cucharadita",
-          "gramos": 5
-        },
-        {
-          "nombre": "1 cucharada",
-          "gramos": 14
-        }
-      ]
-    },
-    {
-      "id": "cl-manjar",
-      "nombre": "Manjar",
-      "grupo": "Lácteos",
-      "alias": "dulce de leche",
-      "por100g": {
-        "kcal": 315,
-        "p": 6.8,
-        "c": 55.4,
-        "g": 7.4
-      },
-      "porciones": [
-        {
-          "nombre": "1 cucharada",
-          "gramos": 20
-        }
-      ]
-    },
-    {
-      "id": "cl-palta",
-      "nombre": "Palta",
-      "grupo": "Frutas",
-      "alias": "aguacate",
-      "por100g": {
-        "kcal": 160,
-        "p": 2,
-        "c": 8.5,
-        "g": 14.7
-      },
-      "porciones": [
-        {
-          "nombre": "media palta",
-          "gramos": 68
-        },
-        {
-          "nombre": "1 palta",
-          "gramos": 136
-        },
-        {
-          "nombre": "1 cucharada",
-          "gramos": 15
-        }
-      ]
-    },
-    {
-      "id": "cl-platano",
-      "nombre": "Plátano",
-      "grupo": "Frutas",
-      "por100g": {
-        "kcal": 89,
-        "p": 1.1,
-        "c": 22.8,
-        "g": 0.3
-      },
-      "porciones": [
-        {
-          "nombre": "1 platano",
-          "gramos": 118
-        }
-      ]
-    },
-    {
-      "id": "cl-manzana",
-      "nombre": "Manzana",
-      "grupo": "Frutas",
-      "por100g": {
-        "kcal": 52,
-        "p": 0.3,
-        "c": 13.8,
-        "g": 0.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 manzana",
-          "gramos": 182
-        }
-      ]
-    },
-    {
-      "id": "cl-naranja",
-      "nombre": "Naranja",
-      "grupo": "Frutas",
-      "por100g": {
-        "kcal": 47,
-        "p": 0.9,
-        "c": 11.8,
-        "g": 0.1
-      },
-      "porciones": [
-        {
-          "nombre": "1 naranja",
-          "gramos": 131
-        }
-      ]
-    },
-    {
-      "id": "cl-pera",
-      "nombre": "Pera",
-      "grupo": "Frutas",
-      "por100g": {
-        "kcal": 57,
-        "p": 0.4,
-        "c": 15.2,
-        "g": 0.1
-      },
-      "porciones": [
-        {
-          "nombre": "1 pera",
-          "gramos": 178
-        }
-      ]
-    },
-    {
-      "id": "cl-uva",
-      "nombre": "Uva",
-      "grupo": "Frutas",
-      "por100g": {
-        "kcal": 69,
-        "p": 0.7,
-        "c": 18.1,
-        "g": 0.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 151
-        }
-      ]
-    },
-    {
-      "id": "cl-frutilla",
-      "nombre": "Frutillas",
-      "grupo": "Frutas",
-      "alias": "fresas",
-      "por100g": {
-        "kcal": 32,
-        "p": 0.7,
-        "c": 7.7,
-        "g": 0.3
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 152
-        }
-      ]
-    },
-    {
-      "id": "cl-kiwi",
-      "nombre": "Kiwi",
-      "grupo": "Frutas",
-      "por100g": {
-        "kcal": 61,
-        "p": 1.1,
-        "c": 14.7,
-        "g": 0.5
-      },
-      "porciones": [
-        {
-          "nombre": "1 kiwi",
-          "gramos": 76
-        }
-      ]
-    },
-    {
-      "id": "cl-durazno",
-      "nombre": "Durazno",
-      "grupo": "Frutas",
-      "por100g": {
-        "kcal": 39,
-        "p": 0.9,
-        "c": 9.5,
-        "g": 0.3
-      },
-      "porciones": [
-        {
-          "nombre": "1 durazno",
-          "gramos": 150
-        }
-      ]
-    },
-    {
-      "id": "cl-sandia",
-      "nombre": "Sandía",
-      "grupo": "Frutas",
-      "por100g": {
-        "kcal": 30,
-        "p": 0.6,
-        "c": 7.6,
-        "g": 0.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 152
-        }
-      ]
-    },
-    {
-      "id": "cl-arandano",
-      "nombre": "Arándanos",
-      "grupo": "Frutas",
-      "por100g": {
-        "kcal": 57,
-        "p": 0.7,
-        "c": 14.5,
-        "g": 0.3
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 148
-        }
-      ]
-    },
-    {
-      "id": "cl-tomate",
-      "nombre": "Tomate",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 18,
-        "p": 0.9,
-        "c": 3.9,
-        "g": 0.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 tomate",
-          "gramos": 123
-        }
-      ]
-    },
-    {
-      "id": "cl-lechuga",
-      "nombre": "Lechuga",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 15,
-        "p": 1.4,
-        "c": 2.9,
-        "g": 0.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 47
-        }
-      ]
-    },
-    {
-      "id": "cl-zanahoria",
-      "nombre": "Zanahoria",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 41,
-        "p": 0.9,
-        "c": 9.6,
-        "g": 0.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 zanahoria",
-          "gramos": 61
-        }
-      ]
-    },
-    {
-      "id": "cl-zapallo-italiano",
-      "nombre": "Zapallo italiano",
-      "grupo": "Verduras",
-      "alias": "zucchini",
-      "por100g": {
-        "kcal": 17,
-        "p": 1.2,
-        "c": 3.1,
-        "g": 0.3
-      },
-      "porciones": [
-        {
-          "nombre": "1 unidad",
-          "gramos": 196
-        }
-      ]
-    },
-    {
-      "id": "cl-zapallo",
-      "nombre": "Zapallo cocido",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 20,
-        "p": 0.7,
-        "c": 4.9,
-        "g": 0.1
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 245
-        }
-      ]
-    },
-    {
-      "id": "cl-brocoli",
-      "nombre": "Brócoli cocido",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 35,
-        "p": 2.4,
-        "c": 7.2,
-        "g": 0.4
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 156
-        }
-      ]
-    },
-    {
-      "id": "cl-espinaca",
-      "nombre": "Espinaca",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 23,
-        "p": 2.9,
-        "c": 3.6,
-        "g": 0.4
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 30
-        }
-      ]
-    },
-    {
-      "id": "cl-cebolla",
-      "nombre": "Cebolla",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 40,
-        "p": 1.1,
-        "c": 9.3,
-        "g": 0.1
-      },
-      "porciones": [
-        {
-          "nombre": "1 cebolla",
-          "gramos": 110
-        }
-      ]
-    },
-    {
-      "id": "cl-pepino",
-      "nombre": "Pepino",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 15,
-        "p": 0.7,
-        "c": 3.6,
-        "g": 0.1
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 104
-        }
-      ]
-    },
-    {
-      "id": "cl-betarraga",
-      "nombre": "Betarraga cocida",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 44,
-        "p": 1.7,
-        "c": 10,
-        "g": 0.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 170
-        }
-      ]
-    },
-    {
-      "id": "cl-coliflor",
-      "nombre": "Coliflor cocida",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 23,
-        "p": 1.8,
-        "c": 4.1,
-        "g": 0.5
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 124
-        }
-      ]
-    },
-    {
-      "id": "cl-champinon",
-      "nombre": "Champiñones",
-      "grupo": "Verduras",
-      "por100g": {
-        "kcal": 22,
-        "p": 3.1,
-        "c": 3.3,
-        "g": 0.3
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 70
-        }
-      ]
-    },
-    {
-      "id": "cl-almendras",
-      "nombre": "Almendras",
-      "grupo": "Frutos secos",
-      "por100g": {
-        "kcal": 579,
-        "p": 21.2,
-        "c": 21.6,
-        "g": 49.9
-      },
-      "porciones": [
-        {
-          "nombre": "1 puñado",
-          "gramos": 28
-        },
-        {
-          "nombre": "10 almendras",
-          "gramos": 12
-        }
-      ]
-    },
-    {
-      "id": "cl-nueces",
-      "nombre": "Nueces",
-      "grupo": "Frutos secos",
-      "por100g": {
-        "kcal": 654,
-        "p": 15.2,
-        "c": 13.7,
-        "g": 65.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 puñado",
-          "gramos": 28
-        }
-      ]
-    },
-    {
-      "id": "cl-mani",
-      "nombre": "Maní",
-      "grupo": "Frutos secos",
-      "por100g": {
-        "kcal": 567,
-        "p": 25.8,
-        "c": 16.1,
-        "g": 49.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 puñado",
-          "gramos": 28
-        }
-      ]
-    },
-    {
-      "id": "cl-mantequilla-mani",
-      "nombre": "Mantequilla de maní",
-      "grupo": "Frutos secos",
-      "por100g": {
-        "kcal": 588,
-        "p": 25.1,
-        "c": 19.6,
-        "g": 50.4
-      },
-      "porciones": [
-        {
-          "nombre": "1 cucharada",
-          "gramos": 16
-        }
-      ]
-    },
-    {
-      "id": "cl-aceite-oliva",
-      "nombre": "Aceite de oliva",
-      "grupo": "Grasas",
-      "por100g": {
-        "kcal": 884,
-        "p": 0,
-        "c": 0,
-        "g": 100
-      },
-      "porciones": [
-        {
-          "nombre": "1 cucharadita",
-          "gramos": 4.5
-        },
-        {
-          "nombre": "1 cucharada",
-          "gramos": 13.5
-        }
-      ]
-    },
-    {
-      "id": "cl-mayonesa",
-      "nombre": "Mayonesa",
-      "grupo": "Grasas",
-      "por100g": {
-        "kcal": 680,
-        "p": 1,
-        "c": 1.3,
-        "g": 75
-      },
-      "porciones": [
-        {
-          "nombre": "1 cucharada",
-          "gramos": 14
-        }
-      ]
+      ],
+      "aprox": true
     },
     {
       "id": "cl-completo",
@@ -1412,113 +3099,19 @@
       "aprox": true
     },
     {
-      "id": "cl-sopaipilla",
-      "nombre": "Sopaipilla",
+      "id": "cl-ensalada-chilena",
+      "nombre": "Ensalada chilena",
       "grupo": "Platos",
       "por100g": {
-        "kcal": 330,
-        "p": 5.8,
-        "c": 44,
-        "g": 14.5
-      },
-      "porciones": [
-        {
-          "nombre": "1 sopaipilla",
-          "gramos": 50
-        },
-        {
-          "nombre": "2 sopaipillas",
-          "gramos": 100
-        }
-      ],
-      "aprox": true
-    },
-    {
-      "id": "cl-cazuela",
-      "nombre": "Cazuela de vacuno",
-      "grupo": "Platos",
-      "por100g": {
-        "kcal": 75,
-        "p": 5.2,
-        "c": 7.4,
-        "g": 2.5
-      },
-      "porciones": [
-        {
-          "nombre": "1 plato",
-          "gramos": 400
-        }
-      ],
-      "aprox": true
-    },
-    {
-      "id": "cl-charquican",
-      "nombre": "Charquicán",
-      "grupo": "Platos",
-      "por100g": {
-        "kcal": 110,
-        "p": 5,
-        "c": 15,
-        "g": 3.5
-      },
-      "porciones": [
-        {
-          "nombre": "1 plato",
-          "gramos": 300
-        }
-      ],
-      "aprox": true
-    },
-    {
-      "id": "cl-pastel-choclo",
-      "nombre": "Pastel de choclo",
-      "grupo": "Platos",
-      "por100g": {
-        "kcal": 150,
-        "p": 6.5,
-        "c": 18,
-        "g": 6
+        "kcal": 35,
+        "p": 0.8,
+        "c": 4.5,
+        "g": 1.8
       },
       "porciones": [
         {
           "nombre": "1 porción",
-          "gramos": 350
-        }
-      ],
-      "aprox": true
-    },
-    {
-      "id": "cl-porotos-riendas",
-      "nombre": "Porotos con riendas",
-      "grupo": "Platos",
-      "por100g": {
-        "kcal": 130,
-        "p": 6,
-        "c": 20,
-        "g": 3
-      },
-      "porciones": [
-        {
-          "nombre": "1 plato",
-          "gramos": 350
-        }
-      ],
-      "aprox": true
-    },
-    {
-      "id": "cl-poroto-granado",
-      "nombre": "Poroto granado",
-      "grupo": "Platos",
-      "por100g": {
-        "kcal": 115,
-        "p": 5.5,
-        "c": 18.5,
-        "g": 2.2
-      },
-      "porciones": [
-        {
-          "nombre": "1 plato",
-          "gramos": 350
+          "gramos": 150
         }
       ],
       "aprox": true
@@ -1542,22 +3135,41 @@
       "aprox": true
     },
     {
-      "id": "cl-ensalada-chilena",
-      "nombre": "Ensalada chilena",
+      "id": "cl-mote-huesillo",
+      "nombre": "Mote con huesillo",
       "grupo": "Platos",
       "por100g": {
-        "kcal": 35,
-        "p": 0.8,
-        "c": 4.5,
-        "g": 1.8
+        "kcal": 100,
+        "p": 1.2,
+        "c": 24,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 vaso",
+          "gramos": 300
+        }
+      ],
+      "aprox": true
+    },
+    {
+      "id": "cl-pastel-choclo",
+      "nombre": "Pastel de choclo",
+      "grupo": "Platos",
+      "por100g": {
+        "kcal": 150,
+        "p": 6.5,
+        "c": 18,
+        "g": 6
       },
       "porciones": [
         {
           "nombre": "1 porción",
-          "gramos": 150
+          "gramos": 350
         }
       ],
-      "aprox": true
+      "aprox": true,
+      "alias": "maiz elote"
     },
     {
       "id": "cl-pebre",
@@ -1578,177 +3190,198 @@
       "aprox": true
     },
     {
-      "id": "cl-churrasco-italiano",
-      "nombre": "Churrasco italiano",
+      "id": "cl-poroto-granado",
+      "nombre": "Poroto granado",
       "grupo": "Platos",
       "por100g": {
-        "kcal": 230,
-        "p": 11,
+        "kcal": 115,
+        "p": 5.5,
+        "c": 18.5,
+        "g": 2.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 plato",
+          "gramos": 350
+        }
+      ],
+      "aprox": true,
+      "alias": "frejol frijol judia"
+    },
+    {
+      "id": "cl-porotos-riendas",
+      "nombre": "Porotos con riendas",
+      "grupo": "Platos",
+      "por100g": {
+        "kcal": 130,
+        "p": 6,
         "c": 20,
-        "g": 12
+        "g": 3
       },
       "porciones": [
         {
-          "nombre": "1 sandwich",
-          "gramos": 300
+          "nombre": "1 plato",
+          "gramos": 350
         }
       ],
-      "aprox": true
+      "aprox": true,
+      "alias": "frejol frijol judia"
     },
     {
-      "id": "cl-mote-huesillo",
-      "nombre": "Mote con huesillo",
+      "id": "cl-sopaipilla",
+      "nombre": "Sopaipilla",
       "grupo": "Platos",
       "por100g": {
-        "kcal": 100,
-        "p": 1.2,
-        "c": 24,
-        "g": 0.2
+        "kcal": 330,
+        "p": 5.8,
+        "c": 44,
+        "g": 14.5
       },
       "porciones": [
         {
-          "nombre": "1 vaso",
-          "gramos": 300
+          "nombre": "1 sopaipilla",
+          "gramos": 50
+        },
+        {
+          "nombre": "2 sopaipillas",
+          "gramos": 100
         }
       ],
-      "aprox": true
+      "aprox": true,
+      "alias": "sopaipa"
     },
     {
-      "id": "cl-azucar",
-      "nombre": "Azúcar",
-      "grupo": "Dulces",
+      "id": "cl-caldo-de-verduras",
+      "nombre": "Caldo de verduras",
+      "grupo": "Salsas",
       "por100g": {
-        "kcal": 387,
-        "p": 0,
-        "c": 100,
-        "g": 0
+        "kcal": 6,
+        "p": 0.3,
+        "c": 1,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 240
+        }
+      ],
+      "alias": "cubito"
+    },
+    {
+      "id": "cl-ketchup",
+      "nombre": "Kétchup",
+      "grupo": "Salsas",
+      "por100g": {
+        "kcal": 101,
+        "p": 1.1,
+        "c": 25.8,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 17
+        }
+      ],
+      "alias": "catsup"
+    },
+    {
+      "id": "cl-mostaza",
+      "nombre": "Mostaza",
+      "grupo": "Salsas",
+      "por100g": {
+        "kcal": 66,
+        "p": 4.4,
+        "c": 5.8,
+        "g": 3.3
       },
       "porciones": [
         {
           "nombre": "1 cucharadita",
-          "gramos": 4
-        },
-        {
-          "nombre": "1 cucharada",
-          "gramos": 12
+          "gramos": 5
         }
       ]
     },
     {
-      "id": "cl-miel",
-      "nombre": "Miel",
-      "grupo": "Dulces",
+      "id": "cl-pure-de-tomate",
+      "nombre": "Puré de tomate",
+      "grupo": "Salsas",
       "por100g": {
-        "kcal": 304,
-        "p": 0.3,
-        "c": 82.4,
+        "kcal": 38,
+        "p": 1.6,
+        "c": 8.6,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "media taza",
+          "gramos": 122
+        },
+        {
+          "nombre": "1 cucharada",
+          "gramos": 16
+        }
+      ],
+      "alias": "salsa de tomate"
+    },
+    {
+      "id": "cl-salsa-de-soya",
+      "nombre": "Salsa de soya",
+      "grupo": "Salsas",
+      "por100g": {
+        "kcal": 53,
+        "p": 8.1,
+        "c": 4.9,
+        "g": 0.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 16
+        }
+      ],
+      "alias": "soja shoyu"
+    },
+    {
+      "id": "cl-vinagre",
+      "nombre": "Vinagre",
+      "grupo": "Salsas",
+      "por100g": {
+        "kcal": 18,
+        "p": 0,
+        "c": 0.9,
         "g": 0
       },
       "porciones": [
         {
           "nombre": "1 cucharada",
-          "gramos": 21
+          "gramos": 15
         }
       ]
     },
     {
-      "id": "cl-chocolate-leche",
-      "nombre": "Chocolate de leche",
-      "grupo": "Dulces",
+      "id": "cl-colageno-en-polvo",
+      "nombre": "Colágeno en polvo",
+      "grupo": "Suplementos",
       "por100g": {
-        "kcal": 535,
-        "p": 7.6,
-        "c": 59.4,
-        "g": 29.7
-      },
-      "porciones": [
-        {
-          "nombre": "1 cuadrito",
-          "gramos": 10
-        },
-        {
-          "nombre": "1 barra chica",
-          "gramos": 40
-        }
-      ]
-    },
-    {
-      "id": "cl-helado",
-      "nombre": "Helado de vainilla",
-      "grupo": "Dulces",
-      "por100g": {
-        "kcal": 207,
-        "p": 3.5,
-        "c": 23.6,
-        "g": 11
-      },
-      "porciones": [
-        {
-          "nombre": "1 bola",
-          "gramos": 66
-        }
-      ]
-    },
-    {
-      "id": "cl-cafe",
-      "nombre": "Café negro sin azúcar",
-      "grupo": "Bebidas",
-      "por100g": {
-        "kcal": 2,
-        "p": 0.1,
+        "kcal": 360,
+        "p": 90,
         "c": 0,
         "g": 0
       },
       "porciones": [
         {
-          "nombre": "1 taza",
-          "gramos": 240
+          "nombre": "1 scoop",
+          "gramos": 10
         }
-      ]
+      ],
+      "alias": "colageno"
     },
     {
-      "id": "cl-te",
-      "nombre": "Té sin azúcar",
-      "grupo": "Bebidas",
-      "por100g": {
-        "kcal": 1,
-        "p": 0,
-        "c": 0.3,
-        "g": 0
-      },
-      "porciones": [
-        {
-          "nombre": "1 taza",
-          "gramos": 240
-        }
-      ]
-    },
-    {
-      "id": "cl-bebida",
-      "nombre": "Bebida gaseosa",
-      "grupo": "Bebidas",
-      "alias": "coca cola sprite",
-      "por100g": {
-        "kcal": 42,
-        "p": 0,
-        "c": 10.6,
-        "g": 0
-      },
-      "porciones": [
-        {
-          "nombre": "1 lata",
-          "gramos": 330
-        },
-        {
-          "nombre": "1 vaso",
-          "gramos": 200
-        }
-      ]
-    },
-    {
-      "id": "cl-bebida-zero",
-      "nombre": "Bebida zero / light",
-      "grupo": "Bebidas",
+      "id": "cl-creatina",
+      "nombre": "Creatina",
+      "grupo": "Suplementos",
       "por100g": {
         "kcal": 0,
         "p": 0,
@@ -1757,80 +3390,647 @@
       },
       "porciones": [
         {
-          "nombre": "1 lata",
-          "gramos": 330
+          "nombre": "1 cucharadita",
+          "gramos": 5
+        }
+      ],
+      "alias": "monohidrato"
+    },
+    {
+      "id": "cl-levadura-nutricional",
+      "nombre": "Levadura nutricional",
+      "grupo": "Suplementos",
+      "por100g": {
+        "kcal": 385,
+        "p": 51,
+        "c": 36,
+        "g": 5
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 5
         }
       ]
     },
     {
-      "id": "cl-jugo-naranja",
-      "nombre": "Jugo de naranja natural",
-      "grupo": "Bebidas",
+      "id": "cl-proteina-en-polvo-whey",
+      "nombre": "Proteína en polvo (whey)",
+      "grupo": "Suplementos",
       "por100g": {
-        "kcal": 45,
-        "p": 0.7,
-        "c": 10.4,
+        "kcal": 375,
+        "p": 85,
+        "c": 5,
+        "g": 2
+      },
+      "porciones": [
+        {
+          "nombre": "1 scoop",
+          "gramos": 30
+        },
+        {
+          "nombre": "2 scoops",
+          "gramos": 60
+        }
+      ],
+      "alias": "suero isolate scoop batido proteico shake"
+    },
+    {
+      "id": "cl-proteina-vegetal-en-polvo",
+      "nombre": "Proteína vegetal en polvo",
+      "grupo": "Suplementos",
+      "por100g": {
+        "kcal": 380,
+        "p": 75,
+        "c": 10,
+        "g": 5
+      },
+      "porciones": [
+        {
+          "nombre": "1 scoop",
+          "gramos": 30
+        }
+      ],
+      "alias": "vegana arveja scoop"
+    },
+    {
+      "id": "cl-acelga",
+      "nombre": "Acelga",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 19,
+        "p": 1.8,
+        "c": 3.7,
         "g": 0.2
       },
       "porciones": [
         {
-          "nombre": "1 vaso",
-          "gramos": 248
-        }
-      ]
-    },
-    {
-      "id": "cl-cerveza",
-      "nombre": "Cerveza",
-      "grupo": "Bebidas",
-      "por100g": {
-        "kcal": 43,
-        "p": 0.5,
-        "c": 3.6,
-        "g": 0
-      },
-      "porciones": [
-        {
-          "nombre": "1 lata",
-          "gramos": 355
+          "nombre": "1 taza",
+          "gramos": 36
         },
         {
-          "nombre": "1 schop",
-          "gramos": 470
+          "nombre": "1 atado cocido",
+          "gramos": 175
         }
       ]
     },
     {
-      "id": "cl-vino-tinto",
-      "nombre": "Vino tinto",
-      "grupo": "Bebidas",
+      "id": "cl-ajo",
+      "nombre": "Ajo",
+      "grupo": "Verduras",
       "por100g": {
-        "kcal": 85,
-        "p": 0.1,
-        "c": 2.6,
-        "g": 0
+        "kcal": 149,
+        "p": 6.4,
+        "c": 33,
+        "g": 0.5
       },
       "porciones": [
         {
-          "nombre": "1 copa",
-          "gramos": 147
+          "nombre": "1 diente",
+          "gramos": 3
         }
       ]
     },
     {
-      "id": "cl-pisco",
-      "nombre": "Pisco",
-      "grupo": "Bebidas",
+      "id": "cl-albahaca",
+      "nombre": "Albahaca",
+      "grupo": "Verduras",
       "por100g": {
-        "kcal": 231,
-        "p": 0,
-        "c": 0,
-        "g": 0
+        "kcal": 23,
+        "p": 3.2,
+        "c": 2.7,
+        "g": 0.6
       },
       "porciones": [
         {
-          "nombre": "1 trago",
-          "gramos": 42
+          "nombre": "1 taza",
+          "gramos": 24
+        }
+      ]
+    },
+    {
+      "id": "cl-alcachofa",
+      "nombre": "Alcachofa",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 47,
+        "p": 3.3,
+        "c": 10.5,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 alcachofa",
+          "gramos": 128
+        }
+      ]
+    },
+    {
+      "id": "cl-apio",
+      "nombre": "Apio",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 16,
+        "p": 0.7,
+        "c": 3,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 tallo",
+          "gramos": 40
+        },
+        {
+          "nombre": "1 taza",
+          "gramos": 101
+        }
+      ]
+    },
+    {
+      "id": "cl-berenjena",
+      "nombre": "Berenjena",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 25,
+        "p": 1,
+        "c": 5.9,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 82
+        },
+        {
+          "nombre": "1 berenjena",
+          "gramos": 458
+        }
+      ]
+    },
+    {
+      "id": "cl-betarraga",
+      "nombre": "Betarraga cocida",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 44,
+        "p": 1.7,
+        "c": 10,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 170
+        }
+      ],
+      "alias": "remolacha"
+    },
+    {
+      "id": "cl-brocoli",
+      "nombre": "Brócoli cocido",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 35,
+        "p": 2.4,
+        "c": 7.2,
+        "g": 0.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 156
+        }
+      ]
+    },
+    {
+      "id": "cl-cebolla",
+      "nombre": "Cebolla",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 40,
+        "p": 1.1,
+        "c": 9.3,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 cebolla",
+          "gramos": 110
+        }
+      ]
+    },
+    {
+      "id": "cl-cebollin",
+      "nombre": "Cebollín",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 32,
+        "p": 1.8,
+        "c": 7.3,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 6
+        }
+      ],
+      "alias": "ciboulette cebolleta"
+    },
+    {
+      "id": "cl-champinon",
+      "nombre": "Champiñones",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 22,
+        "p": 3.1,
+        "c": 3.3,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 70
+        }
+      ]
+    },
+    {
+      "id": "cl-cilantro",
+      "nombre": "Cilantro",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 23,
+        "p": 2.1,
+        "c": 3.7,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 4
+        }
+      ]
+    },
+    {
+      "id": "cl-coliflor",
+      "nombre": "Coliflor cocida",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 23,
+        "p": 1.8,
+        "c": 4.1,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 124
+        }
+      ]
+    },
+    {
+      "id": "cl-espinaca",
+      "nombre": "Espinaca",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 23,
+        "p": 2.9,
+        "c": 3.6,
+        "g": 0.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 30
+        }
+      ]
+    },
+    {
+      "id": "cl-esparragos",
+      "nombre": "Espárragos",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 20,
+        "p": 2.2,
+        "c": 3.9,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 134
+        },
+        {
+          "nombre": "6 espárragos",
+          "gramos": 90
+        }
+      ]
+    },
+    {
+      "id": "cl-jengibre",
+      "nombre": "Jengibre",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 80,
+        "p": 1.8,
+        "c": 17.8,
+        "g": 0.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharadita",
+          "gramos": 2
+        }
+      ],
+      "alias": "kion"
+    },
+    {
+      "id": "cl-kale",
+      "nombre": "Kale",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 49,
+        "p": 4.3,
+        "c": 8.8,
+        "g": 0.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 67
+        }
+      ],
+      "alias": "col rizada berza"
+    },
+    {
+      "id": "cl-lechuga",
+      "nombre": "Lechuga",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 15,
+        "p": 1.4,
+        "c": 2.9,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 47
+        }
+      ]
+    },
+    {
+      "id": "cl-palmitos",
+      "nombre": "Palmitos",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 28,
+        "p": 2.5,
+        "c": 4.6,
+        "g": 0.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 146
+        },
+        {
+          "nombre": "1 tarro",
+          "gramos": 220
+        }
+      ],
+      "alias": "palmito"
+    },
+    {
+      "id": "cl-pepino",
+      "nombre": "Pepino",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 15,
+        "p": 0.7,
+        "c": 3.6,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 104
+        }
+      ]
+    },
+    {
+      "id": "cl-perejil",
+      "nombre": "Perejil",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 36,
+        "p": 3,
+        "c": 6.3,
+        "g": 0.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 cucharada",
+          "gramos": 4
+        }
+      ]
+    },
+    {
+      "id": "cl-pimenton-rojo",
+      "nombre": "Pimentón rojo",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 31,
+        "p": 1,
+        "c": 6,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 pimentón",
+          "gramos": 119
+        },
+        {
+          "nombre": "1 taza",
+          "gramos": 149
+        }
+      ],
+      "alias": "pimiento morrón morron"
+    },
+    {
+      "id": "cl-pimenton-verde",
+      "nombre": "Pimentón verde",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 20,
+        "p": 0.9,
+        "c": 4.6,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 pimentón",
+          "gramos": 119
+        }
+      ],
+      "alias": "pimiento morron"
+    },
+    {
+      "id": "cl-poroto-verde",
+      "nombre": "Porotos verdes cocidos",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 35,
+        "p": 1.9,
+        "c": 7.9,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 125
+        }
+      ],
+      "alias": "frejol frijol judia"
+    },
+    {
+      "id": "cl-rabanito",
+      "nombre": "Rabanito",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 16,
+        "p": 0.7,
+        "c": 3.4,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 116
+        }
+      ],
+      "alias": "rábano"
+    },
+    {
+      "id": "cl-repollo",
+      "nombre": "Repollo",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 25,
+        "p": 1.3,
+        "c": 5.8,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 89
+        }
+      ],
+      "alias": "col"
+    },
+    {
+      "id": "cl-repollo-morado",
+      "nombre": "Repollo morado",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 31,
+        "p": 1.4,
+        "c": 7.4,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 89
+        }
+      ],
+      "alias": "col lombarda"
+    },
+    {
+      "id": "cl-rucula",
+      "nombre": "Rúcula",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 25,
+        "p": 2.6,
+        "c": 3.7,
+        "g": 0.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 20
+        }
+      ],
+      "alias": "arugula"
+    },
+    {
+      "id": "cl-tomate",
+      "nombre": "Tomate",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 18,
+        "p": 0.9,
+        "c": 3.9,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 tomate",
+          "gramos": 123
+        }
+      ]
+    },
+    {
+      "id": "cl-zanahoria",
+      "nombre": "Zanahoria",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 41,
+        "p": 0.9,
+        "c": 9.6,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 zanahoria",
+          "gramos": 61
+        }
+      ]
+    },
+    {
+      "id": "cl-zapallo",
+      "nombre": "Zapallo cocido",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 20,
+        "p": 0.7,
+        "c": 4.9,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 245
+        }
+      ]
+    },
+    {
+      "id": "cl-zapallo-italiano",
+      "nombre": "Zapallo italiano",
+      "grupo": "Verduras",
+      "alias": "zucchini calabacin",
+      "por100g": {
+        "kcal": 17,
+        "p": 1.2,
+        "c": 3.1,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 unidad",
+          "gramos": 196
         }
       ]
     }

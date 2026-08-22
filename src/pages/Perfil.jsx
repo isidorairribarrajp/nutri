@@ -1,5 +1,6 @@
 import { useMemo, useRef, useState } from 'react'
 import * as db from '../db.js'
+import { getCatalogo, getRecetas, getTablaCL } from '../off.js'
 import { redondear } from '../nutricion.js'
 import { kcalDeSesion, promedioDiario } from '../ejercicio.js'
 import {
@@ -419,7 +420,11 @@ function Respaldo({ version, recargar, setAviso }) {
           e.target.value = ''
         }}
       />
-      <p className="mt-3 text-xs text-tenue">
+      <p className="mt-3 text-xs leading-relaxed text-tenue">
+        En el teléfono, sin internet: {getTablaCL().length} alimentos chilenos,{' '}
+        {getRecetas().length} recetas tuyas y {getCatalogo().length.toLocaleString('es-CL')} productos
+        de supermercado.
+        <br />
         {stats.dias} {stats.dias === 1 ? 'día' : 'días'} de comida · {stats.sesiones} {stats.sesiones === 1 ? 'sesión' : 'sesiones'} · {stats.pesos} {stats.pesos === 1 ? 'pesada' : 'pesadas'} ·{' '}
         {stats.propios} {stats.propios === 1 ? 'alimento propio' : 'alimentos propios'}
       </p>

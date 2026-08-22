@@ -39,8 +39,33 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,json,woff2}'],
+        // El catalogo de supermercado son varios MB: no tiene sentido bajarlo
+        // en la instalacion. Se baja la primera vez que Isi busca algo y desde
+        // ahi queda cacheado. La tabla chilena, que es la importante, si va
+        // precacheada.
+        globIgnores: ['**/off-cl.json'],
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: BASE + 'index.html',
         runtimeCaching: [
+          {
+            urlPattern: /\/off-cl\.json$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'catalogo-supermercado',
+              expiration: { maxEntries: 2, maxAgeSeconds: 60 * 60 * 24 * 90 },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
+          {
+            // las fotos de producto: una vez vistas, quedan
+            urlPattern: /^https:\/\/images\.openfoodfacts\.org\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'fotos-productos',
+              expiration: { maxEntries: 500, maxAgeSeconds: 60 * 60 * 24 * 60 },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
           {
             urlPattern: /^https:\/\/world\.openfoodfacts\.org\/.*/i,
             handler: 'NetworkFirst',

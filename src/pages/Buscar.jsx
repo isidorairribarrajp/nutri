@@ -6,7 +6,7 @@ import SelectorPorcion from '../components/SelectorPorcion.jsx'
 const Escaner = lazy(() => import('../components/Escaner.jsx'))
 const RegistroTexto = lazy(() => import('../components/RegistroTexto.jsx'))
 import { MOMENTOS, etiquetaPorcion } from '../nutricion.js'
-import { buscarLocal, buscarOFF, cargarRecetas, cargarTablaCL, fijarEnCache, getRecetas, getTablaCL } from '../off.js'
+import { buscarLocal, buscarOFF, cargarCatalogo, cargarRecetas, cargarTablaCL, fijarEnCache, getRecetas, getTablaCL } from '../off.js'
 import * as db from '../db.js'
 
 const DEBOUNCE_MS = 350
@@ -27,7 +27,7 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
   const inputRef = useRef(null)
 
   useEffect(() => {
-    Promise.all([cargarTablaCL(), cargarRecetas()]).then(() => setLocales(buscarLocal(termino)))
+    Promise.all([cargarTablaCL(), cargarRecetas(), cargarCatalogo()]).then(() => setLocales(buscarLocal(termino)))
     setRecientes(db.getRecientes())
     inputRef.current?.focus()
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -44,7 +44,8 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
     setBuscandoRed(true)
     const t = setTimeout(async () => {
       const res = await buscarOFF(termino.trim())
-      setRemotos(res)
+      const yaLocales = new Set(locales.map((a) => a.id))
+      setRemotos(res.filter((r) => !yaLocales.has(r.id)))
       setBuscandoRed(false)
     }, DEBOUNCE_MS)
     return () => clearTimeout(t)

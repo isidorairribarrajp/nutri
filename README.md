@@ -146,14 +146,30 @@ El reparto "Recomendado" lo elige la app según objetivo y % de grasa, y dice po
 
 ## Los alimentos
 
-- `public/alimentos-cl.json` — ~100 alimentos y platos chilenos con porciones caseras.
-  Va en el bundle: funciona sin internet.
+Todo lo de abajo viaja **dentro de la app**: buscar comida no necesita internet.
+
+- `public/alimentos-cl.json` — ~215 alimentos y platos chilenos **con porciones caseras**
+  ("1 marraqueta", "media palta", "1 taza de arroz cocido"). Es lo que se muestra primero
+  en la búsqueda, porque es lo único que sabe cuánto pesa una porción de verdad.
+  Trae sinónimos (`alias`) para que "aguacate", "fresa", "frejol", "yogurt" o "cabritas"
+  encuentren lo mismo que el nombre chileno.
+- `public/off-cl.json` — el catálogo de productos de supermercado de Chile de Open Food
+  Facts, empaquetado con la app: marca, macros, tamaño de porción y **foto**. Se guarda
+  con claves de una letra porque son miles de productos y cada byte se multiplica.
+  Regenerar: `python3 datos/empaquetar_catalogo.py <archivo bajado>`.
 - `public/recetas-cl.json` — 45 entradas generadas desde los dos recetarios de Isi
   (`datos/`). Los macros se calculan sumando los ingredientes y se **contrastan** contra
   las kcal que declara cada receta; cuando la diferencia supera el 15 % la app lo dice.
   Mediana de desviación: 8,9 %.
-- [Open Food Facts](https://world.openfoodfacts.org/) — productos de supermercado (red).
+- [Open Food Facts](https://world.openfoodfacts.org/) en vivo — para lo que no esté en el
+  catálogo empaquetado. Requiere red; los resultados que ya están locales se filtran para
+  no salir dos veces.
 - Alimentos propios y favoritos.
+
+Las fotos de producto se sirven desde el CDN de Open Food Facts y quedan cacheadas por el
+service worker (`CacheFirst`, 60 días): la primera vez necesitan red, después no.
+
+Datos de Open Food Facts bajo licencia ODbL.
 
 Regenerar las recetas desde los recetarios:
 

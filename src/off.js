@@ -8,6 +8,7 @@ const CAMPOS = 'code,product_name,product_name_es,brands,nutriments,serving_size
 
 let TABLA_CL = null
 let RECETAS = null
+let CATALOGO = null
 
 /** Quita tildes y baja a minusculas para que "platano" encuentre "plátano". */
 export function normalizar(texto) {
@@ -43,6 +44,56 @@ export async function cargarRecetas() {
   return RECETAS
 }
 
+/**
+ * Catalogo de productos chilenos de Open Food Facts, empaquetado con la app.
+ * Son miles, asi que se guarda compacto y se carga una sola vez; a cambio,
+ * buscar un producto de supermercado deja de necesitar internet.
+ */
+export async function cargarCatalogo() {
+  if (CATALOGO) return CATALOGO
+  try {
+    const res = await fetch(`${import.meta.env.BASE_URL}off-cl.json`)
+    const json = await res.json()
+    const base = json.base_imagen || ''
+    CATALOGO = json.productos.map((p) => ({
+      id: `off-${p.c}`,
+      codigo: p.c,
+      nombre: p.n,
+      marca: p.m || null,
+      imagen: p.i ? base + p.i : null,
+      por100g: { kcal: p.k, p: p.p, c: p.h, g: p.g },
+      porciones: p.s ? [{ nombre: '1 porción', gramos: p.s }] : [],
+      fuente: 'off',
+      busqueda: normalizar(`${p.n} ${p.m || ''}`),
+    }))
+  } catch {
+    CATALOGO = []   // sin catalogo la app sigue: queda la busqueda en red
+  }
+  return CATALOGO
+}
+
+export const getCatalogo = () => CATALOGO || []
+
+export function buscarCatalogo(termino, limite = 30) {
+  if (!CATALOGO) return []
+  const q = normalizar(termino)
+  if (q.length < 2) return []
+  const golpes = []
+  for (const a of CATALOGO) {
+    if (!a.busqueda.includes(q)) continue
+    golpes.push(a)
+    if (golpes.length >= limite * 4) break
+  }
+  return golpes
+    .sort((a, b) => {
+      const ia = normalizar(a.nombre).startsWith(q) ? 0 : 1
+      const ib = normalizar(b.nombre).startsWith(q) ? 0 : 1
+      if (ia !== ib) return ia - ib
+      return a.nombre.length - b.nombre.length
+    })
+    .slice(0, limite)
+}
+
 export const getRecetas = () => RECETAS || []
 export const getTablaCL = () => TABLA_CL || []
 
@@ -67,9 +118,18 @@ export function buscarCL(termino) {
   })
 }
 
-/** Todo lo que funciona sin internet: recetas propias + tabla chilena. */
+/**
+ * Todo lo que funciona sin internet, en orden de utilidad:
+ * lo que Isi creo, sus recetas, la tabla chilena con porciones caseras, y
+ * al final los miles de productos de supermercado.
+ */
 export function buscarLocal(termino) {
-  return [...buscarPropios(termino), ...buscarRecetas(termino), ...buscarCL(termino)]
+  return [
+    ...buscarPropios(termino),
+    ...buscarRecetas(termino),
+    ...buscarCL(termino),
+    ...buscarCatalogo(termino),
+  ]
 }
 
 /** Busca en los alimentos que Isi creo a mano. */

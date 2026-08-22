@@ -6,7 +6,7 @@ import Progreso from './pages/Progreso.jsx'
 import Recetas from './pages/Recetas.jsx'
 import Perfil from './pages/Perfil.jsx'
 import * as db from './db.js'
-import { cargarRecetas, cargarTablaCL } from './off.js'
+import { cargarCatalogo, cargarRecetas, cargarTablaCL } from './off.js'
 import { promedioDiario } from './ejercicio.js'
 import { analizar, perfilCompleto } from './perfil.js'
 
@@ -55,6 +55,7 @@ export default function App() {
     // Se precargan para que la primera busqueda sea instantanea y sirva offline.
     cargarTablaCL()
     cargarRecetas()
+    cargarCatalogo()
   }, [])
 
   const pesoKg = useMemo(() => Number(perfil?.peso_kg) || Number(db.getUltimoPeso()?.kg) || 60, [perfil, version])

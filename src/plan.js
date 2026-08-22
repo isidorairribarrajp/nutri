@@ -23,9 +23,9 @@ export const REPARTO_DIA = [
 
 /** Que recetas pegan en que momento del dia. */
 const APTOS = {
-  desayuno: (a) => a.tipo === 'postre' || enGrupo(a, 'Lacteos', 'Panes', 'Frutas', 'Cereales', 'Huevos'),
+  desayuno: (a) => a.tipo === 'postre' || enGrupo(a, 'Lacteos', 'Panes', 'Frutas', 'Cereales', 'Huevos', 'Suplementos', 'Frutos secos'),
   once: (a) => a.tipo === 'postre' || enGrupo(a, 'Lacteos', 'Panes', 'Frutas'),
-  snack: (a) => a.tipo === 'postre' || enGrupo(a, 'Frutas', 'Frutos secos', 'Lacteos'),
+  snack: (a) => a.tipo === 'postre' || enGrupo(a, 'Frutas', 'Frutos secos', 'Lacteos', 'Suplementos'),
   almuerzo: (a) => a.tipo === 'salado' || enGrupo(a, 'Carnes', 'Pescados', 'Legumbres', 'Cereales', 'Verduras', 'Platos', 'Huevos'),
   cena: (a) => a.tipo === 'salado' || enGrupo(a, 'Carnes', 'Pescados', 'Legumbres', 'Verduras', 'Platos', 'Huevos'),
 }
