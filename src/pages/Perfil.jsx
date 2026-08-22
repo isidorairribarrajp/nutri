@@ -74,8 +74,8 @@ export default function Perfil({ metas, recargar }) {
       </button>
 
       <p className="mt-6 text-center text-[11px] leading-relaxed text-tenue">
-        Nutri v2.0 · Alimentos de Open Food Facts, tablas de composición (USDA / INTA)
-        y los recetarios de la casa.
+        Nutri · versión {__SELLO__} · Alimentos de Open Food Facts, tablas de
+        composición (USDA / INTA) y los recetarios de la casa.
         <br />
         El gasto calculado es una estimación estadística, no una medición de tu metabolismo.
         <br />

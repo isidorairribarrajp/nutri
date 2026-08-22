@@ -1,6 +1,9 @@
-import { useEffect, useRef, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { FilaResultado } from '../components/FilaAlimento.jsx'
 import SelectorPorcion from '../components/SelectorPorcion.jsx'
+
+// El lector pesa harto: se carga solo cuando Isi abre la camara.
+const Escaner = lazy(() => import('../components/Escaner.jsx'))
 import { MOMENTOS, etiquetaPorcion } from '../nutricion.js'
 import { buscarLocal, buscarOFF, cargarRecetas, cargarTablaCL, fijarEnCache } from '../off.js'
 import * as db from '../db.js'
@@ -15,6 +18,8 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
   const [buscandoRed, setBuscandoRed] = useState(false)
   const [elegido, setElegido] = useState(null)
   const [creando, setCreando] = useState(false)
+  const [escaneando, setEscaneando] = useState(false)
+  const [codigoNuevo, setCodigoNuevo] = useState(null)
   const [recientes, setRecientes] = useState([])
   const [favoritos, setFavoritos] = useState(() => db.getFavoritos())
   const inputRef = useRef(null)
@@ -78,6 +83,13 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
             placeholder="Buscar alimento..."
             className="min-w-0 flex-1 rounded-xl border border-borde bg-panel2 px-4 py-3 outline-none focus:border-acento"
           />
+          <button
+            onClick={() => setEscaneando(true)}
+            aria-label="Escanear código de barras"
+            className="shrink-0 rounded-xl border border-borde bg-chip px-3 py-3 text-lg leading-none"
+          >
+            ▤
+          </button>
           <button onClick={onCancelar} className="shrink-0 px-1 text-sm text-tenue">
             Cerrar
           </button>
@@ -152,9 +164,23 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
         />
       )}
 
+      {escaneando && (
+        <Suspense fallback={<div className="fixed inset-0 z-50 flex items-center justify-center bg-black text-sm text-white/70">Cargando el lector…</div>}>
+          <Escaner
+            onCerrar={() => setEscaneando(false)}
+            onEncontrado={(prod) => {
+              setEscaneando(false)
+              if (prod.nuevo) { setCodigoNuevo(prod.codigo); setCreando(true) }
+              else setElegido(prod)
+            }}
+          />
+        </Suspense>
+      )}
+
       {creando && (
         <CrearAlimento
           nombreInicial={termino}
+          codigo={codigoNuevo}
           onCancelar={() => setCreando(false)}
           onCreado={(a) => {
             setCreando(false)
@@ -166,13 +192,16 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
   )
 }
 
-function CrearAlimento({ nombreInicial, onCreado, onCancelar }) {
+function CrearAlimento({ nombreInicial, codigo, onCreado, onCancelar }) {
   const [f, setF] = useState({ nombre: nombreInicial || '', kcal: '', p: '', c: '', g: '' })
   const valido = f.nombre.trim() && Number(f.kcal) >= 0 && f.kcal !== ''
 
   function guardar() {
     const alimento = {
-      id: `propio-${crypto.randomUUID()}`,
+      // si vino de un codigo de barras se guarda con ese id: la proxima vez que
+      // Isi lo escanee lo encuentra en el cache, sin internet
+      id: codigo ? `off-${codigo}` : `propio-${crypto.randomUUID()}`,
+      codigo: codigo || null,
       nombre: f.nombre.trim(),
       marca: null,
       por100g: {
@@ -203,7 +232,10 @@ function CrearAlimento({ nombreInicial, onCreado, onCancelar }) {
       >
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-borde" />
         <h2 className="mb-1 text-lg font-semibold">Alimento propio</h2>
-        <p className="mb-4 text-xs text-tenue">Copia los valores del envase, por cada 100 g.</p>
+        <p className="mb-4 text-xs text-tenue">
+          Copia los valores del envase, por cada 100 g.
+          {codigo && <span className="mt-1 block">Código <b>{codigo}</b>: queda guardado con el producto.</span>}
+        </p>
 
         <input
           value={f.nombre}

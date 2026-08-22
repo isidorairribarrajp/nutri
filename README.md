@@ -13,6 +13,8 @@ Abrir la URL **en Safari** (en iOS solo Safari puede instalar PWAs)
 
 ## Las cinco pantallas
 
+- **Buscar** — escáner de código de barras, búsqueda en la tabla chilena, tus recetas,
+  tus favoritos y Open Food Facts.
 - **Hoy** — anillo de calorías segmentado por macro, barras de macros, agua, y las
   comidas del día por momento (desayuno / almuerzo / once / cena / snack). Copiar
   las comidas de otro día.
@@ -21,6 +23,31 @@ Abrir la URL **en Safari** (en iOS solo Safari puede instalar PWAs)
 - **Progreso** — peso, grasa corporal y ejercicio, con gráficos de tendencia.
 - **Recetas** — los dos recetarios, con macros por porción y botón "Comí esto".
 - **Perfil** — el análisis completo, respaldo y tema claro/oscuro.
+
+## Escáner de código de barras
+
+Safari en iOS no trae `BarcodeDetector`, así que se usa **ZXing** sobre el video de la
+cámara (`src/escaner.js`). La librería se carga con `import()` dinámico: son 120 KB gzip
+que solo se bajan si se abre el escáner.
+
+- Solo se buscan formatos de producto (EAN-13/8, UPC-A/E): limitar los formatos hace la
+  detección bastante más rápida y evita falsos positivos.
+- Antes de ir a la red se revisa el caché local por código: un producto ya escaneado
+  vuelve a funcionar **sin señal**.
+- Si Open Food Facts no tiene el producto, se ofrece crearlo a mano y queda guardado
+  **con su código de barras**, así el siguiente escaneo lo encuentra solo.
+- Los errores de cámara (permiso denegado, cámara ocupada, sin cámara) tienen su propio
+  mensaje con el paso concreto para arreglarlo.
+
+## Actualizaciones en el teléfono
+
+`injectRegister: null` y el registro se hace a mano en `src/main.jsx` con
+`virtual:pwa-register`. El script que inyecta el plugin por defecto **solo registra** el
+service worker y no recarga la página cuando llega una versión nueva, así que había que
+abrir la app dos veces para verla. Ahora recarga sola, y además revisa si hay versión
+nueva al volver a la app, al recuperar internet y una vez por hora.
+
+La versión que tiene el teléfono se ve al pie de **Perfil** (sello de build).
 
 ## Cómo se calculan las calorías
 

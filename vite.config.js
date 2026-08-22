@@ -6,12 +6,19 @@ import { VitePWA } from 'vite-plugin-pwa'
 // si no el service worker no registra y la app no se instala.
 const BASE = '/nutri/'
 
+const SELLO = new Date().toISOString().slice(0, 16).replace('T', ' ')
+
 export default defineConfig({
+  define: { __SELLO__: JSON.stringify(SELLO) },
   base: BASE,
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      // El registro se hace a mano en main.jsx: el script que inyecta el plugin
+      // solo registra el service worker y NO recarga la pagina cuando llega una
+      // version nueva, asi que habia que abrir la app dos veces para verla.
+      injectRegister: null,
       includeAssets: ['icons/apple-touch-icon.png', 'icons/favicon.svg'],
       manifest: {
         name: 'Nutri',
