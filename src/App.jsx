@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import Hoy from './pages/Hoy.jsx'
+import Peso from './pages/Peso.jsx'
 import Buscar from './pages/Buscar.jsx'
 import Ajustes from './pages/Ajustes.jsx'
 import * as db from './db.js'
@@ -7,6 +8,7 @@ import { cargarTablaCL } from './off.js'
 
 const TABS = [
   { id: 'hoy', nombre: 'Hoy', icono: '◎' },
+  { id: 'peso', nombre: 'Peso', icono: '↗' },
   { id: 'ajustes', nombre: 'Ajustes', icono: '⚙' },
 ]
 
@@ -57,6 +59,7 @@ export default function App() {
             onAgregar={(momento) => setBuscando(momento)}
           />
         )}
+        {tab === 'peso' && <Peso recargar={recargar} />}
         {tab === 'ajustes' && <Ajustes metas={metas} recargar={recargar} />}
       </main>
 

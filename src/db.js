@@ -6,6 +6,8 @@ const K = {
   diario: 'nutri:diario',
   cache: 'nutri:alimentos_cache',
   recientes: 'nutri:recientes',
+  perfil: 'nutri:perfil',
+  pesos: 'nutri:pesos',
 }
 
 const METAS_DEFAULT = { kcal: 1800, proteina_g: 120, carbos_g: 180, grasa_g: 60 }
@@ -55,6 +57,54 @@ export function getMetas() {
 export function setMetas(metas) {
   escribir(K.metas, { ...getMetas(), ...metas })
   return getMetas()
+}
+
+/**
+ * `auto` marca que las metas las calcula el perfil.
+ * Mientras este en true, guardar el perfil las reescribe.
+ */
+export function metasSonAutomaticas() {
+  return leer(K.metas, {}).auto === true
+}
+
+// --- perfil ---
+export function getPerfil() {
+  return leer(K.perfil, null)
+}
+
+export function setPerfil(perfil) {
+  escribir(K.perfil, perfil)
+  return perfil
+}
+
+// --- peso ---
+export function getPesos() {
+  return leer(K.pesos, {})
+}
+
+/** Un peso por dia: volver a pesarse el mismo dia reemplaza el anterior. */
+export function registrarPeso(fecha, kg) {
+  const pesos = getPesos()
+  pesos[fecha] = Math.round(Number(kg) * 100) / 100
+  escribir(K.pesos, pesos)
+}
+
+export function borrarPeso(fecha) {
+  const pesos = getPesos()
+  delete pesos[fecha]
+  escribir(K.pesos, pesos)
+}
+
+/** Pesos ordenados del mas antiguo al mas nuevo. */
+export function getPesosOrdenados() {
+  return Object.entries(getPesos())
+    .map(([fecha, kg]) => ({ fecha, kg }))
+    .sort((a, b) => a.fecha.localeCompare(b.fecha))
+}
+
+export function getUltimoPeso() {
+  const lista = getPesosOrdenados()
+  return lista.length ? lista[lista.length - 1] : null
 }
 
 // --- diario ---
@@ -139,6 +189,8 @@ export function exportar() {
     version: 1,
     exportado: new Date().toISOString(),
     metas: getMetas(),
+    perfil: getPerfil(),
+    pesos: getPesos(),
     diario: getDiario(),
     alimentos_cache: getCache(),
     recientes: getRecientesIds(),
@@ -148,6 +200,8 @@ export function exportar() {
 export function importar(json) {
   if (!json || json.app !== 'nutri') throw new Error('Este archivo no es un respaldo de Nutri.')
   if (json.metas) escribir(K.metas, json.metas)
+  if (json.perfil) escribir(K.perfil, json.perfil)
+  if (json.pesos) escribir(K.pesos, json.pesos)
   if (json.diario) escribir(K.diario, json.diario)
   if (json.alimentos_cache) escribir(K.cache, json.alimentos_cache)
   if (json.recientes) escribir(K.recientes, json.recientes)
