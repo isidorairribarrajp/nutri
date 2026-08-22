@@ -4,7 +4,7 @@
 import { getCache, guardarAlimento } from './db.js'
 
 const OFF_URL = 'https://world.openfoodfacts.org/cgi/search.pl'
-const CAMPOS = 'code,product_name,product_name_es,brands,nutriments,serving_size,quantity'
+const CAMPOS = 'code,product_name,product_name_es,brands,nutriments,serving_size,quantity,image_thumb_url'
 
 let TABLA_CL = null
 let RECETAS = null
@@ -165,8 +165,10 @@ function traducirProducto(prod) {
 
   return {
     id: `off-${prod.code}`,
+    codigo: String(prod.code),
     nombre,
     marca: (prod.brands || '').split(',')[0].trim() || null,
+    imagen: prod.image_thumb_url || null,
     por100g: {
       kcal: Math.round(kcal),
       p: Math.round((Number(n.proteins_100g) || 0) * 10) / 10,

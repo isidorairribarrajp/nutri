@@ -21,13 +21,14 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
   const [creando, setCreando] = useState(false)
   const [escaneando, setEscaneando] = useState(false)
   const [escribiendo, setEscribiendo] = useState(false)
+  const [datosListos, setDatosListos] = useState(false)
   const [codigoNuevo, setCodigoNuevo] = useState(null)
   const [recientes, setRecientes] = useState([])
   const [favoritos, setFavoritos] = useState(() => db.getFavoritos())
   const inputRef = useRef(null)
 
   useEffect(() => {
-    Promise.all([cargarTablaCL(), cargarRecetas(), cargarCatalogo()]).then(() => setLocales(buscarLocal(termino)))
+    Promise.all([cargarTablaCL(), cargarRecetas(), cargarCatalogo()]).then(() => setDatosListos(true))
     setRecientes(db.getRecientes())
     inputRef.current?.focus()
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -35,7 +36,12 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
 
   // Los resultados locales son instantaneos; los de red van con debounce.
   useEffect(() => {
-    setLocales(buscarLocal(termino))
+    // se calcula una vez y se usa para las dos cosas: pintar los resultados
+    // locales y descartar de la red lo que ya esta. Leer el estado `locales`
+    // aca daria el valor del render anterior.
+    const localesAhora = buscarLocal(termino)
+    setLocales(localesAhora)
+
     if (termino.trim().length < 3) {
       setRemotos([])
       setBuscandoRed(false)
@@ -44,12 +50,15 @@ export default function Buscar({ fecha, momentoInicial, onListo, onCancelar }) {
     setBuscandoRed(true)
     const t = setTimeout(async () => {
       const res = await buscarOFF(termino.trim())
-      const yaLocales = new Set(locales.map((a) => a.id))
+      const yaLocales = new Set(localesAhora.map((a) => a.id))
       setRemotos(res.filter((r) => !yaLocales.has(r.id)))
       setBuscandoRed(false)
     }, DEBOUNCE_MS)
     return () => clearTimeout(t)
-  }, [termino])
+    // datosListos entra a proposito: el catalogo llega despues del primer
+    // render, y sin esto los resultados locales no aparecian hasta la
+    // siguiente tecla.
+  }, [termino, datosListos])
 
   function confirmar(resultado) {
     const alimento = fijarEnCache(elegido)
