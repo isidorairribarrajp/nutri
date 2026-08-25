@@ -44,6 +44,23 @@ Cada estado lleva **color Y forma** (punto lleno / anillo / raya). Solo con colo
 sirve: el verde de "cumplido" y el terracota de "fuera" tienen ΔE 1,9 bajo daltonismo
 protán — son el mismo tono para quien lo tiene, y significan lo opuesto.
 
+## Crudo vs cocido
+
+El nombre de cada alimento **siempre dice en qué estado está**, y donde tiene sentido
+existen las dos versiones. No es cosmético: al cocinar, la carne pierde agua y se
+concentra, y el arroz y las legumbres la absorben y se diluyen.
+
+| | crudo | cocido |
+|---|---|---|
+| Pechuga de pollo | 120 | 165 |
+| Posta de vacuno | 131 | 187 |
+| Lentejas | 352 | 116 |
+| Arroz blanco | 365 | 130 |
+
+Registrar 100 g de lentejas crudas como cocidas es errarle por tres veces. Por eso el
+registro por texto **marca la línea como ambigua** cuando existen ambas versiones y no se
+dijo cuál, en vez de elegir en silencio.
+
 ## Registro por texto
 
 `src/texto.js`. Un parser de cantidad + unidad + nombre, no una IA. Entiende gramos
@@ -55,6 +72,11 @@ Dos reglas:
 
 - **Nunca guarda sin mostrar.** Cada línea vuelve con lo que entendió, con cuántos gramos
   resolvió y con alternativas para corregir cuando no está seguro.
+- **Puntúa por dónde calza, no solo si calza.** "arroz" tiene que dar "Arroz blanco" y no
+  "Galletas de arroz": empezar con el término vale mucho más que contenerlo.
+- **Búsqueda por palabras y por raíz**, compartida con el buscador (`calza` y `raiz` en
+  `src/off.js`): "pollo crudo" encuentra "Pechuga de pollo cruda", "cocidas" encuentra
+  "cocidos" y "huevos" encuentra "Huevo".
 - **Una frase que ya es el nombre de una porción no se vuelve a partir.** "media palta"
   son 68 g, no 34: la porción de la tabla ya se llama "media palta". Sin esa regla el
   parser dividía la mitad por la mitad.
@@ -148,7 +170,7 @@ El reparto "Recomendado" lo elige la app según objetivo y % de grasa, y dice po
 
 Todo lo de abajo viaja **dentro de la app**: buscar comida no necesita internet.
 
-- `public/alimentos-cl.json` — ~215 alimentos y platos chilenos **con porciones caseras**
+- `public/alimentos-cl.json` — ~250 alimentos y platos chilenos **con porciones caseras**
   ("1 marraqueta", "media palta", "1 taza de arroz cocido"). Es lo que se muestra primero
   en la búsqueda, porque es lo único que sabe cuánto pesa una porción de verdad.
   Trae sinónimos (`alias`) para que "aguacate", "fresa", "frejol", "yogurt" o "cabritas"

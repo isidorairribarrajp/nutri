@@ -337,6 +337,24 @@
       ]
     },
     {
+      "id": "cl-asado-de-tira-crudo",
+      "nombre": "Asado de tira crudo",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 250,
+        "p": 18,
+        "c": 0,
+        "g": 19.5
+      },
+      "porciones": [
+        {
+          "nombre": "porción",
+          "gramos": 180
+        }
+      ],
+      "alias": "costillar res"
+    },
+    {
       "id": "cl-carne-molida",
       "nombre": "Carne molida cocida",
       "grupo": "Carnes",
@@ -352,6 +370,24 @@
           "gramos": 120
         }
       ]
+    },
+    {
+      "id": "cl-carne-molida-cruda",
+      "nombre": "Carne molida cruda",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 137,
+        "p": 21.4,
+        "c": 0,
+        "g": 5
+      },
+      "porciones": [
+        {
+          "nombre": "porción",
+          "gramos": 120
+        }
+      ],
+      "alias": "molida magra"
     },
     {
       "id": "cl-chorizo",
@@ -371,8 +407,26 @@
       ]
     },
     {
-      "id": "cl-cordero",
-      "nombre": "Cordero",
+      "id": "cl-churrasco-de-vacuno-cocido",
+      "nombre": "Churrasco de vacuno cocido",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 214,
+        "p": 29,
+        "c": 0,
+        "g": 10.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 churrasco",
+          "gramos": 100
+        }
+      ],
+      "alias": "bistec plancha"
+    },
+    {
+      "id": "cl-cordero-crudo",
+      "nombre": "Cordero crudo",
       "grupo": "Carnes",
       "por100g": {
         "kcal": 258,
@@ -388,8 +442,25 @@
       ]
     },
     {
-      "id": "cl-higado-de-vacuno",
-      "nombre": "Hígado de vacuno",
+      "id": "cl-costillar-de-cerdo-crudo",
+      "nombre": "Costillar de cerdo crudo",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 277,
+        "p": 17,
+        "c": 0,
+        "g": 23
+      },
+      "porciones": [
+        {
+          "nombre": "porción",
+          "gramos": 180
+        }
+      ]
+    },
+    {
+      "id": "cl-higado-de-vacuno-crudo",
+      "nombre": "Hígado de vacuno crudo",
       "grupo": "Carnes",
       "por100g": {
         "kcal": 175,
@@ -443,6 +514,41 @@
       ]
     },
     {
+      "id": "cl-lomo-de-cerdo-crudo",
+      "nombre": "Lomo de cerdo crudo",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 143,
+        "p": 21,
+        "c": 0,
+        "g": 5.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 porción",
+          "gramos": 150
+        }
+      ]
+    },
+    {
+      "id": "cl-lomo-vetado-crudo",
+      "nombre": "Lomo vetado crudo",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 220,
+        "p": 19,
+        "c": 0,
+        "g": 15.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 bistec",
+          "gramos": 180
+        }
+      ],
+      "alias": "res bife"
+    },
+    {
       "id": "cl-longaniza",
       "nombre": "Longaniza",
       "grupo": "Carnes",
@@ -460,8 +566,8 @@
       ]
     },
     {
-      "id": "cl-pechuga-de-pavo",
-      "nombre": "Pechuga de pavo",
+      "id": "cl-pechuga-de-pavo-cocida",
+      "nombre": "Pechuga de pavo cocida",
       "grupo": "Carnes",
       "por100g": {
         "kcal": 135,
@@ -477,8 +583,25 @@
       ]
     },
     {
-      "id": "cl-pollo-pechuga",
-      "nombre": "Pechuga de pollo cocida sin piel",
+      "id": "cl-pechuga-de-pavo-cruda",
+      "nombre": "Pechuga de pavo cruda",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 104,
+        "p": 24,
+        "c": 0,
+        "g": 0.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 porción",
+          "gramos": 150
+        }
+      ]
+    },
+    {
+      "id": "cl-pechuga-de-pollo-cocida",
+      "nombre": "Pechuga de pollo cocida",
       "grupo": "Carnes",
       "por100g": {
         "kcal": 165,
@@ -495,7 +618,30 @@
           "nombre": "porción mediana",
           "gramos": 120
         }
-      ]
+      ],
+      "alias": "sin piel"
+    },
+    {
+      "id": "cl-pechuga-de-pollo-cruda",
+      "nombre": "Pechuga de pollo cruda",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 120,
+        "p": 22.5,
+        "c": 0,
+        "g": 2.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 pechuga",
+          "gramos": 170
+        },
+        {
+          "nombre": "porción",
+          "gramos": 120
+        }
+      ],
+      "alias": "pollo pechuga sin piel"
     },
     {
       "id": "cl-pollo-piel",
@@ -511,6 +657,23 @@
         {
           "nombre": "1 trutro",
           "gramos": 130
+        }
+      ]
+    },
+    {
+      "id": "cl-pollo-molido-crudo",
+      "nombre": "Pollo molido crudo",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 143,
+        "p": 17.4,
+        "c": 0,
+        "g": 8.1
+      },
+      "porciones": [
+        {
+          "nombre": "porción",
+          "gramos": 120
         }
       ]
     },
@@ -531,6 +694,24 @@
           "gramos": 120
         }
       ]
+    },
+    {
+      "id": "cl-posta-de-vacuno-cruda",
+      "nombre": "Posta de vacuno cruda",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 131,
+        "p": 21.8,
+        "c": 0,
+        "g": 4.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 bistec",
+          "gramos": 150
+        }
+      ],
+      "alias": "carne magra res"
     },
     {
       "id": "cl-prieta",
@@ -568,8 +749,26 @@
       ]
     },
     {
-      "id": "cl-tocino",
-      "nombre": "Tocino",
+      "id": "cl-tocino-crudo",
+      "nombre": "Tocino crudo",
+      "grupo": "Carnes",
+      "alias": "panceta bacon",
+      "por100g": {
+        "kcal": 393,
+        "p": 12.6,
+        "c": 1.4,
+        "g": 39.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 lonja",
+          "gramos": 28
+        }
+      ]
+    },
+    {
+      "id": "cl-tocino-frito",
+      "nombre": "Tocino frito",
       "grupo": "Carnes",
       "por100g": {
         "kcal": 541,
@@ -588,6 +787,42 @@
         }
       ],
       "alias": "panceta bacon"
+    },
+    {
+      "id": "cl-trutro-de-pollo-cocido",
+      "nombre": "Trutro de pollo cocido",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 232,
+        "p": 24.6,
+        "c": 0,
+        "g": 14.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 trutro",
+          "gramos": 95
+        }
+      ],
+      "alias": "muslo pierna"
+    },
+    {
+      "id": "cl-trutro-de-pollo-crudo",
+      "nombre": "Trutro de pollo crudo",
+      "grupo": "Carnes",
+      "por100g": {
+        "kcal": 214,
+        "p": 16.7,
+        "c": 0,
+        "g": 15.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 trutro",
+          "gramos": 130
+        }
+      ],
+      "alias": "muslo pierna"
     },
     {
       "id": "cl-vienesa",
@@ -633,6 +868,28 @@
       ]
     },
     {
+      "id": "cl-arroz-blanco-crudo",
+      "nombre": "Arroz blanco crudo",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 365,
+        "p": 7.1,
+        "c": 80,
+        "g": 0.7
+      },
+      "porciones": [
+        {
+          "nombre": "media taza",
+          "gramos": 93
+        },
+        {
+          "nombre": "1 taza",
+          "gramos": 185
+        }
+      ],
+      "alias": "grano seco"
+    },
+    {
       "id": "cl-arroz-integral",
       "nombre": "Arroz integral cocido",
       "grupo": "Cereales",
@@ -648,6 +905,46 @@
           "gramos": 195
         }
       ]
+    },
+    {
+      "id": "cl-arroz-integral-crudo",
+      "nombre": "Arroz integral crudo",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 370,
+        "p": 7.9,
+        "c": 77.2,
+        "g": 2.9
+      },
+      "porciones": [
+        {
+          "nombre": "media taza",
+          "gramos": 95
+        }
+      ],
+      "alias": "grano seco"
+    },
+    {
+      "id": "cl-avena-cocida",
+      "nombre": "Avena cocida",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 71,
+        "p": 2.5,
+        "c": 12,
+        "g": 1.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 234
+        },
+        {
+          "nombre": "1 plato",
+          "gramos": 300
+        }
+      ],
+      "alias": "papilla con agua"
     },
     {
       "id": "cl-avena",
@@ -709,6 +1006,68 @@
       ]
     },
     {
+      "id": "cl-camote-al-horno",
+      "nombre": "Camote al horno",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 90,
+        "p": 2,
+        "c": 20.7,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 camote mediano",
+          "gramos": 114
+        }
+      ],
+      "alias": "batata boniato asado"
+    },
+    {
+      "id": "cl-camote-cocido",
+      "nombre": "Camote cocido",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 76,
+        "p": 1.4,
+        "c": 17.7,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 camote mediano",
+          "gramos": 151
+        },
+        {
+          "nombre": "1 taza",
+          "gramos": 200
+        }
+      ],
+      "alias": "batata boniato hervido"
+    },
+    {
+      "id": "cl-camote-crudo",
+      "nombre": "Camote crudo",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 86,
+        "p": 1.6,
+        "c": 20.1,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 camote mediano",
+          "gramos": 130
+        },
+        {
+          "nombre": "media taza en cubos",
+          "gramos": 67
+        }
+      ],
+      "alias": "batata boniato"
+    },
+    {
       "id": "cl-choclo",
       "nombre": "Choclo cocido",
       "grupo": "Cereales",
@@ -731,6 +1090,24 @@
       ]
     },
     {
+      "id": "cl-choclo-crudo",
+      "nombre": "Choclo crudo",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 86,
+        "p": 3.3,
+        "c": 19,
+        "g": 1.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 choclo",
+          "gramos": 90
+        }
+      ],
+      "alias": "maiz elote"
+    },
+    {
       "id": "cl-fideos",
       "nombre": "Fideos cocidos",
       "grupo": "Cereales",
@@ -751,6 +1128,28 @@
           "gramos": 220
         }
       ]
+    },
+    {
+      "id": "cl-fideos-crudos",
+      "nombre": "Fideos crudos",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 371,
+        "p": 13,
+        "c": 74.7,
+        "g": 1.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 porción",
+          "gramos": 80
+        },
+        {
+          "nombre": "1 taza",
+          "gramos": 105
+        }
+      ],
+      "alias": "pasta seca tallarines"
     },
     {
       "id": "cl-fideos-integrales-cocidos",
@@ -852,6 +1251,24 @@
       ]
     },
     {
+      "id": "cl-papa-al-horno",
+      "nombre": "Papa al horno",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 93,
+        "p": 2.5,
+        "c": 21.2,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 papa mediana",
+          "gramos": 138
+        }
+      ],
+      "alias": "asada"
+    },
+    {
       "id": "cl-papa",
       "nombre": "Papa cocida",
       "grupo": "Cereales",
@@ -869,6 +1286,23 @@
         {
           "nombre": "1 papa chica",
           "gramos": 90
+        }
+      ]
+    },
+    {
+      "id": "cl-papa-cruda",
+      "nombre": "Papa cruda",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 77,
+        "p": 2,
+        "c": 17.5,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 papa mediana",
+          "gramos": 173
         }
       ]
     },
@@ -894,6 +1328,24 @@
       ],
       "aprox": true,
       "alias": "papitas"
+    },
+    {
+      "id": "cl-pure-de-camote",
+      "nombre": "Puré de camote",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 90,
+        "p": 1.8,
+        "c": 20.8,
+        "g": 0.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 255
+        }
+      ],
+      "alias": "batata"
     },
     {
       "id": "cl-pure",
@@ -929,6 +1381,24 @@
           "gramos": 185
         }
       ]
+    },
+    {
+      "id": "cl-quinoa-cruda",
+      "nombre": "Quinoa cruda",
+      "grupo": "Cereales",
+      "por100g": {
+        "kcal": 368,
+        "p": 14.1,
+        "c": 64.2,
+        "g": 6.1
+      },
+      "porciones": [
+        {
+          "nombre": "media taza",
+          "gramos": 85
+        }
+      ],
+      "alias": "grano seco"
     },
     {
       "id": "cl-alfajor",
@@ -2107,6 +2577,81 @@
       ]
     },
     {
+      "id": "cl-huevo-duro",
+      "nombre": "Huevo duro",
+      "grupo": "Huevos",
+      "por100g": {
+        "kcal": 155,
+        "p": 12.6,
+        "c": 1.1,
+        "g": 10.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 huevo",
+          "gramos": 50
+        },
+        {
+          "nombre": "2 huevos",
+          "gramos": 100
+        }
+      ],
+      "alias": "cocido"
+    },
+    {
+      "id": "cl-huevo-frito",
+      "nombre": "Huevo frito",
+      "grupo": "Huevos",
+      "por100g": {
+        "kcal": 196,
+        "p": 13.6,
+        "c": 0.8,
+        "g": 14.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 huevo",
+          "gramos": 46
+        }
+      ]
+    },
+    {
+      "id": "cl-huevo-revuelto",
+      "nombre": "Huevo revuelto",
+      "grupo": "Huevos",
+      "por100g": {
+        "kcal": 149,
+        "p": 10,
+        "c": 1.6,
+        "g": 11
+      },
+      "porciones": [
+        {
+          "nombre": "2 huevos",
+          "gramos": 120
+        }
+      ],
+      "alias": "scrambled"
+    },
+    {
+      "id": "cl-tortilla-de-huevo",
+      "nombre": "Tortilla de huevo",
+      "grupo": "Huevos",
+      "por100g": {
+        "kcal": 154,
+        "p": 10.6,
+        "c": 0.6,
+        "g": 11.7
+      },
+      "porciones": [
+        {
+          "nombre": "1 tortilla",
+          "gramos": 120
+        }
+      ],
+      "alias": "omelette"
+    },
+    {
       "id": "cl-arvejas",
       "nombre": "Arvejas cocidas",
       "grupo": "Legumbres",
@@ -2141,6 +2686,24 @@
       ]
     },
     {
+      "id": "cl-garbanzos-crudos",
+      "nombre": "Garbanzos crudos",
+      "grupo": "Legumbres",
+      "por100g": {
+        "kcal": 364,
+        "p": 19.3,
+        "c": 61,
+        "g": 6
+      },
+      "porciones": [
+        {
+          "nombre": "media taza",
+          "gramos": 100
+        }
+      ],
+      "alias": "grano seco"
+    },
+    {
       "id": "cl-lentejas",
       "nombre": "Lentejas cocidas",
       "grupo": "Legumbres",
@@ -2160,6 +2723,24 @@
           "gramos": 250
         }
       ]
+    },
+    {
+      "id": "cl-lentejas-crudas",
+      "nombre": "Lentejas crudas",
+      "grupo": "Legumbres",
+      "por100g": {
+        "kcal": 352,
+        "p": 24.6,
+        "c": 63.4,
+        "g": 1.1
+      },
+      "porciones": [
+        {
+          "nombre": "media taza",
+          "gramos": 96
+        }
+      ],
+      "alias": "grano seco"
     },
     {
       "id": "cl-porotos",
@@ -2182,6 +2763,24 @@
         }
       ],
       "alias": "frejol frijol judia"
+    },
+    {
+      "id": "cl-porotos-crudos",
+      "nombre": "Porotos crudos",
+      "grupo": "Legumbres",
+      "por100g": {
+        "kcal": 341,
+        "p": 21.6,
+        "c": 62.4,
+        "g": 1.2
+      },
+      "porciones": [
+        {
+          "nombre": "media taza",
+          "gramos": 90
+        }
+      ],
+      "alias": "frejol frijol grano seco"
     },
     {
       "id": "cl-bebida-de-almendras-sin-azucar",
@@ -2842,6 +3441,23 @@
       ]
     },
     {
+      "id": "cl-atun-fresco-crudo",
+      "nombre": "Atún fresco crudo",
+      "grupo": "Pescados",
+      "por100g": {
+        "kcal": 109,
+        "p": 24,
+        "c": 0,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 porción",
+          "gramos": 150
+        }
+      ]
+    },
+    {
       "id": "cl-camarones-cocidos",
       "nombre": "Camarones cocidos",
       "grupo": "Pescados",
@@ -2862,6 +3478,24 @@
         }
       ],
       "alias": "gambas langostinos"
+    },
+    {
+      "id": "cl-camarones-crudos",
+      "nombre": "Camarones crudos",
+      "grupo": "Pescados",
+      "por100g": {
+        "kcal": 85,
+        "p": 20,
+        "c": 0.2,
+        "g": 0.5
+      },
+      "porciones": [
+        {
+          "nombre": "porción",
+          "gramos": 150
+        }
+      ],
+      "alias": "gambas"
     },
     {
       "id": "cl-choritos-cocidos",
@@ -2904,8 +3538,8 @@
       "alias": "conserva"
     },
     {
-      "id": "cl-machas",
-      "nombre": "Machas",
+      "id": "cl-machas-crudas",
+      "nombre": "Machas crudas",
       "grupo": "Pescados",
       "por100g": {
         "kcal": 86,
@@ -2939,6 +3573,23 @@
       ]
     },
     {
+      "id": "cl-merluza-cruda",
+      "nombre": "Merluza cruda",
+      "grupo": "Pescados",
+      "por100g": {
+        "kcal": 71,
+        "p": 15.8,
+        "c": 0,
+        "g": 0.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 filete",
+          "gramos": 170
+        }
+      ]
+    },
+    {
       "id": "cl-reineta",
       "nombre": "Reineta cocida",
       "grupo": "Pescados",
@@ -2952,6 +3603,23 @@
         {
           "nombre": "1 filete",
           "gramos": 130
+        }
+      ]
+    },
+    {
+      "id": "cl-reineta-cruda",
+      "nombre": "Reineta cruda",
+      "grupo": "Pescados",
+      "por100g": {
+        "kcal": 82,
+        "p": 16,
+        "c": 0,
+        "g": 1.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 filete",
+          "gramos": 170
         }
       ]
     },
@@ -2986,6 +3654,23 @@
         {
           "nombre": "1 porción",
           "gramos": 120
+        }
+      ]
+    },
+    {
+      "id": "cl-salmon-crudo",
+      "nombre": "Salmón crudo",
+      "grupo": "Pescados",
+      "por100g": {
+        "kcal": 179,
+        "p": 19.9,
+        "c": 0,
+        "g": 10.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 porción",
+          "gramos": 150
         }
       ]
     },
@@ -3475,6 +4160,23 @@
       ]
     },
     {
+      "id": "cl-acelga-cocida",
+      "nombre": "Acelga cocida",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 20,
+        "p": 1.9,
+        "c": 4.1,
+        "g": 0.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 175
+        }
+      ]
+    },
+    {
       "id": "cl-ajo",
       "nombre": "Ajo",
       "grupo": "Verduras",
@@ -3702,6 +4404,23 @@
         {
           "nombre": "1 taza",
           "gramos": 30
+        }
+      ]
+    },
+    {
+      "id": "cl-espinaca-cocida",
+      "nombre": "Espinaca cocida",
+      "grupo": "Verduras",
+      "por100g": {
+        "kcal": 23,
+        "p": 3,
+        "c": 3.8,
+        "g": 0.3
+      },
+      "porciones": [
+        {
+          "nombre": "1 taza",
+          "gramos": 180
         }
       ]
     },

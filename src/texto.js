@@ -5,7 +5,7 @@
 // Lo importante es que NUNCA adivine en silencio: cada linea vuelve con lo que
 // entendio y con que tan seguro esta, para que Isi lo corrija antes de guardar.
 
-import { normalizar } from './off.js'
+import { normalizar, raiz } from './off.js'
 
 const PALABRAS_NUMERO = {
   un: 1, una: 1, uno: 1, dos: 2, tres: 3, cuatro: 4, cinco: 5, seis: 6,
@@ -84,18 +84,46 @@ export function parsearLinea(linea) {
   return { cantidad: cantidad ?? 1, unidad, nombre, crudo: linea.trim() }
 }
 
-/** Puntaje de coincidencia entre lo escrito y un alimento. Mas alto = mejor. */
+/**
+ * Puntaje de coincidencia. Mas alto = mejor.
+ *
+ * Lo que manda es DONDE calza, no solo si calza: "arroz" tiene que dar
+ * "Arroz blanco" y no "Galletas de arroz". Por eso empezar con el termino
+ * vale mucho mas que contenerlo en cualquier parte.
+ */
+const raices = (t) => normalizar(t).split(/\s+/).filter(Boolean).map(raiz)
+
 function puntaje(nombre, alimento) {
   const a = normalizar(alimento.nombre)
   const busqueda = alimento.busqueda || `${a} ${normalizar(alimento.alias || '')}`
   if (a === nombre) return 100
-  if (busqueda.split(' ').includes(nombre)) return 85
-  if (a.startsWith(nombre)) return 70
-  if (busqueda.includes(nombre)) return 55
-  // todas las palabras de lo escrito aparecen en el alimento
-  const palabras = nombre.split(' ').filter(Boolean)
-  if (palabras.length > 1 && palabras.every((w) => busqueda.includes(w))) return 45
+
+  // se compara por raices para que el plural y el genero no cuenten:
+  // "huevos" tiene que valer lo mismo que "huevo".
+  const q = raices(nombre)
+  const nom = raices(a)
+  const todas = raices(busqueda)
+
+  if (q.join(' ') === nom.join(' ')) return 100
+  if (nom.slice(0, q.length).join(' ') === q.join(' ')) return 90   // empieza igual
+  if (q.every((w) => nom.includes(w))) return 75                     // todas, en cualquier orden
+  if (q.every((w) => todas.includes(w))) return 60                   // incluye sinonimos
+  if (q.every((w) => todas.some((x) => x.startsWith(w)))) return 45
+  if (busqueda.includes(nombre)) return 35
   return 0
+}
+
+const RE_ESTADO = /\b(crud|cocid|asad|frit|horno)/
+
+/** ¿El alimento distingue crudo de cocido y Isi no dijo cual? */
+function estadoAmbiguo(escrito, alimento, candidatos) {
+  if (!RE_ESTADO.test(normalizar(alimento.nombre))) return false
+  if (RE_ESTADO.test(normalizar(escrito))) return false
+  // solo es ambiguo si de verdad existe la otra version
+  return candidatos.some((c) => {
+    const n = normalizar(c.alimento.nombre)
+    return RE_ESTADO.test(n) && n !== normalizar(alimento.nombre)
+  })
 }
 
 /** Gramos que corresponden a cantidad + unidad para ese alimento. */
@@ -154,11 +182,15 @@ export function interpretar(texto, despensa) {
 
       const elegido = candidatos[0]
       const g = resolverGramos(elegido.alimento, p.cantidad, p.unidad, p.crudo)
+      // Cuando hay version cruda y cocida y no se dijo cual, la diferencia
+      // puede ser de tres veces. Eso no se adivina en silencio.
+      const ambiguo = estadoAmbiguo(p.crudo, elegido.alimento, candidatos)
       return {
         ...p,
         alimento: elegido.alimento,
         confianza: elegido.pts,
-        dudoso: elegido.pts < 70 || !g.seguro,
+        dudoso: elegido.pts < 75 || !g.seguro || ambiguo,
+        ambiguoEstado: ambiguo,
         ...g,
         alternativas: candidatos.slice(1).map((c) => c.alimento),
       }

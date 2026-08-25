@@ -82,9 +82,12 @@ export default function RegistroTexto({ fecha, despensa, momentoInicial, onListo
           rows={5}
           className="w-full resize-none rounded-xl border border-borde bg-panel2 px-4 py-3 leading-relaxed text-texto outline-none focus:border-acento"
         />
-        <p className="mb-4 mt-1.5 text-xs text-tenue">
+        <p className="mb-4 mt-1.5 text-xs leading-relaxed text-tenue">
           Un alimento por línea. Entiende gramos ("100 g de pollo"), medidas caseras
           ("1 taza de arroz") y cantidades sueltas ("2 huevos", "media palta").
+          <br />
+          Con arroz, fideos, legumbres y carnes conviene decir <b>crudo</b> o <b>cocido</b>:
+          100 g de lentejas crudas son 352 kcal y cocidas son 116.
         </p>
 
         {filas.length > 0 && (
@@ -151,8 +154,10 @@ function Fila({ fila, abierta, onAbrir, onElegir }) {
       </div>
 
       {fila.dudoso && !abierta && (
-        <button onClick={onAbrir} className="mt-1.5 text-xs text-acento-texto underline underline-offset-2">
-          ¿No es esto? Cambiar
+        <button onClick={onAbrir} className="mt-1.5 text-left text-xs text-acento-texto underline underline-offset-2">
+          {fila.ambiguoEstado
+            ? 'No dijiste si crudo o cocido — la diferencia es grande. Elegir'
+            : '¿No es esto? Cambiar'}
         </button>
       )}
 

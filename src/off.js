@@ -75,22 +75,15 @@ export async function cargarCatalogo() {
 export const getCatalogo = () => CATALOGO || []
 
 export function buscarCatalogo(termino, limite = 30) {
-  if (!CATALOGO) return []
-  const q = normalizar(termino)
-  if (q.length < 2) return []
+  if (!CATALOGO || normalizar(termino).length < 2) return []
   const golpes = []
   for (const a of CATALOGO) {
-    if (!a.busqueda.includes(q)) continue
+    if (!calza(a.busqueda, termino)) continue
     golpes.push(a)
-    if (golpes.length >= limite * 4) break
+    if (golpes.length >= limite * 6) break
   }
   return golpes
-    .sort((a, b) => {
-      const ia = normalizar(a.nombre).startsWith(q) ? 0 : 1
-      const ib = normalizar(b.nombre).startsWith(q) ? 0 : 1
-      if (ia !== ib) return ia - ib
-      return a.nombre.length - b.nombre.length
-    })
+    .sort((a, b) => relevancia(b, termino) - relevancia(a, termino) || a.nombre.length - b.nombre.length)
     .slice(0, limite)
 }
 
@@ -98,24 +91,49 @@ export const getRecetas = () => RECETAS || []
 export const getTablaCL = () => TABLA_CL || []
 
 export function buscarRecetas(termino) {
-  if (!RECETAS) return []
+  if (!RECETAS || !normalizar(termino)) return []
+  return RECETAS.filter((r) => calza(r.busqueda, termino))
+}
+
+/**
+ * Un termino calza si TODAS sus palabras aparecen en el alimento.
+ * Sin esto "pollo crudo" no encontraba nada, porque se buscaba la frase
+ * entera como substring y el alimento se llama "Pechuga de pollo cruda".
+ *
+ * Ademas se recortan el plural y la vocal de genero de las palabras largas,
+ * para que "crudo" encuentre "cruda", "cocidas" encuentre "cocidos" y
+ * "huevos" encuentre "huevo". Las palabras cortas se dejan enteras: recortar
+ * "pan" o "te" convertiria la busqueda en cualquier cosa.
+ */
+export function raiz(palabra) {
+  let r = palabra
+  if (r.length >= 5 && r.endsWith('s')) r = r.slice(0, -1)        // plural
+  if (r.length >= 4 && 'aeiou'.includes(r[r.length - 1])) r = r.slice(0, -1)  // genero
+  return r
+}
+
+export function calza(busqueda, termino) {
+  const palabras = normalizar(termino).split(/\s+/).filter(Boolean)
+  if (!palabras.length) return false
+  return palabras.every((w) => busqueda.includes(raiz(w)))
+}
+
+/** Que tan bien calza, para ordenar. Mas alto es mejor. */
+function relevancia(alimento, termino) {
+  const nombre = normalizar(alimento.nombre)
   const q = normalizar(termino)
-  if (!q) return []
-  return RECETAS.filter((r) => r.busqueda.includes(q))
+  if (nombre === q) return 100
+  if (nombre.startsWith(q)) return 80
+  if (nombre.includes(q)) return 60
+  return 40 - Math.min(nombre.length / 10, 20)
 }
 
 /** Busca en la tabla chilena. Prioriza los que empiezan con el termino. */
 export function buscarCL(termino) {
-  if (!TABLA_CL) return []
-  const q = normalizar(termino)
-  if (!q) return []
-  const golpes = TABLA_CL.filter((a) => a.busqueda.includes(q))
-  return golpes.sort((a, b) => {
-    const ia = normalizar(a.nombre).startsWith(q) ? 0 : 1
-    const ib = normalizar(b.nombre).startsWith(q) ? 0 : 1
-    if (ia !== ib) return ia - ib
-    return a.nombre.length - b.nombre.length
-  })
+  if (!TABLA_CL || !normalizar(termino)) return []
+  return TABLA_CL
+    .filter((a) => calza(a.busqueda, termino))
+    .sort((a, b) => relevancia(b, termino) - relevancia(a, termino) || a.nombre.length - b.nombre.length)
 }
 
 /**
@@ -134,10 +152,9 @@ export function buscarLocal(termino) {
 
 /** Busca en los alimentos que Isi creo a mano. */
 export function buscarPropios(termino) {
-  const q = normalizar(termino)
-  if (!q) return []
+  if (!normalizar(termino)) return []
   return Object.values(getCache())
-    .filter((a) => a.fuente === 'propio' && normalizar(a.nombre).includes(q))
+    .filter((a) => a.fuente === 'propio' && calza(normalizar(a.nombre), termino))
 }
 
 function gramosDeServing(texto) {
