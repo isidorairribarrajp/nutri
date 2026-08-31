@@ -5,13 +5,22 @@
 // apps serias, y es lo que hace que un dia "bien hecho" se sienta alcanzable.
 
 import * as db from './db.js'
+import { MARGEN_ANTOJO, conRegla } from './ciclo.js'
 import { totales } from './nutricion.js'
 
 export const HOLGURA = 0.10
 
-export function rangoKcal(meta) {
+export function rangoKcal(meta, extraArriba = 0) {
   const m = Number(meta) || 0
-  return { min: Math.round(m * (1 - HOLGURA)), max: Math.round(m * (1 + HOLGURA)) }
+  return {
+    min: Math.round(m * (1 - HOLGURA)),
+    max: Math.round(m * (1 + HOLGURA)) + (Number(extraArriba) || 0),
+  }
+}
+
+/** El rango del dia, con el margen de antojo si ese dia esta marcado con regla. */
+export function rangoDelDia(fecha, metas) {
+  return rangoKcal(metas.kcal, conRegla(fecha) ? MARGEN_ANTOJO : 0)
 }
 
 // Cada estado lleva color Y forma. Solo con color no sirve: el verde de
@@ -34,7 +43,7 @@ export function estadoDelDia(fecha, metas) {
   if (!entradas.length) return ESTADOS.vacio
 
   const { kcal } = totales(entradas)
-  const { min, max } = rangoKcal(metas.kcal)
+  const { min, max } = rangoDelDia(fecha, metas)
   const cerrado = db.estaCerrado(fecha)
   const esHoy = fecha === db.claveFecha()
 

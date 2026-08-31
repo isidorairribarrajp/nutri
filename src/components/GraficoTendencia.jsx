@@ -15,7 +15,7 @@ const aDias = (clave) => {
  * El eje X respeta los dias reales, no el indice: si Isi deja de medirse dos
  * semanas, el hueco se ve en vez de disimularse.
  */
-export default function GraficoTendencia({ puntos, color, unidad = 'kg', ventana = 7, vacio }) {
+export default function GraficoTendencia({ puntos, color, unidad = 'kg', ventana = 7, vacio, marcados }) {
   const datos = useMemo(() => promedioMovil(puntos, ventana), [puntos, ventana])
 
   if (datos.length < 2) {
@@ -65,6 +65,19 @@ export default function GraficoTendencia({ puntos, color, unidad = 'kg', ventana
         {/* la tendencia, que es lo unico que se puede leer */}
         <path d={linea('promedio')} fill="none" stroke={color} strokeWidth="2.5"
           strokeLinecap="round" strokeLinejoin="round" />
+
+        {/* dias marcados con regla: la retencion de agua explica saltos falsos */}
+        {marcados && datos.filter((d) => marcados.has(d.fecha)).map((d) => (
+          <rect
+            key={'m' + d.fecha}
+            x={px(d.fecha) - 1.5}
+            y={ALTO - M.abajo + 3}
+            width="3"
+            height="4"
+            rx="1.5"
+            fill="var(--color-acento)"
+          />
+        ))}
 
         <text x={M.izq} y={ALTO - 6} fontSize="9" fill="var(--color-tenue)">
           {datos[0].fecha.slice(5).replace('-', '/')}

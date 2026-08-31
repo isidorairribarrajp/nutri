@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import GraficoTendencia from '../components/GraficoTendencia.jsx'
 import Ejercicio from './Ejercicio.jsx'
 import * as db from '../db.js'
+import { conRegla } from '../ciclo.js'
 import { formatearFecha, redondear } from '../nutricion.js'
 import { COMO_MEDIRSE, grasaNavy, medidasCompletas, tramoGrasa } from '../perfil.js'
 
@@ -17,6 +18,7 @@ export default function Progreso({ perfil, pesoKg, recargar }) {
   const [rango, setRango] = useState(90)
 
   const pesos = useMemo(() => db.getPesosOrdenados(), [version])
+  const diasRegla = useMemo(() => new Set(Object.keys(db.getRegla())), [version])
   const medidas = useMemo(() => db.getMedidasOrdenadas(), [version])
 
   // Cada set de medidas se convierte en un punto de % de grasa.
@@ -104,6 +106,7 @@ export default function Progreso({ perfil, pesoKg, recargar }) {
           puntos={filtrar(serie)}
           color={vista === 'peso' ? 'var(--color-carb)' : 'var(--color-prot)'}
           unidad={vista === 'peso' ? 'kg' : '%'}
+          marcados={vista === 'peso' ? diasRegla : null}
           vacio={
             vista === 'peso'
               ? 'Registra tu peso para ver la tendencia.'
@@ -111,6 +114,14 @@ export default function Progreso({ perfil, pesoKg, recargar }) {
           }
         />
       </section>
+      )}
+
+      {vista === 'peso' && diasRegla.size > 0 && (
+        <p className="mb-4 rounded-xl bg-panel2 px-3 py-2.5 text-xs leading-relaxed text-tenue">
+          Las marcas 🩸 bajo el eje son tus días de regla: antes y durante retienes
+          <b className="text-texto"> 0,5–2 kg de agua</b> que no son grasa. Si la curva salta esos
+          días, no te asustes — mira la tendencia de la línea de color, no el punto.
+        </p>
       )}
 
       {vista === 'grasa' && <ComoMedirse sexo={perfil?.sexo} />}

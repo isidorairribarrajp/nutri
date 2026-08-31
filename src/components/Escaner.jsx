@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { buscarPorCodigo, escanear } from '../escaner.js'
+import { getCatalogo } from '../off.js'
 import * as db from '../db.js'
 
 /**
@@ -138,5 +139,12 @@ export default function Escaner({ onEncontrado, onCerrar }) {
 
 function buscarEnCache(codigo) {
   const cache = db.getCache()
-  return cache[`off-${codigo}`] || Object.values(cache).find((a) => a.codigo === codigo) || null
+  return (
+    cache[`off-${codigo}`] ||
+    Object.values(cache).find((a) => a.codigo === codigo) ||
+    // el catalogo empaquetado: cubre sin internet, y es la UNICA via para los
+    // EAN de la marca propia de Jumbo, que Open Food Facts no conoce
+    getCatalogo().find((a) => a.codigo === codigo) ||
+    null
+  )
 }

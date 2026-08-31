@@ -58,7 +58,7 @@ export default defineConfig({
           },
           {
             // las fotos de producto: una vez vistas, quedan
-            urlPattern: /^https:\/\/images\.openfoodfacts\.org\/.*/i,
+            urlPattern: /^https:\/\/(images\.openfoodfacts\.org|jumbocl\.vtexassets\.com)\/.*/i,
             handler: 'CacheFirst',
             options: {
               cacheName: 'fotos-productos',

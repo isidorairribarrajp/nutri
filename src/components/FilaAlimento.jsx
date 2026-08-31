@@ -5,6 +5,7 @@ const ETIQUETA_FUENTE = {
   off: 'Open Food Facts',
   propio: 'Mío',
   receta: 'Mi recetario',
+  jumbo: 'Jumbo (etiqueta)',
 }
 
 export function FilaResultado({ alimento, onClick, favorito, onFavorito }) {

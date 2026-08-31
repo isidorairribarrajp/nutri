@@ -8,7 +8,9 @@ import FormularioEjercicio from '../components/FormularioEjercicio.jsx'
 import TiraSemana, { LeyendaSemana } from '../components/TiraSemana.jsx'
 import * as db from '../db.js'
 import { buscarEjercicio, kcalDeSesion, resumenSesion } from '../ejercicio.js'
-import { racha, rangoKcal, semanaDe } from '../racha.js'
+import { racha, rangoDelDia, semanaDe } from '../racha.js'
+import { MARGEN_ANTOJO, antojoDelDia, conRegla, enVentana, marcarRegla } from '../ciclo.js'
+import { getRecetas } from '../off.js'
 import { MOMENTOS, etiquetaPorcion, formatearFecha, porMomento, redondear, totales } from '../nutricion.js'
 
 export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgregar }) {
@@ -20,7 +22,10 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
   const t = useMemo(() => totales(entradas), [entradas])
   const grupos = useMemo(() => porMomento(entradas), [entradas])
   const agua = db.getAgua(fecha)
-  const rango = useMemo(() => rangoKcal(metas.kcal), [metas.kcal])
+  const regla = conRegla(fecha)
+  const rango = useMemo(() => rangoDelDia(fecha, metas), [fecha, metas, regla])
+  const sugerirRegla = !regla && enVentana(fecha)
+  const antojo = useMemo(() => (regla ? antojoDelDia(fecha, getRecetas()) : null), [fecha, regla])
   const dias = useMemo(() => semanaDe(fecha, metas), [fecha, metas, entradas])
   const diasSeguidos = useMemo(() => racha(), [entradas])
   const cerrado = db.estaCerrado(fecha)
@@ -59,9 +64,41 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
           className="rounded-full border border-borde px-3 py-1.5 text-tenue disabled:opacity-30" aria-label="Día siguiente">›</button>
       </div>
 
+      <div className="mb-3 flex justify-center">
+        <button
+          onClick={() => { marcarRegla(fecha, !regla); recargar() }}
+          aria-label={regla ? 'Desmarcar regla' : 'Marcar que ando con la regla'}
+          className={`rounded-full border px-3.5 py-1.5 text-xs ${
+            regla
+              ? 'border-acento bg-chip font-semibold text-chip-texto'
+              : sugerirRegla
+                ? 'border-acento bg-panel text-acento-texto'
+                : 'border-borde bg-panel2 text-tenue'
+          }`}
+        >
+          {regla ? '🩸 ando con la regla' : sugerirRegla ? '🩸 ¿te llegó? suele tocarte por estos días' : '🩸 marcar regla'}
+        </button>
+      </div>
+
       <div className="mb-4 flex justify-center">
         <AnilloCalorias totales={t} meta={metas.kcal} rango={rango} />
       </div>
+
+      {regla && (
+        <div className="tarjeta mb-3 px-4 py-3 text-xs leading-relaxed">
+          <p>
+            <b className="text-acento-texto">~{MARGEN_ANTOJO} kcal de antojo hoy.</b>{' '}
+            Con la regla tu gasto sube de verdad (100–300 kcal según la persona): el techo de tu
+            rango ya lo incluye.
+            {antojo && (
+              <> Cabe, de tu recetario: <b>{antojo.nombre}</b> — {antojo.porcion}, {antojo.kcal} kcal.</>
+            )}
+          </p>
+          <p className="mt-1.5 text-tenue">
+            Y estos días pierdes hierro: lentejas, carne roja o espinaca con algo de limón suman.
+          </p>
+        </div>
+      )}
 
 
       <div className="tarjeta mb-3 p-4">

@@ -16,6 +16,7 @@ const K = {
   cerrados: 'nutri:dias_cerrados',
   repetidas: 'nutri:repetidas',
   recetas_editadas: 'nutri:recetas_editadas',
+  regla: 'nutri:regla',
 }
 
 const METAS_DEFAULT = { kcal: 1800, proteina_g: 120, carbos_g: 180, grasa_g: 60 }
@@ -113,6 +114,20 @@ export function getPesosOrdenados() {
 export function getUltimoPeso() {
   const lista = getPesosOrdenados()
   return lista.length ? lista[lista.length - 1] : null
+}
+
+// --- regla ---
+// { 'YYYY-MM-DD': true } por cada dia marcado. Dato sensible: vive solo en
+// este telefono y viaja unicamente dentro del respaldo manual de Isi.
+export function getRegla() {
+  return leer(K.regla, {})
+}
+
+export function setRegla(fecha, valor = true) {
+  const dias = getRegla()
+  if (valor) dias[fecha] = true
+  else delete dias[fecha]
+  escribir(K.regla, dias)
 }
 
 // --- recetas editadas ---
@@ -381,6 +396,7 @@ export function exportar() {
     dias_cerrados: leer(K.cerrados, {}),
     repetidas: getRepetidas(),
     recetas_editadas: getRecetasEditadas(),
+    regla: getRegla(),
     diario: getDiario(),
     alimentos_cache: getCache(),
     recientes: getRecientesIds(),
@@ -399,6 +415,7 @@ export function importar(json) {
   if (json.dias_cerrados) escribir(K.cerrados, json.dias_cerrados)
   if (json.repetidas) escribir(K.repetidas, json.repetidas)
   if (json.recetas_editadas) escribir(K.recetas_editadas, json.recetas_editadas)
+  if (json.regla) escribir(K.regla, json.regla)
   if (json.diario) escribir(K.diario, json.diario)
   if (json.alimentos_cache) escribir(K.cache, json.alimentos_cache)
   if (json.recientes) escribir(K.recientes, json.recientes)

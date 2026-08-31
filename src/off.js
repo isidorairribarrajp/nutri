@@ -64,10 +64,13 @@ export async function cargarCatalogo() {
       codigo: p.c,
       nombre: p.n,
       marca: p.m || null,
-      imagen: p.i ? base + p.i : null,
+      // una foto con URL completa viene de otra fuente (jumbo.cl); las de
+      // Open Food Facts se guardan solo como sufijo de su CDN
+      imagen: p.i ? (p.i.startsWith('http') ? p.i : base + p.i) : null,
       por100g: { kcal: p.k, p: p.p, c: p.h, g: p.g },
-      porciones: p.s ? [{ nombre: '1 porción', gramos: p.s }] : [],
-      fuente: 'off',
+      // sn = nombre real de la porción según la etiqueta ("2 Rebanadas")
+      porciones: p.s ? [{ nombre: p.sn || '1 porción', gramos: p.s }] : [],
+      fuente: p.f === 'jcl' ? 'jumbo' : 'off',
       busqueda: normalizar(`${p.n} ${p.m || ''}`),
     }))
   } catch {

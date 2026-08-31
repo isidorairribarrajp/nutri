@@ -28,6 +28,25 @@ Abrir la URL **en Safari** (en iOS solo Safari puede instalar PWAs)
   **editor**: cambiar cuánto rinde, ajustar cantidades, sacar y agregar ingredientes.
 - **Perfil** — el análisis completo, respaldo y tema claro/oscuro.
 
+## Ciclo menstrual
+
+`src/ciclo.js`. En la fase lútea y durante la regla el metabolismo basal sube de verdad
+(2,5–11 % en los estudios, ~100–300 kcal/día). Como no se puede medir exacto:
+
+- Un chip 🩸 en Hoy marca el día con un toque. La **meta base no cambia**: aparece un
+  margen de antojo explícito (~150 kcal) y el techo del rango sube esa cantidad. Comerse
+  el antojo no marca el día como fallo.
+- El antojo sugiere un postre del recetario de Isi que quepa en el margen (determinístico
+  por fecha).
+- Tras dos ciclos registrados, la app aprende la duración (mediana de las brechas
+  plausibles, 20–45 días) y sugiere «¿te llegó?» en la ventana esperada.
+- Los días de regla se marcan bajo el eje del gráfico de peso: la retención de agua
+  (0,5–2 kg) explica saltos que no son grasa.
+- Nota de hierro esos días.
+
+El dato es sensible: vive solo en el teléfono y viaja únicamente dentro del respaldo
+manual, como todo lo demás.
+
 ## Racha, rango y estado del día
 
 `src/racha.js`. Tres decisiones deliberadas:
@@ -170,7 +189,9 @@ El reparto "Recomendado" lo elige la app según objetivo y % de grasa, y dice po
 
 Todo lo de abajo viaja **dentro de la app**: buscar comida no necesita internet.
 
-- `public/alimentos-cl.json` — ~250 alimentos y platos chilenos **con porciones caseras**
+- `public/alimentos-cl.json` — ~275 alimentos y platos chilenos **con porciones caseras**,
+  incluida la panadería de supermercado como genéricos (los productos de panadería llevan
+  códigos de barra internos de la tienda que nunca estarán en ninguna base)
   ("1 marraqueta", "media palta", "1 taza de arroz cocido"). Es lo que se muestra primero
   en la búsqueda, porque es lo único que sabe cuánto pesa una porción de verdad.
   Trae sinónimos (`alias`) para que "aguacate", "fresa", "frejol", "yogurt" o "cabritas"
@@ -183,6 +204,14 @@ Todo lo de abajo viaja **dentro de la app**: buscar comida no necesita internet.
   (`datos/`). Los macros se calculan sumando los ingredientes y se **contrastan** contra
   las kcal que declara cada receta; cuando la diferencia supera el 15 % la app lo dice.
   Mediana de desviación: 8,9 %.
+- **jumbo.cl** — productos del supermercado con su ficha de ETIQUETA: la página de
+  producto de jumbo.cl incrusta la tabla nutricional completa (por 100 g y por porción,
+  con el nombre real de la porción) más el código de barras y la foto. Para un mismo
+  código, este dato gana sobre el de Open Food Facts: viene del fabricante.
+  Regenerar: `python3 datos/bajar_jumbo.py 650 && python3 datos/fusionar_jumbo.py`.
+  El importador va a una página cada 2,5 s, sin paralelismo — es el sitio de una tienda.
+  Los EAN de la marca propia de Jumbo no existen en Open Food Facts, así que el escáner
+  también consulta el catálogo empaquetado antes de ir a la red.
 - [Open Food Facts](https://world.openfoodfacts.org/) en vivo — para lo que no esté en el
   catálogo empaquetado. Requiere red; los resultados que ya están locales se filtran para
   no salir dos veces.
