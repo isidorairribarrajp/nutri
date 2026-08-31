@@ -1479,6 +1479,25 @@
       "alias": "bomba"
     },
     {
+      "id": "cl-brazo-de-reina",
+      "nombre": "Brazo de reina",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 320,
+        "p": 5.8,
+        "c": 55,
+        "g": 8.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 rebanada",
+          "gramos": 70
+        }
+      ],
+      "aprox": true,
+      "alias": "pionono rollo"
+    },
+    {
       "id": "cl-brownie",
       "nombre": "Brownie",
       "grupo": "Dulces",
@@ -1596,6 +1615,25 @@
       ]
     },
     {
+      "id": "cl-dona-glaseada",
+      "nombre": "Dona glaseada",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 421,
+        "p": 5.1,
+        "c": 49.7,
+        "g": 22.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 dona",
+          "gramos": 60
+        }
+      ],
+      "aprox": true,
+      "alias": "donut berlinesa"
+    },
+    {
       "id": "cl-endulzante-sin-calorias",
       "nombre": "Endulzante sin calorías",
       "grupo": "Dulces",
@@ -1640,6 +1678,25 @@
       "alias": "endulzante"
     },
     {
+      "id": "cl-galleta-de-mantequilla-de-panaderia",
+      "nombre": "Galleta de mantequilla de panadería",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 478,
+        "p": 5.6,
+        "c": 62,
+        "g": 23
+      },
+      "porciones": [
+        {
+          "nombre": "1 galleta",
+          "gramos": 25
+        }
+      ],
+      "aprox": true,
+      "alias": "mantecado"
+    },
+    {
       "id": "cl-galletas-dulces",
       "nombre": "Galletas dulces",
       "grupo": "Dulces",
@@ -1679,6 +1736,25 @@
       ]
     },
     {
+      "id": "cl-kuchen-de-manzana",
+      "nombre": "Kuchen de manzana",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 265,
+        "p": 3.5,
+        "c": 38,
+        "g": 11
+      },
+      "porciones": [
+        {
+          "nombre": "1 trozo",
+          "gramos": 110
+        }
+      ],
+      "aprox": true,
+      "alias": "tarta alemana"
+    },
+    {
       "id": "cl-mermelada",
       "nombre": "Mermelada",
       "grupo": "Dulces",
@@ -1714,6 +1790,82 @@
       ]
     },
     {
+      "id": "cl-muffin-de-arandanos",
+      "nombre": "Muffin de arándanos",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 377,
+        "p": 4.5,
+        "c": 54,
+        "g": 16
+      },
+      "porciones": [
+        {
+          "nombre": "1 muffin",
+          "gramos": 110
+        }
+      ],
+      "aprox": true,
+      "alias": "queque individual blueberry"
+    },
+    {
+      "id": "cl-muffin-de-chocolate",
+      "nombre": "Muffin de chocolate",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 410,
+        "p": 5.3,
+        "c": 52,
+        "g": 20
+      },
+      "porciones": [
+        {
+          "nombre": "1 muffin",
+          "gramos": 110
+        }
+      ],
+      "aprox": true,
+      "alias": "queque individual chips"
+    },
+    {
+      "id": "cl-palmerita",
+      "nombre": "Palmerita",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 486,
+        "p": 5.5,
+        "c": 55,
+        "g": 27
+      },
+      "porciones": [
+        {
+          "nombre": "1 palmerita",
+          "gramos": 30
+        }
+      ],
+      "aprox": true,
+      "alias": "palmera hojaldre"
+    },
+    {
+      "id": "cl-pan-de-pascua",
+      "nombre": "Pan de pascua",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 367,
+        "p": 5.6,
+        "c": 58,
+        "g": 12.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 rebanada",
+          "gramos": 60
+        }
+      ],
+      "aprox": true,
+      "alias": "fruta confitada navidad"
+    },
+    {
       "id": "cl-papas-fritas-de-bolsa",
       "nombre": "Papas fritas de bolsa",
       "grupo": "Dulces",
@@ -1736,6 +1888,44 @@
       "alias": "snack lays papitas"
     },
     {
+      "id": "cl-pie-de-limon-de-pasteleria",
+      "nombre": "Pie de limón de pastelería",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 361,
+        "p": 4.7,
+        "c": 49.7,
+        "g": 16.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 trozo",
+          "gramos": 110
+        }
+      ],
+      "aprox": true,
+      "alias": "tarta"
+    },
+    {
+      "id": "cl-queque-ingles",
+      "nombre": "Queque inglés",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 389,
+        "p": 5.4,
+        "c": 52.8,
+        "g": 17.4
+      },
+      "porciones": [
+        {
+          "nombre": "1 rebanada",
+          "gramos": 55
+        }
+      ],
+      "aprox": true,
+      "alias": "budín bizcocho"
+    },
+    {
       "id": "cl-ramitas",
       "nombre": "Ramitas",
       "grupo": "Dulces",
@@ -1752,6 +1942,25 @@
         }
       ],
       "alias": "snack palitos"
+    },
+    {
+      "id": "cl-torta-de-mil-hojas",
+      "nombre": "Torta de mil hojas",
+      "grupo": "Dulces",
+      "por100g": {
+        "kcal": 430,
+        "p": 5.5,
+        "c": 48,
+        "g": 24
+      },
+      "porciones": [
+        {
+          "nombre": "1 trozo",
+          "gramos": 100
+        }
+      ],
+      "aprox": true,
+      "alias": "manjar hojarasca"
     },
     {
       "id": "cl-arandano",
@@ -3264,6 +3473,86 @@
       "alias": "yogurt yoghurt yogur"
     },
     {
+      "id": "cl-baguette",
+      "nombre": "Baguette",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 274,
+        "p": 8.8,
+        "c": 55.8,
+        "g": 1.6
+      },
+      "porciones": [
+        {
+          "nombre": "un cuarto de baguette",
+          "gramos": 62
+        },
+        {
+          "nombre": "media baguette",
+          "gramos": 125
+        }
+      ],
+      "aprox": true,
+      "alias": "pan francés barra"
+    },
+    {
+      "id": "cl-banana-bread",
+      "nombre": "Banana bread",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 326,
+        "p": 4.3,
+        "c": 54.6,
+        "g": 10.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 rebanada",
+          "gramos": 60
+        }
+      ],
+      "aprox": true,
+      "alias": "queque de plátano pan"
+    },
+    {
+      "id": "cl-chapata",
+      "nombre": "Chapata",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 271,
+        "p": 9.2,
+        "c": 52,
+        "g": 3.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 chapata chica",
+          "gramos": 90
+        }
+      ],
+      "aprox": true,
+      "alias": "ciabatta"
+    },
+    {
+      "id": "cl-croissant",
+      "nombre": "Croissant",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 406,
+        "p": 8.2,
+        "c": 45.8,
+        "g": 21
+      },
+      "porciones": [
+        {
+          "nombre": "1 croissant",
+          "gramos": 57
+        }
+      ],
+      "aprox": true,
+      "alias": "medialuna cachito"
+    },
+    {
       "id": "cl-galleta-soda",
       "nombre": "Galletas de soda",
       "grupo": "Panes",
@@ -3329,6 +3618,66 @@
       ]
     },
     {
+      "id": "cl-pan-amasado",
+      "nombre": "Pan amasado",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 300,
+        "p": 8,
+        "c": 55,
+        "g": 5
+      },
+      "porciones": [
+        {
+          "nombre": "1 pan",
+          "gramos": 90
+        },
+        {
+          "nombre": "medio pan",
+          "gramos": 45
+        }
+      ],
+      "aprox": true
+    },
+    {
+      "id": "cl-pan-de-completo",
+      "nombre": "Pan de completo",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 290,
+        "p": 9.4,
+        "c": 51.5,
+        "g": 4.9
+      },
+      "porciones": [
+        {
+          "nombre": "1 pan",
+          "gramos": 55
+        }
+      ],
+      "aprox": true,
+      "alias": "hot dog"
+    },
+    {
+      "id": "cl-pan-de-hamburguesa",
+      "nombre": "Pan de hamburguesa",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 294,
+        "p": 9.5,
+        "c": 50.1,
+        "g": 5.8
+      },
+      "porciones": [
+        {
+          "nombre": "1 pan",
+          "gramos": 60
+        }
+      ],
+      "aprox": true,
+      "alias": "brioche"
+    },
+    {
       "id": "cl-pan-molde",
       "nombre": "Pan de molde blanco",
       "grupo": "Panes",
@@ -3348,6 +3697,29 @@
           "gramos": 56
         }
       ]
+    },
+    {
+      "id": "cl-pan-de-zapallo-pumpkin-bread",
+      "nombre": "Pan de zapallo (pumpkin bread)",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 318,
+        "p": 4.2,
+        "c": 46.5,
+        "g": 13.1
+      },
+      "porciones": [
+        {
+          "nombre": "1 rebanada",
+          "gramos": 60
+        },
+        {
+          "nombre": "2 rebanadas",
+          "gramos": 120
+        }
+      ],
+      "aprox": true,
+      "alias": "queque calabaza pumpkin bread jumbo"
     },
     {
       "id": "cl-pan-integral",
@@ -3371,6 +3743,25 @@
       ]
     },
     {
+      "id": "cl-pan-integral-de-molde-de-panaderia",
+      "nombre": "Pan integral de molde de panadería",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 252,
+        "p": 12.3,
+        "c": 42.7,
+        "g": 4.2
+      },
+      "porciones": [
+        {
+          "nombre": "1 rebanada",
+          "gramos": 40
+        }
+      ],
+      "aprox": true,
+      "alias": "multigrano centeno"
+    },
+    {
       "id": "cl-pan-pita",
       "nombre": "Pan pita",
       "grupo": "Panes",
@@ -3386,6 +3777,25 @@
           "gramos": 60
         }
       ]
+    },
+    {
+      "id": "cl-pan-pita-integral",
+      "nombre": "Pan pita integral",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 266,
+        "p": 9.8,
+        "c": 55,
+        "g": 2.6
+      },
+      "porciones": [
+        {
+          "nombre": "1 pan pita",
+          "gramos": 64
+        }
+      ],
+      "aprox": true,
+      "alias": "árabe"
     },
     {
       "id": "cl-tortilla-rescoldo",
@@ -3404,6 +3814,29 @@
         }
       ],
       "aprox": true
+    },
+    {
+      "id": "cl-tostadas-pan-tostado",
+      "nombre": "Tostadas / pan tostado",
+      "grupo": "Panes",
+      "por100g": {
+        "kcal": 407,
+        "p": 12,
+        "c": 74,
+        "g": 6.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 tostada",
+          "gramos": 10
+        },
+        {
+          "nombre": "3 tostadas",
+          "gramos": 30
+        }
+      ],
+      "aprox": true,
+      "alias": "crostini zwieback"
     },
     {
       "id": "cl-atun-en-aceite-lata",
@@ -3764,6 +4197,25 @@
         }
       ],
       "aprox": true
+    },
+    {
+      "id": "cl-empanada-de-queso-de-horno",
+      "nombre": "Empanada de queso de horno",
+      "grupo": "Platos",
+      "por100g": {
+        "kcal": 310,
+        "p": 9.5,
+        "c": 33,
+        "g": 15.5
+      },
+      "porciones": [
+        {
+          "nombre": "1 empanada",
+          "gramos": 130
+        }
+      ],
+      "aprox": true,
+      "alias": "panadería"
     },
     {
       "id": "cl-empanada-queso",

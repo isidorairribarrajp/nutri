@@ -95,6 +95,24 @@ for p in crudos:
         item["i"] = img[len("https://images.openfoodfacts.org/images/products/"):]
     salida.append(item)
 
+# Fusion con lo ya publicado: la descarga cruda vive en un directorio
+# temporal o gitignorado y ya se perdio una vez. El catalogo publicado es la
+# memoria de largo plazo: nada de lo que Isi ya tiene se pierde porque una
+# pasada nueva no lo haya vuelto a bajar.
+if SALIDA.exists():
+    previos = {p["c"]: p for p in json.loads(SALIDA.read_text(encoding="utf-8")).get("productos", [])}
+    heredados = 0
+    codigos_nuevos = {x["c"] for x in salida}
+    for codigo, prod in previos.items():
+        if codigo not in codigos_nuevos:
+            salida.append(prod)
+            heredados += 1
+    # si la version nueva de un producto perdio la foto, se conserva la vieja
+    for x in salida:
+        if "i" not in x and x["c"] in previos and "i" in previos[x["c"]]:
+            x["i"] = previos[x["c"]]["i"]
+    print(f"  heredados del catalogo anterior: {heredados}")
+
 salida.sort(key=lambda x: norm(x["n"]))
 SALIDA.write_text(json.dumps({
     "version": 1,
