@@ -39,7 +39,11 @@ export async function cargarRecetas() {
   const { comoAlimento } = await import('./receta.js')
   RECETAS = json.recetas.map((r) => ({
     ...comoAlimento(r),
-    busqueda: normalizar(`${r.nombre} ${r.descripcion} ${r.grupo}`),
+    // Solo el nombre: si entra la descripcion, buscar "huevo" devuelve media
+    // docena de recetas que apenas lo mencionan, antes que el huevo.
+    busqueda: normalizar(r.nombre),
+    // la descripcion sigue disponible para buscar DENTRO de la pestana Recetas
+    busquedaAmplia: normalizar(`${r.nombre} ${r.descripcion} ${r.grupo}`),
   }))
   return RECETAS
 }
@@ -137,15 +141,19 @@ export function buscarCL(termino) {
 }
 
 /**
- * Todo lo que funciona sin internet, en orden de utilidad:
- * lo que Isi creo, sus recetas, la tabla chilena con porciones caseras, y
- * al final los miles de productos de supermercado.
+ * Todo lo que funciona sin internet, en orden de utilidad al registrar:
+ * lo que Isi creo, los alimentos sueltos con porciones caseras, despues sus
+ * recetas y al final los productos de supermercado.
+ *
+ * Las recetas NO van primero a proposito: cuando esta anotando lo que comio
+ * casi siempre busca un ingrediente o un producto, no un plato entero. Siguen
+ * accesibles, pero no tapando lo demas.
  */
 export function buscarLocal(termino) {
   return [
     ...buscarPropios(termino),
-    ...buscarRecetas(termino),
     ...buscarCL(termino),
+    ...buscarRecetas(termino),
     ...buscarCatalogo(termino),
   ]
 }

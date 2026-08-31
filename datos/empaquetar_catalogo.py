@@ -56,7 +56,10 @@ for p in crudos:
     except (TypeError, ValueError):
         descartes["sin kcal"] += 1
         continue
-    if not (0 < kcal <= 900):
+    # 0 kcal es un valor legitimo: Coca Zero, endulzantes, te, agua. Lo que no
+    # sirve es que el campo no exista (eso ya se descarto arriba) o que sea
+    # imposible. Antes se descartaba el cero y se perdian las bebidas light.
+    if not (0 <= kcal <= 900):
         descartes["kcal absurda"] += 1
         continue
 

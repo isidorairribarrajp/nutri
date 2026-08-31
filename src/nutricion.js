@@ -2,6 +2,7 @@
 
 export const MOMENTOS = [
   { id: 'desayuno', nombre: 'Desayuno', emoji: '☕' },
+  { id: 'merienda', nombre: 'Merienda', emoji: '\u{1F950}' },
   { id: 'almuerzo', nombre: 'Almuerzo', emoji: '\u{1F37D}️' },
   { id: 'once', nombre: 'Once', emoji: '\u{1F35E}' },
   { id: 'cena', nombre: 'Cena', emoji: '\u{1F319}' },

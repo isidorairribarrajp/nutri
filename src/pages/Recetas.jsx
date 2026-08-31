@@ -30,7 +30,7 @@ export default function Recetas({ recargar }) {
     return getRecetas()
       .map(conEdicion)
       .filter((r) => filtro === 'todo' || r.tipo === filtro)
-      .filter((r) => !n || r.busqueda.includes(n))
+      .filter((r) => !n || (r.busquedaAmplia || r.busqueda).includes(n))
   }, [listo, filtro, q, version])
 
   return (

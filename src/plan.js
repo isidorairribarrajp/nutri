@@ -14,17 +14,19 @@ import { redondear } from './nutricion.js'
 
 /** Reparto tipico del dia en Chile: el almuerzo pesa mas que la cena. */
 export const REPARTO_DIA = [
-  { momento: 'desayuno', pct: 0.22 },
-  { momento: 'almuerzo', pct: 0.33 },
+  { momento: 'desayuno', pct: 0.20 },
+  { momento: 'merienda', pct: 0.10 },
+  { momento: 'almuerzo', pct: 0.30 },
   { momento: 'once', pct: 0.15 },
-  { momento: 'cena', pct: 0.25 },
-  { momento: 'snack', pct: 0.05 },
+  { momento: 'cena', pct: 0.22 },
+  { momento: 'snack', pct: 0.03 },
 ]
 
 /** Que recetas pegan en que momento del dia. */
 const APTOS = {
   desayuno: (a) => a.tipo === 'postre' || enGrupo(a, 'Lacteos', 'Panes', 'Frutas', 'Cereales', 'Huevos', 'Suplementos', 'Frutos secos'),
   once: (a) => a.tipo === 'postre' || enGrupo(a, 'Lacteos', 'Panes', 'Frutas'),
+  merienda: (a) => a.tipo === 'postre' || enGrupo(a, 'Frutas', 'Frutos secos', 'Lacteos', 'Suplementos', 'Panes'),
   snack: (a) => a.tipo === 'postre' || enGrupo(a, 'Frutas', 'Frutos secos', 'Lacteos', 'Suplementos'),
   almuerzo: (a) => a.tipo === 'salado' || enGrupo(a, 'Carnes', 'Pescados', 'Legumbres', 'Cereales', 'Verduras', 'Platos', 'Huevos'),
   cena: (a) => a.tipo === 'salado' || enGrupo(a, 'Carnes', 'Pescados', 'Legumbres', 'Verduras', 'Platos', 'Huevos'),
