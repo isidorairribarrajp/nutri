@@ -13,6 +13,8 @@ import { MARGEN_ANTOJO, antojoDelDia, conRegla, enVentana, marcarRegla } from '.
 import { getRecetas } from '../off.js'
 import { MOMENTOS, etiquetaPorcion, formatearFecha, porMomento, redondear, totales } from '../nutricion.js'
 
+const nombreMomento = (id) => MOMENTOS.find((m) => m.id === id)?.nombre.toLowerCase() || id
+
 export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgregar }) {
   const [editando, setEditando] = useState(null)
   const [copiando, setCopiando] = useState(false)
@@ -30,6 +32,7 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
   const diasSeguidos = useMemo(() => racha(), [entradas])
   const cerrado = db.estaCerrado(fecha)
   const repetidas = db.getRepetidas()
+  const portapapeles = db.getPortapapeles()
 
   const pesoKg = Number(db.getPerfil()?.peso_kg) || Number(db.getUltimoPeso()?.kg) || 60
   const sesiones = useMemo(() => db.getEjerciciosDia(fecha), [fecha, entradas])
@@ -186,6 +189,40 @@ export default function Hoy({ fecha, setFecha, entradas, metas, recargar, onAgre
             </div>
             {menuMomento === m.id && (
               <div className="mt-2 rounded-xl bg-panel2 p-2">
+                <button
+                  onClick={() => {
+                    const n = db.copiarComida(fecha, m.id)
+                    if (n) setMenuMomento(null)
+                    recargar()
+                  }}
+                  disabled={items.length === 0}
+                  className="w-full rounded-lg px-3 py-2 text-left text-sm disabled:opacity-40"
+                >
+                  Copiar este {m.nombre.toLowerCase()}
+                  {items.length > 0 && (
+                    <span className="text-tenue"> · {items.length} {items.length === 1 ? 'alimento' : 'alimentos'}</span>
+                  )}
+                </button>
+
+                {portapapeles && (
+                  <button
+                    onClick={() => {
+                      db.pegarComida(fecha, m.id)
+                      setMenuMomento(null)
+                      recargar()
+                    }}
+                    className="w-full rounded-lg px-3 py-2 text-left text-sm"
+                  >
+                    Pegar aquí: {nombreMomento(portapapeles.origen.momento)} de{' '}
+                    {formatearFecha(portapapeles.origen.fecha).toLowerCase()}
+                    <span className="block text-xs text-tenue">
+                      {portapapeles.entradas.length}{' '}
+                      {portapapeles.entradas.length === 1 ? 'alimento' : 'alimentos'} ·{' '}
+                      {redondear(totales(portapapeles.entradas).kcal)} kcal
+                    </span>
+                  </button>
+                )}
+
                 {repetidas[m.id] ? (
                   <button
                     onClick={() => { db.setRepetida(m.id, []); setMenuMomento(null); recargar() }}

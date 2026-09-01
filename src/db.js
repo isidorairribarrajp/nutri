@@ -17,6 +17,7 @@ const K = {
   repetidas: 'nutri:repetidas',
   recetas_editadas: 'nutri:recetas_editadas',
   regla: 'nutri:regla',
+  portapapeles: 'nutri:portapapeles',
 }
 
 const METAS_DEFAULT = { kcal: 1800, proteina_g: 120, carbos_g: 180, grasa_g: 60 }
@@ -318,6 +319,31 @@ export function editarEntrada(fecha, id, parche) {
   const lista = diario[fecha] || []
   diario[fecha] = lista.map((e) => (e.id === id ? { ...e, ...parche } : e))
   escribir(K.diario, diario)
+}
+
+// --- portapapeles de comidas ---
+// Copiar UNA comida (el almuerzo de ayer) y pegarla donde sea. Persiste en
+// localStorage para sobrevivir recargas de la PWA; no viaja en el respaldo
+// porque es transitorio.
+export function copiarComida(fecha, momento) {
+  const entradas = getDia(fecha)
+    .filter((e) => e.momento === momento)
+    .map(({ id, ts, ...resto }) => resto)
+  if (!entradas.length) return 0
+  escribir(K.portapapeles, { origen: { fecha, momento }, entradas, ts: Date.now() })
+  return entradas.length
+}
+
+export function getPortapapeles() {
+  return leer(K.portapapeles, null)
+}
+
+/** Pega lo copiado en la fecha y comida destino. La comida destino manda. */
+export function pegarComida(fecha, momento) {
+  const p = getPortapapeles()
+  if (!p) return 0
+  p.entradas.forEach((e) => agregarEntrada(fecha, { ...e, momento }))
+  return p.entradas.length
 }
 
 /** Copia todas las comidas de un dia a otro. Es el "repetir día" de Fitia. */
